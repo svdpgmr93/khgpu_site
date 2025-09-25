@@ -1,0 +1,122 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    min-width: 320px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: #333333;
+    background-color: #f9f9f9;
+}
+
+.header-top-item a {
+    color: #333333;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.header-top-item a:hover {
+    color: #ffba55;
+    transition-duration: 0.3s;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main.main {
+    flex: 1 1 auto;
+}
+
+.header-top-items {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-menu {
+    border-radius: 0;
+    border: none;
+    outline: none;
+}
+
+.header-top {
+    background-color: #f4f2f2;
+}
+
+.dpo {
+    background-color: #ffe877;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.dpo:hover {
+    background-color: #5d5c5b;
+    color: white;
+    transition-duration: 0.3s;
+}
+
+.search {
+    background-color: #ffe877;
+    color: #5d5c5b;
+}
+
+.search:hover {
+    color: #e8c40c;
+    background-color: #5d5c5b;
+    transition-duration: 0.3s;
+}
+
+.lgn {
+    background-color: #5d5c5b;
+    color: #e8c40c;
+}
+
+.lgn:hover {
+    background-color: #e8c40c;
+    transition-duration: 0.3s;
+    color: #5d5c5b;
+}
+
+.header-top-icons {
+    color: #5d5c5b;
+}
+
+.header-top-icons:hover {
+    color: #e8c40c;
+    transition-duration: 0.3s;
+    background-color: #5d5c5b;
+}
+
+.header-menu {
+    
+}
+
+.header-menu-items {
+    list-style: none;
+}
+
+.header-menu-item a {
+    color: #333333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.header-menu-item:hover a{
+    color: #ffb752;
+}
+
+.logo {
+    outline: none;
+    border: none;
+}
+
+.main-carousel {
+    max-height: 600px;
+}
