@@ -6,7 +6,6 @@ body {
     min-width: 320px;
     font-family: 'Montserrat', Arial, sans-serif;
     color: #333333;
-    background-color: #f9f9f9;
 }
 
 .header-top-item a {
@@ -94,6 +93,7 @@ main.main {
 }
 
 .header-menu {
+    background-color: #f9f9f9;
     
 }
 
@@ -119,4 +119,23 @@ main.main {
 
 .main-carousel {
     max-height: 600px;
+}
+
+.instituts-column {
+    background-color:#ffe877;
+}
+
+.custom-drop-menu {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.custom-drop-menu a {
+    text-decoration: none;
+    color: #5c5c5c;
+}
+
+.custom-drop-menu a:hover {
+    color: #ffba55;
+    transition-duration: 0.3s;
 }
