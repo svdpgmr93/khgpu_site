@@ -118,7 +118,7 @@ main.main {
 }
 
 .main-banner {
-    height: 600px;
+    height: 700px;
     background-image: url('../img/banner.webp');
     background-size: cover;
 }
@@ -130,6 +130,7 @@ main.main {
 .custom-drop-menu {
     font-size: 14px;
     font-weight: 400;
+    background-color: #fff;
 }
 
 .custom-drop-menu a {
