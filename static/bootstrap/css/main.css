@@ -142,6 +142,19 @@ main.main {
     transition-duration: 0.3s;
 }
 
+.hgpu-card{
+    background-color:#f4f2f2
+}
+
+.hgpu-card img {
+    width: 80%;
+}
+
+.hgpu-card  p {
+    font-weight:  600;
+}
+
+
 .banner-title {
     font-size: 58px;
     font-weight: 600;

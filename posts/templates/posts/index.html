@@ -26,9 +26,190 @@
     <title>Document</title>
 </head>
 <body>
-<div class="container-xl rounded py-5 gap-5 custom-drop-menu">
-  <div class="row rounded mb-5">
-    <div class="col-6 rounded">
+      <header class="header">
+        <div class="header-top">
+          <div class="container-fluid">
+            <div class="container py-2">
+              <div
+                class="d-flex flex-row gap-4 align-items-center justify-content-between"
+              >
+                <div class="d-flex align-items-center">
+                  <ul
+                    class="header-top-items justify-content-center gap-5 mb-0"
+                  >
+                    <li class="header-top-item">
+                      <div class="dropdown">
+                        <i class="fa-solid fa-briefcase"></i
+                        ><a
+                          href="#"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                          >Школьнику</a
+                        >
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Малая академия наук ХГПУ</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Психолого-педагогические классы</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Профориентация</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Школьные спасательные отряды</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="header-top-item">
+                      <i class="fa-solid fa-book-open-reader"></i>
+                      <a href="">Абитуриенту</a>
+                    </li>
+                    <li class="header-top-item">
+                      <div class="dropdown">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <a
+                          href="#"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                          >Студенту</a
+                        >
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Учебный процесс</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Социальная поддержка</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Студенческая наука</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Студенческие сообщества</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Карьера</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Подготовка вожатых</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="header-top-item">
+                      <i class="fa-solid fa-user-graduate"></i>
+                      <a href="">Выпускнику</a>
+                    </li>
+                    <li class="header-top-item">
+                      <i class="fa-solid fa-book-open"></i>
+                      <a href="">Аспиранту</a>
+                    </li>
+                    <li class="header-top-item">
+                      <i class="fa-solid fa-file-pen"></i>
+                      <a href="">Сотруднику</a>
+                    </li>
+                    <li>
+                      <a class="dpo d-block px-3 py-1 rounded-3" href="">ДПО</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="d-flex align-items-center">
+                  <ul
+                    class="header-top-items justify-content-center gap-2 mb-0"
+                  >
+                    <li class="me-4">
+                      <a
+                        href=""
+                        class="search align-items-center rounded-circle px-1 py-1"
+                        ><i class="fa-solid fa-magnifying-glass"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href=""
+                        class="header-top-icons border border-2 align-items-center rounded px-1 py-1"
+                        ><i class="fa-solid fa-language"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href=""
+                        class="header-top-icons border border-2 align-items-center rounded px-1 py-1"
+                        ><i class="fa-solid fa-eye-low-vision"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href=""
+                        class="search align-items-center rounded-circle px-1 py-1"
+                        ><i class="fa-solid fa-square-phone"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href=""
+                        class="lgn align-items-center rounded px-1 py-1"
+                        ><i class="fa-solid fa-arrow-right-to-bracket"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid header-menu">
+          <div class="container py-2">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="logo d-flex align-items-center">
+                <a href="https://edu.gov.ru/"
+                  ><img src="{% static 'bootstrap\img\minpros.png' %}" alt=""
+                /></a>
+                <a href="/"
+                  ><img src="{% static 'bootstrap\img\hgpu-logo.png' %}" alt=""
+                /></a>
+              </div>
+              <ul class="header-menu-items d-flex align-items-center gap-5">
+                <li class="header-menu-item">
+                  <a href="">Университет</a>
+                </li>
+                <li class="header-menu-item">
+                  <a href="">Образование</a>
+                </li>
+                <li class="header-menu-item">
+                  <a href="">Наука</a>
+                </li>
+                <li class="header-menu-item">
+                  <a href="">Студенческая жизнь</a>
+                </li>
+                <li class="header-menu-item">
+                  <a href="">Медиа</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+<div class="container-xxl rounded py-5 gap-5 custom-drop-menu ">
+  <div class="row rounded mb-5 mx-3 gap-4">
+    <div class="col-5 rounded">
       <div class="row rounded py-3">
         <div class="col-3 fw-bold fs-5">Университет</div>
         <div class="col-9"><hr class="border border-warning border-1 opacity-50"></div>
@@ -56,7 +237,7 @@
         </div>
       </div>
     </div>
-    <div class="col-3 px-4 pt-3 mt-2 rounded instituts-column">
+    <div class="col px-4 pt-3 rounded instituts-column">
           <p class="fw-bold fs-5">Институты</p>
           <p>Институт культуры и искусств</p>
           <p>Институт психологии</p>
@@ -66,13 +247,35 @@
           <p>Институт педагогического и специальногообразования</p>
           <p>Институт филологии и социальных коммуникаций</p>
     </div>
-    <div class="col-3 border rounded">333</div>
+    <div class="col rounded gap-5">
+      <div class="row rounded hgpu-card  mb-3 py-3">
+        <div class="col justify-content-center align-items-center">
+          <img src="{% static 'bootstrap\img\hgpu.png' %}" alt="" class="opacity-25">
+        </div>
+        <div class="col">
+          <p class="h5">ХГПУ: <br> вчера, сегодня, завтра</p>
+          <a href="#">
+            <div class="row">
+              <div class="col"><p>Перейти</p></div>
+              <div class="col"><i class="fa-solid fa-circle-arrow-right fa-xl" style="color: #ffba55;"></i></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="row rounded hgpu-card">
+        <div class="col p-5">
+        <p class="h5 mb-4">Ключевые проекты университета</p>
+        <p>Медиапедагогика</p>
+        <p>Психолого-педагогические классы</p>
+      </div>
+      </div>
+    </div>
   </div>
   <div class="row justify-content-around py-2 px-2 gap-2">
-    <div class="col bg-light rounded p-1 text-center">Разговоры о важном</div>
-    <div class="col bg-light rounded p-1 text-center">Обучение служением</div>
-    <div class="col bg-light rounded p-1 text-center">Движение первых</div>
-    <div class="col bg-light rounded p-1 text-center">2025 - Год защитника Отечества</div>
+    <div class="col hgpu-card rounded p-1 text-center">Разговоры о важном</div>
+    <div class="col hgpu-card rounded p-1 text-center">Обучение служением</div>
+    <div class="col hgpu-card rounded p-1 text-center">Движение первых</div>
+    <div class="col hgpu-card rounded p-1 text-center">2025 - Год защитника Отечества</div>
   </div>
 </div>
 </body>
