@@ -1,1 +1,5 @@
 hgpu_site/settings.py
+hgpu_site/__pycache__/
+hgpu_site/posts/__pycache__/
+hgpu_site/posts/migrations/__pycache__/
+posts/migrations/__pycache__/__init__.cpython-313.pyc
