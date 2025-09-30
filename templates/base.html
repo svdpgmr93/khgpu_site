@@ -177,7 +177,7 @@
           </div>
         </div>
         <div class="container-fluid header-menu">
-          <div class="container py-2">
+          <div class="container">
             <div class="d-flex justify-content-between align-items-center">
               <div class="logo d-flex align-items-center">
                 <a href="https://edu.gov.ru/"
@@ -187,7 +187,9 @@
                   ><img src="{% static 'bootstrap\img\hgpu-logo.png' %}" alt=""
                 /></a>
               </div>
-              <ul class="header-menu-items d-flex align-items-center gap-5">
+              <ul
+                class="header-menu-items mb-0 d-flex align-items-center gap-5"
+              >
                 <li class="header-menu-item" id="#m-link-university">
                   <a href="#">Университет</a>
                 </li>
@@ -211,10 +213,10 @@
       <main class="main">
         <!-- main banner section -->
         <section class="conteiner-fluid main-banner">
-          <div class="container position-relative d-flex align-items-center">
-            <div class="row">
-              <div class="col-6 px-4">
-                <h1 class="pt-5 banner-title mb-4">
+          <div class="container h-100 position-relative">
+            <div class="w-50 h-100 d-flex align-items-center">
+              <div class="d-flex flex-column px-4 py-1 align-items-start">
+                <h1 class="banner-title mb-4">
                   Херсонский государственный педагогический университет
                 </h1>
                 <p class="mb-5 fs-5">
@@ -229,7 +231,10 @@
               </div>
             </div>
             <!-- CUSTOM DROP MENU START -->
-            <div class="container-xxl rounded-bottom-3 py-5 gap-5 custom-drop-menu d-none position-absolute top-0 start-0 z-10" id="#univer-menu">
+            <div
+              class="container-xxl rounded-bottom-3 py-5 gap-5 custom-drop-menu d-none position-absolute top-0 start-0 z-10"
+              id="#univer-menu"
+            >
               <div class="row rounded mb-5 mx-3 gap-4">
                 <div class="col-5 rounded">
                   <div class="row rounded py-3">
@@ -250,7 +255,7 @@
                       <p>Документы</p>
                       <p>Партнеры</p>
                       <p>Брендбук ХГПУ</p>
-                      <p>Контакты</p>
+                      <p class="mb-0">Контакты</p>
                     </div>
                     <div class="col-6 rounded">
                       <a href="#"><p>Учебно-педагогический округ #37</p></a>
@@ -259,23 +264,39 @@
                       <p>Борьба с мошенничеством</p>
                       <p>Противодействие коррупции</p>
                       <p>Работа в ХГПУ</p>
-                      <p>Сведения о доходах</p>
+                      <p class="mb-0">Сведения о доходах</p>
                     </div>
                   </div>
                 </div>
-                <div class="col px-4 pt-3 rounded instituts-column">
-                  <p class="fw-bold fs-5">Институты</p>
-                  <p>Институт культуры и искусств</p>
-                  <p>Институт психологии</p>
-                  <p>Институт управления и права</p>
-                  <p>Институт естествознания, физической культуры и спорта</p>
-                  <p>Институт информационных технологий</p>
-                  <p>Институт педагогического и специальногообразования</p>
-                  <p>Институт филологии и социальных коммуникаций</p>
+                <div class="col-3 px-4 pt-3 rounded instituts-column">
+                  <div class="d-flex flex-column gap-3">
+                    <a class="d-inline-block fw-bold fs-5" href="">Институты</a>
+                    <a class="d-inline-block" href=""
+                      >Институт культуры и искусств</a
+                    >
+                    <a class="d-inline-block" href="">Институт психологии</a>
+                    <a class="d-inline-block" href=""
+                      >Институт управления и права</a
+                    >
+                    <a class="d-inline-block" href=""
+                      >Институт естествознания, физической культуры и спорта</a
+                    >
+                    <a class="d-inline-block" href=""
+                      >Институт информационных технологий</a
+                    >
+                    <a class="d-inline-block" href=""
+                      >Институт педагогического и специальногообразования</a
+                    >
+                    <a class="d-inline-block" href=""
+                      >Институт филологии и социальных коммуникаций</a
+                    >
+                  </div>
                 </div>
-                <div class="col rounded gap-5">
-                  <div class="row rounded hgpu-card mb-3 py-3">
-                    <div class="col justify-content-center align-items-center">
+                <div class="col-3 rounded gap-5">
+                  <div class="row rounded hgpu-card mb-3 py-4">
+                    <div
+                      class="col-6 justify-content-center align-items-center"
+                    >
                       <img
                         src="{% static 'bootstrap\img\hgpu.png' %}"
                         alt=""
@@ -283,10 +304,11 @@
                       />
                     </div>
                     <div class="col">
-                      <p class="h5">
-                        ХГПУ: <br />
-                        вчера, сегодня, завтра
+                      <p class="lh-1 mb-0 custom-drop-menu-card-hgpu">ХГПУ:</p>
+                      <p class="lh-1 mb-0 custom-drop-menu-card-hgpu">
+                        вчера, сегодня,
                       </p>
+                      <p class="lh-1 custom-drop-menu-card-hgpu mb-2">завтра</p>
                       <a href="#">
                         <div class="row">
                           <div class="col"><p>Перейти</p></div>
@@ -301,10 +323,12 @@
                     </div>
                   </div>
                   <div class="row rounded hgpu-card">
-                    <div class="col p-5">
-                      <p class="h5 mb-4">Ключевые проекты университета</p>
-                      <p>Медиапедагогика</p>
-                      <p>Психолого-педагогические классы</p>
+                    <div class="col p-4">
+                      <p class="h5 mb-5 fw-bold">
+                        Ключевые проекты университета
+                      </p>
+                      <p class="fw-semibold">Медиапедагогика</p>
+                      <p class="fw-semibold">Психолого-педагогические классы</p>
                     </div>
                   </div>
                 </div>
@@ -441,6 +465,155 @@
             </div>
             <div class="d-flex justify-content-center py-5">
               <a class="all-news-btn" href="">Все новости</a>
+            </div>
+          </div>
+        </section>
+        <!-- anonce section -->
+        <section class="py-5 anonce">
+          <div class="container">
+            <h1 class="py-3 px-4 fw-semibold">Анонс</h1>
+            <div class="d-flex px-4 gap-2 anonce-tags">
+              <a class="anonce-tag" href="">Все</a>
+              <a class="anonce-tag" href="">Объявление</a>
+              <a class="anonce-tag" href="">Конференция</a>
+              <a class="anonce-tag" href="">Круглый стол</a>
+              <a class="anonce-tag" href="">Фестиваль</a>
+              <a class="anonce-tag" href="">Конкурс</a>
+              <a class="anonce-tag" href="">Абитуриенту</a>
+              <a class="anonce-tag" href="">Школьнику</a>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-5 py-3 px-4 mb-4">
+              <div class="col">
+                <a class="card-link" href="">
+                  <div class="card h-100 anonce-card">
+                    <div class="card-body anonce-card-body">
+                      <p class="anonce-card-date">25 сентября 2025</p>
+                      <h6 class="card-title fw-semibold mb-2 lh-sm">
+                        «Туризм, сервис и гостеприимство: перспективы и
+                        управление развитием»
+                      </h6>
+                      <p class="anonce-card-content">
+                        II Всероссийская научно-практическая конференция с
+                        международным участием
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <a class="card-link" href="">
+                  <div class="card h-100 anonce-card">
+                    <div class="card-body anonce-card-body">
+                      <p class="anonce-card-date">17 сентября 2025</p>
+                      <h6 class="card-title fw-semibold mb-2 lh-sm">
+                        Встреча с Лазаревым Михаилом Львовичем, автором
+                        СОНАТАЛ-педагогики (музыкальной системы гармонизации
+                        детства)
+                      </h6>
+                      <p class="anonce-card-content"></p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <a class="card-link" href="">
+                  <div class="card h-100 anonce-card">
+                    <div class="card-body anonce-card-body">
+                      <p class="anonce-card-date">28 августа 2025</p>
+                      <h6 class="card-title fw-semibold mb-2 lh-sm">
+                        Замещение вакантных должностей
+                      </h6>
+                      <p class="anonce-card-content">
+                        Объявления о конкурсе/выборе на замещение вакантных
+                        должностей
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center py-5">
+              <a class="more-events-btn" href="">Еще события</a>
+            </div>
+          </div>
+        </section>
+        <!-- rector sectiom -->
+        <section class="rector">
+          <div class="container">
+            <div class="row px-4">
+              <div class="col">
+                <div class="d-flex flex-column justify-content-between h-100">
+                  <p class="fw-bold fs-5">
+                    Добро пожаловать в Херсонский государственный педагогический
+                    университет - крупнейший вуз региона!
+                  </p>
+                  <div class="d-flex gap-3">
+                    <img
+                      class="reqtor-q-icon"
+                      src="{% static 'bootstrap/img/icons/rector-q.svg' %}"
+                      alt=""
+                    />
+                    <p class="px-1 py-4 rector-quote">
+                      Херсонский государственный педагогический университет -
+                      многопрофильный просветительский центр региона, который
+                      развивает множество направлений в рамках государственных
+                      стратегических задач
+                    </p>
+                  </div>
+                  <div>
+                    <p class="fw-bold fs-5 mb-1">ШАШКОВА Нина Игоревна</p>
+                    <p class="fs-5">Ректор</p>
+                  </div>
+                  <div class="d-flex align-items-center gap-4">
+                    <a class="d-block" href=""><img
+                      src="{% static 'bootstrap/img/icons/Telegram_Symbol.webp' %}"
+                      alt=""
+                    /></a>
+                    <a class="rector-btn" href="">Онлайн-приемная ректора</a>
+                    <a class="rector-btn" href="">Страница ректора</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-5">
+                <img
+                  class="rounded-3"
+                  src="{% static 'bootstrap/img/rector-photo.webp' %}"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- hgpu today section -->
+        <section class="hgpu-today">
+          <div class="container px-4">
+            <h1 class="hgpu-today-title">ХГПУ сегодня</h1>
+            <ul class="hgpu-today-list">
+              <li>Лучшие традиции образования для развития региона</li>
+              <li>Центр повышения квалификации и переподготовки учителей ХО</li>
+              <li>
+                Наличие 12 уникальных программ бакалавриата с двумя профилями
+              </li>
+              <li>Атмосфера творчества и самовыражения</li>
+              <li>Старт в профессии: более 600 баз практики</li>
+              <li>Возможность успешно совмещать учебу и работу</li>
+            </ul>
+            <div class="row row-cols-1 row-cols-md-3 g-5 px-3">
+              <div class="col">
+                <div class="card h-100 rounded-4 overflow-hidden">
+                  <img src="{% static 'bootstrap/img/hgputoday1.webp' %}" alt="..." />
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 rounded-4 overflow-hidden">
+                  <img src="{% static 'bootstrap/img/hgputoday2.webp' %}" alt="..." />
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 rounded-4 overflow-hidden">
+                  <img src="{% static 'bootstrap/img/hgputoday3.webp' %}" alt="..." />
+                </div>
+              </div>
             </div>
           </div>
         </section>
