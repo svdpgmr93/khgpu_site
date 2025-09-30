@@ -1,4 +1,5 @@
 hgpu_site/settings.py
+posts/__pycache__/
 hgpu_site/__pycache__/
 hgpu_site/posts/__pycache__/
 hgpu_site/posts/migrations/__pycache__/
