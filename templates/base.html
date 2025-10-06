@@ -565,9 +565,10 @@
                     <p class="fs-5">Ректор</p>
                   </div>
                   <div class="d-flex align-items-center gap-4">
-                    <a class="d-block" href=""><img
-                      src="{% static 'bootstrap/img/icons/Telegram_Symbol.webp' %}"
-                      alt=""
+                    <a class="d-block tg-rector" href=""
+                      ><img
+                        src="{% static 'bootstrap/img/icons/Telegram_Symbol.webp' %}"
+                        alt=""
                     /></a>
                     <a class="rector-btn" href="">Онлайн-приемная ректора</a>
                     <a class="rector-btn" href="">Страница ректора</a>
@@ -586,32 +587,133 @@
         </section>
         <!-- hgpu today section -->
         <section class="hgpu-today">
-          <div class="container px-4">
-            <h1 class="hgpu-today-title">ХГПУ сегодня</h1>
-            <ul class="hgpu-today-list">
-              <li>Лучшие традиции образования для развития региона</li>
-              <li>Центр повышения квалификации и переподготовки учителей ХО</li>
-              <li>
-                Наличие 12 уникальных программ бакалавриата с двумя профилями
-              </li>
-              <li>Атмосфера творчества и самовыражения</li>
-              <li>Старт в профессии: более 600 баз практики</li>
-              <li>Возможность успешно совмещать учебу и работу</li>
-            </ul>
-            <div class="row row-cols-1 row-cols-md-3 g-5 px-3">
+          <div class="container">
+            <div class="px-4">
+              <h1 class="hgpu-today-title">ХГПУ сегодня</h1>
+              <ul class="hgpu-today-list">
+                <li>Лучшие традиции образования для развития региона</li>
+                <li>
+                  Центр повышения квалификации и переподготовки учителей ХО
+                </li>
+                <li>
+                  Наличие 12 уникальных программ бакалавриата с двумя профилями
+                </li>
+                <li>Атмосфера творчества и самовыражения</li>
+                <li>Старт в профессии: более 600 баз практики</li>
+                <li>Возможность успешно совмещать учебу и работу</li>
+              </ul>
+              <div class="row row-cols-1 row-cols-md-3 g-5 px-3">
+                <div class="col">
+                  <div class="card h-100 rounded-4 overflow-hidden">
+                    <img
+                      src="{% static 'bootstrap/img/hgputoday1.webp' %}"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 rounded-4 overflow-hidden">
+                    <img
+                      src="{% static 'bootstrap/img/hgputoday2.webp' %}"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 rounded-4 overflow-hidden">
+                    <img
+                      src="{% static 'bootstrap/img/hgputoday3.webp' %}"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- counters section -->
+        <section class="counter-sec">
+          <div class="container">
+            <div class="row gap-4 px-4">
               <div class="col">
-                <div class="card h-100 rounded-4 overflow-hidden">
-                  <img src="{% static 'bootstrap/img/hgputoday1.webp' %}" alt="..." />
+                <div class="d-flex flex-column">
+                  <h2 class="counter">6500</h2>
+                  <div class="counter-line"></div>
+                  <p class="px-2 counter-text">
+                    Студентов, обучающихся по программам бакалавриата,
+                    специалитета и магистратуры
+                  </p>
                 </div>
               </div>
               <div class="col">
-                <div class="card h-100 rounded-4 overflow-hidden">
-                  <img src="{% static 'bootstrap/img/hgputoday2.webp' %}" alt="..." />
+                <div class="d-flex flex-column">
+                  <h2 class="counter">100</h2>
+                  <div class="counter-line"></div>
+                  <p class="px-2 counter-text">
+                    Образовательных программ бакалавриата, специалитета и
+                    магистратуры и аспирантуры
+                  </p>
                 </div>
               </div>
               <div class="col">
-                <div class="card h-100 rounded-4 overflow-hidden">
-                  <img src="{% static 'bootstrap/img/hgputoday3.webp' %}" alt="..." />
+                <div class="d-flex flex-column">
+                  <h2 class="counter">50</h2>
+                  <div class="counter-line"></div>
+                  <p class="px-2 counter-text">
+                    Вузов-партнеров (академических партнеров) по всей России
+                  </p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="d-flex flex-column">
+                  <h2 class="counter">200</h2>
+                  <div class="counter-line"></div>
+                  <p class="px-2 counter-text">
+                    Преподавателей с учеными степенями кандидатов и докторов
+                    наук
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- video slider section -->
+        <section class="video-slider text-center">
+          <h1>VIDEO</h1>
+        </section>
+        <!-- acquaintance section -->
+        <section class="acquaintance">
+          <div class="container">
+            <div class="px-4">
+              <div class="px-4 d-flex justify-content-end acquaintance-banner">
+                <div class="d-flex justify-content-center px-4 py-4 gap-3 w-75">
+                  <a
+                    href=""
+                    class="d-flex flex-column align-self-end justify-content-center align-items-center rounded-circle start-video-circle"
+                  >
+                    <img
+                      class="h-50 w-50"
+                      src="{% static 'bootstrap/img/icons/play-icon.svg' %}"
+                      alt=""
+                    />
+                    <p class="w-50 mb-0">cмотреть видео</p>
+                  </a>
+                  <div
+                    class="px-4 py-4 d-flex flex-column justify-content-between acquaintance-content"
+                  >
+                    <div>
+                      <h2 class="acquaintance-title">Познакомься</h2>
+                      <p class="mb-4 acquaintance-text">
+                        с Херсонским государственным педагогическим
+                        университетом еще ближе
+                      </p>
+                    </div>
+                    <div>
+                      <a class="acquaintance-btn" href=""
+                        >Узнать все поступлении в ХГПУ</a
+                      >
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -621,6 +723,7 @@
       <footer class="footer">FOOTER</footer>
     </div>
   </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="{% static 'bootstrap/js/main.js'%}"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </html>
