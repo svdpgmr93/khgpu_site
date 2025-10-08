@@ -8,6 +8,7 @@ function menuOpen() {
 }
 
 menuLink.addEventListener("click", menuOpen);
+univerMenu.addEventListener('mouseleave', menuOpen)
 
 // jquery for counter
 

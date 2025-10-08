@@ -446,6 +446,25 @@ main.main {
     background-color: #ffd600;
 }
 
+.social-links {
+    list-style: none;
+}
+
+.social-link:hover {
+    transform: scale(1.2);
+    transition-duration: .5s;
+}
+
+.social-links-icon {
+    width: 85px;
+    height: 85px;
+    opacity: .5;
+}
+
+/* .footer-top {
+    background-color: #ffd600;
+}
+
 .footer-top img {
     width: 100%;
 }
@@ -472,4 +491,4 @@ main.main {
     text-decoration: none;
     font-size: 12px;
     color: #f9f9f9;
-}
+} */
