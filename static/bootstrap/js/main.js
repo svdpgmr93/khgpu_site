@@ -1,3 +1,29 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const myAccordionItems = document.querySelectorAll(".my-accordion-item");
+
+  myAccordionItems.forEach((item) => {
+    const header = item.querySelector(".my-accordion-header");
+    const content = item.querySelector(".my-accordion-content");
+    header.addEventListener('click', () => {
+      const isActive = item.classList.contains('active');
+      if (isActive) {
+        item.classList.remove('active');
+        header.classList.remove('active');
+        return
+      }
+      myAccordionItems.forEach((otherItem) => {
+        otherItem.classList.remove('active');
+        const otherHeader = otherItem.querySelector('.my-accordion-header');
+        if (otherHeader) otherHeader.classList.remove('active');
+      });
+      item.classList.add('active')
+      header.classList.add('active')
+    });
+  });
+});
+
+// script for accordion
+
 //  vanilla js for dropdown main menu
 const menuLink = document.getElementById("#m-link-university");
 const univerMenu = document.getElementById("#univer-menu");
@@ -14,7 +40,7 @@ function menuOpenEdu() {
 }
 
 menuLink.addEventListener("click", menuOpen);
-univerMenu.addEventListener('mouseleave', menuOpen)
+univerMenu.addEventListener("mouseleave", menuOpen);
 
 menuLinkEdu.addEventListener("click", menuOpenEdu);
 eduMenu.addEventListener('mouseleave', menuOpenEdu)

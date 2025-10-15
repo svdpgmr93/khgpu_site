@@ -1,0 +1,1097 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&amp;subset=latin,cyrillic"
+      rel="stylesheet"
+    />
+    <link
+      type="text/css"
+      href="{% static 'bootstrap/css/bootstrap.min.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link
+      type="text/css"
+      href="{% static 'bootstrap/css/main.css' %}"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header-top">
+          <div class="container-fluid">
+            <div class="container py-2">
+              <div
+                class="d-flex flex-row gap-4 align-items-center justify-content-between"
+              >
+                <div class="d-flex align-items-center">
+                  <ul
+                    class="header-top-items justify-content-center gap-5 mb-0"
+                  >
+                    <li class="header-top-item">
+                      <div class="dropdown">
+                        <i class="fa-solid fa-briefcase"></i
+                        ><a
+                          href="#"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                          >Школьнику</a
+                        >
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Малая академия наук ХГПУ</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Психолого-педагогические классы</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Профориентация</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Школьные спасательные отряды</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="header-top-item">
+                      <i class="fa-solid fa-book-open-reader"></i>
+                      <a href="">Абитуриенту</a>
+                    </li>
+                    <li class="header-top-item">
+                      <div class="dropdown">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <a
+                          href="#"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                          >Студенту</a
+                        >
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Учебный процесс</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Социальная поддержка</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Студенческая наука</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Студенческие сообщества</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Карьера</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Подготовка вожатых</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="header-top-item">
+                      <i class="fa-solid fa-user-graduate"></i>
+                      <a href="">Выпускнику</a>
+                    </li>
+                    <li class="header-top-item">
+                      <i class="fa-solid fa-book-open"></i>
+                      <a href="">Аспиранту</a>
+                    </li>
+                    <li class="header-top-item">
+                      <i class="fa-solid fa-file-pen"></i>
+                      <a href="">Сотруднику</a>
+                    </li>
+                    <li>
+                      <a class="dpo d-block px-3 py-1 rounded-3" href="">ДПО</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="d-flex align-items-center">
+                  <ul
+                    class="header-top-items justify-content-center gap-2 mb-0"
+                  >
+                    <li class="me-4">
+                      <a
+                        href=""
+                        class="search align-items-center rounded-circle px-1 py-1"
+                        ><i class="fa-solid fa-magnifying-glass"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href=""
+                        class="header-top-icons border border-2 align-items-center rounded px-1 py-1"
+                        ><i class="fa-solid fa-language"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href=""
+                        class="header-top-icons border border-2 align-items-center rounded px-1 py-1"
+                        ><i class="fa-solid fa-eye-low-vision"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href=""
+                        class="search align-items-center rounded-circle px-1 py-1"
+                        ><i class="fa-solid fa-square-phone"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href=""
+                        class="lgn align-items-center rounded px-1 py-1"
+                        ><i class="fa-solid fa-arrow-right-to-bracket"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid header-menu">
+          <div class="container position-relative">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="logo d-flex align-items-center">
+                <a href="https://edu.gov.ru/"
+                  ><img src="{% static 'bootstrap\img\minpros.png' %}" alt=""
+                /></a>
+                <a href="/"
+                  ><img src="{% static 'bootstrap\img\hgpu-logo.png' %}" alt=""
+                /></a>
+              </div>
+              <ul
+                class="header-menu-items mb-0 d-flex align-items-center gap-5"
+              >
+                <li class="header-menu-item" id="#m-link-university">
+                  <a href="#">Университет</a>
+                </li>
+                <li class="header-menu-item">
+                  <a href="#">Образование</a>
+                </li>
+                <li class="header-menu-item">
+                  <a href="#">Наука</a>
+                </li>
+                <li class="header-menu-item">
+                  <a href="#">Студенческая жизнь</a>
+                </li>
+                <li class="header-menu-item">
+                  <a href="#">Медиа</a>
+                </li>
+              </ul>
+            </div>
+            <!-- CUSTOM DROP MENU START -->
+            <div
+              class="container-xxl rounded-bottom-3 py-5 gap-5 custom-drop-menu d-none position-absolute top-100 start-0 z-10"
+              id="#univer-menu"
+            >
+              <div class="row rounded mb-5 mx-3 gap-4">
+                <div class="col-5 rounded">
+                  <div class="row rounded py-3">
+                    <div class="col-3 fw-bold fs-5">Университет</div>
+                    <div class="col-9">
+                      <hr class="border border-warning border-1 opacity-50" />
+                    </div>
+                  </div>
+                  <div class="row rounded">
+                    <div class="col-6 rounded">
+                      <a href="#"
+                        ><p>Сведения об образовательной организации</p></a
+                      >
+                      <p>Ректор ХГПУ</p>
+                      <p>Структура университета</p>
+                      <p>Руководство</p>
+                      <p>Преподаватели и сотрудники</p>
+                      <p>Документы</p>
+                      <p>Партнеры</p>
+                      <p>Брендбук ХГПУ</p>
+                      <p class="mb-0">Контакты</p>
+                    </div>
+                    <div class="col-6 rounded">
+                      <a href="#"><p>Учебно-педагогический округ #37</p></a>
+                      <p>Ассоциация выпускников</p>
+                      <p>Противодействие идеологии терроризма и экстремизма</p>
+                      <p>Борьба с мошенничеством</p>
+                      <p>Противодействие коррупции</p>
+                      <p>Работа в ХГПУ</p>
+                      <p class="mb-0">Сведения о доходах</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 px-4 pt-3 rounded instituts-column">
+                  <div class="d-flex flex-column gap-3">
+                    <a class="d-inline-block fw-bold fs-5" href="">Институты</a>
+                    <a class="d-inline-block" href=""
+                      >Институт культуры и искусств</a
+                    >
+                    <a class="d-inline-block" href="">Институт психологии</a>
+                    <a class="d-inline-block" href=""
+                      >Институт управления и права</a
+                    >
+                    <a class="d-inline-block" href=""
+                      >Институт естествознания, физической культуры и спорта</a
+                    >
+                    <a class="d-inline-block" href=""
+                      >Институт информационных технологий</a
+                    >
+                    <a class="d-inline-block" href=""
+                      >Институт педагогического и специальногообразования</a
+                    >
+                    <a class="d-inline-block" href=""
+                      >Институт филологии и социальных коммуникаций</a
+                    >
+                  </div>
+                </div>
+                <div class="col-3 rounded gap-5">
+                  <div class="row rounded hgpu-card mb-3 py-4">
+                    <div
+                      class="col-6 justify-content-center align-items-center"
+                    >
+                      <img
+                        src="{% static 'bootstrap\img\hgpu.png' %}"
+                        alt=""
+                        class="opacity-25"
+                      />
+                    </div>
+                    <div class="col">
+                      <p class="lh-1 mb-0 custom-drop-menu-card-hgpu">ХГПУ:</p>
+                      <p class="lh-1 mb-0 custom-drop-menu-card-hgpu">
+                        вчера, сегодня,
+                      </p>
+                      <p class="lh-1 custom-drop-menu-card-hgpu mb-2">завтра</p>
+                      <a href="#">
+                        <div class="row">
+                          <div class="col"><p>Перейти</p></div>
+                          <div class="col">
+                            <i
+                              class="fa-solid fa-circle-arrow-right fa-xl"
+                              style="color: #ffba55"
+                            ></i>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row rounded hgpu-card">
+                    <div class="col p-4">
+                      <p class="h5 mb-5 fw-bold">
+                        Ключевые проекты университета
+                      </p>
+                      <p class="fw-semibold">Медиапедагогика</p>
+                      <p class="fw-semibold">Психолого-педагогические классы</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-around py-2 px-2 gap-2">
+                <div class="col hgpu-card rounded p-1 text-center">
+                  Разговоры о важном
+                </div>
+                <div class="col hgpu-card rounded p-1 text-center">
+                  Обучение служением
+                </div>
+                <div class="col hgpu-card rounded p-1 text-center">
+                  Движение первых
+                </div>
+                <div class="col hgpu-card rounded p-1 text-center">
+                  2025 - Год защитника Отечества
+                </div>
+              </div>
+            </div>
+            <!-- CUSTOM DROP MENU  END-->
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="px-4 pt-3">
+          <div class="container">
+            <div class="py-4">
+              <nav
+                style="--bs-breadcrumb-divider: '>>'"
+                aria-label="breadcrumb"
+              >
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                  <li class="breadcrumb-item" aria-current="page">
+                    <a href="">Университет</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    <a href="">Сведения об образовательной организации</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    <a href="">Основные сведения</a>
+                  </li>
+                </ol>
+              </nav>
+            </div>
+            <h2 class="mb-5 fw-bold fs-2 basic-info-title">
+              Основные сведения
+            </h2>
+            <h4 class="fw-semibold">
+              Наименование образовательной организации
+            </h4>
+            <div class="py-5">
+              <div class="rounded-3 overflow-hidden">
+                <table>
+                  <tbody>
+                    <tr class="tr-light">
+                      <td class="w-25 px-4 py-3 fw-bold table-bd">
+                        Полное наименование образовательной организации на
+                        русском языке
+                      </td>
+                      <td class="px-4 py-3 table-bd">
+                        Федеральное государственное бюджетное образовательное
+                        учреждение высшего образования "Херсонский
+                        государственный педагогический университет"
+                      </td>
+                    </tr>
+                    <tr class="tr-dark">
+                      <td class="w-25 px-4 py-3 fw-bold table-bd">
+                        Сокращенное наименование образовательной организации на
+                        русском языке
+                      </td>
+                      <td class="px-4 py-3 table-bd">
+                        ФГБОУ ВО "Херсонский государственный педагогический
+                        университет", Херсонский государственный педагогический
+                        университет, ФГБОУ ВО "ХГПУ", ХГПУ
+                      </td>
+                    </tr>
+                    <tr class="tr-light">
+                      <td class="w-25 px-4 py-3 fw-bold table-bd">
+                        Полное наименование образовательной организации на
+                        английском языке
+                      </td>
+                      <td class="px-4 py-3 table-bd">
+                        Federal State-Financed Educational Institution of Higher
+                        Education "Kherson State Pedagogical University"
+                      </td>
+                    </tr>
+                    <tr class="tr-dark">
+                      <td class="w-25 px-4 py-3 fw-bold table-bd">
+                        Сокращенное наименование образовательной организации на
+                        английском языке
+                      </td>
+                      <td class="px-4 py-3 table-bd">
+                        Kherson State Pedagogical University, KSPU
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <h4 class="mb-5 fw-semibold">
+              Дата создания образовательной организации: 14.06.2022
+            </h4>
+            <h4 class="fw-semibold">
+              Сведения об учредителе образовательной организации
+            </h4>
+            <div class="py-5">
+              <div class="rounded-3 overflow-hidden">
+                <table>
+                  <tbody>
+                    <tr class="tr-dark">
+                      <td class="w-25 px-4 py-3 fw-bold table-bd">
+                        Наименование учредителя
+                      </td>
+                      <td class="px-4 py-3 table-bd">
+                        Министерство просвещения Российской Федерации
+                      </td>
+                    </tr>
+                    <tr class="tr-light">
+                      <td class="w-25 px-4 py-3 fw-bold table-bd">
+                        Адрес места нахождения учредителя
+                      </td>
+                      <td class="px-4 py-3 table-bd">
+                        115093, г. Москва, ул. Люсиновская, 51
+                      </td>
+                    </tr>
+                    <tr class="tr-dark">
+                      <td class="w-25 px-4 py-3 fw-bold table-bd">
+                        Контактные телефоны
+                      </td>
+                      <td class="px-4 py-3 table-bd">+7 (495) 539-55-19</td>
+                    </tr>
+                    <tr class="tr-light">
+                      <td class="w-25 px-4 py-3 fw-bold table-bd">
+                        Адрес электронной почты учредителя
+                      </td>
+                      <td class="px-4 py-3 table-bd">info@edu.gov.ru</td>
+                    </tr>
+                    <tr class="tr-dark">
+                      <td class="w-25 px-4 py-3 fw-bold table-bd">
+                        Адрес сайта учредителя в сети «Интернет»
+                      </td>
+                      <td class="px-4 py-3 table-bd">
+                        <a href="https://edu.gov.ru ">https://edu.gov.ru </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <h4 class="fw-semibold">
+              Сведения о месте нахождения образовательной организации
+            </h4>
+            <div class="py-5">
+              <div class="rounded-3 overflow-hidden">
+                <table class="w-100">
+                  <tbody>
+                    <tr class="tr-dark">
+                      <td class="w-25 px-4 py-3 fw-bold table-bd">
+                        Юридический адрес
+                      </td>
+                      <td class="px-4 py-3 table-bd">
+                        273003, Херсонская область, г.о. Херсонский, г. Херсон,
+                        ул. Университетская, д.27 <br />
+                        275722, Херсонская область, Скадовский м.о., г.
+                        Скадовск, ул. Покровская, д. 7а
+                      </td>
+                    </tr>
+                    <tr class="tr-light">
+                      <td class="w-25 px-4 py-3 fw-bold table-bd">
+                        Фактический адрес
+                      </td>
+                      <td class="px-4 py-3 table-bd">
+                        115093, г. Москва, ул. Люсиновская, 51
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <h4 class="fw-semibold">
+              Информация о режиме и графике работы образовательной организации
+            </h4>
+            <p class="pt-1 ruobr-info d-inline-block">
+              <a
+                class=""
+                data-bs-toggle="collapse"
+                href="#collapseExample"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                !!! Разъяснения Рособрнадзора по данному пункту
+              </a>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <p class="mb-0">Обращаем внимание!</p>
+              <p class="mb-0">Режим рабочего времени должен предусматривать</p>
+              <ul class="rupbr-info-list">
+                <li>
+                  <p>
+                    <span class="text-decoration-underline"
+                      >продолжительность рабочей недели</span
+                    >
+                    (пятидневная с двумя выходными днями, шестидневная с одним
+                    выходным днем, рабочая неделя с предоставлением выходных
+                    дней по скользящему графику, неполная рабочая неделя),
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    работу с
+                    <span class="text-decoration-underline">
+                      ненормированным рабочим днем</span
+                    >
+                    для отдельных категорий работников,
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span class="text-decoration-underline"
+                      >продолжительность ежедневной работы</span
+                    >
+                    (смены), в том числе неполного рабочего дня (смены), время
+                    <span class="text-decoration-underline"
+                      >начала и окончания работы,</span
+                    >
+                    время
+                    <span class="text-decoration-underline">перерывов</span> в
+                    работе,
+                    <span class="text-decoration-underline"
+                      >число смен в сутки</span
+                    >,
+                    <span class="text-decoration-underline"
+                      >чередование рабочих и нерабочих дней</span
+                    >, которые устанавливаются ПВТР в соответствии с трудовым
+                    законодательством и иными нормативными правовыми актами,
+                    содержащими нормы трудового права, коллективным договором,
+                    соглашениями <1>.
+                  </p>
+                </li>
+              </ul>
+              <p>
+                <1>
+                <a
+                  class="fst-italic"
+                  href="https://normativ.kontur.ru/document?moduleId=1&documentId=475952#l4112"
+                  target="_blank"
+                  >Статья 100</a
+                >
+                Трудового кодекса Российской Федерации.
+              </p>
+            </div>
+            <div class="py-5">
+              <div class="rounded-3 overflow-hidden">
+                <table class="w-100">
+                  <tbody>
+                    <tr class="tr-dark">
+                      <td class="w-25 px-4 py-3 fw-bold table-bd">
+                        Административные подразделения
+                      </td>
+                      <td class="px-4 py-3 table-bd">
+                        <p class="mb-0">
+                          <span class="fw-bold">Рабочие дни:</span>
+                          понедельник-пятница
+                        </p>
+                        <p class="mb-0">Часы работы: с 9:00 до 18:00</p>
+                        <p class="mb-0">Обеденный перерыв: с 13:00 до 14:00</p>
+                        <p class="mb-0">
+                          <span class="fw-bold">Выходные дни: </span> суббота,
+                          воскресенье
+                        </p>
+                      </td>
+                    </tr>
+                    <tr class="tr-light">
+                      <td class="w-25 px-4 py-3 fw-bold table-bd">
+                        Расписание звонков
+                      </td>
+                      <td class="px-4 py-3 table-bd">
+                        <p class="mb-0">1 пара: 9:00 — 10:30</p>
+                        <p class="mb-0">2 пара: 10:40 — 12:10</p>
+                        <p class="mb-0">3 пара: 12:30 — 14:00</p>
+                        <p class="mb-0">4 пара: 14:10 — 15:40</p>
+                        <p class="mb-0">5 пара: 15:50 — 17:20</p>
+                        <p class="mb-0">6 пара: 17:40 — 19:10</p>
+                        <p class="mb-0">7 пара: 19:20 — 20:50</p>
+                      </td>
+                    </tr>
+                    <tr class="tr-dark">
+                      <td class="w-25 px-4 py-3 fw-bold table-bd">
+                        Примечание
+                      </td>
+                      <td class="px-4 py-3 table-bd">
+                        Время начала и окончания работы
+                        профессорско-преподавательского состава, включая дни и
+                        часы консультаций, определяется с учетом расписания
+                        учебных занятий
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <h4 class="fw-semibold">
+              Информация о контактных телефонах образовательной организации, об
+              адресах электронной почты образовательной организации
+            </h4>
+            <div class="py-5">
+              <div class="rounded-3 overflow-hidden">
+                <table class="w-100">
+                  <tbody>
+                    <tr class="tr-dark">
+                      <td class="w-25 px-4 py-3 fw-bold table-bd">
+                        Контактные телефоны
+                      </td>
+                      <td class="px-4 py-3 table-bd">+7 (985) 153-00-49</td>
+                    </tr>
+                    <tr class="tr-light">
+                      <td class="w-25 px-4 py-3 fw-bold table-bd">
+                        Адреса электронной почты
+                      </td>
+                      <td class="px-4 py-3 table-bd">
+                        <p class="mb-0">hgpurf@yandex.ru</p>
+                        <p class="mb-0">rector@hgpurf.ru</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <h4 class="fw-semibold mb-3">
+              Информация о лицензии на осуществление образовательной
+              деятельности
+            </h4>
+            <div class="d-flex align-items-center gap-2 mb-5">
+              <div class="d-flex gap-1">
+                <a href=""
+                  ><img
+                    class="basic-info-icon"
+                    src="{% static 'bootstrap/img/icons/pdf-icon.svg' %}"
+                    alt=""
+                /></a>
+                <a href=""
+                  ><img
+                    class="basic-info-icon"
+                    src="{% static 'bootstrap/img/icons/sig-icon.svg' %}"
+                    alt=""
+                /></a>
+              </div>
+              <a class="basic-info-link" href=""
+                >Выписка из реестра лицензий на осуществление образовательной
+                деятельности</a
+              >
+            </div>
+            <h4 class="fw-semibold mb-3">
+              Информация о наличии государственной аккредитации образовательной
+              деятельности по реализуемым образовательным программам
+            </h4>
+            <div class="d-flex align-items-center gap-2 mb-5">
+              <div class="d-flex gap-1">
+                <a href=""
+                  ><img
+                    class="basic-info-icon"
+                    src="{% static 'bootstrap/img/icons/pdf-icon.svg' %}"
+                    alt=""
+                /></a>
+                <a href=""
+                  ><img
+                    class="basic-info-icon"
+                    src="{% static 'bootstrap/img/icons/sig-icon.svg' %}"
+                    alt=""
+                /></a>
+              </div>
+              <a class="basic-info-link" href=""
+                >Выписка из государственной информационной системы "Реестр
+                организаций, осуществляющих образовательную деятельность по
+                имеющим государственную аккредитацию образовательным
+                программам"</a
+              >
+            </div>
+            <h4 class="fw-semibold mb-4">
+              Места осуществления образовательной деятельности, в том числе не
+              указываемые в приложении к лицензии (реестре лицензий) на
+              осуществление образовательной деятельности
+            </h4>
+            <!-- accordion start -->
+            <div class="my-accordion">
+              <div class="my-accordion-item">
+                <div class="my-accordion-header">
+                  <p class="mb-0">
+                    Сведения о местах осуществления образовательной
+                    деятельности, которые включаются в соответствующую запись в
+                    реестре лицензий на осуществление образовательной
+                    деятельности
+                  </p>
+                  <a class="my-accordion-icon">
+                    <i class="fa-solid fa-angle-down fa-2xl"></i>
+                  </a>
+                </div>
+                <div class="my-accordion-content">
+                  <table class="accordion-table">
+                    <tbody>
+                      <tr>
+                        <td class="p-3">№</td>
+                        <td class="p-3 w-100">Адрес места осуществления образовательной деятельности</td>
+                      </tr>
+                      <tr>
+                        <td class="p-3">1.</td>
+                        <td class="p-3 w-100">275722, Херсонская область, Скадовский м.о., г. Скадовск, ул. Покровская, д. 7а</td>
+                      </tr>
+                      <tr>
+                        <td class="p-3">2.</td>
+                        <td class="p-3 w-100">273003, Херсонская область, г.о. Херсонский, г. Херсон, ул. Университетская, д. 27</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="my-accordion-item">
+                <div class="my-accordion-header">
+                  <p class="mb-0">
+                    Сведения о местах осуществления образовательной деятельности при использовании сетевой формы реализации образовательных программ
+                  </p>
+                  <a class="my-accordion-icon">
+                    <i class="fa-solid fa-angle-down fa-2xl"></i>
+                  </a>
+                </div>
+                <div class="my-accordion-content">
+                  <p>Сетевая форма реализации образовательных программ не используется</p>
+                </div>
+              </div>
+              <div class="my-accordion-item">
+                <div class="my-accordion-header">
+                  <p class="mb-0">
+                    Сведения о местах проведения практики - <span class="text-danger">НЕТ ИНФО</span>
+                  </p>
+                  <a class="my-accordion-icon">
+                    <i class="fa-solid fa-angle-down fa-2xl"></i>
+                  </a>
+                </div>
+                <div class="my-accordion-content">
+                  <table class="accordion-table">
+                    <tbody>
+                      <tr>
+                        <td class="p-3">№</td>
+                        <td class="p-3 w-100">Адрес места осуществления образовательной деятельности</td>
+                      </tr>
+                      <tr>
+                        <td class="p-3">1.</td>
+                        <td class="p-3 w-100">...</td>
+                      </tr>
+                      <tr>
+                        <td class="p-3">2.</td>
+                        <td class="p-3 w-100">...</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="my-accordion-item">
+                <div class="my-accordion-header">
+                  <p class="mb-0">
+                    Сведения о местах проведения практической подготовки обучающихся - <span class="text-danger">Дополнить по всем(!) направлениям подготовки не только пед.</span>
+                  </p>
+                  <a class="my-accordion-icon">
+                    <i class="fa-solid fa-angle-down fa-2xl"></i>
+                  </a>
+                </div>
+                <div class="my-accordion-content">
+                  <table class="accordion-table">
+                    <tbody>
+                      <tr>
+                        <td class="p-3">№</td>
+                        <td class="p-3 w-100">Адрес места осуществления образовательной деятельности</td>
+                      </tr>
+                      <tr class="tr-light">
+                        <td class="p-3">1.</td>
+                        <td class="p-3 w-100">275800, Херсонская область, м.о. Каланчакский, с. Новокиевка, ул. Почтовая, д. 41</td>
+                      </tr>
+                      <tr class="tr-dark">
+                        <td class="p-3">2.</td>
+                        <td class="p-3 w-100">275800, Херсонская область, м.о. Каланчакский, пгт. Каланчак, ул. Скадовская, д. 1</td>
+                      </tr>
+                      <tr class="tr-light">
+                        <td class="p-3">3.</td>
+                        <td class="p-3 w-100">275710, Херсонская область, м.о. Скадовский, с. Михайловка, ул. Школьная, д. 51</td>
+                      </tr>
+                      <tr class="tr-dark">
+                        <td class="p-3">4.</td>
+                        <td class="p-3 w-100">275300, Херсонская область, м.о. Новотроицкий, с. Чумацкий Шлях (Владимиро-Ильинка) , пр-т. Кальченка, д. 4</td>
+                      </tr>
+                      <tr class="tr-light">
+                        <td class="p-3">5.</td>
+                        <td class="p-3 w-100">275300, Херсонская область, м.о. Новотроицкий, с. Отрадовка, ул. Гагарина, д. 50в</td>
+                      </tr>
+                      <tr class="tr-dark">
+                        <td class="p-3">6.</td>
+                        <td class="p-3 w-100">275120, Херсонская область, м.о.Алешкинский, пгт.. Новая Маячка, ул. Соборная, д. 112</td>
+                      </tr>
+                      <tr class="tr-light">
+                        <td class="p-3">7.</td>
+                        <td class="p-3 w-100">275300, Херсонская область, м.о. Новотроицкий, с. Чкалово, ул. Зелёная, д. 25</td>
+                      </tr>
+                      <tr class="tr-dark">
+                        <td class="p-3">8.</td>
+                        <td class="p-3 w-100">275213, Херсонская область, м.о. Каланчакский, с. Преображенка (Червоный Чабан), пер. Школьный. д. 2</td>
+                      </tr>
+                      <tr class="tr-light">
+                        <td class="p-3">9.</td>
+                        <td class="p-3 w-100">...</td>
+                      </tr>
+                      <tr class="tr-dark">
+                        <td class="p-3">10.</td>
+                        <td class="p-3 w-100">...</td>
+                      </tr>
+                      <tr class="tr-light">
+                        <td class="p-3">11.</td>
+                        <td class="p-3 w-100">...</td>
+                      </tr>
+                      <tr class="tr-dark">
+                        <td class="p-3">12.</td>
+                        <td class="p-3 w-100">...</td>
+                      </tr>
+                      <tr class="tr-light">
+                        <td class="p-3">13.</td>
+                        <td class="p-3 w-100">...</td>
+                      </tr>
+                      <tr class="tr-dark">
+                        <td class="p-3">14.</td>
+                        <td class="p-3 w-100">...</td>
+                      </tr>
+                      <tr class="tr-light">
+                        <td class="p-3">15.</td>
+                        <td class="p-3 w-100">...</td>
+                      </tr>
+                      <tr class="tr-dark">
+                        <td class="p-3">16.</td>
+                        <td class="p-3 w-100">...</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- accordion end -->
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="container">
+            <div class="d-flex justify-content-center">
+              <ul
+                class="d-flex py-5 px-0 social-links align-items-center justify-content-between w-75 mb-0"
+              >
+                <li>
+                  <a href="" class="d-inline-block social-link">
+                    <img
+                      src="{% static 'bootstrap\img\icons\TG-icon.svg' %}"
+                      alt=""
+                      class="social-links-icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="d-inline-block social-link">
+                    <img
+                      src="{% static 'bootstrap\img\icons\VK-icon.webp' %}"
+                      alt=""
+                      class="social-links-icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="d-inline-block social-link">
+                    <img
+                      src="{% static 'bootstrap\img\icons\dzen-icon.svg' %}"
+                      alt=""
+                      class="social-links-icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="d-inline-block social-link">
+                    <img
+                      src="{% static 'bootstrap\img\icons\OK-icon.webp' %}"
+                      alt=""
+                      class="social-links-icon"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-main">
+          <div class="container">
+            <div class="row mb-4">
+              <div class="col">
+                <p class="footer-col-title">Абитуриентам</p>
+                <ul class="footer-col-list">
+                  <li>
+                    <a href="" class="footer-item-link">Правила приёма</a>
+                  </li>
+                  <li>
+                    <a href="" class="footer-item-link">Приемная комиссия</a>
+                  </li>
+                  <li>
+                    <a href="" class="footer-item-link">Бакалавриат</a>
+                  </li>
+                  <li>
+                    <a href="" class="footer-item-link">Магистратура</a>
+                  </li>
+                  <li>
+                    <a href="" class="footer-item-link">Дни открытых дверей</a>
+                  </li>
+                  <li>
+                    <a href="" class="footer-item-link"
+                      >Подготовительные курсы</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="footer-item-link fw-bold"
+                      >Личный кабинет абитуриента</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col">
+                <p class="footer-col-title">Студентам</p>
+                <ul class="footer-col-list">
+                  <li>
+                    <a href="" class="footer-item-link">Расписание</a>
+                  </li>
+                  <li>
+                    <a href="" class="footer-item-link">Совет обучающихся</a>
+                  </li>
+                  <li>
+                    <a href="" class="footer-item-link">Участие в проектах</a>
+                  </li>
+                  <li>
+                    <a href="" class="footer-item-link d-inline-block w-75"
+                      >Стипендии и иные меры социальной поддержки</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="footer-item-link">Оплата обучения</a>
+                  </li>
+                  <li>
+                    <a href="" class="footer-item-link">Доступная среда</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col">
+                <p class="footer-col-title">Сотрудникам</p>
+                <ul class="footer-col-list">
+                  <li>
+                    <a href="" class="footer-item-link"
+                      >Педагогический состав</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="footer-item-link">Факультеты, кафедры</a>
+                  </li>
+                  <li>
+                    <a href="" class="footer-item-link">Учёный совет</a>
+                  </li>
+                  <li>
+                    <a href="" class="footer-item-link">Научные мероприятия</a>
+                  </li>
+                  <li>
+                    <a href="" class="footer-item-link"
+                      >Документы университета</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="footer-item-link"
+                      >Противодействие коррупции</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="footer-item-link"
+                      >Постановка на воинский учет</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col">
+                <p class="footer-col-title">КОНТАКТЫ</p>
+                <ul class="d-flex flex-column gap-2 footer-col-list">
+                  <li>
+                    <a
+                      href=""
+                      class="footer-item-link d-flex align-items-center gap-2"
+                    >
+                      <i class="fa-solid fa-at"></i>
+                      <p class="mb-0">hgpurf@yandex.ru</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="footer-item-link d-flex align-items-center gap-2"
+                    >
+                      <img
+                        src="{% static 'bootstrap\img\icons\footer-phone-icon.png' %}"
+                        alt=""
+                      />
+                      <p class="mb-0">+7 (990) 140-21-00</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="footer-item-link d-flex align-items-baseline gap-2"
+                    >
+                      <i class="fa-solid fa-paper-plane"></i>
+                      <p class="mb-0 pe-5">
+                        ХГПУ официально | Официальный ТГ-канал ХГПУ
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="footer-item-link d-flex align-items-baseline gap-2"
+                    >
+                      <i class="fa-solid fa-paper-plane"></i>
+                      <p class="mb-0">ТГ-канал ректора ХГПУ</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="footer-item-link d-flex align-items-baseline gap-2"
+                    >
+                      <i class="fa-brands fa-vk"></i>
+                      <p class="mb-0">Официальная группа ХГПУ Вконтакте</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="d-flex align-items-center justify-content-center gap-2 mb-4"
+            >
+              <div class="w-100 footer-logo-line"></div>
+              <div>
+                <a href=""
+                  ><img
+                    src="{% static 'bootstrap\img\footer-hgpu-logo.webp' %}"
+                    alt=""
+                    class="d-block rounded w-100"
+                /></a>
+              </div>
+              <div class="w-100 footer-logo-line"></div>
+            </div>
+            <p class="text-center text-light mb-0">
+              ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ
+              ВЫСШЕГО ОБРАЗОВАНИЯ
+            </p>
+            <p class="text-center text-light mb-4">
+              "ХЕРСОНСКИЙ ГОСУДАРСТВЕННЫЙ ПЕДАГОГИЧЕСКИЙ УНИВЕРСИТЕТ"
+            </p>
+            <div class="d-flex justify-content-between mb-4">
+              <a href="" class="footer-gov-link">
+                Министерство просвещения РФ
+              </a>
+              <a href="" class="footer-gov-link">
+                Министерство просвещения РФ
+              </a>
+              <a href="" class="footer-gov-link"> Рособрнадзор </a>
+              <a href="" class="footer-gov-link">
+                Официальный интернет-портал правовой информации
+              </a>
+            </div>
+            <p class="py-3 mb-0 fs-6 text-light opacity-50">
+              <i class="fa-solid fa-copyright" style="color: #ffffff"></i>
+              Херсонский государственный педагогический университет, 2025
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="{% static 'bootstrap/js/main.js'%}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</html>

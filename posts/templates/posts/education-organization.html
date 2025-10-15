@@ -23,7 +23,7 @@
       href="{% static 'bootstrap/css/main.css' %}"
       rel="stylesheet"
     />
-    <title>{% block title %}Base Template{% endblock %}</title>
+    <title>Document</title>
   </head>
   <body>
     <div class="wrapper">
@@ -177,7 +177,7 @@
           </div>
         </div>
         <div class="container-fluid header-menu">
-          <div class="container position-relative position-relative">
+          <div class="container position-relative">
             <div class="d-flex justify-content-between align-items-center">
               <div class="logo d-flex align-items-center">
                 <a href="https://edu.gov.ru/"
@@ -193,7 +193,7 @@
                 <li class="header-menu-item" id="#m-link-university">
                   <a href="#">Университет</a>
                 </li>
-                <li class="header-menu-item" id="#m-link-education">
+                <li class="header-menu-item">
                   <a href="#">Образование</a>
                 </li>
                 <li class="header-menu-item">
@@ -205,10 +205,9 @@
                 <li class="header-menu-item">
                   <a href="#">Медиа</a>
                 </li>
-              </ul>              
+              </ul>
             </div>
             <!-- CUSTOM DROP MENU START -->
-            <!--University menu-->
             <div
               class="container-xxl rounded-bottom-3 py-5 gap-5 custom-drop-menu d-none position-absolute top-100 start-0 z-10"
               id="#univer-menu"
@@ -326,131 +325,142 @@
                 </div>
               </div>
             </div>
-            <!--Education menu-->
-              <div
-              class="container-xxl rounded-bottom-3 py-5 gap-5 custom-drop-menu d-none position-absolute top-100 start-0 z-1"
-              id="#edu-menu">
-                <div class="row rounded mb-5 mx-3 gap-4">
-                  <div class="col-8 rounded">
-                    <div class="row rounded py-3">
-                      <div class="col-3 fw-bold fs-5">Образование</div>
-                      <div class="col-9">
-                        <hr class="border border-warning border-1 opacity-50" />
-                      </div>
-                    </div>
-                    <div class="row rounded">
-                      <div class="col-6 rounded">
-                        <a href="#"
-                          ><p>Образовательные программы</p></a>
-                        <p>Расписание</p>
-                        <p>График учебного процесса</p>
-                        <p>Перевод и восстановление</p>
-                      </div>
-                      <div class="col-6 rounded">
-                        <a href="#"><p>Дополнительное профессиональное образование</p></a>
-                        <p>Практика</p>
-                        <p>Оплата обучения</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col rounded gap-5">
-                    <div class="row rounded hgpu-card mb-3 py-3">
-                      <div class="col justify-content-center align-items-center">
-                        <img
-                          src="{% static 'bootstrap\img\hgpu.png' %}"
-                          alt=""
-                          class="opacity-25"
-                        />
-                      </div>
-                      <div class="col">
-                        <p class="h5">
-                          ХГПУ: <br />
-                          вчера, сегодня, завтра
-                        </p>
-                        <a href="#">
-                          <div class="row">
-                            <div class="col"><p>Перейти</p></div>
-                            <div class="col">
-                              <i
-                                class="fa-solid fa-circle-arrow-right fa-xl"
-                                style="color: #ffba55"
-                              ></i>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>            
-              </div>
-              <!-- CUSTOM DROP MENU  END-->
+            <!-- CUSTOM DROP MENU  END-->
+          </div>
         </div>
       </header>
-      {%  block content%}
-      {% endblock %}
-      <footer class="footer">
-        <div class="footer-top">
+      <main class="main">
+        <div class="px-4 pt-3">
+          <div
+            class="d-flex align-items-center justify-content-center edu-banner"
+          >
+            <h1 class="edu-info-title w-75 mb-0">
+              Сведения об образовательной организации
+            </h1>
+          </div>
           <div class="container">
-            <div class="d-flex justify-content-center">
-              <ul
-                class="d-flex py-5 px-0 social-links align-items-center justify-content-between w-75 mb-0"
+            <div class="py-4">
+              <nav
+                style="--bs-breadcrumb-divider: '>>'"
+                aria-label="breadcrumb"
               >
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                  <li class="breadcrumb-item" aria-current="page">
+                    <a href="">Университет</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    <a href="">Сведения об образовательной организации</a>
+                  </li>
+                </ol>
+              </nav>
+            </div>
+            <h2 class="mb-4 fw-bold fs-2">
+              Сведения об образовательной организации
+            </h2>
+            <p class="pt-3 regulatory-documents d-inline-block">
+              <a
+                class=""
+                data-bs-toggle="collapse"
+                href="#collapseExample"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                Информация размещена во исполнение и в соответствии с
+                нормативными документами
+              </a>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <ul class="regulatory-documents-list">
                 <li>
-                  <a href="" class="d-inline-block social-link">
-                    <img
-                      src="{% static 'bootstrap\img\icons\TG-icon.svg' %}"
-                      alt=""
-                      class="social-links-icon"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="" class="d-inline-block social-link">
-                    <img
-                      src="{% static 'bootstrap\img\icons\VK-icon.webp' %}"
-                      alt=""
-                      class="social-links-icon"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="" class="d-inline-block social-link">
-                    <img
-                      src="{% static 'bootstrap\img\icons\dzen-icon.svg' %}"
-                      alt=""
-                      class="social-links-icon"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="" class="d-inline-block social-link">
-                    <img
-                      src="{% static 'bootstrap\img\icons\OK-icon.webp' %}"
-                      alt=""
-                    />
-                    <p class="w-50 mb-0">cмотреть видео</p>
-                  </a>
-                  <div
-                    class="px-4 py-4 d-flex flex-column justify-content-between acquaintance-content"
+                  <a href="https://normativ.kontur.ru/document?moduleId=1&documentId=500648&ysclid=mfcqucp0tk318799088#h6946" target="_blank"
+                    >Федеральный закон от 29.12.2012 № 273-ФЗ "Об образовании в
+                    Российской Федерации"</a
                   >
-                    <div>
-                      <h2 class="acquaintance-title">Познакомься</h2>
-                      <p class="mb-4 acquaintance-text">
-                        с Херсонским государственным педагогическим
-                        университетом еще ближе
-                      </p>
-                    </div>
-                    <div>
-                      <a class="acquaintance-btn" href=""
-                        >Узнать все поступлении в ХГПУ</a
-                      >
-                    </div>
-                  </div>
-                </div>
+                  <span
+                    >(Статья 29. Информационная открытость образовательной
+                    организации)</span
+                  >
+                </li>
+                <li>
+                  <a href="https://normativ.kontur.ru/document?moduleId=1&documentId=457031&ysclid=mfcr4pb63f996718370" target="_blank"
+                    >Постановление Правительства РФ от 20.10.2021 N 1802
+                  </a>
+                  <span
+                    >"Об утверждении Правил размещения на официальном сайте
+                    образовательной организации в
+                    информационно-телекоммуникационной сети "Интернет" и
+                    обновления информации об образовательной организации, а
+                    также о признании утратившими силу некоторых актов и
+                    отдельных положений некоторых актов Правительства Российской
+                    Федерации'</span
+                  >
+                </li>
+                <li>
+                  <a href="https://normativ.kontur.ru/document?moduleId=1&documentId=460884&ysclid=mfcr5tu2vh444311010" target="_blank">Приказ Рособрнадзора от 04.08.2023 №1493</a>
+                  <span
+                    >"Об утверждении Требований к структуре официального сайта
+                    образовательной организации в
+                    информационно-телекоммуникационной сети "Интернет" и формату
+                    представления информации"</span
+                  >
+                </li>
+                <li>
+                  <a href="https://normativ.kontur.ru/document?moduleId=1&documentId=482526&ysclid=mfcqc96y1b509783364" target="_blank"
+                    >Официальные разъяснения обязательных требований по
+                    соблюдению образовательными организациями требований
+                    законодательства РФ в сфере образования в части
+                    информационной открытости образовательной организации</a
+                  >
+                  <span>(утв. Рособрнадзором 11.11.2024)</span>
+                </li>
+                <li>
+                  <a href="https://obrnadzor.gov.ru/wp-content/uploads/2024/09/metodicheskie-rekomendaczii-predstavleniya-informaczii-ob-obrazovatelnoj-or....pdf" target="_blank"
+                    >Методические рекомендации представления информации об
+                    образовательной организации в открытых источниках с учетом
+                    соблюдения требований законодательства в сфере образования
+                    (размещено на сайте Рособрнадзора 03.09.2024)</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="d-flex flex-column gap-4 py-4 mb-4">
+              <div class="row gap-4">
+                <a href="" class="col-4 edu-info-btn"> Основные сведения </a>
+                <a href="" class="col edu-info-btn">
+                  Структура и органы управления образовательной организацией
+                </a>
+              </div>
+              <div class="row gap-4">
+                <a href="" class="col-3 edu-info-btn"> Документы </a>
+                <a href="" class="col-3 edu-info-btn"> Образование </a>
+                <a href="" class="col edu-info-btn">
+                  Образовательные стандарты и требования
+                </a>
+              </div>
+              <div class="row gap-4">
+                <a href="" class="col-5 edu-info-btn"> Руководство </a>
+                <a href="" class="col edu-info-btn"> Педагогический состав </a>
+              </div>
+              <div class="row">
+                <a href="" class="col edu-info-btn">Материально-техническое обеспечение и оснащенность образовательного процесса. Доступная среда</a>
+              </div>
+              <div class="row gap-4">
+                <a href="" class="col edu-info-btn">Платные образовательные услуги</a>
+                <a href="" class="col edu-info-btn">Стипендии и меры поддержки обучающихся</a>
+              </div>
+              <div class="row gap-4">
+                <a href="" class="col-5 edu-info-btn">Финансово-хозяйственная деятельность</a>
+                <a href="" class="col edu-info-btn">Вакантные места для приема (перевода) обучающихся</a>
+              </div>
+              <div class="row gap-4">
+                <a href="" class="col-5 edu-info-btn">Международное сотрудничество</a>
+                <a href="" class="col edu-info-btn">Организация питания в образовательной организации</a>
               </div>
             </div>
           </div>
-        </section>
+        </div>
       </main>
       <footer class="footer">
         <div class="footer-top">
@@ -595,31 +605,51 @@
                 <p class="footer-col-title">КОНТАКТЫ</p>
                 <ul class="d-flex flex-column gap-2 footer-col-list">
                   <li>
-                    <a href="" class="footer-item-link d-flex align-items-center gap-2">
+                    <a
+                      href=""
+                      class="footer-item-link d-flex align-items-center gap-2"
+                    >
                       <i class="fa-solid fa-at"></i>
                       <p class="mb-0">hgpurf@yandex.ru</p>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="footer-item-link d-flex align-items-center gap-2">
-                      <img src="{% static 'bootstrap\img\icons\footer-phone-icon.png' %}" alt="">
+                    <a
+                      href=""
+                      class="footer-item-link d-flex align-items-center gap-2"
+                    >
+                      <img
+                        src="{% static 'bootstrap\img\icons\footer-phone-icon.png' %}"
+                        alt=""
+                      />
                       <p class="mb-0">+7 (990) 140-21-00</p>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="footer-item-link d-flex align-items-baseline gap-2">
+                    <a
+                      href=""
+                      class="footer-item-link d-flex align-items-baseline gap-2"
+                    >
                       <i class="fa-solid fa-paper-plane"></i>
-                      <p class="mb-0 pe-5">ХГПУ официально | Официальный ТГ-канал ХГПУ</p>
+                      <p class="mb-0 pe-5">
+                        ХГПУ официально | Официальный ТГ-канал ХГПУ
+                      </p>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="footer-item-link d-flex align-items-baseline gap-2">
+                    <a
+                      href=""
+                      class="footer-item-link d-flex align-items-baseline gap-2"
+                    >
                       <i class="fa-solid fa-paper-plane"></i>
                       <p class="mb-0">ТГ-канал ректора ХГПУ</p>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="footer-item-link d-flex align-items-baseline gap-2">
+                    <a
+                      href=""
+                      class="footer-item-link d-flex align-items-baseline gap-2"
+                    >
                       <i class="fa-brands fa-vk"></i>
                       <p class="mb-0">Официальная группа ХГПУ Вконтакте</p>
                     </a>
@@ -627,15 +657,27 @@
                 </ul>
               </div>
             </div>
-            <div class="d-flex align-items-center justify-content-center gap-2 mb-4">
+            <div
+              class="d-flex align-items-center justify-content-center gap-2 mb-4"
+            >
               <div class="w-100 footer-logo-line"></div>
               <div>
-                <a href=""><img src="{% static 'bootstrap\img\footer-hgpu-logo.webp' %}" alt="" class="d-block rounded w-100"></a>
+                <a href=""
+                  ><img
+                    src="{% static 'bootstrap\img\footer-hgpu-logo.webp' %}"
+                    alt=""
+                    class="d-block rounded w-100"
+                /></a>
               </div>
               <div class="w-100 footer-logo-line"></div>
             </div>
-            <p class="text-center text-light mb-0">ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ</p>
-            <p class="text-center text-light mb-4">"ХЕРСОНСКИЙ ГОСУДАРСТВЕННЫЙ ПЕДАГОГИЧЕСКИЙ УНИВЕРСИТЕТ"</p>
+            <p class="text-center text-light mb-0">
+              ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ
+              ВЫСШЕГО ОБРАЗОВАНИЯ
+            </p>
+            <p class="text-center text-light mb-4">
+              "ХЕРСОНСКИЙ ГОСУДАРСТВЕННЫЙ ПЕДАГОГИЧЕСКИЙ УНИВЕРСИТЕТ"
+            </p>
             <div class="d-flex justify-content-between mb-4">
               <a href="" class="footer-gov-link">
                 Министерство просвещения РФ
@@ -643,15 +685,13 @@
               <a href="" class="footer-gov-link">
                 Министерство просвещения РФ
               </a>
-              <a href="" class="footer-gov-link">
-                Рособрнадзор
-              </a>
+              <a href="" class="footer-gov-link"> Рособрнадзор </a>
               <a href="" class="footer-gov-link">
                 Официальный интернет-портал правовой информации
               </a>
             </div>
             <p class="py-3 mb-0 fs-6 text-light opacity-50">
-              <i class="fa-solid fa-copyright" style="color: #ffffff;"></i>
+              <i class="fa-solid fa-copyright" style="color: #ffffff"></i>
               Херсонский государственный педагогический университет, 2025
             </p>
           </div>
