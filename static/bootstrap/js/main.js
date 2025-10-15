@@ -1,14 +1,23 @@
 //  vanilla js for dropdown main menu
 const menuLink = document.getElementById("#m-link-university");
-
 const univerMenu = document.getElementById("#univer-menu");
+
+const menuLinkEdu = document.getElementById("#m-link-education");
+const eduMenu = document.getElementById("#edu-menu");
 
 function menuOpen() {
   univerMenu.classList.toggle("d-none");
 }
 
+function menuOpenEdu() {
+  eduMenu.classList.toggle("d-none");
+}
+
 menuLink.addEventListener("click", menuOpen);
 univerMenu.addEventListener('mouseleave', menuOpen)
+
+menuLinkEdu.addEventListener("click", menuOpenEdu);
+eduMenu.addEventListener('mouseleave', menuOpenEdu)
 
 // jquery for counter
 
