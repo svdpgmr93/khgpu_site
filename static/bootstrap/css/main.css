@@ -461,6 +461,234 @@ main.main {
     opacity: .5;
 }
 
+.footer-main {
+    padding-top: 80px;
+    background-color: #333333;
+}
+
+.footer-col-title {
+    color: #c7a55e;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.footer-col-list {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.footer-item-link {
+    color: #ffffff;
+    font-size: 14px;
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.footer-item-link:hover {
+    color: #c7a55e;
+    transition-duration: .3s;
+}
+
+.footer-logo-line {
+    height: 1px;
+    background-color: #ffffff;
+    opacity: .5;
+}
+
+.footer-gov-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 1.15;
+}
+
+.footer-gov-link:hover {
+    color: #c7a55e;
+    transition-duration: .3s;
+}
+
+/* education organization page classes */
+
+.edu-banner {
+    background-image: url('../img/edu-organization-banner.jpg');
+    height: 420px;
+    border-radius: 30px;
+    background-position-y: 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.edu-info-title {
+    color: #ffffff;
+    font-size: 100px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #5c5c5c;
+    font-size: 14px;
+}
+
+.breadcrumb a:hover {
+    color: #f3c016;
+    transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.regulatory-documents {
+    border-bottom: 2px dashed #ffbf31;
+}
+
+.regulatory-documents a{
+    text-decoration: none;
+    color: #ffbf31;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.regulatory-documents-list li a{
+    font-size: 14px;
+    color: #2B4D99;
+    line-height: 1.55;
+}
+
+.regulatory-documents-list li span{
+    font-size: 14px;
+    color: #5c5c5c;
+    line-height: 1.55;
+}
+
+.edu-info-btn {
+    background-color: #f4f2f2;
+    border-radius: 10px 10px 10px 10px;
+    padding: 30px 50px;
+    text-align: center;
+    color: #333333;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.55;
+}
+
+.edu-info-btn:hover {
+    background-color: #ffd600;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+/* basic-info page classes */
+
+.basic-info-title {
+    color: #ffbf31;
+}
+
+.tr-dark {
+    background-color: #f4f2f2;
+}
+
+.tr-light {
+    background-color: #f9f9f9;
+}
+
+.table-bd {
+    border: 1px solid #ffffff;
+    font-size: 14px;
+}
+
+.ruobr-info {
+    border-bottom: 2px dashed #d80707;
+}
+
+.ruobr-info a{
+    text-decoration: none;
+    color: #d80707;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.basic-info-icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+.basic-info-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #5c5c5c;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.basic-info-link:hover {
+    color: #f3c016;
+    transition-duration: .3s;
+}
+
+/* accordion */
+
+.my-accordion-item {
+    padding: 20px 0px;
+    border-top: 1px solid #eee
+}
+
+.my-accordion-item.active .my-accordion-content {
+    max-height: 3000px;
+    transition: max-height 1s ease;
+}
+
+.my-accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.35;
+    cursor: pointer;
+}
+
+.my-accordion-header.active .my-accordion-icon {
+    transform: rotate(180deg);
+}
+
+.my-accordion-icon {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #eee;
+    padding: 8px;
+    border-radius: 100%;
+    color: #333333;
+}
+
+.my-accordion-icon:hover {
+    background-color: #ffd600;
+    transition-duration: .3s;
+}
+
+.my-accordion-content {
+    padding-top: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease;
+}
+
+.accordion-table {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.accordion-table tr:first-child {
+    background-color: #ffd600;
+}
+
 /* .footer-top {
     background-color: #ffd600;
 }

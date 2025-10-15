@@ -330,395 +330,137 @@
         </div>
       </header>
       <main class="main">
-        <!-- main banner section -->
-        <section class="conteiner-fluid main-banner">
-          <div class="container h-100">
-            <div class="w-50 h-100 d-flex align-items-center">
-              <div class="d-flex flex-column px-4 py-1 align-items-start">
-                <h1 class="banner-title mb-4">
-                  Херсонский государственный педагогический университет
-                </h1>
-                <p class="mb-5 fs-5">
-                  Флагман педагогического образования региона
-                </p>
-                <a
-                  class="d-inline-block px-5 py-3 blc text-decoration-none rounded-5 fw-semibold shadow"
-                  href=""
-                >
-                  Поступить в ХГПУ
-                </a>
-              </div>
-            </div>
+        <div class="px-4 pt-3">
+          <div
+            class="d-flex align-items-center justify-content-center edu-banner"
+          >
+            <h1 class="edu-info-title w-75 mb-0">
+              Сведения об образовательной организации
+            </h1>
           </div>
-        </section>
-        <!-- news section -->
-        <section class="py-5">
           <div class="container">
-            <h1 class="py-3 px-4 fw-semibold">Новости</h1>
-            <div class="row row-cols-1 row-cols-md-3 g-5 py-3 px-4 mb-4">
-              <div class="col">
-                <a class="card-link" href="">
-                  <div class="card h-100 news-card">
-                    <img
-                      src="{% static 'bootstrap\img\posts_photo\post1.webp' %}"
-                      class="card-img-top card-img-size"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <p class="card-text px-3">25 сентября 2025</p>
-                      <h5 class="card-title px-3 fw-semibold">
-                        В честь третьей годовщины воссоединения новых регионов с
-                        Россией
-                      </h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col">
-                <a class="card-link" href="">
-                  <div class="card h-100 news-card">
-                    <img
-                      src="{% static 'bootstrap\img\posts_photo\post2.webp' %}"
-                      class="card-img-top card-img-size"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <p class="card-text px-3">25 сентября 2025</p>
-                      <h5 class="card-title px-3 fw-semibold">
-                        Творческий конкурс
-                      </h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col">
-                <a class="card-link" href="">
-                  <div class="card h-100 news-card">
-                    <img
-                      src="{% static 'bootstrap\img\posts_photo\post3.webp' %}"
-                      class="card-img-top card-img-size"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <p class="card-text px-3">20 сентября 2025</p>
-                      <h5 class="card-title px-3 fw-semibold">
-                        Епископ Скадовский и Алешкинский Филарет совершил чин
-                        освящения здания университета
-                      </h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col">
-                <a class="card-link" href="">
-                  <div class="card h-100 news-card">
-                    <img
-                      src="{% static 'bootstrap\img\posts_photo\post4.webp' %}"
-                      class="card-img-top card-img-size"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <p class="card-text px-3">20 сентября 2025</p>
-                      <h5 class="card-title px-3 fw-semibold">
-                        Тематический урок от представителей Росгвардии
-                      </h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col">
-                <a class="card-link" href="">
-                  <div class="card h-100 news-card">
-                    <img
-                      src="{% static 'bootstrap\img\posts_photo\post5.webp' %}"
-                      class="card-img-top card-img-size"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <p class="card-text px-3">20 сентября 2025</p>
-                      <h5 class="card-title px-3 fw-semibold">
-                        Профессор кафедры философии и истории ХГПУ Денис
-                        Солодухин принял участие в круглом столе Общественной
-                        палаты РФ
-                      </h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col">
-                <a class="card-link" href="">
-                  <div class="card h-100 news-card">
-                    <img
-                      src="{% static 'bootstrap\img\posts_photo\post6.webp' %}"
-                      class="card-img-top card-img-size"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <p class="card-text px-3">19 сентября 2025</p>
-                      <h5 class="card-title px-3 fw-semibold">
-                        Акция "Вузы для фронта!"
-                      </h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
+            <div class="py-4">
+              <nav
+                style="--bs-breadcrumb-divider: '>>'"
+                aria-label="breadcrumb"
+              >
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                  <li class="breadcrumb-item" aria-current="page">
+                    <a href="">Университет</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    <a href="">Сведения об образовательной организации</a>
+                  </li>
+                </ol>
+              </nav>
             </div>
-            <div class="d-flex justify-content-center py-5">
-              <a class="all-news-btn" href="">Все новости</a>
-            </div>
-          </div>
-        </section>
-        <!-- anonce section -->
-        <section class="py-5 anonce">
-          <div class="container">
-            <h1 class="py-3 px-4 fw-semibold">Анонс</h1>
-            <div class="d-flex px-4 gap-2 anonce-tags">
-              <a class="anonce-tag" href="">Все</a>
-              <a class="anonce-tag" href="">Объявление</a>
-              <a class="anonce-tag" href="">Конференция</a>
-              <a class="anonce-tag" href="">Круглый стол</a>
-              <a class="anonce-tag" href="">Фестиваль</a>
-              <a class="anonce-tag" href="">Конкурс</a>
-              <a class="anonce-tag" href="">Абитуриенту</a>
-              <a class="anonce-tag" href="">Школьнику</a>
-            </div>
-            <div class="row row-cols-1 row-cols-md-3 g-5 py-3 px-4 mb-4">
-              <div class="col">
-                <a class="card-link" href="">
-                  <div class="card h-100 anonce-card">
-                    <div class="card-body anonce-card-body">
-                      <p class="anonce-card-date">25 сентября 2025</p>
-                      <h6 class="card-title fw-semibold mb-2 lh-sm">
-                        «Туризм, сервис и гостеприимство: перспективы и
-                        управление развитием»
-                      </h6>
-                      <p class="anonce-card-content">
-                        II Всероссийская научно-практическая конференция с
-                        международным участием
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col">
-                <a class="card-link" href="">
-                  <div class="card h-100 anonce-card">
-                    <div class="card-body anonce-card-body">
-                      <p class="anonce-card-date">17 сентября 2025</p>
-                      <h6 class="card-title fw-semibold mb-2 lh-sm">
-                        Встреча с Лазаревым Михаилом Львовичем, автором
-                        СОНАТАЛ-педагогики (музыкальной системы гармонизации
-                        детства)
-                      </h6>
-                      <p class="anonce-card-content"></p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col">
-                <a class="card-link" href="">
-                  <div class="card h-100 anonce-card">
-                    <div class="card-body anonce-card-body">
-                      <p class="anonce-card-date">28 августа 2025</p>
-                      <h6 class="card-title fw-semibold mb-2 lh-sm">
-                        Замещение вакантных должностей
-                      </h6>
-                      <p class="anonce-card-content">
-                        Объявления о конкурсе/выборе на замещение вакантных
-                        должностей
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="d-flex justify-content-center py-5">
-              <a class="more-events-btn" href="">Еще события</a>
-            </div>
-          </div>
-        </section>
-        <!-- rector sectiom -->
-        <section class="rector">
-          <div class="container">
-            <div class="row px-4">
-              <div class="col">
-                <div class="d-flex flex-column justify-content-between h-100">
-                  <p class="fw-bold fs-5">
-                    Добро пожаловать в Херсонский государственный педагогический
-                    университет - крупнейший вуз региона!
-                  </p>
-                  <div class="d-flex gap-3">
-                    <img
-                      class="reqtor-q-icon"
-                      src="{% static 'bootstrap/img/icons/rector-q.svg' %}"
-                      alt=""
-                    />
-                    <p class="px-1 py-4 rector-quote">
-                      Херсонский государственный педагогический университет -
-                      многопрофильный просветительский центр региона, который
-                      развивает множество направлений в рамках государственных
-                      стратегических задач
-                    </p>
-                  </div>
-                  <div>
-                    <p class="fw-bold fs-5 mb-1">ШАШКОВА Нина Игоревна</p>
-                    <p class="fs-5">Ректор</p>
-                  </div>
-                  <div class="d-flex align-items-center gap-4">
-                    <a class="d-block tg-rector" href=""
-                      ><img
-                        src="{% static 'bootstrap/img/icons/Telegram_Symbol.webp' %}"
-                        alt=""
-                    /></a>
-                    <a class="rector-btn" href="">Онлайн-приемная ректора</a>
-                    <a class="rector-btn" href="">Страница ректора</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-5">
-                <img
-                  class="rounded-3"
-                  src="{% static 'bootstrap/img/rector-photo.webp' %}"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- hgpu today section -->
-        <section class="hgpu-today">
-          <div class="container">
-            <div class="px-4">
-              <h1 class="hgpu-today-title">ХГПУ сегодня</h1>
-              <ul class="hgpu-today-list">
-                <li>Лучшие традиции образования для развития региона</li>
+            <h2 class="mb-4 fw-bold fs-2">
+              Сведения об образовательной организации
+            </h2>
+            <p class="pt-3 regulatory-documents d-inline-block">
+              <a
+                class=""
+                data-bs-toggle="collapse"
+                href="#collapseExample"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                Информация размещена во исполнение и в соответствии с
+                нормативными документами
+              </a>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <ul class="regulatory-documents-list">
                 <li>
-                  Центр повышения квалификации и переподготовки учителей ХО
-                </li>
-                <li>
-                  Наличие 12 уникальных программ бакалавриата с двумя профилями
-                </li>
-                <li>Атмосфера творчества и самовыражения</li>
-                <li>Старт в профессии: более 600 баз практики</li>
-                <li>Возможность успешно совмещать учебу и работу</li>
-              </ul>
-              <div class="row row-cols-1 row-cols-md-3 g-5 px-3">
-                <div class="col">
-                  <div class="card h-100 rounded-4 overflow-hidden">
-                    <img
-                      src="{% static 'bootstrap/img/hgputoday1.webp' %}"
-                      alt="..."
-                    />
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card h-100 rounded-4 overflow-hidden">
-                    <img
-                      src="{% static 'bootstrap/img/hgputoday2.webp' %}"
-                      alt="..."
-                    />
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card h-100 rounded-4 overflow-hidden">
-                    <img
-                      src="{% static 'bootstrap/img/hgputoday3.webp' %}"
-                      alt="..."
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- counters section -->
-        <section class="counter-sec">
-          <div class="container">
-            <div class="row gap-4 px-4">
-              <div class="col">
-                <div class="d-flex flex-column">
-                  <h2 class="counter">6500</h2>
-                  <div class="counter-line"></div>
-                  <p class="px-2 counter-text">
-                    Студентов, обучающихся по программам бакалавриата,
-                    специалитета и магистратуры
-                  </p>
-                </div>
-              </div>
-              <div class="col">
-                <div class="d-flex flex-column">
-                  <h2 class="counter">100</h2>
-                  <div class="counter-line"></div>
-                  <p class="px-2 counter-text">
-                    Образовательных программ бакалавриата, специалитета и
-                    магистратуры и аспирантуры
-                  </p>
-                </div>
-              </div>
-              <div class="col">
-                <div class="d-flex flex-column">
-                  <h2 class="counter">50</h2>
-                  <div class="counter-line"></div>
-                  <p class="px-2 counter-text">
-                    Вузов-партнеров (академических партнеров) по всей России
-                  </p>
-                </div>
-              </div>
-              <div class="col">
-                <div class="d-flex flex-column">
-                  <h2 class="counter">200</h2>
-                  <div class="counter-line"></div>
-                  <p class="px-2 counter-text">
-                    Преподавателей с учеными степенями кандидатов и докторов
-                    наук
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- video slider section -->
-        <section class="video-slider text-center">
-          <h1>VIDEO</h1>
-        </section>
-        <!-- acquaintance section -->
-        <section class="acquaintance">
-          <div class="container">
-            <div class="px-4">
-              <div class="px-4 d-flex justify-content-end acquaintance-banner">
-                <div class="d-flex justify-content-center px-4 py-4 gap-3 w-75">
-                  <a
-                    href=""
-                    class="d-flex flex-column align-self-end justify-content-center align-items-center rounded-circle start-video-circle"
+                  <a href="https://normativ.kontur.ru/document?moduleId=1&documentId=500648&ysclid=mfcqucp0tk318799088#h6946" target="_blank"
+                    >Федеральный закон от 29.12.2012 № 273-ФЗ "Об образовании в
+                    Российской Федерации"</a
                   >
-                    <img
-                      class="h-50 w-50"
-                      src="{% static 'bootstrap/img/icons/play-icon.svg' %}"
-                      alt=""
-                    />
-                    <p class="w-50 mb-0">cмотреть видео</p>
+                  <span
+                    >(Статья 29. Информационная открытость образовательной
+                    организации)</span
+                  >
+                </li>
+                <li>
+                  <a href="https://normativ.kontur.ru/document?moduleId=1&documentId=457031&ysclid=mfcr4pb63f996718370" target="_blank"
+                    >Постановление Правительства РФ от 20.10.2021 N 1802
                   </a>
-                  <div
-                    class="px-4 py-4 d-flex flex-column justify-content-between acquaintance-content"
+                  <span
+                    >"Об утверждении Правил размещения на официальном сайте
+                    образовательной организации в
+                    информационно-телекоммуникационной сети "Интернет" и
+                    обновления информации об образовательной организации, а
+                    также о признании утратившими силу некоторых актов и
+                    отдельных положений некоторых актов Правительства Российской
+                    Федерации'</span
                   >
-                    <div>
-                      <h2 class="acquaintance-title">Познакомься</h2>
-                      <p class="mb-4 acquaintance-text">
-                        с Херсонским государственным педагогическим
-                        университетом еще ближе
-                      </p>
-                    </div>
-                    <div>
-                      <a class="acquaintance-btn" href=""
-                        >Узнать все поступлении в ХГПУ</a
-                      >
-                    </div>
-                  </div>
-                </div>
+                </li>
+                <li>
+                  <a href="https://normativ.kontur.ru/document?moduleId=1&documentId=460884&ysclid=mfcr5tu2vh444311010" target="_blank">Приказ Рособрнадзора от 04.08.2023 №1493</a>
+                  <span
+                    >"Об утверждении Требований к структуре официального сайта
+                    образовательной организации в
+                    информационно-телекоммуникационной сети "Интернет" и формату
+                    представления информации"</span
+                  >
+                </li>
+                <li>
+                  <a href="https://normativ.kontur.ru/document?moduleId=1&documentId=482526&ysclid=mfcqc96y1b509783364" target="_blank"
+                    >Официальные разъяснения обязательных требований по
+                    соблюдению образовательными организациями требований
+                    законодательства РФ в сфере образования в части
+                    информационной открытости образовательной организации</a
+                  >
+                  <span>(утв. Рособрнадзором 11.11.2024)</span>
+                </li>
+                <li>
+                  <a href="https://obrnadzor.gov.ru/wp-content/uploads/2024/09/metodicheskie-rekomendaczii-predstavleniya-informaczii-ob-obrazovatelnoj-or....pdf" target="_blank"
+                    >Методические рекомендации представления информации об
+                    образовательной организации в открытых источниках с учетом
+                    соблюдения требований законодательства в сфере образования
+                    (размещено на сайте Рособрнадзора 03.09.2024)</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="d-flex flex-column gap-4 py-4 mb-4">
+              <div class="row gap-4">
+                <a href="" class="col-4 edu-info-btn"> Основные сведения </a>
+                <a href="" class="col edu-info-btn">
+                  Структура и органы управления образовательной организацией
+                </a>
+              </div>
+              <div class="row gap-4">
+                <a href="" class="col-3 edu-info-btn"> Документы </a>
+                <a href="" class="col-3 edu-info-btn"> Образование </a>
+                <a href="" class="col edu-info-btn">
+                  Образовательные стандарты и требования
+                </a>
+              </div>
+              <div class="row gap-4">
+                <a href="" class="col-5 edu-info-btn"> Руководство </a>
+                <a href="" class="col edu-info-btn"> Педагогический состав </a>
+              </div>
+              <div class="row">
+                <a href="" class="col edu-info-btn">Материально-техническое обеспечение и оснащенность образовательного процесса. Доступная среда</a>
+              </div>
+              <div class="row gap-4">
+                <a href="" class="col edu-info-btn">Платные образовательные услуги</a>
+                <a href="" class="col edu-info-btn">Стипендии и меры поддержки обучающихся</a>
+              </div>
+              <div class="row gap-4">
+                <a href="" class="col-5 edu-info-btn">Финансово-хозяйственная деятельность</a>
+                <a href="" class="col edu-info-btn">Вакантные места для приема (перевода) обучающихся</a>
+              </div>
+              <div class="row gap-4">
+                <a href="" class="col-5 edu-info-btn">Международное сотрудничество</a>
+                <a href="" class="col edu-info-btn">Организация питания в образовательной организации</a>
               </div>
             </div>
           </div>
-        </section>
+        </div>
       </main>
       <footer class="footer">
         <div class="footer-top">
@@ -863,31 +605,51 @@
                 <p class="footer-col-title">КОНТАКТЫ</p>
                 <ul class="d-flex flex-column gap-2 footer-col-list">
                   <li>
-                    <a href="" class="footer-item-link d-flex align-items-center gap-2">
+                    <a
+                      href=""
+                      class="footer-item-link d-flex align-items-center gap-2"
+                    >
                       <i class="fa-solid fa-at"></i>
                       <p class="mb-0">hgpurf@yandex.ru</p>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="footer-item-link d-flex align-items-center gap-2">
-                      <img src="{% static 'bootstrap\img\icons\footer-phone-icon.png' %}" alt="">
+                    <a
+                      href=""
+                      class="footer-item-link d-flex align-items-center gap-2"
+                    >
+                      <img
+                        src="{% static 'bootstrap\img\icons\footer-phone-icon.png' %}"
+                        alt=""
+                      />
                       <p class="mb-0">+7 (990) 140-21-00</p>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="footer-item-link d-flex align-items-baseline gap-2">
+                    <a
+                      href=""
+                      class="footer-item-link d-flex align-items-baseline gap-2"
+                    >
                       <i class="fa-solid fa-paper-plane"></i>
-                      <p class="mb-0 pe-5">ХГПУ официально | Официальный ТГ-канал ХГПУ</p>
+                      <p class="mb-0 pe-5">
+                        ХГПУ официально | Официальный ТГ-канал ХГПУ
+                      </p>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="footer-item-link d-flex align-items-baseline gap-2">
+                    <a
+                      href=""
+                      class="footer-item-link d-flex align-items-baseline gap-2"
+                    >
                       <i class="fa-solid fa-paper-plane"></i>
                       <p class="mb-0">ТГ-канал ректора ХГПУ</p>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="footer-item-link d-flex align-items-baseline gap-2">
+                    <a
+                      href=""
+                      class="footer-item-link d-flex align-items-baseline gap-2"
+                    >
                       <i class="fa-brands fa-vk"></i>
                       <p class="mb-0">Официальная группа ХГПУ Вконтакте</p>
                     </a>
@@ -895,15 +657,27 @@
                 </ul>
               </div>
             </div>
-            <div class="d-flex align-items-center justify-content-center gap-2 mb-4">
+            <div
+              class="d-flex align-items-center justify-content-center gap-2 mb-4"
+            >
               <div class="w-100 footer-logo-line"></div>
               <div>
-                <a href=""><img src="{% static 'bootstrap\img\footer-hgpu-logo.webp' %}" alt="" class="d-block rounded w-100"></a>
+                <a href=""
+                  ><img
+                    src="{% static 'bootstrap\img\footer-hgpu-logo.webp' %}"
+                    alt=""
+                    class="d-block rounded w-100"
+                /></a>
               </div>
               <div class="w-100 footer-logo-line"></div>
             </div>
-            <p class="text-center text-light mb-0">ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ</p>
-            <p class="text-center text-light mb-4">"ХЕРСОНСКИЙ ГОСУДАРСТВЕННЫЙ ПЕДАГОГИЧЕСКИЙ УНИВЕРСИТЕТ"</p>
+            <p class="text-center text-light mb-0">
+              ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ
+              ВЫСШЕГО ОБРАЗОВАНИЯ
+            </p>
+            <p class="text-center text-light mb-4">
+              "ХЕРСОНСКИЙ ГОСУДАРСТВЕННЫЙ ПЕДАГОГИЧЕСКИЙ УНИВЕРСИТЕТ"
+            </p>
             <div class="d-flex justify-content-between mb-4">
               <a href="" class="footer-gov-link">
                 Министерство просвещения РФ
@@ -911,15 +685,13 @@
               <a href="" class="footer-gov-link">
                 Министерство просвещения РФ
               </a>
-              <a href="" class="footer-gov-link">
-                Рособрнадзор
-              </a>
+              <a href="" class="footer-gov-link"> Рособрнадзор </a>
               <a href="" class="footer-gov-link">
                 Официальный интернет-портал правовой информации
               </a>
             </div>
             <p class="py-3 mb-0 fs-6 text-light opacity-50">
-              <i class="fa-solid fa-copyright" style="color: #ffffff;"></i>
+              <i class="fa-solid fa-copyright" style="color: #ffffff"></i>
               Херсонский государственный педагогический университет, 2025
             </p>
           </div>
