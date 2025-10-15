@@ -23,7 +23,7 @@
       href="{% static 'bootstrap/css/main.css' %}"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <title>{% block title %}Base Template{% endblock %}</title>
   </head>
   <body>
     <div class="wrapper">
@@ -177,7 +177,7 @@
           </div>
         </div>
         <div class="container-fluid header-menu">
-          <div class="container position-relative">
+          <div class="container position-relative position-relative">
             <div class="d-flex justify-content-between align-items-center">
               <div class="logo d-flex align-items-center">
                 <a href="https://edu.gov.ru/"
@@ -193,7 +193,7 @@
                 <li class="header-menu-item" id="#m-link-university">
                   <a href="#">Университет</a>
                 </li>
-                <li class="header-menu-item">
+                <li class="header-menu-item" id="#m-link-education">
                   <a href="#">Образование</a>
                 </li>
                 <li class="header-menu-item">
@@ -205,9 +205,10 @@
                 <li class="header-menu-item">
                   <a href="#">Медиа</a>
                 </li>
-              </ul>
+              </ul>              
             </div>
             <!-- CUSTOM DROP MENU START -->
+            <!--University menu-->
             <div
               class="container-xxl rounded-bottom-3 py-5 gap-5 custom-drop-menu d-none position-absolute top-100 start-0 z-10"
               id="#univer-menu"
@@ -325,375 +326,106 @@
                 </div>
               </div>
             </div>
-            <!-- CUSTOM DROP MENU  END-->
-          </div>
+            <!--Education menu-->
+              <div
+              class="container-xxl rounded-bottom-3 py-5 gap-5 custom-drop-menu d-none position-absolute top-100 start-0 z-1"
+              id="#edu-menu">
+                <div class="row rounded mb-5 mx-3 gap-4">
+                  <div class="col-8 rounded">
+                    <div class="row rounded py-3">
+                      <div class="col-3 fw-bold fs-5">Образование</div>
+                      <div class="col-9">
+                        <hr class="border border-warning border-1 opacity-50" />
+                      </div>
+                    </div>
+                    <div class="row rounded">
+                      <div class="col-6 rounded">
+                        <a href="#"
+                          ><p>Образовательные программы</p></a>
+                        <p>Расписание</p>
+                        <p>График учебного процесса</p>
+                        <p>Перевод и восстановление</p>
+                      </div>
+                      <div class="col-6 rounded">
+                        <a href="#"><p>Дополнительное профессиональное образование</p></a>
+                        <p>Практика</p>
+                        <p>Оплата обучения</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col rounded gap-5">
+                    <div class="row rounded hgpu-card mb-3 py-3">
+                      <div class="col justify-content-center align-items-center">
+                        <img
+                          src="{% static 'bootstrap\img\hgpu.png' %}"
+                          alt=""
+                          class="opacity-25"
+                        />
+                      </div>
+                      <div class="col">
+                        <p class="h5">
+                          ХГПУ: <br />
+                          вчера, сегодня, завтра
+                        </p>
+                        <a href="#">
+                          <div class="row">
+                            <div class="col"><p>Перейти</p></div>
+                            <div class="col">
+                              <i
+                                class="fa-solid fa-circle-arrow-right fa-xl"
+                                style="color: #ffba55"
+                              ></i>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>            
+              </div>
+              <!-- CUSTOM DROP MENU  END-->
         </div>
       </header>
-      <main class="main">
-        <!-- main banner section -->
-        <section class="conteiner-fluid main-banner">
-          <div class="container h-100">
-            <div class="w-50 h-100 d-flex align-items-center">
-              <div class="d-flex flex-column px-4 py-1 align-items-start">
-                <h1 class="banner-title mb-4">
-                  Херсонский государственный педагогический университет
-                </h1>
-                <p class="mb-5 fs-5">
-                  Флагман педагогического образования региона
-                </p>
-                <a
-                  class="d-inline-block px-5 py-3 blc text-decoration-none rounded-5 fw-semibold shadow"
-                  href=""
-                >
-                  Поступить в ХГПУ
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- news section -->
-        <section class="py-5">
+      {%  block content%}
+      {% endblock %}
+      <footer class="footer">
+        <div class="footer-top">
           <div class="container">
-            <h1 class="py-3 px-4 fw-semibold">Новости</h1>
-            <div class="row row-cols-1 row-cols-md-3 g-5 py-3 px-4 mb-4">
-              <div class="col">
-                <a class="card-link" href="">
-                  <div class="card h-100 news-card">
+            <div class="d-flex justify-content-center">
+              <ul
+                class="d-flex py-5 px-0 social-links align-items-center justify-content-between w-75 mb-0"
+              >
+                <li>
+                  <a href="" class="d-inline-block social-link">
                     <img
-                      src="{% static 'bootstrap\img\posts_photo\post1.webp' %}"
-                      class="card-img-top card-img-size"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <p class="card-text px-3">25 сентября 2025</p>
-                      <h5 class="card-title px-3 fw-semibold">
-                        В честь третьей годовщины воссоединения новых регионов с
-                        Россией
-                      </h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col">
-                <a class="card-link" href="">
-                  <div class="card h-100 news-card">
-                    <img
-                      src="{% static 'bootstrap\img\posts_photo\post2.webp' %}"
-                      class="card-img-top card-img-size"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <p class="card-text px-3">25 сентября 2025</p>
-                      <h5 class="card-title px-3 fw-semibold">
-                        Творческий конкурс
-                      </h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col">
-                <a class="card-link" href="">
-                  <div class="card h-100 news-card">
-                    <img
-                      src="{% static 'bootstrap\img\posts_photo\post3.webp' %}"
-                      class="card-img-top card-img-size"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <p class="card-text px-3">20 сентября 2025</p>
-                      <h5 class="card-title px-3 fw-semibold">
-                        Епископ Скадовский и Алешкинский Филарет совершил чин
-                        освящения здания университета
-                      </h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col">
-                <a class="card-link" href="">
-                  <div class="card h-100 news-card">
-                    <img
-                      src="{% static 'bootstrap\img\posts_photo\post4.webp' %}"
-                      class="card-img-top card-img-size"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <p class="card-text px-3">20 сентября 2025</p>
-                      <h5 class="card-title px-3 fw-semibold">
-                        Тематический урок от представителей Росгвардии
-                      </h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col">
-                <a class="card-link" href="">
-                  <div class="card h-100 news-card">
-                    <img
-                      src="{% static 'bootstrap\img\posts_photo\post5.webp' %}"
-                      class="card-img-top card-img-size"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <p class="card-text px-3">20 сентября 2025</p>
-                      <h5 class="card-title px-3 fw-semibold">
-                        Профессор кафедры философии и истории ХГПУ Денис
-                        Солодухин принял участие в круглом столе Общественной
-                        палаты РФ
-                      </h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col">
-                <a class="card-link" href="">
-                  <div class="card h-100 news-card">
-                    <img
-                      src="{% static 'bootstrap\img\posts_photo\post6.webp' %}"
-                      class="card-img-top card-img-size"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <p class="card-text px-3">19 сентября 2025</p>
-                      <h5 class="card-title px-3 fw-semibold">
-                        Акция "Вузы для фронта!"
-                      </h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="d-flex justify-content-center py-5">
-              <a class="all-news-btn" href="">Все новости</a>
-            </div>
-          </div>
-        </section>
-        <!-- anonce section -->
-        <section class="py-5 anonce">
-          <div class="container">
-            <h1 class="py-3 px-4 fw-semibold">Анонс</h1>
-            <div class="d-flex px-4 gap-2 anonce-tags">
-              <a class="anonce-tag" href="">Все</a>
-              <a class="anonce-tag" href="">Объявление</a>
-              <a class="anonce-tag" href="">Конференция</a>
-              <a class="anonce-tag" href="">Круглый стол</a>
-              <a class="anonce-tag" href="">Фестиваль</a>
-              <a class="anonce-tag" href="">Конкурс</a>
-              <a class="anonce-tag" href="">Абитуриенту</a>
-              <a class="anonce-tag" href="">Школьнику</a>
-            </div>
-            <div class="row row-cols-1 row-cols-md-3 g-5 py-3 px-4 mb-4">
-              <div class="col">
-                <a class="card-link" href="">
-                  <div class="card h-100 anonce-card">
-                    <div class="card-body anonce-card-body">
-                      <p class="anonce-card-date">25 сентября 2025</p>
-                      <h6 class="card-title fw-semibold mb-2 lh-sm">
-                        «Туризм, сервис и гостеприимство: перспективы и
-                        управление развитием»
-                      </h6>
-                      <p class="anonce-card-content">
-                        II Всероссийская научно-практическая конференция с
-                        международным участием
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col">
-                <a class="card-link" href="">
-                  <div class="card h-100 anonce-card">
-                    <div class="card-body anonce-card-body">
-                      <p class="anonce-card-date">17 сентября 2025</p>
-                      <h6 class="card-title fw-semibold mb-2 lh-sm">
-                        Встреча с Лазаревым Михаилом Львовичем, автором
-                        СОНАТАЛ-педагогики (музыкальной системы гармонизации
-                        детства)
-                      </h6>
-                      <p class="anonce-card-content"></p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col">
-                <a class="card-link" href="">
-                  <div class="card h-100 anonce-card">
-                    <div class="card-body anonce-card-body">
-                      <p class="anonce-card-date">28 августа 2025</p>
-                      <h6 class="card-title fw-semibold mb-2 lh-sm">
-                        Замещение вакантных должностей
-                      </h6>
-                      <p class="anonce-card-content">
-                        Объявления о конкурсе/выборе на замещение вакантных
-                        должностей
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="d-flex justify-content-center py-5">
-              <a class="more-events-btn" href="">Еще события</a>
-            </div>
-          </div>
-        </section>
-        <!-- rector sectiom -->
-        <section class="rector">
-          <div class="container">
-            <div class="row px-4">
-              <div class="col">
-                <div class="d-flex flex-column justify-content-between h-100">
-                  <p class="fw-bold fs-5">
-                    Добро пожаловать в Херсонский государственный педагогический
-                    университет - крупнейший вуз региона!
-                  </p>
-                  <div class="d-flex gap-3">
-                    <img
-                      class="reqtor-q-icon"
-                      src="{% static 'bootstrap/img/icons/rector-q.svg' %}"
+                      src="{% static 'bootstrap\img\icons\TG-icon.svg' %}"
                       alt=""
+                      class="social-links-icon"
                     />
-                    <p class="px-1 py-4 rector-quote">
-                      Херсонский государственный педагогический университет -
-                      многопрофильный просветительский центр региона, который
-                      развивает множество направлений в рамках государственных
-                      стратегических задач
-                    </p>
-                  </div>
-                  <div>
-                    <p class="fw-bold fs-5 mb-1">ШАШКОВА Нина Игоревна</p>
-                    <p class="fs-5">Ректор</p>
-                  </div>
-                  <div class="d-flex align-items-center gap-4">
-                    <a class="d-block tg-rector" href=""
-                      ><img
-                        src="{% static 'bootstrap/img/icons/Telegram_Symbol.webp' %}"
-                        alt=""
-                    /></a>
-                    <a class="rector-btn" href="">Онлайн-приемная ректора</a>
-                    <a class="rector-btn" href="">Страница ректора</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-5">
-                <img
-                  class="rounded-3"
-                  src="{% static 'bootstrap/img/rector-photo.webp' %}"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- hgpu today section -->
-        <section class="hgpu-today">
-          <div class="container">
-            <div class="px-4">
-              <h1 class="hgpu-today-title">ХГПУ сегодня</h1>
-              <ul class="hgpu-today-list">
-                <li>Лучшие традиции образования для развития региона</li>
-                <li>
-                  Центр повышения квалификации и переподготовки учителей ХО
+                  </a>
                 </li>
                 <li>
-                  Наличие 12 уникальных программ бакалавриата с двумя профилями
+                  <a href="" class="d-inline-block social-link">
+                    <img
+                      src="{% static 'bootstrap\img\icons\VK-icon.webp' %}"
+                      alt=""
+                      class="social-links-icon"
+                    />
+                  </a>
                 </li>
-                <li>Атмосфера творчества и самовыражения</li>
-                <li>Старт в профессии: более 600 баз практики</li>
-                <li>Возможность успешно совмещать учебу и работу</li>
-              </ul>
-              <div class="row row-cols-1 row-cols-md-3 g-5 px-3">
-                <div class="col">
-                  <div class="card h-100 rounded-4 overflow-hidden">
+                <li>
+                  <a href="" class="d-inline-block social-link">
                     <img
-                      src="{% static 'bootstrap/img/hgputoday1.webp' %}"
-                      alt="..."
+                      src="{% static 'bootstrap\img\icons\dzen-icon.svg' %}"
+                      alt=""
+                      class="social-links-icon"
                     />
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card h-100 rounded-4 overflow-hidden">
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="d-inline-block social-link">
                     <img
-                      src="{% static 'bootstrap/img/hgputoday2.webp' %}"
-                      alt="..."
-                    />
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card h-100 rounded-4 overflow-hidden">
-                    <img
-                      src="{% static 'bootstrap/img/hgputoday3.webp' %}"
-                      alt="..."
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- counters section -->
-        <section class="counter-sec">
-          <div class="container">
-            <div class="row gap-4 px-4">
-              <div class="col">
-                <div class="d-flex flex-column">
-                  <h2 class="counter">6500</h2>
-                  <div class="counter-line"></div>
-                  <p class="px-2 counter-text">
-                    Студентов, обучающихся по программам бакалавриата,
-                    специалитета и магистратуры
-                  </p>
-                </div>
-              </div>
-              <div class="col">
-                <div class="d-flex flex-column">
-                  <h2 class="counter">100</h2>
-                  <div class="counter-line"></div>
-                  <p class="px-2 counter-text">
-                    Образовательных программ бакалавриата, специалитета и
-                    магистратуры и аспирантуры
-                  </p>
-                </div>
-              </div>
-              <div class="col">
-                <div class="d-flex flex-column">
-                  <h2 class="counter">50</h2>
-                  <div class="counter-line"></div>
-                  <p class="px-2 counter-text">
-                    Вузов-партнеров (академических партнеров) по всей России
-                  </p>
-                </div>
-              </div>
-              <div class="col">
-                <div class="d-flex flex-column">
-                  <h2 class="counter">200</h2>
-                  <div class="counter-line"></div>
-                  <p class="px-2 counter-text">
-                    Преподавателей с учеными степенями кандидатов и докторов
-                    наук
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- video slider section -->
-        <section class="video-slider text-center">
-          <h1>VIDEO</h1>
-        </section>
-        <!-- acquaintance section -->
-        <section class="acquaintance">
-          <div class="container">
-            <div class="px-4">
-              <div class="px-4 d-flex justify-content-end acquaintance-banner">
-                <div class="d-flex justify-content-center px-4 py-4 gap-3 w-75">
-                  <a
-                    href=""
-                    class="d-flex flex-column align-self-end justify-content-center align-items-center rounded-circle start-video-circle"
-                  >
-                    <img
-                      class="h-50 w-50"
-                      src="{% static 'bootstrap/img/icons/play-icon.svg' %}"
+                      src="{% static 'bootstrap\img\icons\OK-icon.webp' %}"
                       alt=""
                     />
                     <p class="w-50 mb-0">cмотреть видео</p>
