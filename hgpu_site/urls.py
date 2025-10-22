@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from posts.views import index, main, education_organization, basic_info
+from posts.views import index, main, education_organization, basic_info, documents, paid_edu
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,4 +24,6 @@ urlpatterns = [
     path('index/', index),
     path('edu/', education_organization),
     path('edu/basic-info', basic_info),
+    path('edu/documents', documents),
+    path('edu/paid-edu', paid_edu),
 ]

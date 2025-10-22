@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 def main(requests):
-    return render(requests, 'base.html')
+    return render(requests, 'main.html')
 
 def index(requests):
     return render(requests, 'posts/index.html')
@@ -11,3 +11,9 @@ def education_organization(requests):
 
 def basic_info(requests):
     return render(requests, 'posts/basic-info.html')
+
+def documents(requests):
+    return render(requests, 'documents.html')
+
+def paid_edu(requests):
+    return render(requests, 'paid-edu.html')
