@@ -1,4 +1,8 @@
 from django.shortcuts import render
+from django.http import HttpResponseNotFound
+
+def pageNotFoun(request, exception):
+    return HttpResponseNotFound(request,'404.html')
 
 def main(requests):
     return render(requests, 'main.html')
