@@ -627,8 +627,8 @@ main.main {
 }
 
 /* accordion */
-
-.my-accordion-item {
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+ /* .my-accordion-item {
     padding: 20px 0px;
     border-top: 1px solid #eee
 }
@@ -687,36 +687,76 @@ main.main {
 
 .accordion-table tr:first-child {
     background-color: #ffd600;
+} 
+------------------------------------------------------------------------------------------------------------------- */
+
+
+/* NEW ACCORDION CLASSES */
+
+.details {
+    padding: 20px 0px;
+    border-top: 1px solid #eee;
 }
 
-/* .footer-top {
-    background-color: #ffd600;
+.details:last-child {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
 }
 
-.footer-top img {
-    width: 100%;
+summary {
+    list-style: none;
 }
 
-.footer-bootom {
-   background-color:#333333;
-   color:#cdc5c5
+summary p {
+    margin-bottom: 0;
+    padding-right: 40px;
 }
 
-.footer-bootom h6{
-    color: #ffbf31
+.details-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.35;
+    cursor: pointer;
 }
 
-.footer-bootom a{
+.my-accordion-icon {
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #eee;
+    padding: 8px;
+    border-radius: 100%;
+    color: #333333;
+}
+
+.my-accordion-icon:hover {
+    background-color: #ffd600;
+    transition-duration: .3s;
+}
+
+.details[open] .my-accordion-icon {
+  transform: rotate(180deg);
+  transition-duration: .5s;
+}
+
+.details-content {
+    padding-top: 20px;
+}
+
+.accordion-table {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
     font-size: 14px;
 }
 
-.footer-bootom p{
-    margin-bottom: 0.5em;
+.accordion-table tr:first-child {
+    background-color: #ffd600;
 }
-
-.copyright-menu a{
-    text-decoration: none;
-    font-size: 12px;
-    color: #f9f9f9;
-} */

@@ -18,3 +18,6 @@ def basic_info(requests):
 
 def documents(requests):
     return render(requests, 'documents.html')
+
+def paid_edu(requests):
+    return render(requests, 'paid-edu.html')
