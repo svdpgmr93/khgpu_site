@@ -15,16 +15,32 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from posts.views import index, main, education_organization, basic_info, documents, paid_edu, employees
+from django.urls import path, include
+from posts.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', main),
+    path('', main, name='main'),
     path('index/', index),
-    path('edu/', education_organization),
-    path('edu/basic-info', basic_info),
-    path('edu/documents', documents),
-    path('edu/paid-edu', paid_edu),
+    # Меню УНИВЕРСИТЕТ
+    # -- START --
+    path('sveden/', sveden, name='sveden'),
+    # -- END --
+    # Сведения об образовательной организации 
+    # -- START --
+    path('sveden/common', common, name='common'),
+    path('sveden/struct', struct, name='struct'),
+    path('sveden/document', document,  name='document'),
+    path('sveden/education', education, name='education'),
+    path('sveden/eduStandarts', eduStandarts, name='eduStandarts'),
+    path('sveden/managers', managers, name='managers'),
     path('sveden/employees', employees, name='employees'),
+    path('sveden/objects', objects, name='objects'),
+    path('sveden/grants', grants, name='grants'),
+    path('sveden/paid_edu', paid_edu, name='paid_edu'),
+    path('sveden/budget', budget, name='budget'),
+    path('sveden/vacant', vacant, name='vacant'),
+    path('sveden/inter', inter, name='inter'),
+    path('sveden/catering', catering, name='catering'),
+    # -- END --
 ]
