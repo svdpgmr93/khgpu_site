@@ -1,0 +1,869 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Основные сведения{% endblock %}
+{% block content %}
+      <main class="main">
+        <div class="px-4 pt-3">
+          <div class="container">
+            <div class="py-4">
+              <nav
+                style="--bs-breadcrumb-divider: '>>'"
+                aria-label="breadcrumb"
+              >
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="{%url 'main'%}">Главная</a></li>
+                  <li class="breadcrumb-item" aria-current="page">
+                    <a href="{%url 'main'%}">Университет</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    <a href="{%url 'sveden'%}">Сведения об образовательной организации</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    <a href="{%url 'common'%}">Основные сведения</a>
+                  </li>
+                </ol>
+              </nav>
+            </div>
+            <h2 class="mb-5 fw-bold fs-2 basic-info-title">
+              Основные сведения
+            </h2>
+            <h4 class="fw-semibold">
+              Наименование образовательной организации
+            </h4>
+            <div class="py-5">
+              <div class="rounded-3 overflow-hidden">
+                <table>
+                  <tbody>
+                    <tr class="tr-light">
+                      <td class="w-25 px-4 py-3 fw-bold table-bd">
+                        Полное наименование образовательной организации на
+                        русском языке
+                      </td>
+                      <td class="px-4 py-3 table-bd">
+                        Федеральное государственное бюджетное образовательное
+                        учреждение высшего образования "Херсонский
+                        государственный педагогический университет"
+                      </td>
+                    </tr>
+                    <tr class="tr-dark">
+                      <td class="w-25 px-4 py-3 fw-bold table-bd">
+                        Сокращенное наименование образовательной организации на
+                        русском языке
+                      </td>
+                      <td class="px-4 py-3 table-bd">
+                        ФГБОУ ВО "Херсонский государственный педагогический
+                        университет", Херсонский государственный педагогический
+                        университет, ФГБОУ ВО "ХГПУ", ХГПУ
+                      </td>
+                    </tr>
+                    <tr class="tr-light">
+                      <td class="w-25 px-4 py-3 fw-bold table-bd">
+                        Полное наименование образовательной организации на
+                        английском языке
+                      </td>
+                      <td class="px-4 py-3 table-bd">
+                        Federal State-Financed Educational Institution of Higher
+                        Education "Kherson State Pedagogical University"
+                      </td>
+                    </tr>
+                    <tr class="tr-dark">
+                      <td class="w-25 px-4 py-3 fw-bold table-bd">
+                        Сокращенное наименование образовательной организации на
+                        английском языке
+                      </td>
+                      <td class="px-4 py-3 table-bd">
+                        Kherson State Pedagogical University, KSPU
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <h4 class="mb-5 fw-semibold">
+              Дата создания образовательной организации: 14.06.2022
+            </h4>
+            <h4 class="fw-semibold">
+              Сведения об учредителе образовательной организации
+            </h4>
+            <div class="py-5">
+              <div class="rounded-3 overflow-hidden">
+                <table>
+                  <tbody>
+                    <tr class="tr-dark">
+                      <td class="w-25 px-4 py-3 fw-bold table-bd">
+                        Наименование учредителя
+                      </td>
+                      <td class="px-4 py-3 table-bd">
+                        Министерство просвещения Российской Федерации
+                      </td>
+                    </tr>
+                    <tr class="tr-light">
+                      <td class="w-25 px-4 py-3 fw-bold table-bd">
+                        Адрес места нахождения учредителя
+                      </td>
+                      <td class="px-4 py-3 table-bd">
+                        115093, г. Москва, ул. Люсиновская, 51
+                      </td>
+                    </tr>
+                    <tr class="tr-dark">
+                      <td class="w-25 px-4 py-3 fw-bold table-bd">
+                        Контактные телефоны
+                      </td>
+                      <td class="px-4 py-3 table-bd">+7 (495) 539-55-19</td>
+                    </tr>
+                    <tr class="tr-light">
+                      <td class="w-25 px-4 py-3 fw-bold table-bd">
+                        Адрес электронной почты учредителя
+                      </td>
+                      <td class="px-4 py-3 table-bd">info@edu.gov.ru</td>
+                    </tr>
+                    <tr class="tr-dark">
+                      <td class="w-25 px-4 py-3 fw-bold table-bd">
+                        Адрес сайта учредителя в сети «Интернет»
+                      </td>
+                      <td class="px-4 py-3 table-bd">
+                        <a href="https://edu.gov.ru ">https://edu.gov.ru </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <h4 class="fw-semibold">
+              Сведения о месте нахождения образовательной организации
+            </h4>
+            <div class="py-5">
+              <div class="rounded-3 overflow-hidden">
+                <table class="w-100">
+                  <tbody>
+                    <tr class="tr-dark">
+                      <td class="w-25 px-4 py-3 fw-bold table-bd">
+                        Юридический адрес
+                      </td>
+                      <td class="px-4 py-3 table-bd">
+                        273003, Херсонская область, г.о. Херсонский, г. Херсон,
+                        ул. Университетская, д.27 <br />
+                        275722, Херсонская область, Скадовский м.о., г.
+                        Скадовск, ул. Покровская, д. 7а
+                      </td>
+                    </tr>
+                    <tr class="tr-light">
+                      <td class="w-25 px-4 py-3 fw-bold table-bd">
+                        Фактический адрес
+                      </td>
+                      <td class="px-4 py-3 table-bd">
+                        115093, г. Москва, ул. Люсиновская, 51
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <h4 class="fw-semibold">
+              Информация о режиме и графике работы образовательной организации
+            </h4>
+            <p class="pt-1 ruobr-info d-inline-block">
+              <a
+                class=""
+                data-bs-toggle="collapse"
+                href="#collapseExample"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                !!! Разъяснения Рособрнадзора по данному пункту
+              </a>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <p class="mb-0">Обращаем внимание!</p>
+              <p class="mb-0">Режим рабочего времени должен предусматривать</p>
+              <ul class="rupbr-info-list">
+                <li>
+                  <p>
+                    <span class="text-decoration-underline"
+                      >продолжительность рабочей недели</span
+                    >
+                    (пятидневная с двумя выходными днями, шестидневная с одним
+                    выходным днем, рабочая неделя с предоставлением выходных
+                    дней по скользящему графику, неполная рабочая неделя),
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    работу с
+                    <span class="text-decoration-underline">
+                      ненормированным рабочим днем</span
+                    >
+                    для отдельных категорий работников,
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span class="text-decoration-underline"
+                      >продолжительность ежедневной работы</span
+                    >
+                    (смены), в том числе неполного рабочего дня (смены), время
+                    <span class="text-decoration-underline"
+                      >начала и окончания работы,</span
+                    >
+                    время
+                    <span class="text-decoration-underline">перерывов</span> в
+                    работе,
+                    <span class="text-decoration-underline"
+                      >число смен в сутки</span
+                    >,
+                    <span class="text-decoration-underline"
+                      >чередование рабочих и нерабочих дней</span
+                    >, которые устанавливаются ПВТР в соответствии с трудовым
+                    законодательством и иными нормативными правовыми актами,
+                    содержащими нормы трудового права, коллективным договором,
+                    соглашениями <1>.
+                  </p>
+                </li>
+              </ul>
+              <p>
+                <1>
+                <a
+                  class="fst-italic"
+                  href="https://normativ.kontur.ru/document?moduleId=1&documentId=475952#l4112"
+                  target="_blank"
+                  >Статья 100</a
+                >
+                Трудового кодекса Российской Федерации.
+              </p>
+            </div>
+            <div class="py-5">
+              <div class="rounded-3 overflow-hidden">
+                <table class="w-100">
+                  <tbody>
+                    <tr class="tr-dark">
+                      <td class="w-25 px-4 py-3 fw-bold table-bd">
+                        Административные подразделения
+                      </td>
+                      <td class="px-4 py-3 table-bd">
+                        <p class="mb-0">
+                          <span class="fw-bold">Рабочие дни:</span>
+                          понедельник-пятница
+                        </p>
+                        <p class="mb-0">Часы работы: с 9:00 до 18:00</p>
+                        <p class="mb-0">Обеденный перерыв: с 13:00 до 14:00</p>
+                        <p class="mb-0">
+                          <span class="fw-bold">Выходные дни: </span> суббота,
+                          воскресенье
+                        </p>
+                      </td>
+                    </tr>
+                    <tr class="tr-light">
+                      <td class="w-25 px-4 py-3 fw-bold table-bd">
+                        Расписание звонков
+                      </td>
+                      <td class="px-4 py-3 table-bd">
+                        <p class="mb-0">1 пара: 9:00 — 10:30</p>
+                        <p class="mb-0">2 пара: 10:40 — 12:10</p>
+                        <p class="mb-0">3 пара: 12:30 — 14:00</p>
+                        <p class="mb-0">4 пара: 14:10 — 15:40</p>
+                        <p class="mb-0">5 пара: 15:50 — 17:20</p>
+                        <p class="mb-0">6 пара: 17:40 — 19:10</p>
+                        <p class="mb-0">7 пара: 19:20 — 20:50</p>
+                      </td>
+                    </tr>
+                    <tr class="tr-dark">
+                      <td class="w-25 px-4 py-3 fw-bold table-bd">
+                        Примечание
+                      </td>
+                      <td class="px-4 py-3 table-bd">
+                        Время начала и окончания работы
+                        профессорско-преподавательского состава, включая дни и
+                        часы консультаций, определяется с учетом расписания
+                        учебных занятий
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <h4 class="fw-semibold">
+              Информация о контактных телефонах образовательной организации, об
+              адресах электронной почты образовательной организации
+            </h4>
+            <div class="py-5">
+              <div class="rounded-3 overflow-hidden">
+                <table class="w-100">
+                  <tbody>
+                    <tr class="tr-dark">
+                      <td class="w-25 px-4 py-3 fw-bold table-bd">
+                        Контактные телефоны
+                      </td>
+                      <td class="px-4 py-3 table-bd">+7 (985) 153-00-49</td>
+                    </tr>
+                    <tr class="tr-light">
+                      <td class="w-25 px-4 py-3 fw-bold table-bd">
+                        Адреса электронной почты
+                      </td>
+                      <td class="px-4 py-3 table-bd">
+                        <p class="mb-0">hgpurf@yandex.ru</p>
+                        <p class="mb-0">rector@hgpurf.ru</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <h4 class="fw-semibold mb-3">
+              Информация о лицензии на осуществление образовательной
+              деятельности
+            </h4>
+            <div class="d-flex align-items-center gap-2 mb-5">
+              <div class="d-flex gap-1">
+                <a href=""
+                  ><img
+                    class="basic-info-icon"
+                    src="{% static 'bootstrap/img/icons/pdf-icon.svg' %}"
+                    alt=""
+                /></a>
+                <a href=""
+                  ><img
+                    class="basic-info-icon"
+                    src="{% static 'bootstrap/img/icons/sig-icon.svg' %}"
+                    alt=""
+                /></a>
+              </div>
+              <a class="basic-info-link" href=""
+                >Выписка из реестра лицензий на осуществление образовательной
+                деятельности</a
+              >
+            </div>
+            <h4 class="fw-semibold mb-3">
+              Информация о наличии государственной аккредитации образовательной
+              деятельности по реализуемым образовательным программам
+            </h4>
+            <div class="d-flex align-items-center gap-2 mb-5">
+              <div class="d-flex gap-1">
+                <a href=""
+                  ><img
+                    class="basic-info-icon"
+                    src="{% static 'bootstrap/img/icons/pdf-icon.svg' %}"
+                    alt=""
+                /></a>
+                <a href=""
+                  ><img
+                    class="basic-info-icon"
+                    src="{% static 'bootstrap/img/icons/sig-icon.svg' %}"
+                    alt=""
+                /></a>
+              </div>
+              <a class="basic-info-link" href=""
+                >Выписка из государственной информационной системы "Реестр
+                организаций, осуществляющих образовательную деятельность по
+                имеющим государственную аккредитацию образовательным
+                программам"</a
+              >
+            </div>
+            <h4 class="fw-semibold mb-4">
+              Места осуществления образовательной деятельности, в том числе не
+              указываемые в приложении к лицензии (реестре лицензий) на
+              осуществление образовательной деятельности
+            </h4>
+            <!-- JS accordion start -->
+            <!-- <div class="my-accordion">
+              <div class="my-accordion-item">
+                <div class="my-accordion-header">
+                  <p class="mb-0">
+                    Сведения о местах осуществления образовательной
+                    деятельности, которые включаются в соответствующую запись в
+                    реестре лицензий на осуществление образовательной
+                    деятельности
+                  </p>
+                  <a class="my-accordion-icon">
+                    <i class="fa-solid fa-angle-down fa-2xl"></i>
+                  </a>
+                </div>
+                <div class="my-accordion-content">
+                  <table class="accordion-table">
+                    <tbody>
+                      <tr>
+                        <td class="p-3">№</td>
+                        <td class="p-3 w-100">
+                          Адрес места осуществления образовательной деятельности
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3">1.</td>
+                        <td class="p-3 w-100">
+                          275722, Херсонская область, Скадовский м.о., г.
+                          Скадовск, ул. Покровская, д. 7а
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3">2.</td>
+                        <td class="p-3 w-100">
+                          273003, Херсонская область, г.о. Херсонский, г.
+                          Херсон, ул. Университетская, д. 27
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="my-accordion-item">
+                <div class="my-accordion-header">
+                  <p class="mb-0">
+                    Сведения о местах осуществления образовательной деятельности
+                    при использовании сетевой формы реализации образовательных
+                    программ
+                  </p>
+                  <a class="my-accordion-icon">
+                    <i class="fa-solid fa-angle-down fa-2xl"></i>
+                  </a>
+                </div>
+                <div class="my-accordion-content">
+                  <p>
+                    Сетевая форма реализации образовательных программ не
+                    используется
+                  </p>
+                </div>
+              </div>
+              <div class="my-accordion-item">
+                <div class="my-accordion-header">
+                  <p class="mb-0">
+                    Сведения о местах проведения практики -
+                    <span class="text-danger">НЕТ ИНФО</span>
+                  </p>
+                  <a class="my-accordion-icon">
+                    <i class="fa-solid fa-angle-down fa-2xl"></i>
+                  </a>
+                </div>
+                <div class="my-accordion-content">
+                  <table class="accordion-table">
+                    <tbody>
+                      <tr>
+                        <td class="p-3">№</td>
+                        <td class="p-3 w-100">
+                          Адрес места осуществления образовательной деятельности
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3">1.</td>
+                        <td class="p-3 w-100">...</td>
+                      </tr>
+                      <tr>
+                        <td class="p-3">2.</td>
+                        <td class="p-3 w-100">...</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="my-accordion-item">
+                <div class="my-accordion-header">
+                  <p class="mb-0">
+                    Сведения о местах проведения практической подготовки
+                    обучающихся -
+                    <span class="text-danger"
+                      >Дополнить по всем(!) направлениям подготовки не только
+                      пед.</span
+                    >
+                  </p>
+                  <a class="my-accordion-icon">
+                    <i class="fa-solid fa-angle-down fa-2xl"></i>
+                  </a>
+                </div>
+                <div class="my-accordion-content">
+                  <table class="accordion-table">
+                    <tbody>
+                      <tr>
+                        <td class="p-3">№</td>
+                        <td class="p-3 w-100">
+                          Адрес места осуществления образовательной деятельности
+                        </td>
+                      </tr>
+                      <tr class="tr-light">
+                        <td class="p-3">1.</td>
+                        <td class="p-3 w-100">
+                          275800, Херсонская область, м.о. Каланчакский, с.
+                          Новокиевка, ул. Почтовая, д. 41
+                        </td>
+                      </tr>
+                      <tr class="tr-dark">
+                        <td class="p-3">2.</td>
+                        <td class="p-3 w-100">
+                          275800, Херсонская область, м.о. Каланчакский, пгт.
+                          Каланчак, ул. Скадовская, д. 1
+                        </td>
+                      </tr>
+                      <tr class="tr-light">
+                        <td class="p-3">3.</td>
+                        <td class="p-3 w-100">
+                          275710, Херсонская область, м.о. Скадовский, с.
+                          Михайловка, ул. Школьная, д. 51
+                        </td>
+                      </tr>
+                      <tr class="tr-dark">
+                        <td class="p-3">4.</td>
+                        <td class="p-3 w-100">
+                          275300, Херсонская область, м.о. Новотроицкий, с.
+                          Чумацкий Шлях (Владимиро-Ильинка) , пр-т. Кальченка,
+                          д. 4
+                        </td>
+                      </tr>
+                      <tr class="tr-light">
+                        <td class="p-3">5.</td>
+                        <td class="p-3 w-100">
+                          275300, Херсонская область, м.о. Новотроицкий, с.
+                          Отрадовка, ул. Гагарина, д. 50в
+                        </td>
+                      </tr>
+                      <tr class="tr-dark">
+                        <td class="p-3">6.</td>
+                        <td class="p-3 w-100">
+                          275120, Херсонская область, м.о.Алешкинский, пгт..
+                          Новая Маячка, ул. Соборная, д. 112
+                        </td>
+                      </tr>
+                      <tr class="tr-light">
+                        <td class="p-3">7.</td>
+                        <td class="p-3 w-100">
+                          275300, Херсонская область, м.о. Новотроицкий, с.
+                          Чкалово, ул. Зелёная, д. 25
+                        </td>
+                      </tr>
+                      <tr class="tr-dark">
+                        <td class="p-3">8.</td>
+                        <td class="p-3 w-100">
+                          275213, Херсонская область, м.о. Каланчакский, с.
+                          Преображенка (Червоный Чабан), пер. Школьный. д. 2
+                        </td>
+                      </tr>
+                      <tr class="tr-light">
+                        <td class="p-3">9.</td>
+                        <td class="p-3 w-100">...</td>
+                      </tr>
+                      <tr class="tr-dark">
+                        <td class="p-3">10.</td>
+                        <td class="p-3 w-100">...</td>
+                      </tr>
+                      <tr class="tr-light">
+                        <td class="p-3">11.</td>
+                        <td class="p-3 w-100">...</td>
+                      </tr>
+                      <tr class="tr-dark">
+                        <td class="p-3">12.</td>
+                        <td class="p-3 w-100">...</td>
+                      </tr>
+                      <tr class="tr-light">
+                        <td class="p-3">13.</td>
+                        <td class="p-3 w-100">...</td>
+                      </tr>
+                      <tr class="tr-dark">
+                        <td class="p-3">14.</td>
+                        <td class="p-3 w-100">...</td>
+                      </tr>
+                      <tr class="tr-light">
+                        <td class="p-3">15.</td>
+                        <td class="p-3 w-100">...</td>
+                      </tr>
+                      <tr class="tr-dark">
+                        <td class="p-3">16.</td>
+                        <td class="p-3 w-100">...</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div> -->
+            <!-- JS accordion end -->
+            <!-- new accordion start -->
+            <div class="my-accordion">
+              <details class="details" name="basic-info-accordion">
+                <summary class="details-title">
+                  <p>
+                    Сведения о местах осуществления образовательной
+                    деятельности, которые включаются в соответствующую запись в
+                    реестре лицензий на осуществление образовательной
+                    деятельности
+                  </p>
+                  <i
+                    class="fa-solid fa-angle-down fa-2xl my-accordion-icon"
+                  ></i>
+                </summary>
+                <div class="details-content">
+                  <table class="accordion-table">
+                    <tbody>
+                      <tr>
+                        <td class="p-3">№</td>
+                        <td class="p-3 w-100">
+                          Адрес места осуществления образовательной деятельности
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3">1.</td>
+                        <td class="p-3 w-100">
+                          275722, Херсонская область, Скадовский м.о., г.
+                          Скадовск, ул. Покровская, д. 7а
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3">2.</td>
+                        <td class="p-3 w-100">
+                          273003, Херсонская область, г.о. Херсонский, г.
+                          Херсон, ул. Университетская, д. 27
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </details>
+              <details class="details" name="basic-info-accordion">
+                <summary class="details-title">
+                  <p>
+                    Сведения о местах осуществления образовательной деятельности
+                    при использовании сетевой формы реализации образовательных
+                    программ
+                  </p>
+                  <i
+                    class="fa-solid fa-angle-down fa-2xl my-accordion-icon"
+                  ></i>
+                </summary>
+                <div class="details-content">
+                  <p>
+                    Сетевая форма реализации образовательных программ не
+                    используется
+                  </p>
+                </div>
+              </details>
+              <details class="details" name="basic-info-accordion">
+                <summary class="details-title">
+                  <p>
+                    Сведения о местах проведения практики -
+                    <span class="text-danger">НЕТ ИНФО</span>
+                  </p>
+                  <i
+                    class="fa-solid fa-angle-down fa-2xl my-accordion-icon"
+                  ></i>
+                </summary>
+                <div class="details-content">
+                  <table class="accordion-table">
+                    <tbody>
+                      <tr>
+                        <td class="p-3">№</td>
+                        <td class="p-3 w-100">
+                          Адрес места осуществления образовательной деятельности
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3">1.</td>
+                        <td class="p-3 w-100">
+                          275722, Херсонская область, Скадовский м.о., г.
+                          Скадовск, ул. Покровская, д. 7а
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3">2.</td>
+                        <td class="p-3 w-100">
+                          273003, Херсонская область, г.о. Херсонский, г.
+                          Херсон, ул. Университетская, д. 27
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </details>
+              <details class="details" name="basic-info-accordion">
+                <summary class="details-title">
+                  <p>
+                    Сведения о местах проведения практической подготовки
+                    обучающихся -
+                    <span class="text-danger"
+                      >Дополнить по всем(!) направлениям подготовки не только
+                      пед.</span
+                    >
+                  </p>
+                  <i
+                    class="fa-solid fa-angle-down fa-2xl my-accordion-icon"
+                  ></i>
+                </summary>
+                <div class="details-content">
+                  <table class="accordion-table">
+                    <tbody>
+                      <tr>
+                        <td class="p-3">№</td>
+                        <td class="p-3 w-100">
+                          Адрес места осуществления образовательной деятельности
+                        </td>
+                      </tr>
+                      <tr class="tr-light">
+                        <td class="p-3">1.</td>
+                        <td class="p-3 w-100">
+                          275800, Херсонская область, м.о. Каланчакский, с.
+                          Новокиевка, ул. Почтовая, д. 41
+                        </td>
+                      </tr>
+                      <tr class="tr-dark">
+                        <td class="p-3">2.</td>
+                        <td class="p-3 w-100">
+                          275800, Херсонская область, м.о. Каланчакский, пгт.
+                          Каланчак, ул. Скадовская, д. 1
+                        </td>
+                      </tr>
+                      <tr class="tr-light">
+                        <td class="p-3">3.</td>
+                        <td class="p-3 w-100">
+                          275710, Херсонская область, м.о. Скадовский, с.
+                          Михайловка, ул. Школьная, д. 51
+                        </td>
+                      </tr>
+                      <tr class="tr-dark">
+                        <td class="p-3">4.</td>
+                        <td class="p-3 w-100">
+                          275300, Херсонская область, м.о. Новотроицкий, с.
+                          Чумацкий Шлях (Владимиро-Ильинка) , пр-т. Кальченка,
+                          д. 4
+                        </td>
+                      </tr>
+                      <tr class="tr-light">
+                        <td class="p-3">5.</td>
+                        <td class="p-3 w-100">
+                          275300, Херсонская область, м.о. Новотроицкий, с.
+                          Отрадовка, ул. Гагарина, д. 50в
+                        </td>
+                      </tr>
+                      <tr class="tr-dark">
+                        <td class="p-3">6.</td>
+                        <td class="p-3 w-100">
+                          275120, Херсонская область, м.о.Алешкинский, пгт..
+                          Новая Маячка, ул. Соборная, д. 112
+                        </td>
+                      </tr>
+                      <tr class="tr-light">
+                        <td class="p-3">7.</td>
+                        <td class="p-3 w-100">
+                          275300, Херсонская область, м.о. Новотроицкий, с.
+                          Чкалово, ул. Зелёная, д. 25
+                        </td>
+                      </tr>
+                      <tr class="tr-dark">
+                        <td class="p-3">8.</td>
+                        <td class="p-3 w-100">
+                          275213, Херсонская область, м.о. Каланчакский, с.
+                          Преображенка (Червоный Чабан), пер. Школьный. д. 2
+                        </td>
+                      </tr>
+                      <tr class="tr-light">
+                        <td class="p-3">9.</td>
+                        <td class="p-3 w-100">...</td>
+                      </tr>
+                      <tr class="tr-dark">
+                        <td class="p-3">10.</td>
+                        <td class="p-3 w-100">...</td>
+                      </tr>
+                      <tr class="tr-light">
+                        <td class="p-3">11.</td>
+                        <td class="p-3 w-100">...</td>
+                      </tr>
+                      <tr class="tr-dark">
+                        <td class="p-3">12.</td>
+                        <td class="p-3 w-100">...</td>
+                      </tr>
+                      <tr class="tr-light">
+                        <td class="p-3">13.</td>
+                        <td class="p-3 w-100">...</td>
+                      </tr>
+                      <tr class="tr-dark">
+                        <td class="p-3">14.</td>
+                        <td class="p-3 w-100">...</td>
+                      </tr>
+                      <tr class="tr-light">
+                        <td class="p-3">15.</td>
+                        <td class="p-3 w-100">...</td>
+                      </tr>
+                      <tr class="tr-dark">
+                        <td class="p-3">16.</td>
+                        <td class="p-3 w-100">...</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </details>
+              <details class="details" name="basic-info-accordion">
+                <summary class="details-title">
+                  <p>
+                    Сведения о местах проведения государственной итоговой
+                    аттестации
+                  </p>
+                  <i
+                    class="fa-solid fa-angle-down fa-2xl my-accordion-icon"
+                  ></i>
+                </summary>
+                <div class="details-content">
+                  <table class="accordion-table">
+                    <tbody>
+                      <tr>
+                        <td class="p-3">№</td>
+                        <td class="p-3 w-100">
+                          Адрес места осуществления образовательной деятельности
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3">1.</td>
+                        <td class="p-3 w-100">
+                          275722, Херсонская область, Скадовский м.о., г.
+                          Скадовск, ул. Покровская, д. 7а
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </details>
+              <details class="details" name="basic-info-accordion">
+                <summary class="details-title">
+                  <p>
+                    Сведения о местах осуществления образовательной деятельности
+                    по дополнительным образовательным программам
+                  </p>
+                  <i
+                    class="fa-solid fa-angle-down fa-2xl my-accordion-icon"
+                  ></i>
+                </summary>
+                <div class="details-content">
+                  <table class="accordion-table">
+                    <tbody>
+                      <tr>
+                        <td class="p-3">№</td>
+                        <td class="p-3 w-100">
+                          Адрес места осуществления образовательной деятельности
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3">1.</td>
+                        <td class="p-3 w-100">
+                          275722, Херсонская область, Скадовский м.о., г.
+                          Скадовск, ул. Покровская, д. 7а
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </details>
+              <details class="details" name="basic-info-accordion">
+                <summary class="details-title">
+                  <p>
+                    Сведения о местах осуществления образовательной деятельности
+                    по основным программам профессионального обучения
+                  </p>
+                  <i
+                    class="fa-solid fa-angle-down fa-2xl my-accordion-icon"
+                  ></i>
+                </summary>
+                <div class="details-content">
+                  <p>
+                    Сетевая форма реализации образовательных программ не
+                    используется
+                  </p>
+                </div>
+              </details>
+            </div>
+            <!-- new accordion end -->
+          </div>
+        </div>
+      </main>
+{% endblock %}

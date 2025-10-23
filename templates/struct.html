@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Структура и органы управления 
+образовательной организацией{% endblock %}
+{% block content %}
+      <main class="main">
+        <div class="px-4 pt-3">
+          <div class="container">
+            <div class="py-4">
+            <div class="my-accordion">
+              <details class="details" name="basic-info-accordion">
+                <summary class="details-title">
+                  <p>
+                    Органы управления образовательной организацией
+                  </p>
+                  <i
+                    class="fa-solid fa-angle-down fa-2xl my-accordion-icon"
+                  ></i>
+                </summary>
+                <div class="details-content">
+                  <table class="accordion-table table-bordered table-bd">
+                    <tbody>
+                      <tr>
+                        <td class="p-3">Наименование органа управления/ структурного подразделения</td>
+                        <td class="p-3">ФИО руководителя структурного подразделения</td>
+                        <td class="p-3">Должность руководителя структурного подразделения</td>
+                        <td class="p-3">Адрес местонахождения структурного подразделения</td>
+                        <td class="p-3">Адрес официального сайта структурного подразделения</td>
+                        <td class="p-3">Адрес электронной почты структурного подразделения</td>
+                        <td class="p-3">Положение об органе управления/ структурного подразделения</td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold">Единоличный исполнительный орган управления</td>
+                        <td class="p-3">Шашкова Нина Игоревна</td>
+                        <td class="p-3">Ректор</td>
+                        <td class="p-3">Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3">Нет</td>
+                        <td class="p-3">rector@hgpurf.ru</td>
+                        <td class="p-3">Нет</td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold">Ученый совет Университета</td>
+                        <td class="p-3">Шашкова Нина Игоревна</td>
+                        <td class="p-3">Председатель</td>
+                        <td class="p-3">Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3">Нет</td>
+                        <td class="p-3">u_sovet@hgpurf.ru</td>
+                        <td class="p-3"><a href="https://cloud.hgpurf.ru/index.php/s/BwiHWZxYyyLf7kz?dir=/&openfile=true">Положение</a> | <a href="#"> ЭП (sig)</a></td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold">Конференция работников и обучающихся</td>
+                        <td class="p-3">Шашкова Нина Игоревна</td>
+                        <td class="p-3">Председатель</td>
+                        <td class="p-3">Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3">Нет</td>
+                        <td class="p-3">rector@hgpurf.ru</td>
+                        <td class="p-3">Нет</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </details>
+            </div>
+            <!-- new accordion end -->
+          </div>
+        </div>
+      </main>
+{% endblock %}
