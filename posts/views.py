@@ -21,3 +21,6 @@ def documents(requests):
 
 def paid_edu(requests):
     return render(requests, 'paid-edu.html')
+
+def employees(requests):
+    return render(requests, 'employees.html')

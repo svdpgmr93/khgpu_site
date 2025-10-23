@@ -693,6 +693,10 @@ main.main {
 
 /* NEW ACCORDION CLASSES */
 
+.my-accordion {
+    margin-bottom: 120px;
+}
+
 .details {
     padding: 20px 0px;
     border-top: 1px solid #eee;
@@ -759,4 +763,15 @@ summary p {
 
 .accordion-table tr:first-child {
     background-color: #ffd600;
+}
+
+/* employees accordion border style */
+.details.yelow-divider{
+    padding: 20px 0px;
+    border-top: 1px solid #ffd600;
+}
+
+.details.yelow-divider:last-child {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ffd600;
 }

@@ -1,0 +1,69 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block title %}
+Педагогический состав
+{% endblock %}
+{% block content %}
+<main class="main">
+  <div class="px-4 pt-3">
+    <div class="container">
+      <div class="py-4">
+        <nav style="--bs-breadcrumb-divider: '>>'" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+            <li class="breadcrumb-item" aria-current="page">
+              <a href="">Университет</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              <a href="">Сведения об образовательной организации</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              <a href="">Преподавательский состав</a>
+            </li>
+          </ol>
+        </nav>
+      </div>
+      <h2 class="mb-5 fw-bold fs-2 basic-info-title">Педагогический состав</h2>
+      <p class="fw-medium fs-5 mb-1">Персональный состав педагогических работников по реализуемым образовательным программам</p>
+      <span class="fw-bold fs-5">ВЫСШЕГО ОБРАЗОВАНИЯ</span>
+      <div class="my-accordion pt-4">
+        <details class="details yelow-divider" name="basic-info-accordion">
+          <summary class="details-title">
+            <p class="fw-semibold fs-4">
+              Бакалавриат
+            </p>
+            <i class="fa-solid fa-angle-down fa-2xl my-accordion-icon"></i>
+          </summary>
+          <div class="details-content">
+            <table class="accordion-table">
+              <tbody>
+                <tr>
+                  <td class="p-3">№</td>
+                  <td class="p-3 w-100">
+                    Адрес места осуществления образовательной деятельности
+                  </td>
+                </tr>
+                <tr>
+                  <td class="p-3">1.</td>
+                  <td class="p-3 w-100">
+                    275722, Херсонская область, Скадовский м.о., г. Скадовск,
+                    ул. Покровская, д. 7а
+                  </td>
+                </tr>
+                <tr>
+                  <td class="p-3">2.</td>
+                  <td class="p-3 w-100">
+                    273003, Херсонская область, г.о. Херсонский, г. Херсон, ул.
+                    Университетская, д. 27
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+      </div>
+      <!-- new accordion end -->
+    </div>
+  </div>
+</main>
+{% endblock %}
