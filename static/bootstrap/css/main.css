@@ -693,7 +693,7 @@ main.main {
 
 /* NEW ACCORDION CLASSES */
 
-.my-accordion {
+.my-accordion:last-child {
     margin-bottom: 120px;
 }
 
@@ -774,4 +774,9 @@ summary p {
 .details.yelow-divider:last-child {
     margin-bottom: 20px;
     border-bottom: 1px solid #ffd600;
+}
+
+.font-color-gray {
+    color: #333333;
+    font-weight: 600;
 }

@@ -5,10 +5,32 @@
 {% block content %}
       <main class="main">
         <div class="px-4 pt-3">
-          <div class="container">
+          <div class="container" itemprop="structOrgUprav">
             <div class="py-4">
+              <nav
+                style="--bs-breadcrumb-divider: '>>'"
+                aria-label="breadcrumb"
+              >
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="{%url 'main'%}">Главная</a></li>
+                  <li class="breadcrumb-item" aria-current="page">
+                    <a href="{%url 'main'%}">Университет</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    <a href="{%url 'sveden'%}">Сведения об образовательной организации</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    <a href="{%url 'struct'%}">Структура и органы управления образовательной организацией</a>
+                  </li>
+                </ol>
+              </nav>
+            </div>
+            <h2 class="mb-5 fw-bold fs-2 basic-info-title">
+              Структура и органы управления образовательной организацией
+            </h2>
             <div class="my-accordion">
-              <details class="details" name="basic-info-accordion">
+              <!-- Органы управления-->
+              <details class="details yelow-divider" name="basic-info-accordion">
                 <summary class="details-title">
                   <p>
                     Органы управления образовательной организацией
@@ -30,34 +52,899 @@
                         <td class="p-3">Положение об органе управления/ структурного подразделения</td>
                       </tr>
                       <tr>
-                        <td class="p-3 fw-bold">Единоличный исполнительный орган управления</td>
-                        <td class="p-3">Шашкова Нина Игоревна</td>
-                        <td class="p-3">Ректор</td>
-                        <td class="p-3">Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
-                        <td class="p-3">Нет</td>
-                        <td class="p-3">rector@hgpurf.ru</td>
-                        <td class="p-3">Нет</td>
+                        <td class="p-3 fw-bold" itemprop="name">Единоличный исполнительный орган управления</td>
+                        <td class="p-3" itemprop="fio">Шашкова Нина Игоревна</td>
+                        <td class="p-3" itemprop="post">Ректор</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">rector@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClauseDocLink">Нет</td>
                       </tr>
                       <tr>
-                        <td class="p-3 fw-bold">Ученый совет Университета</td>
-                        <td class="p-3">Шашкова Нина Игоревна</td>
-                        <td class="p-3">Председатель</td>
-                        <td class="p-3">Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
-                        <td class="p-3">Нет</td>
-                        <td class="p-3">u_sovet@hgpurf.ru</td>
-                        <td class="p-3"><a href="https://cloud.hgpurf.ru/index.php/s/BwiHWZxYyyLf7kz?dir=/&openfile=true">Положение</a> | <a href="#"> ЭП (sig)</a></td>
+                        <td class="p-3 fw-bold" itemprop="name">Ученый совет Университета</td>
+                        <td class="p-3" itemprop="fio">Шашкова Нина Игоревна</td>
+                        <td class="p-3" itemprop="post">Председатель</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">u_sovet@hgpurf.ru</td>
+                        <td class="p-3">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/BwiHWZxYyyLf7kz?dir=/&openfile=true">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
                       </tr>
                       <tr>
-                        <td class="p-3 fw-bold">Конференция работников и обучающихся</td>
-                        <td class="p-3">Шашкова Нина Игоревна</td>
-                        <td class="p-3">Председатель</td>
-                        <td class="p-3">Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
-                        <td class="p-3">Нет</td>
-                        <td class="p-3">rector@hgpurf.ru</td>
-                        <td class="p-3">Нет</td>
+                        <td class="p-3 fw-bold" itemprop="name">Конференция работников и обучающихся</td>
+                        <td class="p-3" itemprop="fio">Шашкова Нина Игоревна</td>
+                        <td class="p-3" itemprop="post">Председатель</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">rector@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClauseDocLink">Нет</td>
                       </tr>
                     </tbody>
                   </table>
+                </div>
+              </details>
+              <!-- Институты-->
+              <details class="details yelow-divider" name="basic-info-accordion">
+                <summary class="details-title">
+                  <p>
+                    Институты
+                  </p>
+                  <i
+                    class="fa-solid fa-angle-down fa-2xl my-accordion-icon"
+                  ></i>
+                </summary>
+                <div class="details-content">
+                  <table class="accordion-table table-bordered table-bd">
+                    <tbody>
+                      <tr>
+                        <td class="p-3">Наименование органа управления/ структурного подразделения</td>
+                        <td class="p-3">ФИО руководителя структурного подразделения</td>
+                        <td class="p-3">Должность руководителя структурного подразделения</td>
+                        <td class="p-3">Адрес местонахождения структурного подразделения</td>
+                        <td class="p-3">Адрес официального сайта структурного подразделения</td>
+                        <td class="p-3">Адрес электронной почты структурного подразделения</td>
+                        <td class="p-3">Положение об органе управления/ структурного подразделения</td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Институт культуры и искусств</td>
+                        <td class="p-3" itemprop="fio">Самарин Андрей Николаевич</td>
+                        <td class="p-3" itemprop="post">Директор института</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">institut_ki@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/Nf2MRLwaxCbAYjn">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Институт психологии</td>
+                        <td class="p-3" itemprop="fio">Ревенко Светлана Павловна</td>
+                        <td class="p-3" itemprop="post">Директор института</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">institut_p@hgpurf.ru</td>
+                        <td class="p-3">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/CFPJ8YqMZsdNxsk">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Институт управления и права</td>
+                        <td class="p-3" itemprop="fio">Шульга Марина Александровна</td>
+                        <td class="p-3" itemprop="post">Директор института</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">institut_up@hgpurf.ru</td>
+                        <td class="p-3">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/CFPJ8YqMZsdNxsk">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Институт естествознания, физической культуры и спорта</td>
+                        <td class="p-3" itemprop="fio">Андреева Регина Игоревна</td>
+                        <td class="p-3" itemprop="post">Директор института</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">institut_efks@hgpurf.ru</td>
+                        <td class="p-3">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/DyHZsMJe7F23BNN">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Институт информационных технологий</td>
+                        <td class="p-3" itemprop="fio">Самчинская Ярослава Борисовна</td>
+                        <td class="p-3" itemprop="post">Директор института</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">institut_it@hgpurf.ru</td>
+                        <td class="p-3">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/qB3Y53ApwX5Xm7j">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Институт педагогического и специального образования</td>
+                        <td class="p-3" itemprop="fio">Костылева Екатерина Владимировна</td>
+                        <td class="p-3" itemprop="post">Директор института</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">institut_pso@hgpurf.ru</td>
+                        <td class="p-3">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/KjatQHSDHWn2sfW">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Институт филологии и социальных коммуникаций</td>
+                        <td class="p-3" itemprop="fio">Бандурко Зинаида Валерьевна</td>
+                        <td class="p-3" itemprop="post">Директор института</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">institut_fsk@hgpurf.ru</td>
+                        <td class="p-3">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/GEdC4AQfgexGP2R">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </details>
+              <!-- Кафедры-->
+              <details class="details yelow-divider" name="basic-info-accordion">
+                <summary class="details-title">
+                  <p>
+                    Кафедры
+                  </p>
+                  <i
+                    class="fa-solid fa-angle-down fa-2xl my-accordion-icon"
+                  ></i>
+                </summary>
+                <div class="details-content">
+                  <table class="accordion-table table-bordered table-bd">
+                    <tbody>
+                      <tr>
+                        <td class="p-3">Наименование органа управления/ структурного подразделения</td>
+                        <td class="p-3">ФИО руководителя структурного подразделения</td>
+                        <td class="p-3">Должность руководителя структурного подразделения</td>
+                        <td class="p-3">Адрес местонахождения структурного подразделения</td>
+                        <td class="p-3">Адрес официального сайта структурного подразделения</td>
+                        <td class="p-3">Адрес электронной почты структурного подразделения</td>
+                        <td class="p-3">Положение об органе управления/ структурного подразделения</td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Кафедра культурологии</td>
+                        <td class="p-3" itemprop="fio">Авилов Владимир Николаевич</td>
+                        <td class="p-3" itemprop="post">Заведующий кафедрой</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">kafedra_k@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/gmEp3b85xjXpGHJ">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Кафедра изящных искусств</td>
+                        <td class="p-3" itemprop="fio">Серафимова Людмила Ивановна</td>
+                        <td class="p-3" itemprop="post">Заведующий кафедрой</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">kafedra_ii@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/gmEp3b85xjXpGHJ">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Кафедра хореографии</td>
+                        <td class="p-3" itemprop="fio">Кулик Ольга Валерьевна</td>
+                        <td class="p-3" itemprop="post">Заведующий кафедрой</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">kafedra_h@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/gmEp3b85xjXpGHJ">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Кафедра изобразительного искусства и дизайна</td>
+                        <td class="p-3" itemprop="fio">Чайка Надежда Михайловна</td>
+                        <td class="p-3" itemprop="post">Заведующий кафедрой</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">kafedra_iid@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/gmEp3b85xjXpGHJ">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Кафедра общей и социальной психологии</td>
+                        <td class="p-3" itemprop="fio">Олейник Нармина Оруджовна</td>
+                        <td class="p-3" itemprop="post">Заведующий кафедрой</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">kafedra_osp@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/gmEp3b85xjXpGHJ">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Кафедра прикладной психологии и развития личности</td>
+                        <td class="p-3" itemprop="fio">Блинова Елена Евгеньевна</td>
+                        <td class="p-3" itemprop="post">Заведующий кафедрой</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">kafedra_pprl@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/gmEp3b85xjXpGHJ">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Кафедра менеджмента, сервиса и туризма</td>
+                        <td class="p-3" itemprop="fio">Сергеева Елена Анатольевна</td>
+                        <td class="p-3" itemprop="post">Заведующий кафедрой</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">kafedra_mst@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/gmEp3b85xjXpGHJ">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Кафедра публичного управления и делового администрирования</td>
+                        <td class="p-3" itemprop="fio">Круглая Наталия Анатольевна</td>
+                        <td class="p-3" itemprop="post">Заведующий кафедрой</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">kafedra_puda@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/gmEp3b85xjXpGHJ">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Кафедра философии и истории</td>
+                        <td class="p-3" itemprop="fio">Вишневский Сергей Анатольевич</td>
+                        <td class="p-3" itemprop="post">Заведующий кафедрой</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">kafedra_fi@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/gmEp3b85xjXpGHJ">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Кафедра юриспруденции</td>
+                        <td class="p-3" itemprop="fio">Милкина Екатерина Валериевна</td>
+                        <td class="p-3" itemprop="post">Заведующий кафедрой</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">kafedra_y@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/gmEp3b85xjXpGHJ">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Кафедра естественных наук</td>
+                        <td class="p-3" itemprop="fio">Бердникова Елена Геннадиевна</td>
+                        <td class="p-3" itemprop="post">Заведующий кафедрой</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">kafedra_en@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/gmEp3b85xjXpGHJ">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Кафедра спорта и оздоровительных технологий</td>
+                        <td class="p-3" itemprop="fio">Сизова Наталья Валерьевна</td>
+                        <td class="p-3" itemprop="post">Заведующий кафедрой</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">kafedra_sot@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/gmEp3b85xjXpGHJ">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Кафедра теоретических основ физической культуры</td>
+                        <td class="p-3" itemprop="fio">Гунченко Валерий Витальевич</td>
+                        <td class="p-3" itemprop="post">Заведующий кафедрой</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">kafedra_tofk@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/gmEp3b85xjXpGHJ">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Кафедра цифрового образования, математики и физики</td>
+                        <td class="p-3" itemprop="fio">Линник Елена Петровна</td>
+                        <td class="p-3" itemprop="post">Заведующий кафедрой</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">kafedra_comf@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/gmEp3b85xjXpGHJ">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Кафедра программной инженерии и информационных технологий</td>
+                        <td class="p-3" itemprop="fio">Линник Иван Иванович</td>
+                        <td class="p-3" itemprop="post">Заведующий кафедрой</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">kafedra_piit@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/gmEp3b85xjXpGHJ">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Кафедра специального образования</td>
+                        <td class="p-3" itemprop="fio">Вишневский Владимир Анатольевич</td>
+                        <td class="p-3" itemprop="post">Заведующий кафедрой</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">kafedra_kp@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/gmEp3b85xjXpGHJ">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Кафедра педагогики и образовательных технологий</td>
+                        <td class="p-3" itemprop="fio">Беленцов Сергей Иванович</td>
+                        <td class="p-3" itemprop="post">Заведующий кафедрой</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">kafedra_pmno@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/gmEp3b85xjXpGHJ">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Кафедра русского языка и литературы</td>
+                        <td class="p-3" itemprop="fio">Матвиенко Анна Игоревна</td>
+                        <td class="p-3" itemprop="post">Заведующий кафедрой</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">kafedra_ryl@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/gmEp3b85xjXpGHJ">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Кафедра иностранной филологии</td>
+                        <td class="p-3" itemprop="fio">Чечуй Эмилия Петровна</td>
+                        <td class="p-3" itemprop="post">Заведующий кафедрой</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">kafedra_if@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/gmEp3b85xjXpGHJ">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Кафедра специального образования</td>
+                        <td class="p-3" itemprop="fio">Зубко Дарья Валерьевна</td>
+                        <td class="p-3" itemprop="post">Заведующий кафедрой</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">kafedra_zsk@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/gmEp3b85xjXpGHJ">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </details>
+              <!-- Иные структурные подразделения-->
+              <details class="details yelow-divider" name="basic-info-accordion">
+                <summary class="details-title">
+                  <p>
+                    Иные структурные подразделения
+                  </p>
+                  <i
+                    class="fa-solid fa-angle-down fa-2xl my-accordion-icon"
+                  ></i>
+                </summary>
+                <div class="details-content">
+                  <table class="accordion-table table-bordered table-bd">
+                    <tbody>
+                      <tr>
+                        <td class="p-3">Наименование органа управления/ структурного подразделения</td>
+                        <td class="p-3">ФИО руководителя структурного подразделения</td>
+                        <td class="p-3">Должность руководителя структурного подразделения</td>
+                        <td class="p-3">Адрес местонахождения структурного подразделения</td>
+                        <td class="p-3">Адрес официального сайта структурного подразделения</td>
+                        <td class="p-3">Адрес электронной почты структурного подразделения</td>
+                        <td class="p-3">Положение об органе управления/ структурного подразделения</td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Дирекция административных процессов</td>
+                        <td class="p-3" itemprop="fio">Черепанова Татьяна Васильевна</td>
+                        <td class="p-3" itemprop="post">Директор</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">directorate_ap@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/BG4kWkyrfEsZ8ts">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Отдел делопроизводства и архивного обеспечения</td>
+                        <td class="p-3" itemprop="fio">Поплавская Екатерина Дмитриевна</td>
+                        <td class="p-3" itemprop="post">Начальник</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">otdel_dpao@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="_____">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Отдел кадров</td>
+                        <td class="p-3" itemprop="fio">Клименко Нина Михайловна</td>
+                        <td class="p-3" itemprop="post">Начальник</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">ok@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/bm7BdeHQfXG4saG">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Отдел охраны труда</td>
+                        <td class="p-3" itemprop="fio">Арашкиев Вячеслав Уресович</td>
+                        <td class="p-3" itemprop="post">Начальник</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">otdel_ot@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="_____">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Управление правового обеспечения</td>
+                        <td class="p-3" itemprop="fio">Кузнецова Инна Николаевна</td>
+                        <td class="p-3" itemprop="post">Заместитель начальника</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">upravlenie_po@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/qNCpaSFwgM58QK6">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Управление комплексной безопасности</td>
+                        <td class="p-3" itemprop="fio">Черний Игорь Анатольевич</td>
+                        <td class="p-3" itemprop="post">Начальник</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">upravlenie_kb@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="_____">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Отдел внутренней безопасности</td>
+                        <td class="p-3" itemprop="fio">_____</td>
+                        <td class="p-3" itemprop="post">Начальник</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">otdel_vb@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="_____">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Отдел внешней безопасности</td>
+                        <td class="p-3" itemprop="fio">Родинов Дмитрий Сергеевич</td>
+                        <td class="p-3" itemprop="post">Начальник</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">otdel_vnb@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="_____">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Спортивно-оздоровительный лагерь "Буревестник"</td>
+                        <td class="p-3" itemprop="fio">Ширяев Максим Витальевич</td>
+                        <td class="p-3" itemprop="post">Директор</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">burevestnik@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/7jic7DX9YjmwxG4">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Центр психологической поддержки обучающихся</td>
+                        <td class="p-3" itemprop="fio">Попельчук Галина Алексеевна</td>
+                        <td class="p-3" itemprop="post">Директор</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">center_pp@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/f9mWFXqDrsDDFiz">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Дирекция развития образовательных программ</td>
+                        <td class="p-3" itemprop="fio">Линник Иван Иванович</td>
+                        <td class="p-3" itemprop="post">Директор</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">directorate_rop@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/oqQw2xQ5MpCksNA">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Отдел оценки качества образования</td>
+                        <td class="p-3" itemprop="fio">Степанская Людмила Васильевна</td>
+                        <td class="p-3" itemprop="post">Начальник</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">otdel_oko@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/Z46C9WDsWaRzrSq">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Отдел организации, планирования и контроля учебной работы</td>
+                        <td class="p-3" itemprop="fio">Щеглова Елена Александровна</td>
+                        <td class="p-3" itemprop="post">Начальник</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">otdel_opkur@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/Lx3NJ2gDASnfP5A">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Дирекция статистики и учѐта контингента обучающихся</td>
+                        <td class="p-3" itemprop="fio">Степанский Василий Васильевич</td>
+                        <td class="p-3" itemprop="post">Директор</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">directorate_statistiki@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/cMTmB4RrqiiAne6">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Отдел подготовки и выдачи документов студентам</td>
+                        <td class="p-3" itemprop="fio">Трофименко Анастасия Андреевна</td>
+                        <td class="p-3" itemprop="post">Начальник</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">otdel_pvds@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/eASKxQ7rBiMiNXT">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Отдел социальной работы</td>
+                        <td class="p-3" itemprop="fio">_____</td>
+                        <td class="p-3" itemprop="post">Начальник</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">otdel_sr@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="_____">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Центр профориентационной работы</td>
+                        <td class="p-3" itemprop="fio">Алешина Татьяна Владимировна</td>
+                        <td class="p-3" itemprop="post">Директор</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">center_prof_r@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/7AHcCDt6ja849WD">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Центр карьеры и содействия трудоустройству выпускников</td>
+                        <td class="p-3" itemprop="fio">Кузьминых Евгения Владимировна</td>
+                        <td class="p-3" itemprop="post">Директор</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">center_kstv@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/35eZGwY4RPLMgjK">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Проектный офис</td>
+                        <td class="p-3" itemprop="fio">Гавринёв Константин Александрович</td>
+                        <td class="p-3" itemprop="post">Специалист	</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">office_proekt@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/KQjzqiJPb4inyeoj">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Отдел аспирантуры и докторантуры</td>
+                        <td class="p-3" itemprop="fio">Кот Тамара Алексеевна</td>
+                        <td class="p-3" itemprop="post">Начальник</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">otdel_asp_doc@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/efqHJm9Bk4eTbYX">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Отдел ученого секретаря</td>
+                        <td class="p-3" itemprop="fio">Иванникова Марина Викторовна</td>
+                        <td class="p-3" itemprop="post">Начальник</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">otdel_us@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/JrE2cxHdqSTy4Lo">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Дирекция информационного обеспечения образовательного процесса</td>
+                        <td class="p-3" itemprop="fio">Кисиличак Геннадий Васильевич</td>
+                        <td class="p-3" itemprop="post">Директор</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">directorate_ioop@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="_____">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Отдел администрирования сети</td>
+                        <td class="p-3" itemprop="fio">Марусик Ольга Анатолиевна</td>
+                        <td class="p-3" itemprop="post">Начальник</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">otdel_as@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="_____">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Отдел технического обеспечения электронной образовательной среды университета</td>
+                        <td class="p-3" itemprop="fio">Яблуновская Юлия Анатольевна</td>
+                        <td class="p-3" itemprop="post">Начальник</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">otdel_toeosu@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="_____">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Центр цифровизации</td>
+                        <td class="p-3" itemprop="fio">Бойчук Евгений Владимирович</td>
+                        <td class="p-3" itemprop="post">Директор</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">center_digital@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="_____">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Дирекция приемной комиссии</td>
+                        <td class="p-3" itemprop="fio">Фастунова Виктория Александровна</td>
+                        <td class="p-3" itemprop="post">Директор</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">directorate_pk@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="_____">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Управление бухгалтерского учета и финансового контроля</td>
+                        <td class="p-3" itemprop="fio">Общая Наталья Владимировна</td>
+                        <td class="p-3" itemprop="post">Главный бухгалтер</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">upravlenie_bufk@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="_____">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Отдел учета материальных ценностей</td>
+                        <td class="p-3" itemprop="fio">Личная Наталья Васильевна</td>
+                        <td class="p-3" itemprop="post">_____</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">otdel_umc@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="_____">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Отдел учета заработной платы и стипендии</td>
+                        <td class="p-3" itemprop="fio">Сультимова Светлана Борисовна</td>
+                        <td class="p-3" itemprop="post">Начальник</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">otdel_uzps@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="_____">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Планово-экономический отдел</td>
+                        <td class="p-3" itemprop="fio">Жигжитов Зоригто Александрович</td>
+                        <td class="p-3" itemprop="post">Заместитель начальника</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">peo@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/QcTCXiSTBykory6">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Административно-хозяйственная часть</td>
+                        <td class="p-3" itemprop="fio">Коваленко Александр Викторович</td>
+                        <td class="p-3" itemprop="post">Начальник</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">ahch@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="_____">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Хозяйственная служба</td>
+                        <td class="p-3" itemprop="fio">_____</td>
+                        <td class="p-3" itemprop="post">Начальник</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">hs@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="_____">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Транспортная служба</td>
+                        <td class="p-3" itemprop="fio">Кондратюк Дмитрий Владимирович</td>
+                        <td class="p-3" itemprop="post">Начальник</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">ts@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="_____">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Отдел закупок</td>
+                        <td class="p-3" itemprop="fio">Макарова Анастасия Максимовна</td>
+                        <td class="p-3" itemprop="post">Начальник</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">otdel_zakupok@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="_____">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Киностудия ХГПУ</td>
+                        <td class="p-3" itemprop="fio">Угаров Артем Владимирович</td>
+                        <td class="p-3" itemprop="post">Директор</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">kino@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="_____">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="name">Спортивный клуб</td>
+                        <td class="p-3" itemprop="fio">Лупенко Николай Николаевич</td>
+                        <td class="p-3" itemprop="post">Директор</td>
+                        <td class="p-3" itemprop="addressStr" >Херсонская область, Скадовский МО, г.Скадовск, ул.Покровская, д.7а</td>
+                        <td class="p-3" itemprop="site">Нет</td>
+                        <td class="p-3" itemprop="email">sport_club@hgpurf.ru</td>
+                        <td class="p-3" itemprop="divisionClause DocLink">
+                          <a href="https://cloud.hgpurf.ru/index.php/s/H5PpAyS5W5LWGPc">Положение</a> | 
+                          <a href="#" itemprop="divisionClause DocLink"> ЭП (sig)</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </details>
+              <!-- Сведения о филиалах-->
+              <details class="details yelow-divider" name="basic-info-accordion">
+                <summary class="details-title">
+                  <p>
+                    Сведения о каждом филиале образовательной организации (в том числе находящихся за пределами РФ)
+                  </p>
+                  <i
+                    class="fa-solid fa-angle-down fa-2xl my-accordion-icon"
+                  ></i>
+                </summary>
+                <div class="details-content">
+                Образовательная организация не имеет филиалов
+                </div>
+              </details>
+              <!-- Сведения о представительстве-->
+              <details class="details yelow-divider" name="basic-info-accordion">
+                <summary class="details-title">
+                  <p>
+                    Сведения о каждом представительстве образовательной организации (в том числе находящихся за пределами РФ)
+                  </p>
+                  <i
+                    class="fa-solid fa-angle-down fa-2xl my-accordion-icon"
+                  ></i>
+                </summary>
+                <div class="details-content">
+                  Образовательная организация не имеет представительств
                 </div>
               </details>
             </div>

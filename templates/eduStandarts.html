@@ -1,0 +1,356 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Образовательные стандарты и требования{% endblock %}
+{% block content %}
+      <main class="main">
+        <div class="px-4 pt-3">
+          <div class="container">
+            <div class="py-4">
+              <nav
+                style="--bs-breadcrumb-divider: '>>'"
+                aria-label="breadcrumb"
+              >
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="{%url 'main'%}">Главная</a></li>
+                  <li class="breadcrumb-item" aria-current="page">
+                    <a href="{%url 'main'%}">Университет</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    <a href="{%url 'sveden'%}">Сведения об образовательной организации</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    <a href="{%url 'eduStandarts'%}">Образовательные стандарты и требования</a>
+                  </li>
+                </ol>
+              </nav>
+            </div>
+            <h2 class="mb-5 fw-bold fs-2 basic-info-title">
+              Образовательные стандарты и требования
+            </h2>
+            <h4 class="mb-5 fw-bold">
+              Федеральные государственные образовательные стандарты (ФГОС)
+            </h4>
+            <div class="my-accordion mb-5" itemprop="eduFedDoc">
+              <!-- Федеральные государственные образовательные стандарты (ФГОС)-->
+              <details class="details yelow-divider" name="basic-info-accordion">
+                <summary class="details-title">
+                  <h4 class="font-color-gray">
+                    05.00.00 Науки о земле
+                  </h4>
+                  <i
+                    class="fa-solid fa-angle-down fa-2xl my-accordion-icon"
+                  ></i>
+                </summary>
+                <div class="details-content">
+                  <ul>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FBak%2F050306_B_3_23082020.pdf&id=1936">05.03.06 Экология и природопользование 3++</a></li>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FMag%2F050406_M_3_22082020.pdf&id=1912">05.04.06 Экология и природопользование 3++</a></li>
+                  </ul>
+                </div>
+              </details>
+              <details class="details yelow-divider" name="basic-info-accordion" >
+                <summary class="details-title">
+                  <h4 class="font-color-gray">
+                    06.00.00 Биологические науки
+                  </h4>
+                  <i
+                    class="fa-solid fa-angle-down fa-2xl my-accordion-icon"
+                  ></i>
+                </summary>
+                <div class="details-content">
+                  <ul>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FBak%2F060301_B_3_2308202.pdf&id=1930">06.03.01 Биология (уровень бакалавриата) 3++</a></li>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FMag%2F060401_M_3_31082020.pdf&id=1987">06.04.01 Биология (уровень магистратуры) 3++</a></li>
+                  </ul>
+                </div>
+              </details>
+              <details class="details yelow-divider" name="basic-info-accordion" >
+                <summary class="details-title">
+                  <h4 class="font-color-gray">
+                    09.00.00 Информатика и вычислительная техника
+                  </h4>
+                  <i
+                    class="fa-solid fa-angle-down fa-2xl my-accordion-icon"
+                  ></i>
+                </summary>
+                <div class="details-content">
+                  <ul>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FBak%2F090304_B_3_15062021.pdf&id=1472">09.03.04 Программная инженерия (уровень бакалавриата) 3++</a></li>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FMag%2F090404_%25D0%259C_3_17062021.pdf&id=1439">09.04.04 Программная инженерия (уровень магистратуры) 3++</a></li>
+                  </ul>
+                </div>
+              </details>
+              <details class="details yelow-divider" name="basic-info-accordion" >
+                <summary class="details-title">
+                  <h4 class="font-color-gray">
+                    33.00.00 Фармация
+                  </h4>
+                  <i
+                    class="fa-solid fa-angle-down fa-2xl my-accordion-icon"
+                  ></i>
+                </summary>
+                <div class="details-content">
+                  <ul>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FSpec%2F330501_C_3_18062021.pdf&id=1702">33.05.01 Фармация (уровень специалитета) 3++</a></li>
+                  </ul>
+                </div>
+              </details>
+              <details class="details yelow-divider" name="basic-info-accordion" >
+                <summary class="details-title">
+                  <h4 class="font-color-gray">
+                    37.00.00 Психологические науки
+                  </h4>
+                  <i
+                    class="fa-solid fa-angle-down fa-2xl my-accordion-icon"
+                  ></i>
+                </summary>
+                <div class="details-content">
+                  <ul>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FBak%2F370301_B_3_23082020.pdf&id=1925">37.03.01 Психология (уровень бакалавриата) 3++</a></li>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FMag%2F380401_M_3_22082020.pdf&id=1920">37.04.01 Психология (уровень магистратуры) 3++</a></li>
+                  </ul>
+                </div>
+              </details>
+              <details class="details yelow-divider" name="basic-info-accordion" >
+                <summary class="details-title">
+                  <h4 class="font-color-gray">
+                    38.00.00 Экономика и управление
+                  </h4>
+                  <i
+                    class="fa-solid fa-angle-down fa-2xl my-accordion-icon"
+                  ></i>
+                </summary>
+                <div class="details-content">
+                  <ul>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FBak%2F380302_B_3_31082020.pdf&id=2027">38.03.02 Менеджмент (уровень бакалавриата) 3++</a></li>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FBak%2F380304_B_3_31082020.pdf&id=2019">38.03.04 Государственное и муниципальное управление 3++</a></li>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FMag%2F380402_M_3_22082020.pdf&id=1914">38.04.02 Менеджмент (уровень магистратуры) 3++</a></li>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FMag%2F380404_M_3_31082020.pdf&id=1986">38.04.04 Государственное и муниципальное управление (уровень магистратуры) 3++</a></li>
+                  </ul>
+                </div>
+              </details>
+              <details class="details yelow-divider" name="basic-info-accordion" >
+                <summary class="details-title">
+                  <h4 class="font-color-gray">
+                    39.00.00 Социология и социальная работа
+                  </h4>
+                  <i
+                    class="fa-solid fa-angle-down fa-2xl my-accordion-icon"
+                  ></i>
+                </summary>
+                <div class="details-content">
+                  <ul>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FBak%2F390303_B_3_15062021.pdf&id=1642">39.03.03 Организация работы с молодежью (уровень бакалавриата) 3++</a></li>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FMag%2F390403_%25D0%259C_3_17062021.pdf&id=1636">39.04.03 Организация работы с молодежью (уровень магистратуры) 3++</a></li>
+                  </ul>
+                </div>
+              </details>
+              <details class="details yelow-divider" name="basic-info-accordion" >
+                <summary class="details-title">
+                  <h4 class="font-color-gray">
+                    40.00.00 Юриспруденция
+                  </h4>
+                  <i
+                    class="fa-solid fa-angle-down fa-2xl my-accordion-icon"
+                  ></i>
+                </summary>
+                <div class="details-content">
+                  <ul>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FBak%2F400301_B_3_15062021.pdf&id=2040">40.03.01 Юриспруденция (уровень бакалавриата) 3++</a></li>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FMag%2F400401_M_3_11032021.pdf&id=2098">40.04.01 Юриспруденция (уровень магистратуры) 3++</a></li>
+                  </ul>
+                </div>
+              </details>
+              <details class="details yelow-divider" name="basic-info-accordion" >
+                <summary class="details-title">
+                  <h4 class="font-color-gray">
+                    42.00.00 Средства массовой информации и информационно-библиотечное дело
+                  </h4>
+                  <i
+                    class="fa-solid fa-angle-down fa-2xl my-accordion-icon"
+                  ></i>
+                </summary>
+                <div class="details-content">
+                  <ul>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FBak%2F420302_B_3_15062021.pdf&id=1353">42.03.02 Журналистика (уровень бакалавриата) 3++</a></li>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FBak%2F420304_B_3_15062021.pdf&id=1362">42.03.04 Телевидение (уровень бакалавриата) 3++</a></li>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FMag%2F420402_%25D0%259C_3_17062021.pdf&id=1366">42.04.02 Журналистика (уровень магистратуры) 3++</a></li>
+                  </ul>
+                </div>
+              </details>
+              <details class="details yelow-divider" name="basic-info-accordion" >
+                <summary class="details-title">
+                  <h4 class="font-color-gray">
+                    43.00.00 Сервис и туризм
+                  </h4>
+                  <i
+                    class="fa-solid fa-angle-down fa-2xl my-accordion-icon"
+                  ></i>
+                </summary>
+                <div class="details-content">
+                  <ul>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FBak%2F430301_B_3_15062021.pdf&id=1363">43.03.01 Сервис (уровень бакалавриата) 3++</a></li>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FBak%2F430302_B_3_15062021.pdf&id=1350">43.03.02 Туризм (уровень бакалавриата) 3++</a></li>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FBak%2F430303_B_3_15062021.pdf&id=1349">43.03.03 Гостиничное дело (уровень бакалавриата) 3++</a></li>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FMag%2F430401_%25D0%259C_3_17062021.pdf&id=1597">43.04.01 Сервис (уровень магистратуры) 3++</a></li>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FMag%2F430402_%25D0%259C_3_17062021.pdf&id=1598">43.04.02 Туризм (уровень магистратуры) 3++</a></li>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FMag%2F430403_%25D0%259C_3_17062021.pdf&id=1375">43.04.03 Гостиничное дело (уровень магистратуры) 3++</a></li>
+                  </ul>
+                </div>
+              </details>
+              <details class="details yelow-divider" name="basic-info-accordion" >
+                <summary class="details-title">
+                  <h4 class="font-color-gray">
+                    44.00.00 Образование и педагогические науки
+                  </h4>
+                  <i
+                    class="fa-solid fa-angle-down fa-2xl my-accordion-icon"
+                  ></i>
+                </summary>
+                <div class="details-content">
+                  <ul>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FBak%2F440301_B_3_15062021.pdf&id=1654">44.03.01 Педагогическое образование (уровень бакалавриата) 3++</a></li>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FBak%2F440302_B_3_15062021.pdf&id=1659">44.03.02 Психолого-педагогическое образование (уровень бакалавриата) 3++</a></li>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FBak%2F440303_B_3_15062021.pdf&id=1660">44.03.03 Специальное (дефектологическое) образование (уровень бакалавриата) 3++</a></li>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FBak%2F440305_B_3_15062021.pdf&id=1655">44.03.05 Педагогическое образование (с двумя профилями подготовки) (уровень бакалавриата) 3++</a></li>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FMag%2F440401_%25D0%259C_3_17062021.pdf&id=1656">44.04.01 Педагогическое образование (уровень магистратуры) 3++</a></li>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FMag%2F440402_%25D0%259C_3_17062021.pdf&id=1653">44.04.02 Психолого-педагогическое образование (уровень магистратуры) 3++</a></li>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FMag%2F440403_%25D0%259C_3_17062021.pdf&id=1657">44.04.03 Специальное (дефектологическое) образование (уровень магистратуры) 3++</a></li>
+                  </ul>
+                </div>
+              </details>
+              <details class="details yelow-divider" name="basic-info-accordion" >
+                <summary class="details-title">
+                  <h4 class="font-color-gray">
+                    45.00.00 Языкознание и литературоведение
+                  </h4>
+                  <i
+                    class="fa-solid fa-angle-down fa-2xl my-accordion-icon"
+                  ></i>
+                </summary>
+                <div class="details-content">
+                  <ul>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FBak%2F450302_B_3_31082020.pdf&id=2028">45.03.02 Лингвистика (уровень бакалавриата) 3++</a></li>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FMag%2F450402_%25D0%259C_3_17062021.pdf&id=2013">45.04.02 Лингвистика (уровень магистратуры) 3++</a></li>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FMag%2F450401_M_3_31082020.pdf&id=1951">45.04.01 Филология (уровень магистратуры) 3++</a></li>
+                  </ul>
+                </div>
+              </details>
+              <details class="details yelow-divider" name="basic-info-accordion" >
+                <summary class="details-title">
+                  <h4 class="font-color-gray">
+                    47.00.00 Философия, этика и религиоведение
+                  </h4>
+                  <i
+                    class="fa-solid fa-angle-down fa-2xl my-accordion-icon"
+                  ></i>
+                </summary>
+                <div class="details-content">
+                  <ul>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FMag%2F470401_M_3_31082020.pdf&id=1989">47.04.01 История (уровень магистратуры) 3++</a></li>
+                  </ul>
+                </div>
+              </details>
+              <details class="details yelow-divider" name="basic-info-accordion" >
+                <summary class="details-title">
+                  <h4 class="font-color-gray">
+                    49.00.00 Физическая культура и спорт
+                  </h4>
+                  <i
+                    class="fa-solid fa-angle-down fa-2xl my-accordion-icon"
+                  ></i>
+                </summary>
+                <div class="details-content">
+                  <ul>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FBak%2F490301_B_3_15062021.pdf&id=1486">49.03.01 Физическая культура (уровень бакалавриата) 3++</a></li>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FBak%2F490302_B_3_15062021.pdf&id=1487">49.03.02 Физическая культура для лиц с отклонениями в состоянии здоровья (адаптивная физическая культура) (уровень бакалавриата) 3++</a></li>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FBak%2F490304_B_3_29042021.pdf&id=1870">49.03.04 Спорт (уровень бакалавриата) 3++</a></li>
+                  </ul>
+                </div>
+              </details>
+              <details class="details yelow-divider" name="basic-info-accordion" >
+                <summary class="details-title">
+                  <h4 class="font-color-gray">
+                    51.00.00 Культуроведение и социокультурный проекты
+                  </h4>
+                  <i
+                    class="fa-solid fa-angle-down fa-2xl my-accordion-icon"
+                  ></i>
+                </summary>
+                <div class="details-content">
+                  <ul>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FBak%2F510301_B_3_15062021.pdf&id=1700">51.03.01 Культурология (уровень бакалавриата) 3++</a></li>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FBak%2F510305_B_3_15062021.pdf&id=1614">51.03.05 Режиссура театрализованных представлений и праздников (уровень бакалавриата) 3++</a></li>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FMag%2F510401_%25D0%259C_3_17062021.pdf&id=1575">51.04.01 Культурология (уровень магистратуры) 3++</a></li>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FMag%2F510405_%25D0%259C_3_07122021.pdf&id=1579">51.04.05 Режиссура театрализованных представлений и праздников (уровень магистратуры) 3++</a></li>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FMag%2F510406_%25D0%259C_3_17062021.pdf&id=1582">51.04.06 Библиотечно-информационная деятельность (уровень магистратуры) 3++</a></li>
+                  </ul>
+                </div>
+              </details>
+              <details class="details yelow-divider" name="basic-info-accordion" >
+                <summary class="details-title">
+                  <h4 class="font-color-gray">
+                    52.00.00 Сценические искусства и литературное творчество
+                  </h4>
+                  <i
+                    class="fa-solid fa-angle-down fa-2xl my-accordion-icon"
+                  ></i>
+                </summary>
+                <div class="details-content">
+                  <ul>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FBak%2F520301_B_3_15062021.pdf&id=1590">52.03.01 Хореографическое искусство (уровень бакалавриата) 3++</a></li>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FMag%2F520401_%25D0%259C_3_17062021.pdf&id=1600">52.04.01 Хореографическое искусство (уровень магистратуры) 3++</a></li>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FMag%2F520403_%25D0%259C_3_17062021.pdf&id=1573">52.04.03 Театральное искусство (уровень магистратуры) 3++</a></li>
+                  </ul>
+                </div>
+              </details>
+              <details class="details yelow-divider" name="basic-info-accordion" >
+                <summary class="details-title">
+                  <h4 class="font-color-gray">
+                    53.00.00 Музыкальное искусство
+                  </h4>
+                  <i
+                    class="fa-solid fa-angle-down fa-2xl my-accordion-icon"
+                  ></i>
+                </summary>
+                <div class="details-content">
+                  <ul>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FBak%2F530301_B_3_15062021.pdf&id=1373">53.03.01 Музыкальное искусство эстрады (уровень бакалавриата) 3++</a></li>
+                  </ul>
+                </div>
+              </details>
+              <details class="details yelow-divider" name="basic-info-accordion" >
+                <summary class="details-title">
+                  <h4 class="font-color-gray">
+                    54.00.00 Изобразительное искусство и прикладные виды искусств
+                  </h4>
+                  <i
+                    class="fa-solid fa-angle-down fa-2xl my-accordion-icon"
+                  ></i>
+                </summary>
+                <div class="details-content">
+                  <ul>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FBak%2F540301_B_3_15062021.pdf&id=2020">54.03.01 Дизайн (уровень бакалавриата) 3++</a></li>
+                    <li><a href="https://fgosvo.ru/fgosvo/downloads?f=%2Fuploadfiles%2FFGOS+VO+3%2B%2B%2FMag%2F540401_M_3_31082020.pdf&id=1990">54.04.01 Дизайн (уровень магистратуры) 3++</a></li>
+                  </ul>
+                </div>
+              </details>
+            </div>
+            <!-- new accordion end -->
+            <h4 class="mb-5 fw-bold">
+              Федеральные государственные требования
+            </h4>
+            <div class="mb-5" itemprop="eduFedTreb"><a href="https://www.herzen.spb.ru/upload/medialibrary/7f2/Federalnye-gosudarstvennye-trebovaniya-k-strukture-programm-podgotovki-nauchnykh-i-nauchno_pedagogicheskikh-kadrov-v-aspiranture.pdf">Федеральные государственные требования к структуре программ подготовки научных и
+научно-педагогических кадров в аспирантуре (адъюнктуре), условиям их реализации, срокам
+освоения этих программ с учетом различных форм обучения, образовательных технологий и
+особенностей отдельных категорий аспирантов (адъюнктов)</a></div>
+            <h4 class="mb-5 fw-bold">
+              Образовательные стандарты, разработанные и утвержденные образовательной
+организацией самостоятельно
+            </h4>
+            <div class="mb-5" itemprop="eduStandartTreb
+">Отсутствуют</div>
+          </div>
+        </div>
+      </main>
+{% endblock %}
