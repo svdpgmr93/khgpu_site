@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Вакантные места для приема (перевода)
+обучающихся{% endblock %}
+{% block content %}
+      <main class="main">
+        <div class="px-4 pt-3">
+          <div class="container">
+            <div class="py-4">
+              <nav
+                style="--bs-breadcrumb-divider: '>>'"
+                aria-label="breadcrumb"
+              >
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="{%url 'main'%}">Главная</a></li>
+                  <li class="breadcrumb-item" aria-current="page">
+                    <a href="{%url 'main'%}">Университет</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    <a href="{%url 'sveden'%}">Сведения об образовательной организации</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    <a href="{%url 'vacant'%}">Вакантные места для приема (перевода) обучающихся</a>
+                  </li>
+                </ol>
+              </nav>
+            </div>
+            <h2 class="mb-5 fw-bold fs-2 basic-info-title">
+              Вакантные места для приема (перевода) обучающихся
+            </h2>
+            <h4 class="mb-5">
+            Информация о руководителе образовательной организации
+            </h4>
+            <!-- Информация о руководителе образовательной организации-->
+            <table class="accordion-table table-bordered table-bd w-100 mb-5" itemprop="vacant">
+                    <tbody>
+                      <tr>
+                        <td class="p-3">_________</td>
+                        <td class="p-3">_________</td>
+                        <td class="p-3">_________</td>
+                        <td class="p-3">_________</td>
+                      </tr>
+                      <tr>
+                        <td class="p-3">_________</td>
+                        <td class="p-3">_________</td>
+                        <td class="p-3">_________</td>
+                        <td class="p-3">_________</td>
+                      </tr>
+                    </tbody>
+                  </table>
+          </div>
+        </div>
+      </main>
+{% endblock %}

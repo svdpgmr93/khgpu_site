@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Организация питания в образовательной организации{% endblock %}
+{% block content %}
+      <main class="main">
+        <div class="px-4 pt-3">
+          <div class="container">
+            <div class="py-4">
+              <nav
+                style="--bs-breadcrumb-divider: '>>'"
+                aria-label="breadcrumb"
+              >
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="{%url 'main'%}">Главная</a></li>
+                  <li class="breadcrumb-item" aria-current="page">
+                    <a href="{%url 'main'%}">Университет</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    <a href="{%url 'sveden'%}">Сведения об образовательной организации</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    <a href="{%url 'catering'%}">Организация питания в образовательной организации</a>
+                  </li>
+                </ol>
+              </nav>
+            </div>
+            <h2 class="mb-5 fw-bold fs-2 basic-info-title">
+              Организация питания в образовательной организации
+            </h2>
+            <div class="my-accordion">
+              <!-- Органы управления-->
+              <details class="details yelow-divider" name="basic-info-accordion" >
+                <summary class="details-title">
+                  <p>
+                    Сведения об условиях питания обучающихся
+                  </p>
+                  <i
+                    class="fa-solid fa-angle-down fa-2xl my-accordion-icon"
+                  ></i>
+                </summary>
+                <div class="details-content">
+                  <table class="accordion-table table-bordered table-bd" itemprop="meals">
+                    <tbody>
+                      <tr>
+                        <td class="p-3">Наименование объекта</td>
+                        <td class="p-3">Адрес места нахождения</td>
+                        <td class="p-3">Площадь, м2</td>
+                        <td class="p-3">Количество мест</td>
+                        <td class="p-3">Приспособленность для использования инвалидами и лицами с ограниченными возможностями здоровья</td>
+                      </tr>
+                      <tr>
+                        <td class="p-3" itemprop="objName">Отсутствует</td>
+                        <td class="p-3" itemprop="objAddress">Отсутствует</td>
+                        <td class="p-3" itemprop="objSq">Отсутствует</td>
+                        <td class="p-3" itemprop="objCnt" >Отсутствует</td>
+                        <td class="p-3" itemprop="objOvz">Отсутствует</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </details>
+              <details class="details yelow-divider" name="basic-info-accordion">
+                <summary class="details-title">
+                  <p>
+                    Сведения об условиях охраны здоровья обучающихся
+                  </p>
+                  <i
+                    class="fa-solid fa-angle-down fa-2xl my-accordion-icon"
+                  ></i>
+                </summary>
+                <div class="details-content">
+                  <table class="accordion-table table-bordered table-bd" itemprop="health">
+                    <tbody>
+                      <tr>
+                        <td class="p-3">Наименование объекта</td>
+                        <td class="p-3">Адрес места нахождения</td>
+                        <td class="p-3">Площадь, м2</td>
+                        <td class="p-3">Количество мест</td>
+                        <td class="p-3">Приспособленность для использования инвалидами и лицами с ограниченными возможностями здоровья</td>
+                      </tr>
+                      <tr>
+                        <td class="p-3" itemprop="objName">Отсутствует</td>
+                        <td class="p-3" itemprop="objAddress">Отсутствует</td>
+                        <td class="p-3" itemprop="objSq">Отсутствует</td>
+                        <td class="p-3" itemprop="objCnt" >Отсутствует</td>
+                        <td class="p-3" itemprop="objOvz">Отсутствует</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </details>
+          </div>
+        </div>
+      </main>
+{% endblock %}
