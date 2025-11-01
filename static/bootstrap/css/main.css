@@ -759,10 +759,12 @@ summary p {
     border-top-right-radius: 20px;
     overflow: hidden;
     font-size: 14px;
+    width: 100%;
 }
 
 .accordion-table tr:first-child {
     background-color: #ffd600;
+    font-weight: 500;
 }
 
 /* employees accordion border style */
@@ -776,9 +778,26 @@ summary p {
     border-bottom: 1px solid #ffd600;
 }
 
+<<<<<<< HEAD
+.accordion-table.objects {
+    font-size: 12px;
+}
+
+.link-color {
+   color: #2B4D99;
+}
+
+.table-head {
+    background-color: #ffd600;
+}
+
+.table-white-border th, td{
+    border: 1px solid #fff;
+=======
 .font-color-gray {
     color: #333333;
     font-weight: 600;
+>>>>>>> bbd2653e80fbe0c51c9b4e76a3f3b6fa81ffbcd3
 }
 
 .span-cells td {
