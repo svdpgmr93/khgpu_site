@@ -1,0 +1,49 @@
+{% extends 'base.html' %} {% load static %} {% block title %}
+Международное сотрудничество {% endblock %} {% block content %}
+<main class="main">
+  <div class="container">
+    <div class="py-4">
+      <nav style="--bs-breadcrumb-divider: '»'" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Главная</a></li>
+          <li class="breadcrumb-item" aria-current="page">
+            <a href="">Университет</a>
+          </li>
+          <li class="breadcrumb-item" aria-current="page">
+            <a href="">Сведения об образовательной организации</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            <a href="">Международное сотрудничество</a>
+          </li>
+        </ol>
+      </nav>
+    </div>
+    <h2 class="mb-5 fw-bold fs-2 basic-info-title">
+      Международное сотрудничество
+    </h2>
+    <p class="mb-4">
+      Информация о заключённых и планируемых к заключению договорах с
+      иностранными и (или) международными организациями по вопросам образования
+      и науки
+    </p>
+    <div class="mb-4">
+      <table class="accordion-table text-center table-white-border">
+        <tr>
+          <td class="p-3">№</td>
+          <td class="p-3">Государство</td>
+          <td class="p-3">Наименование организации</td>
+          <td class="p-3">
+            Реквизиты договора (наименование, дата, номер, срок действия)
+          </td>
+        </tr>
+        <tr class="tr-light">
+          <td class="p-3">Отсутствует</td>
+          <td class="p-3">Отсутствует</td>
+          <td class="p-3">Отсутствует</td>
+          <td class="p-3">Отсутствует</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</main>
+{% endblock %}

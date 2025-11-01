@@ -693,7 +693,7 @@ main.main {
 
 /* NEW ACCORDION CLASSES */
 
-.my-accordion {
+.my-accordion:last-child {
     margin-bottom: 120px;
 }
 
@@ -759,10 +759,12 @@ summary p {
     border-top-right-radius: 20px;
     overflow: hidden;
     font-size: 14px;
+    width: 100%;
 }
 
 .accordion-table tr:first-child {
     background-color: #ffd600;
+    font-weight: 500;
 }
 
 /* employees accordion border style */
@@ -774,4 +776,20 @@ summary p {
 .details.yelow-divider:last-child {
     margin-bottom: 20px;
     border-bottom: 1px solid #ffd600;
+}
+
+.accordion-table.objects {
+    font-size: 12px;
+}
+
+.link-color {
+   color: #2B4D99;
+}
+
+.table-head {
+    background-color: #ffd600;
+}
+
+.table-white-border th, td{
+    border: 1px solid #fff;
 }
