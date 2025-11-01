@@ -780,3 +780,15 @@ summary p {
     color: #333333;
     font-weight: 600;
 }
+
+.span-cells td {
+    background-color: #ffd600;
+}
+
+.table-scroll {
+    height: 900px;
+    overflow-y: scroll;
+}
+.push-footer {
+    margin-bottom: 90px;
+}
