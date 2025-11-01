@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Руководство{% endblock %}
+{% block content %}
+      <main class="main">
+        <div class="px-4 pt-3">
+          <div class="container">
+            <div class="py-4">
+              <nav
+                style="--bs-breadcrumb-divider: '>>'"
+                aria-label="breadcrumb"
+              >
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="{%url 'main'%}">Главная</a></li>
+                  <li class="breadcrumb-item" aria-current="page">
+                    <a href="{%url 'main'%}">Университет</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    <a href="{%url 'sveden'%}">Сведения об образовательной организации</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    <a href="{%url 'managers'%}">Руководство</a>
+                  </li>
+                </ol>
+              </nav>
+            </div>
+            <h2 class="mb-5 fw-bold fs-2 basic-info-title">
+              Руководство
+            </h2>
+            <h4 class="mb-5">
+            Информация о руководителе образовательной организации
+            </h4>
+            <!-- Информация о руководителе образовательной организации-->
+            <table class="accordion-table table-bordered table-bd w-100 mb-5" itemprop="rucovodstvo">
+                    <tbody>
+                      <tr>
+                        <td class="p-3">Ф.И.О.</td>
+                        <td class="p-3">Должность</td>
+                        <td class="p-3">Контактный телефон</td>
+                        <td class="p-3">Адрес электронной почты</td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="fio">ШАШКОВА Нина Игоревна</td>
+                        <td class="p-3" itemprop="post">Ректор</td>
+                        <td class="p-3" itemprop="telephone">+7 (990) 140-21-00</td>
+                        <td class="p-3" itemprop="email">rector@hgpurf.ru</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            <h4 class="mb-5">
+            Информация о заместителях руководителя образовательной организации
+            </h4>
+            <!-- Информация о руководителе образовательной организации-->
+             <table class="accordion-table table-bordered table-bd mb-5"itemprop="rucovodstvoZam">
+                    <tbody>
+                      <tr>
+                        <td class="p-3">Ф.И.О.</td>
+                        <td class="p-3">Должность</td>
+                        <td class="p-3">Контактный телефон</td>
+                        <td class="p-3">Адрес электронной почты</td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="fio">КРУГЛАЯ Наталия Анатольевна</td>
+                        <td class="p-3" itemprop="post">Первый проректор</td>
+                        <td class="p-3" itemprop="telephone">+7 (990) 002-55-15</td>
+                        <td class="p-3" itemprop="email">kruglayana@hgpurf.ru</td>
+                      </tr>
+                      <tr class="tr-dark">
+                        <td class="p-3 fw-bold" itemprop="fio">ШУШАРА Татьяна Викторовна</td>
+                        <td class="p-3" itemprop="post">Проректор по научной и инновационной деятельности</td>
+                        <td class="p-3" itemprop="telephone">+7 (978) 887-69-45</td>
+                        <td class="p-3" itemprop="email">shusharatv@hgpurf.ru</td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="fio">БОРЖЕМСКАЯ Наталья Валерьевна</td>
+                        <td class="p-3" itemprop="post">Проректор по финансово-экономической и административно-хозяйственной деятельности</td>
+                        <td class="p-3" itemprop="telephone">+7 (978) 804-24-11</td>
+                        <td class="p-3" itemprop="email">borgemskayanv@hgpurf.ru</td>
+                      </tr>
+                      <tr class="tr-dark">
+                        <td class="p-3 fw-bold" itemprop="fio">БЛЫЩИК Надежда Олеговна</td>
+                        <td class="p-3" itemprop="post">Проректор по информационному обеспечению и общим вопросам</td>
+                        <td class="p-3" itemprop="telephone">+7 (990) 050-86-23</td>
+                        <td class="p-3" itemprop="email">blyshchikno@hgpurf.ru</td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 fw-bold" itemprop="fio">ХИСМАТУЛЛИНА Елена Александровна</td>
+                        <td class="p-3" itemprop="post">Проректор по непрерывному образованию и проектной деятельности</td>
+                        <td class="p-3" itemprop="telephone">+7 (978) 661-49-96</td>
+                        <td class="p-3" itemprop="email">khismatullinaea@hgpurf.ru</td>
+                      </tr>
+                    </tbody>
+                  </table>
+          </div>
+        </div>
+      </main>
+{% endblock %}
