@@ -778,7 +778,6 @@ summary p {
     border-bottom: 1px solid #ffd600;
 }
 
-<<<<<<< HEAD
 .accordion-table.objects {
     font-size: 12px;
 }
@@ -791,13 +790,13 @@ summary p {
     background-color: #ffd600;
 }
 
-.table-white-border th, td{
+.table-white-border th, td {
     border: 1px solid #fff;
-=======
+}
+
 .font-color-gray {
     color: #333333;
     font-weight: 600;
->>>>>>> bbd2653e80fbe0c51c9b4e76a3f3b6fa81ffbcd3
 }
 
 .span-cells td {
