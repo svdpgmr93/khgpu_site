@@ -804,9 +804,13 @@ summary p {
 }
 
 .table-scroll {
-    height: 900px;
+    max-height: 900px;
     overflow-y: scroll;
 }
 .push-footer {
     margin-bottom: 90px;
+}
+
+.accordion-table.education {
+    font-size: 11px;
 }

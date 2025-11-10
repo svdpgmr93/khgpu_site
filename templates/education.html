@@ -1,0 +1,438 @@
+{% extends 'base.html' %}
+{% load static %} 
+{% block title %}
+Образование
+{% endblock %}
+{% block content %}
+<main class="main">
+  <div class="container">
+    <div class="py-4">
+      <nav style="--bs-breadcrumb-divider: '»'" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/">Главная</a></li>
+          <li class="breadcrumb-item" aria-current="page">
+            <a href="#">Университет</a>
+          </li>
+          <li class="breadcrumb-item" aria-current="page">
+            <a href="{% url 'sveden' %}">Сведения об образовательной организации</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            <a href="#">Образование</a>
+          </li>
+        </ol>
+      </nav>
+    </div>
+    <h2 class="mb-5 fw-bold fs-2 basic-info-title">
+      Образование
+    </h2>
+    <div class="my-accordion pt-4">
+      <details class="details yelow-divider" name="education-accordion">
+        <summary class="details-title">
+          <p class="fw-semibold fs-4">
+            Информация о реализуемых уровнях образования, о формах обучения, нормативных сроках обучения
+          </p>
+          <i class="fa-solid fa-angle-down fa-2xl my-accordion-icon"></i>
+        </summary>
+        <div class="details-content table-scroll">
+          <table class="accordion-table education w-100 text-center">
+            <tbody>
+              <tr>
+                <td class="p-3">№ п/п</td>
+                <td class="p-3">Код, шифр</td>
+                <td class="p-3">Наименование направления подготовки, научной специальности</td>
+                <td class="p-3">Наименование образовательной программы (ОП), научной специальности</td>
+                <td class="p-3">Уровень образования</td>
+                <td class="p-3">Формы обучения</td>
+                <td class="p-3">Нормативный срок обучения</td>
+                <td class="p-3">Учебные предметы, курсы, дисциплины (модули), предусмот-ренные соответст- вующей ОП</td>
+                <td class="p-3">Практики, предусмот- ренные соответст- вующей ОП</td>
+              </tr>
+              <tr class="tr-light">
+                <td class="p-3">1</td>
+                <td class="p-3">05.03.06</td>
+                <td class="p-3">Экология и природопользование</td>
+                <td class="p-3">Геоэкология</td>
+                <td class="p-3">Высшее образование - бакалавриат</td>
+                <td class="p-3">Очная/ Заочная</td>
+                <td class="p-3">4 года/4 года 6 месяцев</td>
+                <td class="p-3"><a href="">Перейти</a></td>
+                <td class="p-3"><a href="">Перейти</a></td>
+              </tr>
+              <tr class="tr-dark">
+                <td class="p-3">2</td>
+                <td class="p-3">06.03.01</td>
+                <td class="p-3">Биология</td>
+                <td class="p-3">Биоэкология</td>
+                <td class="p-3">Высшее образование - бакалавриат</td>
+                <td class="p-3">Очно-заочная</td>
+                <td class="p-3">4 года 6 месяцев</td>
+                <td class="p-3"><a href="">Перейти</a></td>
+                <td class="p-3"><a href="">Перейти</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+      <details class="details yelow-divider" name="education-accordion">
+        <summary class="details-title">
+          <p class="fw-semibold fs-4">
+           Информация о реализуемых образовательных программах
+          </p>
+          <i class="fa-solid fa-angle-down fa-2xl my-accordion-icon"></i>
+        </summary>
+        <div class="details-content">
+          <ul>
+            <li>
+              <a
+                class="link-color fs-5"
+                href="#"
+                target="_blank"
+                >Высшее образование. Программы БАКАЛАВРИАТА</a
+              >
+            </li>
+            <li>
+              <a
+                class="link-color fs-5"
+                href="#"
+                target="_blank"
+                >Высшее образование. Программы СПЕЦИАЛИТЕТА</a
+              >
+            </li>
+            <li>
+              <a
+                class="link-color fs-5"
+                href="#"
+                target="_blank"
+                >Высшее образование. Программы МАГИСТРАТУРЫ</a
+              >
+            </li>
+            <li>
+              <a
+                class="link-color fs-5"
+                href="#"
+                target="_blank"
+                >Высшее образование. Программы подготовки научных и научно-педагогических кадров в АСПИРАНТУРЕ</a
+              >
+            </li>
+          </ul>
+        </div>
+      </details>
+      <details class="details yelow-divider" name="education-accordion">
+        <summary class="details-title">
+          <p class="fw-semibold fs-4">
+           Информация по адаптированным образовательным программам
+          </p>
+          <i class="fa-solid fa-angle-down fa-2xl my-accordion-icon"></i>
+        </summary>
+        <div class="details-content">
+          <p>
+            Адаптированные образовательные программы (АОП) в образовательной организации не реализуются в связи с отсутствием в контингенте обучающихся лиц с ограниченными возможностями здоровья (ОВЗ), желающих обучаться по АОП. Согласно Федеральному Закону об образовании 273-ФЗ от 29.12.2012 г. ст. 79, п.8 "Профессиональное обучение и профессиональное образование обучающихся с ограниченными возможностями здоровья осуществляются на основе образовательных программ, адаптированных при необходимости для обучения указанных обучающихся". АОП разрабатывается по каждой направленности при наличии заявлений от обучающихся, являющихся инвалидами или лицами с ОВЗ и изъявивших желание об обучении по данному типу образовательных программ.
+          </p>
+        </div>
+      </details>
+      <details class="details yelow-divider" name="education-accordion">
+        <summary class="details-title">
+          <p class="fw-semibold fs-4">
+           Информация о направлениях и результатах научной (научно-исследовательской) деятельности и научно-исследовательской базе для ее осуществления
+          </p>
+          <i class="fa-solid fa-angle-down fa-2xl my-accordion-icon"></i>
+        </summary>
+        <div class="details-content">
+          <ul>
+            <li>
+              <a
+                class="link-color fs-5"
+                href="#"
+                target="_blank"
+                >Высшее образование. Программы БАКАЛАВРИАТА</a
+              >
+            </li>
+            <li>
+              <a
+                class="link-color fs-5"
+                href="#"
+                target="_blank"
+                >Высшее образование. Программы СПЕЦИАЛИТЕТА</a
+              >
+            </li>
+            <li>
+              <a
+                class="link-color fs-5"
+                href="#"
+                target="_blank"
+                >Высшее образование. Программы МАГИСТРАТУРЫ</a
+              >
+            </li>
+            <li>
+              <a
+                class="link-color fs-5"
+                href="#"
+                target="_blank"
+                >Высшее образование - Подготовка кадров высшей квалификации. Аспирантура</a
+              >
+            </li>
+          </ul>
+        </div>
+      </details>
+      <details class="details yelow-divider" name="education-accordion">
+        <summary class="details-title">
+          <p class="fw-semibold fs-4">
+           Информация о языках образования (в форме электронного документа)
+          </p>
+          <i class="fa-solid fa-angle-down fa-2xl my-accordion-icon"></i>
+        </summary>
+        <div class="details-content">
+          <p>
+            <a class="link-color" href="https://cloud.hgpurf.ru/index.php/s/DMbqbjC52pBrfDj">Приказ №43-О/4 от 19.06.2024 г. "Об утверждении Положения о языке образования в ФГБОУ ВО "Херсонский государственный педагогический университет"</a> | <a class="link-color" href="">ЭП</a>
+          </p>
+        </div>
+      </details>
+      <details class="details yelow-divider" name="education-accordion">
+        <summary class="details-title">
+          <p class="fw-semibold fs-4">
+           Информация о численности обучающихся (в форме электронного документа)
+          </p>
+          <i class="fa-solid fa-angle-down fa-2xl my-accordion-icon"></i>
+        </summary>
+        <div class="details-content">
+
+        </div>
+      </details>
+      <details class="details yelow-divider" name="education-accordion">
+        <summary class="details-title">
+          <p class="fw-semibold fs-4">
+           Информация о результатах приема в ФГБОУ ВО “ХГПУ” (в форме электронного документа)
+          </p>
+          <i class="fa-solid fa-angle-down fa-2xl my-accordion-icon"></i>
+        </summary>
+        <div class="details-content">
+        
+        </div>
+      </details>
+      <details class="details yelow-divider" name="education-accordion">
+        <summary class="details-title">
+          <p class="fw-semibold fs-4">
+           Информация о результатах перевода, восстановления и отчисления (в форме электронного документа)
+          </p>
+          <i class="fa-solid fa-angle-down fa-2xl my-accordion-icon"></i>
+        </summary>
+        <div class="details-content">
+        
+        </div>
+      </details>
+      <details class="details yelow-divider" name="education-accordion">
+        <summary class="details-title">
+          <p class="fw-semibold fs-4">
+           Информация о трудоустройстве выпускников за прошлый учебный год
+          </p>
+          <i class="fa-solid fa-angle-down fa-2xl my-accordion-icon"></i>
+        </summary>
+        <div class="details-content table-scroll">
+          <table class="accordion-table education text-center w-100">
+            <tbody>
+              <tr>
+                <td class="p-3">№ п/п</td>
+                <td class="p-3">Код, шифр</td>
+                <td class="p-3">Наименование направления подготовки, научной специальности</td>
+                <td class="p-3">Наименование образовательной программы (ОП), научной специальности</td>
+                <td class="p-3">Уровень образования</td>
+                <td class="p-3">Количество выпускников</td>
+                <td class="p-3">Количество трудоустроенных выпускников</td>
+              </tr>
+              <tr class="tr-light">
+                <td class="p-3">1</td>
+                <td class="p-3">09.03.04</td>
+                <td class="p-3">Программная инженерия</td>
+                <td class="p-3">Программно-информационные системы</td>
+                <td class="p-3">Высшее образование - бакалавриат</td>
+                <td class="p-3">5</td>
+                <td class="p-3">3</td>
+              </tr>
+              <tr class="tr-dark">
+                <td class="p-3">2</td>
+                <td class="p-3">44.03.01</td>
+                <td class="p-3">Педагогическое образование</td>
+                <td class="p-3">Физическая культура</td>
+                <td class="p-3">Высшее образование - бакалавриат</td>
+                <td class="p-3">2</td>
+                <td class="p-3">2</td>
+              </tr>
+              <tr class="tr-light">
+                <td class="p-3">3</td>
+                <td class="p-3">05.04.06</td>
+                <td class="p-3">Экология и природопользование</td>
+                <td class="p-3">Технологии оценивания экологических рисков</td>
+                <td class="p-3">Высшее образование - магистратура</td>
+                <td class="p-3">1</td>
+                <td class="p-3">1</td>
+              </tr>
+              <tr class="tr-dark">
+                <td class="p-3">4</td>
+                <td class="p-3">37.04.01</td>
+                <td class="p-3">Психология</td>
+                <td class="p-3">Психологическое консультирование</td>
+                <td class="p-3">Высшее образование - магистратура</td>
+                <td class="p-3">68</td>
+                <td class="p-3">42</td>
+              </tr>
+              <tr class="tr-light">
+                <td class="p-3">5</td>
+                <td class="p-3">38.04.02</td>
+                <td class="p-3">Менеджмент</td>
+                <td class="p-3">Управление проектом</td>
+                <td class="p-3">Высшее образование - магистратура</td>
+                <td class="p-3">5</td>
+                <td class="p-3">4</td>
+              </tr>
+              <tr class="tr-dark">
+                <td class="p-3">6</td>
+                <td class="p-3">40.04.01</td>
+                <td class="p-3">Юриспруденция</td>
+                <td class="p-3">Правозащитная и правоохранительная деятельность в Российской Федерации</td>
+                <td class="p-3">Высшее образование - магистратура</td>
+                <td class="p-3">5</td>
+                <td class="p-3">4</td>
+              </tr>
+              <tr class="tr-light">
+                <td class="p-3">7</td>
+                <td class="p-3">42.04.02</td>
+                <td class="p-3">Журналистика</td>
+                <td class="p-3">Медиаобразование в сфере межнациональных отношений</td>
+                <td class="p-3">Высшее образование - магистратура</td>
+                <td class="p-3">6</td>
+                <td class="p-3">5</td>
+              </tr>
+              <tr class="tr-dark">
+                <td class="p-3">8</td>
+                <td class="p-3">44.04.01</td>
+                <td class="p-3">Педагогическое образование</td>
+                <td class="p-3">Инновационная начальная школа</td>
+                <td class="p-3">Высшее образование - магистратура</td>
+                <td class="p-3">5</td>
+                <td class="p-3">5</td>
+              </tr>
+              <tr class="tr-light">
+                <td class="p-3">9</td>
+                <td class="p-3">44.04.01</td>
+                <td class="p-3">Педагогическое образование</td>
+                <td class="p-3">Менеджмент в образовании</td>
+                <td class="p-3">Высшее образование - магистратура</td>
+                <td class="p-3">5</td>
+                <td class="p-3">5</td>
+              </tr>
+              <tr class="tr-dark">
+                <td class="p-3">10</td>
+                <td class="p-3">44.04.01</td>
+                <td class="p-3">Педагогическое образование</td>
+                <td class="p-3">Музыкальная культура и искусство</td>
+                <td class="p-3">Высшее образование - магистратура</td>
+                <td class="p-3">4</td>
+                <td class="p-3">4</td>
+              </tr>
+              <tr class="tr-light">
+                <td class="p-3">11</td>
+                <td class="p-3">44.04.01</td>
+                <td class="p-3">Педагогическое образование</td>
+                <td class="p-3">Теория спорта и технологии спортивной подготовки</td>
+                <td class="p-3">Высшее образование - магистратура</td>
+                <td class="p-3">6</td>
+                <td class="p-3">6</td>
+              </tr>
+              <tr class="tr-dark">
+                <td class="p-3">12</td>
+                <td class="p-3">44.04.01</td>
+                <td class="p-3">Педагогическое образование</td>
+                <td class="p-3">Изобразительное искусство в художественном образовании</td>
+                <td class="p-3">Высшее образование - магистратура</td>
+                <td class="p-3">2</td>
+                <td class="p-3">1</td>
+              </tr>
+              <tr class="tr-light">
+                <td class="p-3">13</td>
+                <td class="p-3">44.04.01</td>
+                <td class="p-3">Педагогическое образование</td>
+                <td class="p-3">Воспитательная работа с молодежью</td>
+                <td class="p-3">Высшее образование - магистратура</td>
+                <td class="p-3">3</td>
+                <td class="p-3">2</td>
+              </tr>
+              <tr class="tr-dark">
+                <td class="p-3">14</td>
+                <td class="p-3">44.04.03</td>
+                <td class="p-3">Специальное (дефектологическое) образование</td>
+                <td class="p-3">Теоретическая и прикладная логопедия</td>
+                <td class="p-3">Высшее образование - магистратура</td>
+                <td class="p-3">25</td>
+                <td class="p-3">18</td>
+              </tr>
+              <tr class="tr-light">
+                <td class="p-3">15</td>
+                <td class="p-3">45.04.01</td>
+                <td class="p-3">Филология</td>
+                <td class="p-3">Русский язык в различных сферах коммуникации</td>
+                <td class="p-3">Высшее образование - магистратура</td>
+                <td class="p-3">3</td>
+                <td class="p-3">3</td>
+              </tr>
+              <tr class="tr-dark">
+                <td class="p-3">16</td>
+                <td class="p-3">51.04.01</td>
+                <td class="p-3">Культурология</td>
+                <td class="p-3">Кросскультурные исследования и управление проектами в сфере культуры</td>
+                <td class="p-3">Высшее образование - магистратура</td>
+                <td class="p-3">9</td>
+                <td class="p-3">5</td>
+              </tr>
+              <tr class="tr-light">
+                <td class="p-3">17</td>
+                <td class="p-3">51.04.05</td>
+                <td class="p-3">Режиссура театрализованных представлений и праздников</td>
+                <td class="p-3">Театрализованные представления и праздники</td>
+                <td class="p-3">Высшее образование - магистратура</td>
+                <td class="p-3">10</td>
+                <td class="p-3">4</td>
+              </tr>
+              <tr class="tr-dark">
+                <td class="p-3">18</td>
+                <td class="p-3">52.04.01</td>
+                <td class="p-3">Хореографическое искусство</td>
+                <td class="p-3">Хореографическое образование</td>
+                <td class="p-3">Высшее образование - магистратура</td>
+                <td class="p-3">5</td>
+                <td class="p-3">4</td>
+              </tr>
+              <tr class="tr-light">
+                <td class="p-3">19</td>
+                <td class="p-3">52.04.01</td>
+                <td class="p-3">Хореографическое искусство</td>
+                <td class="p-3">Искусство балетмейстера-постановщика</td>
+                <td class="p-3">Высшее образование - магистратура</td>
+                <td class="p-3">5</td>
+                <td class="p-3">2</td>
+              </tr>
+              <tr class="tr-dark">
+                <td class="p-3">20</td>
+                <td class="p-3">52.04.03</td>
+                <td class="p-3">Театральное искусство</td>
+                <td class="p-3">Мастерство актёра</td>
+                <td class="p-3">Высшее образование - магистратура</td>
+                <td class="p-3">5</td>
+                <td class="p-3">2</td>
+              </tr>
+              <tr class="tr-light">
+                <td class="p-3">21</td>
+                <td class="p-3">54.04.01</td>
+                <td class="p-3">Дизайн</td>
+                <td class="p-3">Дизайн мультимедиа</td>
+                <td class="p-3">Высшее образование - магистратура</td>
+                <td class="p-3">12</td>
+                <td class="p-3">5</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+    </div>
+  </div>
+</main>
+{% endblock %}

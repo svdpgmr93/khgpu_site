@@ -1,28 +1,25 @@
-{% extends 'base.html' %} 
-{% load static %} 
-{% block title %}Международное сотрудничество {% endblock %} 
-{% block content %}
+{% extends 'base.html' %} {% load static %} {% block title %}Международное
+сотрудничество {% endblock %} {% block content %}
 <main class="main">
   <div class="container">
     <div class="py-4">
-              <nav
-                style="--bs-breadcrumb-divider: '>>'"
-                aria-label="breadcrumb"
-              >
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="{%url 'main'%}">Главная</a></li>
-                  <li class="breadcrumb-item" aria-current="page">
-                    <a href="{%url 'main'%}">Университет</a>
-                  </li>
-                  <li class="breadcrumb-item active" aria-current="page">
-                    <a href="{%url 'sveden'%}">Сведения об образовательной организации</a>
-                  </li>
-                  <li class="breadcrumb-item active" aria-current="page">
-                    <a href="{%url 'inter'%}">Международное сотрудничество</a>
-                  </li>
-                </ol>
-              </nav>
-            </div>
+      <nav style="--bs-breadcrumb-divider: '>>'" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="{%url 'main'%}">Главная</a></li>
+          <li class="breadcrumb-item" aria-current="page">
+            <a href="{%url 'main'%}">Университет</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            <a href="{%url 'sveden'%}"
+              >Сведения об образовательной организации</a
+            >
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            <a href="{%url 'inter'%}">Международное сотрудничество</a>
+          </li>
+        </ol>
+      </nav>
+    </div>
     <h2 class="mb-5 fw-bold fs-2 basic-info-title">
       Международное сотрудничество
     </h2>
