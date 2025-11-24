@@ -32,6 +32,7 @@ urlpatterns = [
     path('sveden/struct', struct, name='struct'),
     path('sveden/document', document,  name='document'),
     path('sveden/education', education, name='education'),
+    path('sveden/education/mag_opop', mag_opop, name='mag_opop'),
     path('sveden/eduStandarts', eduStandarts, name='eduStandarts'),
     path('sveden/managers', managers, name='managers'),
     path('sveden/employees', employees, name='employees'),
@@ -42,5 +43,6 @@ urlpatterns = [
     path('sveden/vacant', vacant, name='vacant'),
     path('sveden/inter', inter, name='inter'),
     path('sveden/catering', catering, name='catering'),
+    path('test', test, name='test'),
     # -- END --
 ]
