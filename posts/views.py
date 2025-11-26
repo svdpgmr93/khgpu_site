@@ -25,6 +25,9 @@ def document(requests):
 def education(requests):
     return render(requests, 'education.html')
 
+def mag_opop(requests):
+    return render(requests, 'mag_opop.html')
+
 def eduStandarts(requests):
     return render(requests, 'eduStandarts.html')
 
@@ -59,3 +62,6 @@ def catering(requests):
 
 def career(requests):
     return render(requests, 'career.html')
+
+def test(requests):
+    return render(requests, 'test.html')

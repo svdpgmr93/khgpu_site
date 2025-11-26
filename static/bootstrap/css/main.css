@@ -787,7 +787,7 @@ summary p {
 }
 
 .table-head {
-    background-color: #ffd600;
+    background-color: #ffd600 !important
 }
 
 .table-white-border th, td {
@@ -1042,3 +1042,15 @@ summary p {
     background-color: #d80707;
 }
 /* Career-center page styles end*/
+
+.table-opop thead td{
+    background-color: #ffd600
+}
+
+.table-opop {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+    font-size: 14px;
+    width: 100%;
+}

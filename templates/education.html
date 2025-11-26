@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% load static %} 
+{% load static %}
 {% block title %}
 Образование
 {% endblock %}
@@ -17,7 +17,7 @@
             <a href="{% url 'sveden' %}">Сведения об образовательной организации</a>
           </li>
           <li class="breadcrumb-item active" aria-current="page">
-            <a href="#">Образование</a>
+            <a href="{% url 'education' %}">Образование</a>
           </li>
         </ol>
       </nav>
@@ -33,10 +33,9 @@
           </p>
           <i class="fa-solid fa-angle-down fa-2xl my-accordion-icon"></i>
         </summary>
-        <div class="details-content table-scroll">
-          <table class="accordion-table education w-100 text-center">
-            <tbody>
-              <tr>
+        <table class="accordion-table">
+          <tbody>
+            <tr>
                 <td class="p-3">№ п/п</td>
                 <td class="p-3">Код, шифр</td>
                 <td class="p-3">Наименование направления подготовки, научной специальности</td>
@@ -47,72 +46,1708 @@
                 <td class="p-3">Учебные предметы, курсы, дисциплины (модули), предусмот-ренные соответст- вующей ОП</td>
                 <td class="p-3">Практики, предусмот- ренные соответст- вующей ОП</td>
               </tr>
-              <tr class="tr-light">
-                <td class="p-3">1</td>
-                <td class="p-3">05.03.06</td>
-                <td class="p-3">Экология и природопользование</td>
-                <td class="p-3">Геоэкология</td>
-                <td class="p-3">Высшее образование - бакалавриат</td>
-                <td class="p-3">Очная/ Заочная</td>
-                <td class="p-3">4 года/4 года 6 месяцев</td>
-                <td class="p-3"><a href="">Перейти</a></td>
-                <td class="p-3"><a href="">Перейти</a></td>
+          </tbody>
+        </table>
+        <div class="details-content table-scroll">
+          <table class="table table-striped accordion-table education text-center">
+            <tbody>
+              <tr itemprop="eduAccred">
+                <td class="p-3">1.</td>
+                <td class="p-3" itemprop="eduCode">05.03.06</td>
+                <td class="p-3" itemprop="eduName">Экология и природопользование</td>
+                <td class="p-3" itemprop="eduProf">Геоэкология</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Заочная</td>
+                <td class="p-3" itemprop="learningTerm">4 года/
+                  4 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/dr7Lop3AZqZaBqZ">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/dr7Lop3AZqZaBqZ">Перейти</a></td>
               </tr>
-              <tr class="tr-dark">
-                <td class="p-3">2</td>
-                <td class="p-3">06.03.01</td>
-                <td class="p-3">Биология</td>
-                <td class="p-3">Биоэкология</td>
-                <td class="p-3">Высшее образование - бакалавриат</td>
-                <td class="p-3">Очно-заочная</td>
-                <td class="p-3">4 года 6 месяцев</td>
-                <td class="p-3"><a href="">Перейти</a></td>
-                <td class="p-3"><a href="">Перейти</a></td>
+              <tr itemprop="eduAccred">
+                <td class="p-3">2.</td>
+                <td class="p-3" itemprop="eduCode">06.03.01</td>
+                <td class="p-3" itemprop="eduName">Биология</td>
+                <td class="p-3" itemprop="eduProf">Биоэкология</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очно-заочная</td>
+                <td class="p-3" itemprop="learningTerm">4 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/ZmAwaTNso3678dA">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/ZmAwaTNso3678dA">Перейти</a></td>
               </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">3.</td>
+                <td class="p-3" itemprop="eduCode">09.03.04</td>
+                <td class="p-3" itemprop="eduName">Программная инженерия</td>
+                <td class="p-3" itemprop="eduProf">Программно-информационные системы</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Заочная/
+                  Очно-заочная</td>
+                <td class="p-3" itemprop="learningTerm">4 года/
+                  4 года 6 месяцев/
+                  4 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/EyPecE7YSi6EnZt">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/EyPecE7YSi6EnZt">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">4.</td>
+                <td class="p-3" itemprop="eduCode">37.03.01</td>
+                <td class="p-3" itemprop="eduName">Психология</td>
+                <td class="p-3" itemprop="eduProf">Психологическая диагностика и развитие личности</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Очно-заочная</td>
+                <td class="p-3" itemprop="learningTerm">4 года/
+                  4 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/7S7qTweqSzX4LDR?dir=/37.03.01_%D0%9F%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D0%B4%D0%B8%D0%B0%D0%B3%D0%BD%D0%BE%D1%81%D1%82%D0%B8%D0%BA%D0%B0%20%D0%B8%20%D1%80%D0%B0%D0%B7%D0%B2%D0%B8%D1%82%D0%B8%D0%B5%20%D0%BB%D0%B8%D1%87%D0%BD%D0%BE%D1%81%D1%82%D0%B8">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/7S7qTweqSzX4LDR?dir=/37.03.01_%D0%9F%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D0%B4%D0%B8%D0%B0%D0%B3%D0%BD%D0%BE%D1%81%D1%82%D0%B8%D0%BA%D0%B0%20%D0%B8%20%D1%80%D0%B0%D0%B7%D0%B2%D0%B8%D1%82%D0%B8%D0%B5%20%D0%BB%D0%B8%D1%87%D0%BD%D0%BE%D1%81%D1%82%D0%B8">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">5.</td>
+                <td class="p-3" itemprop="eduCode">37.03.01</td>
+                <td class="p-3" itemprop="eduName">Психология</td>
+                <td class="p-3" itemprop="eduProf">Социальная психология развития</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная</td>
+                <td class="p-3" itemprop="learningTerm">4 года</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/7S7qTweqSzX4LDR?dir=/37.03.01_%D0%A1%D0%BE%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%BF%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%20%D1%80%D0%B0%D0%B7%D0%B2%D0%B8%D1%82%D0%B8%D1%8F">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/7S7qTweqSzX4LDR?dir=/37.03.01_%D0%A1%D0%BE%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%BF%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%20%D1%80%D0%B0%D0%B7%D0%B2%D0%B8%D1%82%D0%B8%D1%8F">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">6.</td>
+                <td class="p-3" itemprop="eduCode">38.03.02</td>
+                <td class="p-3" itemprop="eduName">Менеджмент</td>
+                <td class="p-3" itemprop="eduProf">Управление бизнесом</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Очно-заочная</td>
+                <td class="p-3" itemprop="learningTerm">4 года/
+                  4 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/ZXHLmdyaioYiKo8">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/ZXHLmdyaioYiKo8">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">7.</td>
+                <td class="p-3" itemprop="eduCode">38.03.04</td>
+                <td class="p-3" itemprop="eduName">Государственное и муниципальное управление</td>
+                <td class="p-3" itemprop="eduProf">Государственное и муниципальное управление</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Очно-заочная</td>
+                <td class="p-3" itemprop="learningTerm">4 года/
+                  4 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/FDRfy6XxYN8dJrd">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/FDRfy6XxYN8dJrd">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">8.</td>
+                <td class="p-3" itemprop="eduCode">39.03.03</td>
+                <td class="p-3" itemprop="eduName">Организация работы с молодёжью</td>
+                <td class="p-3" itemprop="eduProf">Управление в системе молодёжной политики</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Очно-заочная</td>
+                <td class="p-3" itemprop="learningTerm">4 года/
+                  4 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/bLKef8Lweaekc7c">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/bLKef8Lweaekc7c">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">9.</td>
+                <td class="p-3" itemprop="eduCode">40.03.01</td>
+                <td class="p-3" itemprop="eduName">Юриспруденция</td>
+                <td class="p-3" itemprop="eduProf">Юриспруденция</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Очно-заочная/
+                  Заочная</td>
+                <td class="p-3" itemprop="learningTerm">4 года/
+                  4 года 6 месяцев/
+                  4 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/5s5Bq7yKJpfm7rK">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/5s5Bq7yKJpfm7rK">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">10.</td>
+                <td class="p-3" itemprop="eduCode">42.03.02</td>
+                <td class="p-3" itemprop="eduName">Журналистика</td>
+                <td class="p-3" itemprop="eduProf">Журналистика</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Заочная</td>
+                <td class="p-3" itemprop="learningTerm">4 года/
+                  4 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/8piEaKxs5xaMmi2">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/8piEaKxs5xaMmi2">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">11.</td>
+                <td class="p-3" itemprop="eduCode">42.03.04</td>
+                <td class="p-3" itemprop="eduName">Телевидение</td>
+                <td class="p-3" itemprop="eduProf">Режиссура телевизионных и мультимедийных проектов</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Заочная</td>
+                <td class="p-3" itemprop="learningTerm">4 года/
+                  4 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/9Ds2zeoxjYEcgBj">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/9Ds2zeoxjYEcgBj">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">12.</td>
+                <td class="p-3" itemprop="eduCode">43.03.01</td>
+                <td class="p-3" itemprop="eduName">Сервис</td>
+                <td class="p-3" itemprop="eduProf">Менеджмент, маркетинг и дизайн в сервисе</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очно-заочная/
+                  Заочная</td>
+                <td class="p-3" itemprop="learningTerm">4 года 6 месяцев/
+                  4 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/ZeyBymGXddLWDkE">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/ZeyBymGXddLWDkE">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">13.</td>
+                <td class="p-3" itemprop="eduCode">43.03.02</td>
+                <td class="p-3" itemprop="eduName">Туризм</td>
+                <td class="p-3" itemprop="eduProf">Технология и организация услуг на предприятиях индустрии туризма</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Заочная</td>
+                <td class="p-3" itemprop="learningTerm">4 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/dzr2HE22tcrDH3b">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/dzr2HE22tcrDH3b">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">14.</td>
+                <td class="p-3" itemprop="eduCode">43.03.03</td>
+                <td class="p-3" itemprop="eduName">Гостиничное дело</td>
+                <td class="p-3" itemprop="eduProf">Гостинично-ресторанный бизнес</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Очно-заочная</td>
+                <td class="p-3" itemprop="learningTerm">4 года/
+                  4 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/QGtjxNMrm4RemfZ">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/QGtjxNMrm4RemfZ">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">15.</td>
+                <td class="p-3" itemprop="eduCode">43.03.03</td>
+                <td class="p-3" itemprop="eduName">Гостиничное дело</td>
+                <td class="p-3" itemprop="eduProf">Гостиничный бизнес</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Заочная</td>
+                <td class="p-3" itemprop="learningTerm">4 года/
+                  4 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/QGtjxNMrm4RemfZ">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/QGtjxNMrm4RemfZ">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">16.</td>
+                <td class="p-3" itemprop="eduCode">43.03.03</td>
+                <td class="p-3" itemprop="eduName">Гостиничное дело</td>
+                <td class="p-3" itemprop="eduProf">Ресторанный бизнес</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Заочная</td>
+                <td class="p-3" itemprop="learningTerm">4 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/QGtjxNMrm4RemfZ">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/QGtjxNMrm4RemfZ">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">17.</td>
+                <td class="p-3" itemprop="eduCode">43.03.03</td>
+                <td class="p-3" itemprop="eduName">Гостиничное дело</td>
+                <td class="p-3" itemprop="eduProf">Гостинично-ресторанная деятельность</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Заочная</td>
+                <td class="p-3" itemprop="learningTerm">4 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/QGtjxNMrm4RemfZ">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/QGtjxNMrm4RemfZ">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">18.</td>
+                <td class="p-3" itemprop="eduCode">44.03.01</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование</td>
+                <td class="p-3" itemprop="eduProf">География</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Заочная</td>
+                <td class="p-3" itemprop="learningTerm">4 года/
+                  4 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/yjnxdbzQSmHdmg6?dir=/44.03.01_%D0%93%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/yjnxdbzQSmHdmg6?dir=/44.03.01_%D0%93%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">19.</td>
+                <td class="p-3" itemprop="eduCode">44.03.01</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование</td>
+                <td class="p-3" itemprop="eduProf">История</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Заочная</td>
+                <td class="p-3" itemprop="learningTerm">4 года/
+                  4 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/yjnxdbzQSmHdmg6?dir=/44.03.01_%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/yjnxdbzQSmHdmg6?dir=/44.03.01_%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">20.</td>
+                <td class="p-3" itemprop="eduCode">44.03.01</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование</td>
+                <td class="p-3" itemprop="eduProf">Изобразительное искусство</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Заочная</td>
+                <td class="p-3" itemprop="learningTerm">4 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/yjnxdbzQSmHdmg6?dir=/44.03.01_%D0%98%D0%97%D0%9E">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/yjnxdbzQSmHdmg6?dir=/44.03.01_%D0%98%D0%97%D0%9E">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">21.</td>
+                <td class="p-3" itemprop="eduCode">44.03.01</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование</td>
+                <td class="p-3" itemprop="eduProf">Иностранный язык (английский)</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Заочная</td>
+                <td class="p-3" itemprop="learningTerm">4 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/yjnxdbzQSmHdmg6?dir=/44.03.01_%D0%98%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%8F%D0%B7%D1%8B%D0%BA%20%28%D0%B0%D0%BD%D0%B3%D0%BB.%29">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/yjnxdbzQSmHdmg6?dir=/44.03.01_%D0%98%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%8F%D0%B7%D1%8B%D0%BA%20%28%D0%B0%D0%BD%D0%B3%D0%BB.%29">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">22.</td>
+                <td class="p-3" itemprop="eduCode">44.03.01</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование</td>
+                <td class="p-3" itemprop="eduProf">Иностранный язык (испанский)</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Заочная</td>
+                <td class="p-3" itemprop="learningTerm">4 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/yjnxdbzQSmHdmg6?dir=/44.03.01_%D0%98%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%8F%D0%B7%D1%8B%D0%BA%20%28%D0%B8%D1%81%D0%BF%D0%B0%D0%BD.%29">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/yjnxdbzQSmHdmg6?dir=/44.03.01_%D0%98%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%8F%D0%B7%D1%8B%D0%BA%20%28%D0%B8%D1%81%D0%BF%D0%B0%D0%BD.%29">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">23.</td>
+                <td class="p-3" itemprop="eduCode">44.03.01</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование</td>
+                <td class="p-3" itemprop="eduProf">Иностранный язык (немецкий)</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Заочная</td>
+                <td class="p-3" itemprop="learningTerm">4 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/yjnxdbzQSmHdmg6?dir=/44.03.01_%D0%98%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%8F%D0%B7%D1%8B%D0%BA%20%28%D0%BD%D0%B5%D0%BC.%29">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/yjnxdbzQSmHdmg6?dir=/44.03.01_%D0%98%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%8F%D0%B7%D1%8B%D0%BA%20%28%D0%BD%D0%B5%D0%BC.%29">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">24.</td>
+                <td class="p-3" itemprop="eduCode">44.03.01</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование</td>
+                <td class="p-3" itemprop="eduProf">Музыкальное образование (в области эстрадно-джазового искусства)</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Очно-заочная</td>
+                <td class="p-3" itemprop="learningTerm">4 года/
+                  4 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/yjnxdbzQSmHdmg6?dir=/44.03.01_%D0%9C%D1%83%D0%B7%D1%8B%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/yjnxdbzQSmHdmg6?dir=/44.03.01_%D0%9C%D1%83%D0%B7%D1%8B%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">25.</td>
+                <td class="p-3" itemprop="eduCode">44.03.01</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование</td>
+                <td class="p-3" itemprop="eduProf">Начальное образование</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Заочная</td>
+                <td class="p-3" itemprop="learningTerm">4 года/
+                  4 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/yjnxdbzQSmHdmg6?dir=/44.03.01_%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/yjnxdbzQSmHdmg6?dir=/44.03.01_%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">26.</td>
+                <td class="p-3" itemprop="eduCode">44.03.01</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование</td>
+                <td class="p-3" itemprop="eduProf">Физическая культура</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Заочная</td>
+                <td class="p-3" itemprop="learningTerm">4 года/
+                  4 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/yjnxdbzQSmHdmg6?dir=/44.03.01_%D0%A4%D0%B8%D0%B7%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BA%D1%83%D0%BB%D1%8C%D1%82%D1%83%D1%80%D0%B0">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/yjnxdbzQSmHdmg6?dir=/44.03.01_%D0%A4%D0%B8%D0%B7%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BA%D1%83%D0%BB%D1%8C%D1%82%D1%83%D1%80%D0%B0">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">27.</td>
+                <td class="p-3" itemprop="eduCode">44.03.01</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование</td>
+                <td class="p-3" itemprop="eduProf">Художественное образование (в области театрального искусства)</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Очно-заочная</td>
+                <td class="p-3" itemprop="learningTerm">4 года/
+                  4 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/yjnxdbzQSmHdmg6?dir=/44.03.01_%D0%A5%D1%83%D0%B4%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%28%D1%82%D0%B5%D0%B0%D1%82%D1%80%29">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/yjnxdbzQSmHdmg6?dir=/44.03.01_%D0%A5%D1%83%D0%B4%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%28%D1%82%D0%B5%D0%B0%D1%82%D1%80%29">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">28.</td>
+                <td class="p-3" itemprop="eduCode">44.03.01</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование</td>
+                <td class="p-3" itemprop="eduProf">Художественное образование (в области хореографии)</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Очно-заочная/
+                  Заочная</td>
+                <td class="p-3" itemprop="learningTerm">4 года/
+                  4 года 6 месяцев/
+                  4 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/yjnxdbzQSmHdmg6?dir=/44.03.01_%D0%A5%D1%83%D0%B4%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%28%D1%85%D0%BE%D1%80%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F%29">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/yjnxdbzQSmHdmg6?dir=/44.03.01_%D0%A5%D1%83%D0%B4%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%28%D1%85%D0%BE%D1%80%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F%29">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">29.</td>
+                <td class="p-3" itemprop="eduCode">44.03.02</td>
+                <td class="p-3" itemprop="eduName">Психолого-педагогическое образование</td>
+                <td class="p-3" itemprop="eduProf">Психология и педагогика дошкольного образования</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Заочная</td>
+                <td class="p-3" itemprop="learningTerm">4 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/Rd323BixePgGa7r">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/Rd323BixePgGa7r">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">30.</td>
+                <td class="p-3" itemprop="eduCode">44.03.03</td>
+                <td class="p-3" itemprop="eduName">Специальное (дефектологическое) образование</td>
+                <td class="p-3" itemprop="eduProf">Логопедия</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Заочная</td>
+                <td class="p-3" itemprop="learningTerm">4 года/
+                  4 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/CdHnko8LijLkc3z">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/CdHnko8LijLkc3z">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">31.</td>
+                <td class="p-3" itemprop="eduCode">44.03.05</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование (с двумя профилями подготовки)</td>
+                <td class="p-3" itemprop="eduProf">Биология и Экология</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Заочная</td>
+                <td class="p-3" itemprop="learningTerm">5 лет/
+                  5 лет 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4ty96ZnoyJqKW7K?dir=/44.03.05_%D0%91%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%20%D0%B8%20%D0%AD%D0%BA%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4ty96ZnoyJqKW7K?dir=/44.03.05_%D0%91%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%20%D0%B8%20%D0%AD%D0%BA%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">32.</td>
+                <td class="p-3" itemprop="eduCode">44.03.05</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование (с двумя профилями подготовки)</td>
+                <td class="p-3" itemprop="eduProf">Безопасность жизнедеятельности и дополнительное образование (туризм)
+                </td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Заочная</td>
+                <td class="p-3" itemprop="learningTerm">5 лет 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4ty96ZnoyJqKW7K?dir=/44.03.05_%D0%91%D0%96%20%D0%B8%20%D0%94%D0%BE%D0%BF.%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%28%D1%82%D1%83%D1%80%D0%B8%D0%B7%D0%BC%29">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4ty96ZnoyJqKW7K?dir=/44.03.05_%D0%91%D0%96%20%D0%B8%20%D0%94%D0%BE%D0%BF.%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%28%D1%82%D1%83%D1%80%D0%B8%D0%B7%D0%BC%29">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">33.</td>
+                <td class="p-3" itemprop="eduCode">44.03.05</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование (с двумя профилями подготовки)</td>
+                <td class="p-3" itemprop="eduProf">Дошкольное образование и Дополнительное образование (раннее
+                  творческое развитие)</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная</td>
+                <td class="p-3" itemprop="learningTerm">5 лет</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4ty96ZnoyJqKW7K?dir=/44.03.05_%D0%94%D0%BE%D1%88%D0%BA%D0%BE%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20%D0%94%D0%BE%D0%BF.%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%28%D1%80%D0%B0%D0%BD%D0%BD%D0%B5%D0%B5%20%D1%82%D0%B2%D0%BE%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5%20%D1%80%D0%B0%D0%B7%D0%B2%D0%B8%D1%82%D0%B8%D0%B5%29">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4ty96ZnoyJqKW7K?dir=/44.03.05_%D0%94%D0%BE%D1%88%D0%BA%D0%BE%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20%D0%94%D0%BE%D0%BF.%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%28%D1%80%D0%B0%D0%BD%D0%BD%D0%B5%D0%B5%20%D1%82%D0%B2%D0%BE%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5%20%D1%80%D0%B0%D0%B7%D0%B2%D0%B8%D1%82%D0%B8%D0%B5%29">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">34.</td>
+                <td class="p-3" itemprop="eduCode">44.03.05</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование (с двумя профилями подготовки)</td>
+                <td class="p-3" itemprop="eduProf">Изобразительное искусство и дополнительное образование</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная</td>
+                <td class="p-3" itemprop="learningTerm">5 лет</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4ty96ZnoyJqKW7K?dir=/44.03.05_%D0%98%D0%97%D0%9E%20%D0%B8%20%D0%94%D0%BE%D0%BF.%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4ty96ZnoyJqKW7K?dir=/44.03.05_%D0%98%D0%97%D0%9E%20%D0%B8%20%D0%94%D0%BE%D0%BF.%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">35.</td>
+                <td class="p-3" itemprop="eduCode">44.03.05</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование (с двумя профилями подготовки)</td>
+                <td class="p-3" itemprop="eduProf">Иностранный язык (английский) и Иностранный язык (немецкий)</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Заочная</td>
+                <td class="p-3" itemprop="learningTerm">5 лет/
+                  5 лет 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4ty96ZnoyJqKW7K?dir=/44.03.05_%D0%98%D0%BD.%D1%8F%D0%B7%D1%8B%D0%BA%20%28%D0%B0%D0%BD%D0%B3%D0%BB.%29%20%D0%B8%20%D0%98%D0%BD.%D1%8F%D0%B7%D1%8B%D0%BA%20%28%D0%BD%D0%B5%D0%BC.%29">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4ty96ZnoyJqKW7K?dir=/44.03.05_%D0%98%D0%BD.%D1%8F%D0%B7%D1%8B%D0%BA%20%28%D0%B0%D0%BD%D0%B3%D0%BB.%29%20%D0%B8%20%D0%98%D0%BD.%D1%8F%D0%B7%D1%8B%D0%BA%20%28%D0%BD%D0%B5%D0%BC.%29">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">36.</td>
+                <td class="p-3" itemprop="eduCode">44.03.05</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование (с двумя профилями подготовки)</td>
+                <td class="p-3" itemprop="eduProf">Иностранный язык (немецкий) и Иностранный язык (английский)</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная</td>
+                <td class="p-3" itemprop="learningTerm">5 лет</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4ty96ZnoyJqKW7K?dir=/44.03.05_%D0%98%D0%BD.%D1%8F%D0%B7%D1%8B%D0%BA%20%28%D0%BD%D0%B5%D0%BC.%29%20%D0%B8%20%D0%98%D0%BD.%D1%8F%D0%B7%D1%8B%D0%BA%20%28%D0%B0%D0%BD%D0%B3%D0%BB.%29">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4ty96ZnoyJqKW7K?dir=/44.03.05_%D0%98%D0%BD.%D1%8F%D0%B7%D1%8B%D0%BA%20%28%D0%BD%D0%B5%D0%BC.%29%20%D0%B8%20%D0%98%D0%BD.%D1%8F%D0%B7%D1%8B%D0%BA%20%28%D0%B0%D0%BD%D0%B3%D0%BB.%29">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">37.</td>
+                <td class="p-3" itemprop="eduCode">44.03.05</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование (с двумя профилями подготовки)</td>
+                <td class="p-3" itemprop="eduProf">Иностранный язык (английский) и Иностранный язык (турецкий)</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Заочная</td>
+                <td class="p-3" itemprop="learningTerm">5 лет 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4ty96ZnoyJqKW7K?dir=/44.03.05_%D0%98%D0%BD.%D1%8F%D0%B7%D1%8B%D0%BA%20%28%D0%B0%D0%BD%D0%B3%D0%BB.%29%20%D0%B8%20%D0%98%D0%BD.%D1%8F%D0%B7%D1%8B%D0%BA%20%28%D1%82%D1%83%D1%80%D0%B5%D1%86.%29">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4ty96ZnoyJqKW7K?dir=/44.03.05_%D0%98%D0%BD.%D1%8F%D0%B7%D1%8B%D0%BA%20%28%D0%B0%D0%BD%D0%B3%D0%BB.%29%20%D0%B8%20%D0%98%D0%BD.%D1%8F%D0%B7%D1%8B%D0%BA%20%28%D1%82%D1%83%D1%80%D0%B5%D1%86.%29">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">38.</td>
+                <td class="p-3" itemprop="eduCode">44.03.05</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование (с двумя профилями подготовки)</td>
+                <td class="p-3" itemprop="eduProf">Иностранный язык (испанский) и Иностранный язык (английский)</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная</td>
+                <td class="p-3" itemprop="learningTerm">5 лет</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4ty96ZnoyJqKW7K?dir=/44.03.05_%D0%98%D0%BD.%D1%8F%D0%B7%D1%8B%D0%BA%20%28%D0%B8%D1%81%D0%BF%D0%B0%D0%BD.%29%20%D0%B8%20%D0%98%D0%BD.%D1%8F%D0%B7%D1%8B%D0%BA%20%28%D0%B0%D0%BD%D0%B3%D0%BB.%29">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4ty96ZnoyJqKW7K?dir=/44.03.05_%D0%98%D0%BD.%D1%8F%D0%B7%D1%8B%D0%BA%20%28%D0%B8%D1%81%D0%BF%D0%B0%D0%BD.%29%20%D0%B8%20%D0%98%D0%BD.%D1%8F%D0%B7%D1%8B%D0%BA%20%28%D0%B0%D0%BD%D0%B3%D0%BB.%29">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">39.</td>
+                <td class="p-3" itemprop="eduCode">44.03.05</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование (с двумя профилями подготовки)</td>
+                <td class="p-3" itemprop="eduProf">Математика и Информатика</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очно-заочная/
+                  Заочная</td>
+                <td class="p-3" itemprop="learningTerm">5 лет 6 месяцев/
+                  5 лет 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4ty96ZnoyJqKW7K?dir=/44.03.05_%D0%9C%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0%20%D0%B8%20%D0%98%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4ty96ZnoyJqKW7K?dir=/44.03.05_%D0%9C%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0%20%D0%B8%20%D0%98%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">40.</td>
+                <td class="p-3" itemprop="eduCode">44.03.05</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование (с двумя профилями подготовки)</td>
+                <td class="p-3" itemprop="eduProf">Математика и Экономика</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очно-заочная/
+                  Заочная</td>
+                <td class="p-3" itemprop="learningTerm">5 лет 6 месяцев/
+                  5 лет 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4ty96ZnoyJqKW7K?dir=/44.03.05_%D0%9C%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0%20%D0%B8%20%D0%AD%D0%BA%D0%BE%D0%BD%D0%BE%D0%BC%D0%B8%D0%BA%D0%B0">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4ty96ZnoyJqKW7K?dir=/44.03.05_%D0%9C%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0%20%D0%B8%20%D0%AD%D0%BA%D0%BE%D0%BD%D0%BE%D0%BC%D0%B8%D0%BA%D0%B0">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">41.</td>
+                <td class="p-3" itemprop="eduCode">44.03.05</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование (с двумя профилями подготовки)</td>
+                <td class="p-3" itemprop="eduProf">Начальное образование и Информатика</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная</td>
+                <td class="p-3" itemprop="learningTerm">5 лет</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4ty96ZnoyJqKW7K?dir=/44.03.05_%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20%D0%98%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4ty96ZnoyJqKW7K?dir=/44.03.05_%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20%D0%98%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">42.</td>
+                <td class="p-3" itemprop="eduCode">44.03.05</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование (с двумя профилями подготовки)</td>
+                <td class="p-3" itemprop="eduProf">Русский язык и Иностранный язык (английский)</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Заочная</td>
+                <td class="p-3" itemprop="learningTerm">5 лет/
+                  5 лет 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4ty96ZnoyJqKW7K?dir=/44.03.05_%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9%20%D1%8F%D0%B7%D1%8B%D0%BA%20%D0%B8%20%D0%98%D0%BD.%D1%8F%D0%B7%D1%8B%D0%BA%20%28%D0%B0%D0%BD%D0%B3%D0%BB.%29">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4ty96ZnoyJqKW7K?dir=/44.03.05_%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9%20%D1%8F%D0%B7%D1%8B%D0%BA%20%D0%B8%20%D0%98%D0%BD.%D1%8F%D0%B7%D1%8B%D0%BA%20%28%D0%B0%D0%BD%D0%B3%D0%BB.%29">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">43.</td>
+                <td class="p-3" itemprop="eduCode">44.03.05</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование (с двумя профилями подготовки)</td>
+                <td class="p-3" itemprop="eduProf">Русский язык и Иностранный язык (китайский)</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная</td>
+                <td class="p-3" itemprop="learningTerm">5 лет</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4ty96ZnoyJqKW7K?dir=/44.03.05_%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9%20%D1%8F%D0%B7%D1%8B%D0%BA%20%D0%B8%20%D0%98%D0%BD.%D1%8F%D0%B7%D1%8B%D0%BA%20%28%D0%BA%D0%B8%D1%82%D0%B0%D0%B9%D1%81%D0%BA%D0%B8%D0%B9%29">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4ty96ZnoyJqKW7K?dir=/44.03.05_%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9%20%D1%8F%D0%B7%D1%8B%D0%BA%20%D0%B8%20%D0%98%D0%BD.%D1%8F%D0%B7%D1%8B%D0%BA%20%28%D0%BA%D0%B8%D1%82%D0%B0%D0%B9%D1%81%D0%BA%D0%B8%D0%B9%29">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">44.</td>
+                <td class="p-3" itemprop="eduCode">44.03.05</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование (с двумя профилями подготовки)</td>
+                <td class="p-3" itemprop="eduProf">Русский язык и Литература</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Заочная</td>
+                <td class="p-3" itemprop="learningTerm">5 лет/
+                  5 лет 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4ty96ZnoyJqKW7K?dir=/44.03.05_%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9%20%D1%8F%D0%B7%D1%8B%D0%BA%20%D0%B8%20%D0%9B%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%82%D1%83%D1%80%D0%B0">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4ty96ZnoyJqKW7K?dir=/44.03.05_%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9%20%D1%8F%D0%B7%D1%8B%D0%BA%20%D0%B8%20%D0%9B%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%82%D1%83%D1%80%D0%B0">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">45.</td>
+                <td class="p-3" itemprop="eduCode">44.03.05</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование (с двумя профилями подготовки)</td>
+                <td class="p-3" itemprop="eduProf">Физика и Информатика</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Заочная</td>
+                <td class="p-3" itemprop="learningTerm">5 лет 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4ty96ZnoyJqKW7K?dir=/44.03.05_%D0%A4%D0%B8%D0%B7%D0%B8%D0%BA%D0%B0%20%D0%B8%20%D0%98%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4ty96ZnoyJqKW7K?dir=/44.03.05_%D0%A4%D0%B8%D0%B7%D0%B8%D0%BA%D0%B0%20%D0%B8%20%D0%98%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">46.</td>
+                <td class="p-3" itemprop="eduCode">44.03.05</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование (с двумя профилями подготовки)</td>
+                <td class="p-3" itemprop="eduProf">Физическая культура и дополнительное образование (спортивная
+                  подготовка)</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная</td>
+                <td class="p-3" itemprop="learningTerm">5 лет</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4ty96ZnoyJqKW7K?dir=/44.03.05_%D0%A4%D0%B8%D0%B7-%D1%80%D0%B0%20%D0%B8%20%D0%B4%D0%BE%D0%BF.%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%28%D1%81%D0%BF%D0%BE%D1%80%D1%82%29">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4ty96ZnoyJqKW7K?dir=/44.03.05_%D0%A4%D0%B8%D0%B7-%D1%80%D0%B0%20%D0%B8%20%D0%B4%D0%BE%D0%BF.%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%28%D1%81%D0%BF%D0%BE%D1%80%D1%82%29">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">47.</td>
+                <td class="p-3" itemprop="eduCode">44.03.05</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование (с двумя профилями подготовки)</td>
+                <td class="p-3" itemprop="eduProf">Химия и Экология</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Заочная</td>
+                <td class="p-3" itemprop="learningTerm">5 лет/
+                  5 лет 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4ty96ZnoyJqKW7K?dir=/44.03.05_%D0%A5%D0%B8%D0%BC%D0%B8%D1%8F%20%D0%B8%20%D0%AD%D0%BA%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4ty96ZnoyJqKW7K?dir=/44.03.05_%D0%A5%D0%B8%D0%BC%D0%B8%D1%8F%20%D0%B8%20%D0%AD%D0%BA%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">48.</td>
+                <td class="p-3" itemprop="eduCode">44.03.05</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование (с двумя профилями подготовки)</td>
+                <td class="p-3" itemprop="eduProf">Экономика и управление в сфере образования</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Зочная</td>
+                <td class="p-3" itemprop="learningTerm">5 лет 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4ty96ZnoyJqKW7K?dir=/44.03.05_%D0%AD%D0%BA%D0%BE%D0%BD%D0%BE%D0%BC%D0%B8%D0%BA%D0%B0%20%D0%B8%20%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B2%20%D1%81%D1%84%D0%B5%D1%80%D0%B5%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4ty96ZnoyJqKW7K?dir=/44.03.05_%D0%AD%D0%BA%D0%BE%D0%BD%D0%BE%D0%BC%D0%B8%D0%BA%D0%B0%20%D0%B8%20%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B2%20%D1%81%D1%84%D0%B5%D1%80%D0%B5%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">49.</td>
+                <td class="p-3" itemprop="eduCode">45.03.02</td>
+                <td class="p-3" itemprop="eduName">Лингвистика</td>
+                <td class="p-3" itemprop="eduProf">Перевод и переводоведение (английский язык)</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Заочная</td>
+                <td class="p-3" itemprop="learningTerm">4 года/
+                  4 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/RYy8jyB6dK4bR43">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/RYy8jyB6dK4bR43">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">50.</td>
+                <td class="p-3" itemprop="eduCode">45.03.02</td>
+                <td class="p-3" itemprop="eduName">Лингвистика</td>
+                <td class="p-3" itemprop="eduProf">Перевод и переводоведение (немецкий язык)</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная</td>
+                <td class="p-3" itemprop="learningTerm">4 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/RYy8jyB6dK4bR43">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/RYy8jyB6dK4bR43">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">51.</td>
+                <td class="p-3" itemprop="eduCode">49.03.01</td>
+                <td class="p-3" itemprop="eduName">Физическая культура</td>
+                <td class="p-3" itemprop="eduProf">Физкультурно-оздоровительная деятельность</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Заочная</td>
+                <td class="p-3" itemprop="learningTerm">4 года/
+                  4 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/SB2jdoocMCejxSP">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/SB2jdoocMCejxSP">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">52.</td>
+                <td class="p-3" itemprop="eduCode">49.03.02</td>
+                <td class="p-3" itemprop="eduName">Физическая культура для лиц с отклонениями в состоянии здоровья
+                  (адаптивная физическая культура)</td>
+                <td class="p-3" itemprop="eduProf">Адаптивное физическое воспитание</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Заочная</td>
+                <td class="p-3" itemprop="learningTerm">4 года/
+                  4 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/7GF7oPBHirjQZxr">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/7GF7oPBHirjQZxr">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">53.</td>
+                <td class="p-3" itemprop="eduCode">49.03.04</td>
+                <td class="p-3" itemprop="eduName">Спорт</td>
+                <td class="p-3" itemprop="eduProf">Тренерско-преподавательская деятельность в избранном виде спорта</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Заочная</td>
+                <td class="p-3" itemprop="learningTerm">4 года/
+                  4 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/Js6Fos2wHgbsjWS">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/Js6Fos2wHgbsjWS">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">54.</td>
+                <td class="p-3" itemprop="eduCode">51.03.01</td>
+                <td class="p-3" itemprop="eduName">Культурология</td>
+                <td class="p-3" itemprop="eduProf">Культурология</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Заочная</td>
+                <td class="p-3" itemprop="learningTerm">4 года/
+                  4 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/9SwNaAgbJm8acQ9">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/9SwNaAgbJm8acQ9">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">55.</td>
+                <td class="p-3" itemprop="eduCode">51.03.05</td>
+                <td class="p-3" itemprop="eduName">Режиссура театрализованных представлений и праздников</td>
+                <td class="p-3" itemprop="eduProf">Театрализованные представления и праздники</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Заочная</td>
+                <td class="p-3" itemprop="learningTerm">4 года/
+                  4 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/PNbHdwjPAxJ2849">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/PNbHdwjPAxJ2849">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">56.</td>
+                <td class="p-3" itemprop="eduCode">52.03.01</td>
+                <td class="p-3" itemprop="eduName">Хореографическое искусство</td>
+                <td class="p-3" itemprop="eduProf">Искусство балетмейстера</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очно-заочная</td>
+                <td class="p-3" itemprop="learningTerm">4 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/FSx9p7J7gjNjpQG?dir=/2024_%D0%98%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE%20%D0%B1%D0%B0%D0%BB%D0%B5%D1%82%D0%BC%D0%B5%D0%B9%D1%81%D1%82%D0%B5%D1%80%D0%B0">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/FSx9p7J7gjNjpQG?dir=/2024_%D0%98%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE%20%D0%B1%D0%B0%D0%BB%D0%B5%D1%82%D0%BC%D0%B5%D0%B9%D1%81%D1%82%D0%B5%D1%80%D0%B0">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">57.</td>
+                <td class="p-3" itemprop="eduCode">52.03.01</td>
+                <td class="p-3" itemprop="eduName">Хореографическое искусство</td>
+                <td class="p-3" itemprop="eduProf">Педагогика хореографии</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Заочная</td>
+                <td class="p-3" itemprop="learningTerm">4 года/
+                  4 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/FSx9p7J7gjNjpQG?dir=/2023_%D0%9F%D0%B5%D0%B4%D0%B0%D0%B3%D0%BE%D0%B3%D0%B8%D0%BA%D0%B0%20%D1%85%D0%BE%D1%80%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%B8">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/FSx9p7J7gjNjpQG?dir=/2023_%D0%9F%D0%B5%D0%B4%D0%B0%D0%B3%D0%BE%D0%B3%D0%B8%D0%BA%D0%B0%20%D1%85%D0%BE%D1%80%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%B8">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">58.</td>
+                <td class="p-3" itemprop="eduCode">52.03.01</td>
+                <td class="p-3" itemprop="eduName">Хореографическое искусство</td>
+                <td class="p-3" itemprop="eduProf">Искусство хореографа-постановщика</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная</td>
+                <td class="p-3" itemprop="learningTerm">4года</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/FSx9p7J7gjNjpQG?dir=/2022_%D0%98%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE%20%D1%85%D0%BE%D1%80%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B0-%D0%BF%D0%BE%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D1%89%D0%B8%D0%BA%D0%B0">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/FSx9p7J7gjNjpQG?dir=/2022_%D0%98%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE%20%D1%85%D0%BE%D1%80%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B0-%D0%BF%D0%BE%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D1%89%D0%B8%D0%BA%D0%B0">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">59.</td>
+                <td class="p-3" itemprop="eduCode">53.03.01</td>
+                <td class="p-3" itemprop="eduName">Музыкальное искусство эстрады</td>
+                <td class="p-3" itemprop="eduProf">Эстрадно-джазовое пение</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Заочная</td>
+                <td class="p-3" itemprop="learningTerm">4 года/
+                  4 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/mNek7QLfrDHQ3Lb">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/mNek7QLfrDHQ3Lb">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">60.</td>
+                <td class="p-3" itemprop="eduCode">54.03.01</td>
+                <td class="p-3" itemprop="eduName">Дизайн</td>
+                <td class="p-3" itemprop="eduProf">Дизайн</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Очно-заочная</td>
+                <td class="p-3" itemprop="learningTerm">4 года/
+                  4 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/xn7XKeXKsfyNaCt">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/xn7XKeXKsfyNaCt">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">61.</td>
+                <td class="p-3" itemprop="eduCode">33.05.01</td>
+                <td class="p-3" itemprop="eduName">Фармация</td>
+                <td class="p-3" itemprop="eduProf">Фармация</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - специалитет</td>
+                <td class="p-3" itemprop="eduForm">Очная</td>
+                <td class="p-3" itemprop="learningTerm">4 года</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/sbascLKpLbGnHrt">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/sbascLKpLbGnHrt">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">62.</td>
+                <td class="p-3" itemprop="eduCode">05.04.06</td>
+                <td class="p-3" itemprop="eduName">Экология и природопользование</td>
+                <td class="p-3" itemprop="eduProf">Технологии оценивания экологических рисков</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/gqgkKgwiH9pX28N">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/gqgkKgwiH9pX28N">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">63.</td>
+                <td class="p-3" itemprop="eduCode">06.04.01</td>
+                <td class="p-3" itemprop="eduName">Биология</td>
+                <td class="p-3" itemprop="eduProf">Экология</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Очно-заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4jFRNWB6iPSBgNS">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4jFRNWB6iPSBgNS">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">64.</td>
+                <td class="p-3" itemprop="eduCode">09.04.04</td>
+                <td class="p-3" itemprop="eduName">Программная инженерия</td>
+                <td class="p-3" itemprop="eduProf">Разработка программно-информационных систем</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года/
+                  2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/cpXnKEKGjXEJnzX">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/cpXnKEKGjXEJnzX">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">65.</td>
+                <td class="p-3" itemprop="eduCode">37.04.01</td>
+                <td class="p-3" itemprop="eduName">Психология</td>
+                <td class="p-3" itemprop="eduProf">Психологическое консультирование</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Очно-заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года/
+                  2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/2945ywawk5AdwHM">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/2945ywawk5AdwHM">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">66.</td>
+                <td class="p-3" itemprop="eduCode">38.04.02</td>
+                <td class="p-3" itemprop="eduName">Менеджмент</td>
+                <td class="p-3" itemprop="eduProf">Управление проектом</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года/
+                  2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/FfWNgiiRGfSDoDg">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/FfWNgiiRGfSDoDg">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">67.</td>
+                <td class="p-3" itemprop="eduCode">38.04.04</td>
+                <td class="p-3" itemprop="eduName">Государственное и муниципальное управление</td>
+                <td class="p-3" itemprop="eduProf">Организация государственной и гражданской службы</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года/
+                  2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4RxZa2Zfy5JfmDj?dir=/2024_%D0%9E%D1%80%D0%B3%D0%B0%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B3%D0%BE%D1%81.%D0%B3%D1%80%D0%B0%D0%B6%D0%B4%D0%B0%D0%BD%D1%81%D0%BA%D0%BE%D0%B9%20%D1%81%D0%BB%D1%83%D0%B6%D0%B1%D1%8B">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4RxZa2Zfy5JfmDj?dir=/2024_%D0%9E%D1%80%D0%B3%D0%B0%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B3%D0%BE%D1%81.%D0%B3%D1%80%D0%B0%D0%B6%D0%B4%D0%B0%D0%BD%D1%81%D0%BA%D0%BE%D0%B9%20%D1%81%D0%BB%D1%83%D0%B6%D0%B1%D1%8B">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">68.</td>
+                <td class="p-3" itemprop="eduCode">38.04.04</td>
+                <td class="p-3" itemprop="eduName">Государственное и муниципальное управление</td>
+                <td class="p-3" itemprop="eduProf">Организация государственной гражданской службы (муниципальной службы)
+                </td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4RxZa2Zfy5JfmDj">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/4RxZa2Zfy5JfmDj">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">69.</td>
+                <td class="p-3" itemprop="eduCode">39.04.03</td>
+                <td class="p-3" itemprop="eduName">Организация работы с молодёжью</td>
+                <td class="p-3" itemprop="eduProf">Государственная молодёжная политика</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/5xRSHsBbABPMGtG">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/5xRSHsBbABPMGtG">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">70.</td>
+                <td class="p-3" itemprop="eduCode">40.04.01</td>
+                <td class="p-3" itemprop="eduName">Юриспруденция</td>
+                <td class="p-3" itemprop="eduProf">Правозащитная и правоохранительная деятельность в Российской
+                  Федерации</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года/
+                  2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/GZ8GZcqcJodGsiF">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/GZ8GZcqcJodGsiF">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">71.</td>
+                <td class="p-3" itemprop="eduCode">42.04.02</td>
+                <td class="p-3" itemprop="eduName">Журналистика</td>
+                <td class="p-3" itemprop="eduProf">Медиаобразование в сфере межнациональных отношений</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/FFxRaACRnfxNAq7">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/FFxRaACRnfxNAq7">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">72.</td>
+                <td class="p-3" itemprop="eduCode">43.04.01</td>
+                <td class="p-3" itemprop="eduName">Сервис</td>
+                <td class="p-3" itemprop="eduProf">Управление процессами обслуживания</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/FAFLLZoy73e7fqL">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/FAFLLZoy73e7fqL">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">73.</td>
+                <td class="p-3" itemprop="eduCode">43.04.01</td>
+                <td class="p-3" itemprop="eduName">Сервис</td>
+                <td class="p-3" itemprop="eduProf">Сервис недвижимости</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/FAFLLZoy73e7fqL?dir=/2023_%D0%A1%D0%B5%D1%80%D0%B2%D0%B8%D1%81%20%D0%BD%D0%B5%D0%B4%D0%B2%D0%B8%D0%B6%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/FAFLLZoy73e7fqL?dir=/2023_%D0%A1%D0%B5%D1%80%D0%B2%D0%B8%D1%81%20%D0%BD%D0%B5%D0%B4%D0%B2%D0%B8%D0%B6%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">74.</td>
+                <td class="p-3" itemprop="eduCode">43.04.02</td>
+                <td class="p-3" itemprop="eduName">Туризм</td>
+                <td class="p-3" itemprop="eduProf">Управление в индустрии туризма</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/6dQzrSME5RgFBic?dir=/2024_%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B2%20%D0%B8%D0%BD%D0%B4%D1%83%D1%81%D1%82%D1%80%D0%B8%D0%B8%20%D1%82%D1%83%D1%80%D0%B8%D0%B7%D0%BC%D0%B0">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/6dQzrSME5RgFBic?dir=/2024_%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B2%20%D0%B8%D0%BD%D0%B4%D1%83%D1%81%D1%82%D1%80%D0%B8%D0%B8%20%D1%82%D1%83%D1%80%D0%B8%D0%B7%D0%BC%D0%B0">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">75.</td>
+                <td class="p-3" itemprop="eduCode">43.04.02</td>
+                <td class="p-3" itemprop="eduName">Туризм</td>
+                <td class="p-3" itemprop="eduProf">Государственное регулирование сферы туризма</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/6dQzrSME5RgFBic?dir=/2023_%D0%93%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5%20%D1%80%D0%B5%D0%B3%D1%83%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D1%81%D1%84%D0%B5%D1%80%D1%8B%20%D1%82%D1%83%D1%80%D0%B8%D0%B7%D0%BC%D0%B0">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/6dQzrSME5RgFBic?dir=/2023_%D0%93%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5%20%D1%80%D0%B5%D0%B3%D1%83%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D1%81%D1%84%D0%B5%D1%80%D1%8B%20%D1%82%D1%83%D1%80%D0%B8%D0%B7%D0%BC%D0%B0">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">76.</td>
+                <td class="p-3" itemprop="eduCode">43.04.03</td>
+                <td class="p-3" itemprop="eduName">Гостиничное дело</td>
+                <td class="p-3" itemprop="eduProf">Инновационные технологии управления гостиничным бизнесом</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/RnMgrsQJPTri4FK">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/RnMgrsQJPTri4FK">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">77.</td>
+                <td class="p-3" itemprop="eduCode">44.04.01</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование</td>
+                <td class="p-3" itemprop="eduProf">Биолого-экологическое образование</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года/
+                  2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/YNgBJ8cWp9w8Jqc?dir=/44.04.01_%D0%91%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3%D0%BE-%D0%AD%D0%BA%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/YNgBJ8cWp9w8Jqc?dir=/44.04.01_%D0%91%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3%D0%BE-%D0%AD%D0%BA%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">78.</td>
+                <td class="p-3" itemprop="eduCode">44.04.01</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование</td>
+                <td class="p-3" itemprop="eduProf">Изобразительное искусство</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/YNgBJ8cWp9w8Jqc?dir=/44.04.01_%D0%98%D0%97%D0%9E">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/YNgBJ8cWp9w8Jqc?dir=/44.04.01_%D0%98%D0%97%D0%9E">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">79.</td>
+                <td class="p-3" itemprop="eduCode">44.04.01</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование</td>
+                <td class="p-3" itemprop="eduProf">Инновационная начальная школа</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года/
+                  2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/YNgBJ8cWp9w8Jqc?dir=/44.04.01_%D0%98%D0%BD%D0%BD%D0%BE%D0%B2%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F%20%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/YNgBJ8cWp9w8Jqc?dir=/44.04.01_%D0%98%D0%BD%D0%BD%D0%BE%D0%B2%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F%20%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">80.</td>
+                <td class="p-3" itemprop="eduCode">44.04.01</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование</td>
+                <td class="p-3" itemprop="eduProf">История</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/YNgBJ8cWp9w8Jqc?dir=/44.04.01_%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/YNgBJ8cWp9w8Jqc?dir=/44.04.01_%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">81.</td>
+                <td class="p-3" itemprop="eduCode">44.04.01</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование</td>
+                <td class="p-3" itemprop="eduProf">Историческое образование в высшей школе</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/YNgBJ8cWp9w8Jqc?dir=/44.04.01_%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B2%20%D0%B2%D1%8B%D1%81%D1%88%D0%B5%D0%B9%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B5">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/YNgBJ8cWp9w8Jqc?dir=/44.04.01_%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B2%20%D0%B2%D1%8B%D1%81%D1%88%D0%B5%D0%B9%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B5">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">82.</td>
+                <td class="p-3" itemprop="eduCode">44.04.01</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование</td>
+                <td class="p-3" itemprop="eduProf">Менеджмент в образовании</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года/
+                  2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/YNgBJ8cWp9w8Jqc?dir=/44.04.01_%D0%9C%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%BC%D0%B5%D0%BD%D1%82%20%D0%B2%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/YNgBJ8cWp9w8Jqc?dir=/44.04.01_%D0%9C%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%BC%D0%B5%D0%BD%D1%82%20%D0%B2%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">83.</td>
+                <td class="p-3" itemprop="eduCode">44.04.01</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование</td>
+                <td class="p-3" itemprop="eduProf">Музыкальная культура и искусство</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года/
+                  2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/YNgBJ8cWp9w8Jqc?dir=/44.04.01_%D0%9C%D1%83%D0%B7%D1%8B%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%BA%D1%83%D0%BB%D1%8C%D1%82%D1%83%D1%80%D0%B0%20%D0%B8%20%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/YNgBJ8cWp9w8Jqc?dir=/44.04.01_%D0%9C%D1%83%D0%B7%D1%8B%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%BA%D1%83%D0%BB%D1%8C%D1%82%D1%83%D1%80%D0%B0%20%D0%B8%20%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">84.</td>
+                <td class="p-3" itemprop="eduCode">44.04.01</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование</td>
+                <td class="p-3" itemprop="eduProf">Педагогика хореографии</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/YNgBJ8cWp9w8Jqc?dir=/44.04.01_%D0%9F%D0%B5%D0%B4%D0%B0%D0%B3%D0%BE%D0%B3%D0%B8%D0%BA%D0%B0%20%D1%85%D0%BE%D1%80%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%B8">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/YNgBJ8cWp9w8Jqc?dir=/44.04.01_%D0%9F%D0%B5%D0%B4%D0%B0%D0%B3%D0%BE%D0%B3%D0%B8%D0%BA%D0%B0%20%D1%85%D0%BE%D1%80%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%B8">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">85.</td>
+                <td class="p-3" itemprop="eduCode">44.04.01</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование</td>
+                <td class="p-3" itemprop="eduProf">Русский язык как иностранный</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/YNgBJ8cWp9w8Jqc?dir=/44.04.01_%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9%20%D1%8F%D0%B7%D1%8B%D0%BA%20%D0%BA%D0%B0%D0%BA%20%D0%B8%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D0%B9">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/YNgBJ8cWp9w8Jqc?dir=/44.04.01_%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9%20%D1%8F%D0%B7%D1%8B%D0%BA%20%D0%BA%D0%B0%D0%BA%20%D0%B8%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D0%B9">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">86.</td>
+                <td class="p-3" itemprop="eduCode">44.04.01</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование</td>
+                <td class="p-3" itemprop="eduProf">Театральное образование</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года/
+                  2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/YNgBJ8cWp9w8Jqc?dir=/44.04.01_%D0%A2%D0%B5%D0%B0%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/YNgBJ8cWp9w8Jqc?dir=/44.04.01_%D0%A2%D0%B5%D0%B0%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">87.</td>
+                <td class="p-3" itemprop="eduCode">44.04.01</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование</td>
+                <td class="p-3" itemprop="eduProf">Теория спорта и технологии спортивной подготовки</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Очная</td>
+                <td class="p-3" itemprop="learningTerm">2 года</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/YNgBJ8cWp9w8Jqc?dir=/44.04.01_%D0%A2%D0%B5%D0%BE%D1%80%D0%B8%D1%8F%20%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%B0%20%D0%B8%20%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8%20%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D0%B9%20%D0%BF%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B8">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/YNgBJ8cWp9w8Jqc?dir=/44.04.01_%D0%A2%D0%B5%D0%BE%D1%80%D0%B8%D1%8F%20%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%B0%20%D0%B8%20%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8%20%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D0%B9%20%D0%BF%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B8">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">88.</td>
+                <td class="p-3" itemprop="eduCode">44.04.01</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование</td>
+                <td class="p-3" itemprop="eduProf">Технологии географического образования</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/YNgBJ8cWp9w8Jqc?dir=/44.04.01_%D0%A2%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8%20%D0%B3%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/YNgBJ8cWp9w8Jqc?dir=/44.04.01_%D0%A2%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8%20%D0%B3%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">89.</td>
+                <td class="p-3" itemprop="eduCode">44.04.01</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование</td>
+                <td class="p-3" itemprop="eduProf">Хореографическое искусство и образование</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Очная/
+                  Заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года/
+                  2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/YNgBJ8cWp9w8Jqc?dir=/44.04.01_%D0%A5%D0%BE%D1%80%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5%20%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE%20%D0%B8%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/YNgBJ8cWp9w8Jqc?dir=/44.04.01_%D0%A5%D0%BE%D1%80%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5%20%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE%20%D0%B8%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">90.</td>
+                <td class="p-3" itemprop="eduCode">44.04.01</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование</td>
+                <td class="p-3" itemprop="eduProf">Инновационные технологии подготовки учителя в образовательной
+                  деятельности "Математика и информатика"</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/YNgBJ8cWp9w8Jqc?dir=/44.04.01_%D0%98%D0%BD%D0%BD%D0%BE%D0%B2.%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8%20%D0%BF%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B8%20%D1%83%D1%87%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%20%D0%B2%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D1%82.%D0%BE%D0%B1%D0%BB.%20%22%D0%9C%D0%B0%D1%82%D0%B5%D0%BC.%20%D0%B8%20%D0%98%D0%BD%D1%84%D0%BE%D1%80%D0%BC.%22">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/YNgBJ8cWp9w8Jqc?dir=/44.04.01_%D0%98%D0%BD%D0%BD%D0%BE%D0%B2.%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8%20%D0%BF%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B8%20%D1%83%D1%87%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%20%D0%B2%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D1%82.%D0%BE%D0%B1%D0%BB.%20%22%D0%9C%D0%B0%D1%82%D0%B5%D0%BC.%20%D0%B8%20%D0%98%D0%BD%D1%84%D0%BE%D1%80%D0%BC.%22">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">91.</td>
+                <td class="p-3" itemprop="eduCode">44.04.01</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование</td>
+                <td class="p-3" itemprop="eduProf">Современные технологии иноязычного образования</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/YNgBJ8cWp9w8Jqc?dir=/44.04.01_%D0%A1%D0%BE%D0%B2%D1%80.%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8%20%D0%B8%D0%BD%D0%BE%D1%8F%D0%B7%D1%8B%D1%87%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/YNgBJ8cWp9w8Jqc?dir=/44.04.01_%D0%A1%D0%BE%D0%B2%D1%80.%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8%20%D0%B8%D0%BD%D0%BE%D1%8F%D0%B7%D1%8B%D1%87%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">92.</td>
+                <td class="p-3" itemprop="eduCode">44.04.01</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование</td>
+                <td class="p-3" itemprop="eduProf">Современные технологии биологического и химического образования</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/YNgBJ8cWp9w8Jqc?dir=/44.04.01_%D0%A1%D0%BE%D0%B2%D1%80.%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8%20%D0%B1%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3.%20%D0%B8%20%D1%85%D0%B8%D0%BC.%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/YNgBJ8cWp9w8Jqc?dir=/44.04.01_%D0%A1%D0%BE%D0%B2%D1%80.%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8%20%D0%B1%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3.%20%D0%B8%20%D1%85%D0%B8%D0%BC.%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">93.</td>
+                <td class="p-3" itemprop="eduCode">44.04.01</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование</td>
+                <td class="p-3" itemprop="eduProf">Теория физической культуры и технологии физического воспитания</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/YNgBJ8cWp9w8Jqc?dir=/44.04.01_%D0%A2%D0%B5%D0%BE%D1%80%D0%B8%D1%8F%20%D1%84%D0%B8%D0%B7-%D1%80%D1%8B%20%D0%B8%20%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8%20%D1%84%D0%B8%D0%B7.%D0%B2%D0%BE%D1%81%D0%BF%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/YNgBJ8cWp9w8Jqc?dir=/44.04.01_%D0%A2%D0%B5%D0%BE%D1%80%D0%B8%D1%8F%20%D1%84%D0%B8%D0%B7-%D1%80%D1%8B%20%D0%B8%20%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8%20%D1%84%D0%B8%D0%B7.%D0%B2%D0%BE%D1%81%D0%BF%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">94.</td>
+                <td class="p-3" itemprop="eduCode">44.04.01</td>
+                <td class="p-3" itemprop="eduName">Педагогическое образование</td>
+                <td class="p-3" itemprop="eduProf">Ихобразительное искусство в художественном образовании</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/YNgBJ8cWp9w8Jqc?dir=/44.04.01_%D0%98%D0%97%D0%9E%20%D0%B2%20%D1%85%D1%83%D0%B4%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%BC%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/YNgBJ8cWp9w8Jqc?dir=/44.04.01_%D0%98%D0%97%D0%9E%20%D0%B2%20%D1%85%D1%83%D0%B4%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%BC%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">95.</td>
+                <td class="p-3" itemprop="eduCode">44.04.02</td>
+                <td class="p-3" itemprop="eduName">Психолого-педагогическое образование</td>
+                <td class="p-3" itemprop="eduProf">Образование детей старшего дошкольного возраста</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/2kHbT28cE7rXrGz">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/2kHbT28cE7rXrGz">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">96.</td>
+                <td class="p-3" itemprop="eduCode">44.04.03</td>
+                <td class="p-3" itemprop="eduName">Специальное (дефектологическое) образование</td>
+                <td class="p-3" itemprop="eduProf">Теоретическая и прикладная логопедия</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Очная</td>
+                <td class="p-3" itemprop="learningTerm">2 года</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/ZKSaoEFCNZ2gWcF">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/ZKSaoEFCNZ2gWcF">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">97.</td>
+                <td class="p-3" itemprop="eduCode">45.04.02</td>
+                <td class="p-3" itemprop="eduName">Лингвистика</td>
+                <td class="p-3" itemprop="eduProf">Теория и практика перевода</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/wBrcyW4nQqnr84d">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/wBrcyW4nQqnr84d">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">98.</td>
+                <td class="p-3" itemprop="eduCode">47.04.01</td>
+                <td class="p-3" itemprop="eduName">Философия</td>
+                <td class="p-3" itemprop="eduProf">Социальная философия</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/eStBKbg9L8sXj8m">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/eStBKbg9L8sXj8m">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">99.</td>
+                <td class="p-3" itemprop="eduCode">51.04.01</td>
+                <td class="p-3" itemprop="eduName">Культурология</td>
+                <td class="p-3" itemprop="eduProf">Кросскультурные исследования и управление проектами в сфере культуры
+                </td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/3gGdG6jEM9GjDTQ">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/3gGdG6jEM9GjDTQ">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">100.</td>
+                <td class="p-3" itemprop="eduCode">51.04.05</td>
+                <td class="p-3" itemprop="eduName">Режиссура театрализованных представлений и праздников</td>
+                <td class="p-3" itemprop="eduProf">Театрализованные представления и праздники</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/2zxN9G7dKTHQ6NW">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/2zxN9G7dKTHQ6NW">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">101.</td>
+                <td class="p-3" itemprop="eduCode">52.04.01</td>
+                <td class="p-3" itemprop="eduName">Хореографическое искусство</td>
+                <td class="p-3" itemprop="eduProf">Хореографическое образование</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/d7GdEddXtWBSm3f?dir=/2023_%D0%A5%D0%BE%D1%80%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/d7GdEddXtWBSm3f?dir=/2023_%D0%A5%D0%BE%D1%80%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">102.</td>
+                <td class="p-3" itemprop="eduCode">52.04.01</td>
+                <td class="p-3" itemprop="eduName">Хореографическое искусство</td>
+                <td class="p-3" itemprop="eduProf">Искусство балетмейстера-постановщика</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/d7GdEddXtWBSm3f?dir=/2023_%D0%98%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE%20%D0%B1%D0%B0%D0%BB%D0%B5%D1%82%D0%BC%D0%B5%D0%B9%D1%81%D1%82%D0%B5%D1%80%D0%B0-%D0%BF%D0%BE%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D1%89%D0%B8%D0%BA%D0%B0">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/d7GdEddXtWBSm3f?dir=/2023_%D0%98%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE%20%D0%B1%D0%B0%D0%BB%D0%B5%D1%82%D0%BC%D0%B5%D0%B9%D1%81%D1%82%D0%B5%D1%80%D0%B0-%D0%BF%D0%BE%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D1%89%D0%B8%D0%BA%D0%B0">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">103.</td>
+                <td class="p-3" itemprop="eduCode">52.04.03</td>
+                <td class="p-3" itemprop="eduName">Театральное искусство</td>
+                <td class="p-3" itemprop="eduProf">Мастерство актёра</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/7fKNoES5Dq2kcmM">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/7fKNoES5Dq2kcmM">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">104.</td>
+                <td class="p-3" itemprop="eduCode">54.04.01</td>
+                <td class="p-3" itemprop="eduName">Дизайн</td>
+                <td class="p-3" itemprop="eduProf">Дизайн мультимедиа</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - магистратура</td>
+                <td class="p-3" itemprop="eduForm">Заочная/
+                  Очно-заочная</td>
+                <td class="p-3" itemprop="learningTerm">2 года 6 месяцев/
+                  2 года 6 месяцев</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/Nmydi4MXG5TJAAE">Перейти</a></td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/Nmydi4MXG5TJAAE">Перейти</a></td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">105.</td>
+                <td class="p-3" itemprop="eduCode">5.2</td>
+                <td class="p-3" itemprop="eduName">Экономика</td>
+                <td class="p-3" itemprop="eduProf">5.2.3 Региональная и отраслевая экономика</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - подготовка кадров высшей квалификации</td>
+                <td class="p-3" itemprop="eduForm">Очная</td>
+                <td class="p-3" itemprop="learningTerm">3 года</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/JrgEWdeWA2kHkK5?dir=/5.2.3_%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%B8%20%D0%BE%D1%82%D1%80%D0%B0%D1%81%D0%BB%D0%B5%D0%B2%D0%B0%D1%8F%20%D1%8D%D0%BA%D0%BE%D0%BD%D0%BE%D0%BC%D0%B8%D0%BA%D0%B0">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/JrgEWdeWA2kHkK5?dir=/5.2.3_%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%B8%20%D0%BE%D1%82%D1%80%D0%B0%D1%81%D0%BB%D0%B5%D0%B2%D0%B0%D1%8F%20%D1%8D%D0%BA%D0%BE%D0%BD%D0%BE%D0%BC%D0%B8%D0%BA%D0%B0">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">106.</td>
+                <td class="p-3" itemprop="eduCode">5.2</td>
+                <td class="p-3" itemprop="eduName">Экономика</td>
+                <td class="p-3" itemprop="eduProf">5.2.6 Менеджмент</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - подготовка кадров высшей квалификации</td>
+                <td class="p-3" itemprop="eduForm">Очная</td>
+                <td class="p-3" itemprop="learningTerm">3 года</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/JrgEWdeWA2kHkK5?dir=/5.2.6_%D0%9C%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%BC%D0%B5%D0%BD%D1%82">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/JrgEWdeWA2kHkK5?dir=/5.2.6_%D0%9C%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%BC%D0%B5%D0%BD%D1%82">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">107.</td>
+                <td class="p-3" itemprop="eduCode">5.3</td>
+                <td class="p-3" itemprop="eduName">Психология</td>
+                <td class="p-3" itemprop="eduProf">5.3.5 Социальная психология, политическая и экономическая психология
+                </td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - подготовка кадров высшей квалификации</td>
+                <td class="p-3" itemprop="eduForm">Очная</td>
+                <td class="p-3" itemprop="learningTerm">3 года</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/oFGEc8x2cKjdjRp?dir=/5.3.5_%D0%A1%D0%BE%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%BF%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%2C%20%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D0%B8%20%D1%8D%D0%BA%D0%BE%D0%BD%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BF%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/oFGEc8x2cKjdjRp?dir=/5.3.5_%D0%A1%D0%BE%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%BF%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%2C%20%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D0%B8%20%D1%8D%D0%BA%D0%BE%D0%BD%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BF%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">108.</td>
+                <td class="p-3" itemprop="eduCode">5.8</td>
+                <td class="p-3" itemprop="eduName">Педагогика</td>
+                <td class="p-3" itemprop="eduProf">5.8.1 Общая педагогика, история педагогики и образования</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - подготовка кадров высшей квалификации</td>
+                <td class="p-3" itemprop="eduForm">Очная</td>
+                <td class="p-3" itemprop="learningTerm">3 года</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/gEf7QyKTgqfR4RQ?dir=/5.8.1_%D0%9E%D0%B1%D1%89%D0%B0%D1%8F%20%D0%BF%D0%B5%D0%B4%D0%B0%D0%B3%D0%BE%D0%B3%D0%B8%D0%BA%D0%B0%2C%20%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20%D0%BF%D0%B5%D0%B4%D0%B0%D0%B3%D0%BE%D0%B3%D0%B8%D0%BA%D0%B8%20%D0%B8%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/gEf7QyKTgqfR4RQ?dir=/5.8.1_%D0%9E%D0%B1%D1%89%D0%B0%D1%8F%20%D0%BF%D0%B5%D0%B4%D0%B0%D0%B3%D0%BE%D0%B3%D0%B8%D0%BA%D0%B0%2C%20%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20%D0%BF%D0%B5%D0%B4%D0%B0%D0%B3%D0%BE%D0%B3%D0%B8%D0%BA%D0%B8%20%D0%B8%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">109.</td>
+                <td class="p-3" itemprop="eduCode">5.8</td>
+                <td class="p-3" itemprop="eduName">Педагогика</td>
+                <td class="p-3" itemprop="eduProf">5.8.7 Методология и технология профессионального образования</td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - подготовка кадров высшей квалификации</td>
+                <td class="p-3" itemprop="eduForm">Очная</td>
+                <td class="p-3" itemprop="learningTerm">3 года</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/gEf7QyKTgqfR4RQ?dir=/5.8.7_%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%20%D0%B8%20%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%20%D0%BF%D1%80%D0%BE%D1%84%D0%B5%D1%81%D1%81%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/gEf7QyKTgqfR4RQ?dir=/5.8.7_%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%20%D0%B8%20%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%20%D0%BF%D1%80%D0%BE%D1%84%D0%B5%D1%81%D1%81%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F">Перейти</a>
+                </td>
+              </tr>
+              <tr itemprop="eduAccred">
+                <td class="p-3">110.</td>
+                <td class="p-3" itemprop="eduCode">5.9</td>
+                <td class="p-3" itemprop="eduName">Филология</td>
+                <td class="p-3" itemprop="eduProf">5.9.1 Русская литература и литературы народов Российской Федерации
+                </td>
+                <td class="p-3" itemprop="eduLevel">Высшее образование - подготовка кадров высшей квалификации</td>
+                <td class="p-3" itemprop="eduForm">Очная</td>
+                <td class="p-3" itemprop="learningTerm">3 года</td>
+                <td class="p-3" itemprop="eduPred"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/JxsgRGbZ8sp6jkP?dir=/5.9.1_%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BB%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%82%D1%83%D1%80%D0%B0%20%D0%B8%20%D0%BB%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%82%D1%83%D1%80%D1%8B%20%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BE%D0%B2%20%D0%A0%D0%A4">Перейти</a>
+                </td>
+                <td class="p-3" itemprop="eduPrac"><a
+                    href="https://cloud.hgpurf.ru/index.php/s/JxsgRGbZ8sp6jkP?dir=/5.9.1_%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BB%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%82%D1%83%D1%80%D0%B0%20%D0%B8%20%D0%BB%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%82%D1%83%D1%80%D1%8B%20%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BE%D0%B2%20%D0%A0%D0%A4">Перейти</a>
+                </td>
+              </tr>
+
             </tbody>
           </table>
+
         </div>
       </details>
       <details class="details yelow-divider" name="education-accordion">
         <summary class="details-title">
           <p class="fw-semibold fs-4">
-           Информация о реализуемых образовательных программах
+            Информация о реализуемых образовательных программах
           </p>
           <i class="fa-solid fa-angle-down fa-2xl my-accordion-icon"></i>
         </summary>
         <div class="details-content">
           <ul>
             <li>
-              <a
-                class="link-color fs-5"
-                href="#"
-                target="_blank"
-                >Высшее образование. Программы БАКАЛАВРИАТА</a
-              >
+              <a class="link-color fs-5" href="#" target="_blank">Высшее образование. Программы БАКАЛАВРИАТА</a>
             </li>
             <li>
-              <a
-                class="link-color fs-5"
-                href="#"
-                target="_blank"
-                >Высшее образование. Программы СПЕЦИАЛИТЕТА</a
-              >
+              <a class="link-color fs-5" href="#" target="_blank">Высшее образование. Программы СПЕЦИАЛИТЕТА</a>
             </li>
             <li>
-              <a
-                class="link-color fs-5"
-                href="#"
-                target="_blank"
-                >Высшее образование. Программы МАГИСТРАТУРЫ</a
-              >
+              <a class="link-color fs-5" href="{% url 'mag_opop'%}" target="_blank">Высшее образование. Программы МАГИСТРАТУРЫ</a>
             </li>
             <li>
-              <a
-                class="link-color fs-5"
-                href="#"
-                target="_blank"
-                >Высшее образование. Программы подготовки научных и научно-педагогических кадров в АСПИРАНТУРЕ</a
-              >
+              <a class="link-color fs-5" href="#" target="_blank">Высшее образование. Программы подготовки научных и
+                научно-педагогических кадров в АСПИРАНТУРЕ</a>
             </li>
           </ul>
         </div>
@@ -120,56 +1755,44 @@
       <details class="details yelow-divider" name="education-accordion">
         <summary class="details-title">
           <p class="fw-semibold fs-4">
-           Информация по адаптированным образовательным программам
+            Информация по адаптированным образовательным программам
           </p>
           <i class="fa-solid fa-angle-down fa-2xl my-accordion-icon"></i>
         </summary>
         <div class="details-content">
           <p>
-            Адаптированные образовательные программы (АОП) в образовательной организации не реализуются в связи с отсутствием в контингенте обучающихся лиц с ограниченными возможностями здоровья (ОВЗ), желающих обучаться по АОП. Согласно Федеральному Закону об образовании 273-ФЗ от 29.12.2012 г. ст. 79, п.8 "Профессиональное обучение и профессиональное образование обучающихся с ограниченными возможностями здоровья осуществляются на основе образовательных программ, адаптированных при необходимости для обучения указанных обучающихся". АОП разрабатывается по каждой направленности при наличии заявлений от обучающихся, являющихся инвалидами или лицами с ОВЗ и изъявивших желание об обучении по данному типу образовательных программ.
+            Адаптированные образовательные программы (АОП) в образовательной организации не реализуются в связи с
+            отсутствием в контингенте обучающихся лиц с ограниченными возможностями здоровья (ОВЗ), желающих обучаться
+            по АОП. Согласно Федеральному Закону об образовании 273-ФЗ от 29.12.2012 г. ст. 79, п.8 "Профессиональное
+            обучение и профессиональное образование обучающихся с ограниченными возможностями здоровья осуществляются на
+            основе образовательных программ, адаптированных при необходимости для обучения указанных обучающихся". АОП
+            разрабатывается по каждой направленности при наличии заявлений от обучающихся, являющихся инвалидами или
+            лицами с ОВЗ и изъявивших желание об обучении по данному типу образовательных программ.
           </p>
         </div>
       </details>
       <details class="details yelow-divider" name="education-accordion">
         <summary class="details-title">
           <p class="fw-semibold fs-4">
-           Информация о направлениях и результатах научной (научно-исследовательской) деятельности и научно-исследовательской базе для ее осуществления
+            Информация о направлениях и результатах научной (научно-исследовательской) деятельности и
+            научно-исследовательской базе для ее осуществления
           </p>
           <i class="fa-solid fa-angle-down fa-2xl my-accordion-icon"></i>
         </summary>
         <div class="details-content">
           <ul>
             <li>
-              <a
-                class="link-color fs-5"
-                href="#"
-                target="_blank"
-                >Высшее образование. Программы БАКАЛАВРИАТА</a
-              >
+              <a class="link-color fs-5" href="#" target="_blank">Высшее образование. Программы БАКАЛАВРИАТА</a>
             </li>
             <li>
-              <a
-                class="link-color fs-5"
-                href="#"
-                target="_blank"
-                >Высшее образование. Программы СПЕЦИАЛИТЕТА</a
-              >
+              <a class="link-color fs-5" href="#" target="_blank">Высшее образование. Программы СПЕЦИАЛИТЕТА</a>
             </li>
             <li>
-              <a
-                class="link-color fs-5"
-                href="#"
-                target="_blank"
-                >Высшее образование. Программы МАГИСТРАТУРЫ</a
-              >
+              <a class="link-color fs-5" href="#" target="_blank">Высшее образование. Программы МАГИСТРАТУРЫ</a>
             </li>
             <li>
-              <a
-                class="link-color fs-5"
-                href="#"
-                target="_blank"
-                >Высшее образование - Подготовка кадров высшей квалификации. Аспирантура</a
-              >
+              <a class="link-color fs-5" href="#" target="_blank">Высшее образование - Подготовка кадров высшей
+                квалификации. Аспирантура</a>
             </li>
           </ul>
         </div>
@@ -177,20 +1800,22 @@
       <details class="details yelow-divider" name="education-accordion">
         <summary class="details-title">
           <p class="fw-semibold fs-4">
-           Информация о языках образования (в форме электронного документа)
+            Информация о языках образования (в форме электронного документа)
           </p>
           <i class="fa-solid fa-angle-down fa-2xl my-accordion-icon"></i>
         </summary>
         <div class="details-content">
           <p>
-            <a class="link-color" href="https://cloud.hgpurf.ru/index.php/s/DMbqbjC52pBrfDj">Приказ №43-О/4 от 19.06.2024 г. "Об утверждении Положения о языке образования в ФГБОУ ВО "Херсонский государственный педагогический университет"</a> | <a class="link-color" href="">ЭП</a>
+            <a class="link-color" href="https://cloud.hgpurf.ru/index.php/s/DMbqbjC52pBrfDj">Приказ №43-О/4 от
+              19.06.2024 г. "Об утверждении Положения о языке образования в ФГБОУ ВО "Херсонский государственный
+              педагогический университет"</a> | <a class="link-color" href="">ЭП</a>
           </p>
         </div>
       </details>
       <details class="details yelow-divider" name="education-accordion">
         <summary class="details-title">
           <p class="fw-semibold fs-4">
-           Информация о численности обучающихся (в форме электронного документа)
+            Информация о численности обучающихся (в форме электронного документа)
           </p>
           <i class="fa-solid fa-angle-down fa-2xl my-accordion-icon"></i>
         </summary>
@@ -201,29 +1826,29 @@
       <details class="details yelow-divider" name="education-accordion">
         <summary class="details-title">
           <p class="fw-semibold fs-4">
-           Информация о результатах приема в ФГБОУ ВО “ХГПУ” (в форме электронного документа)
+            Информация о результатах приема в ФГБОУ ВО “ХГПУ” (в форме электронного документа)
           </p>
           <i class="fa-solid fa-angle-down fa-2xl my-accordion-icon"></i>
         </summary>
         <div class="details-content">
-        
+
         </div>
       </details>
       <details class="details yelow-divider" name="education-accordion">
         <summary class="details-title">
           <p class="fw-semibold fs-4">
-           Информация о результатах перевода, восстановления и отчисления (в форме электронного документа)
+            Информация о результатах перевода, восстановления и отчисления (в форме электронного документа)
           </p>
           <i class="fa-solid fa-angle-down fa-2xl my-accordion-icon"></i>
         </summary>
         <div class="details-content">
-        
+
         </div>
       </details>
       <details class="details yelow-divider" name="education-accordion">
         <summary class="details-title">
           <p class="fw-semibold fs-4">
-           Информация о трудоустройстве выпускников за прошлый учебный год
+            Информация о трудоустройстве выпускников за прошлый учебный год
           </p>
           <i class="fa-solid fa-angle-down fa-2xl my-accordion-icon"></i>
         </summary>
