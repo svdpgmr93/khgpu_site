@@ -1,0 +1,316 @@
+{% extends 'base.html' %} {% load static %} {% block title %}Центр карьеры и
+содействию трудоустройству выпускников{% endblock %} {% block content %}
+<main class="main">
+  <div class="px-3">
+    <div class="d-flex align-items-center justify-content-center career-banner">
+      <div class="career-banner-overlay"></div>
+      <div class="d-flex justify-content-between gap-5 w-75 z-1">
+        <div>
+          <img
+            class="career-banner-logo"
+            src="{% static 'bootstrap\img\career-banner-logo.webp' %}"
+            alt="career-banner-logo"
+          />
+        </div>
+        <div class="d-flex flex-column justify-content-between">
+          <h1 class="career-title mb-0">
+            Центр карьеры и содействия трудоустройству выпускников
+          </h1>
+          <div>
+            <a
+              class="career-banner-link"
+              href="https://t.me//HGPU_job_tg"
+              target="_blank"
+            >
+              Быть в курсе новостей Центра
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="career-banner-bottom"></div>
+  </div>
+  <div class="container">
+    <div class="w-75 mx-auto px-2 py-5 career-under-banner-text">
+      <p class="mb-0 py-5 text-center fs-4">
+        Центр карьеры и содействия трудоустройству выпускников ХГПУ помогает
+        студентам узнать о возможностях на рынке труда, построить карьерный путь
+        и найти работу.
+      </p>
+    </div>
+    <div class="d-flex justify-content-center py-5">
+      <div class="career-consultation-photo"></div>
+      <div class="d-flex flex-column career-consultation-text">
+        <p>
+          "ХГПУ формирует кадровый резерв Херсонской области. Наша главная
+          задача — воспитание педагогов на основе традиционных ценностей,
+          патриотичности и духовного мировоззрения", —
+          <span class="fst-italic"
+            >ректор ХГПУ, доктор экономических наук, профессор Нина
+            Шашкова</span
+          >
+        </p>
+        <a class="career-consultation-link" href=""
+          >Записаться на консультацию</a
+        >
+      </div>
+    </div>
+    <div class="mb-4 career-section-divider"></div>
+    <h2 class="mb-4 fw-semibold fs-1">Мы поможем вам:</h2>
+    <div class="d-flex flex-column gap-4 py-4 mb-5">
+      <div class="row gap-4">
+        <div class="col px-5 py-5 career-card">
+          <div class="mb-3 career-card-circle">
+            <img
+              src="{% static 'bootstrap/img/icons/career-cv-icon.svg' %}"
+              alt="career-cv-icon"
+              class="w-75 h-75"
+            />
+          </div>
+          <p class="fs-4 fw-bold mb-3">Составить сильное резюме</p>
+          <p>
+            Расскажем, что писать, чтобы вас приняли на работу: о чем не стоит
+            упоминать в резюме, как преподносить себя
+          </p>
+        </div>
+        <div class="col px-5 py-5 career-card">
+          <div class="mb-3 career-card-circle">
+            <img
+              src="{% static 'bootstrap/img/icons/career-cv-passed-icon.svg' %}"
+              alt="career-cv-icon"
+              class="w-75 h-75"
+            />
+          </div>
+          <p class="fs-4 fw-bold mb-3">Успешно пройти собеседование</p>
+          <p class="pe-4">
+            Правильно ответить на вопросы HR, показать себя с выгодной стороны
+          </p>
+        </div>
+        <div class="col px-5 py-5 career-card">
+          <div class="mb-3 career-card-circle">
+            <img
+              src="{% static 'bootstrap/img/icons/career-books-icon.svg' %}"
+              alt="career-cv-icon"
+              class="w-75 h-75"
+            />
+          </div>
+          <p class="fs-4 fw-bold mb-3 pe-4">Развить гибкие навыки</p>
+          <p class="pe-4">
+            Например, навыки переговоров, тайм-менеджмента и коллективной работы
+          </p>
+        </div>
+      </div>
+      <div class="row gap-4">
+        <div class="col d-flex align-items-center gap-4 px-5 py-5 career-card">
+          <div class="career-card-circle">
+            <img
+              src="{% static 'bootstrap/img/icons/career-searching-icon.svg' %}"
+              alt="career-cv-icon"
+              class="w-75 h-75"
+            />
+          </div>
+          <div class="w-75">
+            <p class="fs-4 fw-bold mb-3">Искать работу эффективно</p>
+            <p class="pe-4">
+              Разобраться в доступных ресурсах, научиться правильно откликаться
+              на вакансии
+            </p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-center gap-4 px-5 py-5 career-card">
+          <div class="career-card-circle">
+            <img
+              src="{% static 'bootstrap/img/icons/career-portfolio-icon.svg' %}"
+              alt="career-cv-icon"
+              class="w-75 h-75"
+            />
+          </div>
+          <div class="w-75">
+            <p class="fs-4 fw-bold mb-3">Собрать портфолио</p>
+            <p class="pe-4">
+              Рассказать о своих проектах, грамотно подавать и “продавать” свои
+              работы
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section-career-team">
+    <div class="container">
+      <h2 class="mb-4 fw-semibold fs-1">Наша команда</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-5">
+        <div class="col">
+          <div class="card h-100 border-0 bg-transparent">
+            <img
+              src="{% static 'bootstrap/img/career_team/hismatulina.png.webp' %}"
+              class="card-img-top rounded-3"
+              alt="..."
+            />
+            <div class="card-body px-0">
+              <h5 class="card-title fw-semibold">
+                ХИСМАТУЛЛИНА <br />
+                Елена Александровна
+              </h5>
+              <p class="card-text career-team-card-text">
+                Проректор по непрерывному образованию и проектной деятельности
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border-0 bg-transparent">
+            <img
+              src="{% static 'bootstrap/img/career_team/kuzminyh.png.webp' %}"
+              class="card-img-top rounded-3"
+              alt="..."
+            />
+            <div class="card-body px-0">
+              <h5 class="card-title fw-semibold">
+                КУЗЬМИНЫХ <br />
+                Евгения Владимировна
+              </h5>
+              <p class="card-text career-team-card-text">
+                Руководитель центра карьеры и содействия трудоустройству
+                выпускников
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border-0 bg-transparent">
+            <img
+              src="{% static 'bootstrap/img/career_team/aleshina.png.webp' %}"
+              class="card-img-top rounded-3"
+              alt="..."
+            />
+            <div class="card-body px-0">
+              <h5 class="card-title fw-semibold">
+                АЛЕШИНА <br />
+                Татьяна Владимировна
+              </h5>
+              <p class="card-text career-team-card-text">
+                Специалист центра карьеры и содействия трудоустройству
+                выпускников
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section-career-vacancy">
+    <div class="container">
+      <h2 class="mb-5 fw-semibold fs-1">Вакансии</h2>
+      <div class="row row-cols-1 row-cols-md-4 g-5 mb-5">
+        <div class="col">
+          <a href="" class="card-link">
+            <div class="card h-100 bg-body-tertiary rounded-3 border-0">
+              <img
+                src="{% static 'bootstrap/img/career-vacancy-1.jpg.webp' %}"
+                class="card-img-top rounded-top-3"
+                alt="career-vacancy-1"
+              />
+              <div class="card-body">
+                <h5 class="card-title px-3 fw-semibold fs-6">
+                  Учитель химии и биологии
+                </h5>
+                <p class="card-text px-3 fs-6 lh-sm">
+                  ГБОУ ХО "Лазурненская школа"
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="" class="card-link">
+            <div class="card h-100 bg-body-tertiary rounded-3 border-0">
+              <img
+                src="{% static 'bootstrap/img/career-vacancy-2.jpg.webp' %}"
+                class="card-img-top rounded-top-3"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title px-3 fw-semibold fs-6">
+                  Учитель английского языка
+                </h5>
+                <p class="card-text px-3 fs-6 lh-sm">
+                  ГБОУ ХО "Новоалександровская школа Каланчакского района"
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="" class="card-link">
+            <div class="card h-100 bg-body-tertiary rounded-3 border-0">
+              <img
+                src="{% static 'bootstrap/img/career-vacancy-3.jpg.webp' %}"
+                class="card-img-top rounded-top-3"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title px-3 fw-semibold fs-6">
+                  Учитель математики
+                </h5>
+                <p class="card-text px-3 fs-6 lh-sm">
+                  ГБОУ ХО "Новоалександровская школа Каланчакского района"
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="" class="card-link">
+            <div class="card h-100 bg-body-tertiary rounded-3 border-0">
+              <img
+                src="{% static 'bootstrap/img/career-vacancy-4.jpg.webp' %}"
+                class="card-img-top rounded-top-3"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title px-3 fw-semibold fs-6">Учитель физики</h5>
+                <p class="card-text px-3 fs-6 lh-sm">
+                  ГБОУ ХО "Железнопортовская школа Голопристанского
+                  муниципального округа"
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="py-4 text-center">
+        <a href="" class="career-vacancy-all-link">Банк вакансий</a>
+      </div>
+    </div>
+  </div>
+  <div class="career-stripe"></div>
+  <div class="container">
+    <div class="d-flex align-items-center gap-5 py-5">
+      <div>
+        <img
+          src="{% static 'bootstrap/img/career-schedule-img.png' %}"
+          alt=""
+        />
+      </div>
+      <div>
+        <h3 class="mb-4 fw-semibold fs-1 fw-bold">Четверг карьериста с ХГПУ</h3>
+        <p class="fs-4">
+          Цикл полноценных вебинаров на темы повышения личной и профессиональной
+          эффективности
+        </p>
+        <div class="mb-5">
+          <a class="career-tag" href="">Собеседование</a>
+          <a class="career-tag" href="">Педагогам</a>
+          <a class="career-tag" href="">Резюме</a>
+          <a class="career-tag" href="">Гибкие навыки</a>
+          <a class="career-tag" href="">О карьере</a>
+          <a class="career-tag" href="">Категория</a>
+          <a class="career-tag" href="">Поиск работы</a>
+        </div>
+        <a href="" class="career-shedule-link">Расписание вебинаров</a>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

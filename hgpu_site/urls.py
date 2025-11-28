@@ -46,4 +46,5 @@ urlpatterns = [
     path('sveden/catering', catering, name='catering'),
     path('test', test, name='test'),
     # -- END --
+    path('career', career, name='career'),
 ]

@@ -63,5 +63,8 @@ def inter(requests):
 def catering(requests):
     return render(requests, 'catering.html')
 
+def career(requests):
+    return render(requests, 'career.html')
+
 def test(requests):
     return render(requests, 'test.html')
