@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Образование
+{% endblock %}
+{% block content %}
+<main class="main">
+    <div class="container">
+        <div class="py-4">
+            <nav style="--bs-breadcrumb-divider: '»'" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">Главная</a></li>
+                    <li class="breadcrumb-item" aria-current="page">
+                        <a href="#">Университет</a>
+                    </li>
+                    <li class="breadcrumb-item" aria-current="page">
+                        <a href="{% url 'sveden' %}">Сведения об образовательной организации</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        <a href="{% url 'education'%}">Образование</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        <a href="{% url 'bak_opop'%}">Информация о реализуемых ОПОП. Высшее образование. Программы
+                            БАКАЛАВРИАТА.</a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+        <h2 class="mb-5 fw-bold fs-2 basic-info-title">
+            Высшее образование. Программы БАКАЛАВРИАТА
+        </h2>
+        <div class="my-accordion pt-4">
+            <details class="details yelow-divider" name="education-accordion">
+                <summary class="details-title">
+                    <p class="fw-semibold fs-4">_____________________________________</p>
+                    <i class="fa-solid fa-angle-down fa-2xl my-accordion-icon"></i>
+                </summary>
+            </details>
+        </div>
+    </div>
+</main>
+{% endblock %}

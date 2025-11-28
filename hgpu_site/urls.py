@@ -33,6 +33,7 @@ urlpatterns = [
     path('sveden/document', document,  name='document'),
     path('sveden/education', education, name='education'),
     path('sveden/education/mag_opop', mag_opop, name='mag_opop'),
+    path('sveden/education/bak_opop', bak_opop, name='bak_opop'),
     path('sveden/eduStandarts', eduStandarts, name='eduStandarts'),
     path('sveden/managers', managers, name='managers'),
     path('sveden/employees', employees, name='employees'),
