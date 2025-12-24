@@ -28,6 +28,9 @@ def education(requests):
 def mag_opop(requests):
     return render(requests, 'mag_opop.html')
 
+def bak_opop(requests):
+    return render(requests, 'bak_opop.html')
+
 def eduStandarts(requests):
     return render(requests, 'eduStandarts.html')
 
