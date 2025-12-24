@@ -63,5 +63,14 @@ def catering(requests):
 def career(requests):
     return render(requests, 'career.html')
 
+def media(requests):
+    return render(requests, 'templates_media/media.html')
+
+def universitet_v_smi(requests):
+    return render(requests, 'templates_media/universitet_v_smi.html')
+
+def anti_corruption(requests):
+    return render(requests, 'anti-corruption.html')
+
 def test(requests):
     return render(requests, 'test.html')
