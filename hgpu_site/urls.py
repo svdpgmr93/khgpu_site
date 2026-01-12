@@ -44,6 +44,7 @@ urlpatterns = [
     path('sveden/vacant', vacant, name='vacant'),
     path('sveden/inter', inter, name='inter'),
     path('sveden/catering', catering, name='catering'),
+    path('rabota_v_hgpu', rabota_v_hgpu, name='rabota_v_hgpu'),
     path('test', test, name='test'),
     # -- END --
     path('career', career, name='career'),

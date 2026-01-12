@@ -75,5 +75,8 @@ def universitet_v_smi(requests):
 def anti_corruption(requests):
     return render(requests, 'anti-corruption.html')
 
+def rabota_v_hgpu(requests):
+    return render(requests, 'rabota-v-hgpu.html')
+
 def test(requests):
     return render(requests, 'test.html')
