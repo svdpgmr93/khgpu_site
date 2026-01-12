@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}График учебного процесса{% endblock %}
+{% block content %}
+<div class="container-xxl">
+  <div class="py-4">
+    <nav style="--bs-breadcrumb-divider: '>>'" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Главная</a></li>
+        <li class="breadcrumb-item" aria-current="page"><a href="№">Образование</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><a href="{%url 'gup'%}">График учебного процесса</a>
+        </li>
+      </ol>
+    </nav>
+  </div>
+  <h1 class="mb-5 fw-bold fs-2">График учебного процесса</h1>
+  <div class="d-flex align-items-center gap-2 mb-5">
+    <div class="d-flex gap-1">
+      <a href="https://cloud.hgpurf.ru/index.php/s/bFoWGqxXwQb44mN"><img
+          class="basic-info-icon" src="/static/bootstrap/img/icons/pdf-icon.svg" alt=""></a>
+    </div>
+    <a class="basic-info-link"
+      href="https://cloud.hgpurf.ru/index.php/s/bFoWGqxXwQb44mN">Сводный календарный учебный график ФГБОУ ВО “Херсонский государственный педагогический университет” на 2025-2026 учебный год”</a>
+  </div>
+{% endblock %}

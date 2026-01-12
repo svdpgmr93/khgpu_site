@@ -51,4 +51,5 @@ urlpatterns = [
     path('protivodeistvie-corrupcii', anti_corruption, name='anti_corruption'),
     path('media', media, name='media'),
     path('media/universitet_v_smi', universitet_v_smi, name='universitet_v_smi'),
+    path('gup', gup, name='gup'),
 ]

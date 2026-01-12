@@ -14,16 +14,16 @@ def sveden(requests):
     return render(requests, 'sveden.html')
 
 def common(requests):
-    return render(requests, 'common.html')
+    return render(requests, 'common.html') #Основные сведения
 
 def struct(requests):
-    return render(requests, 'struct.html')
+    return render(requests, 'struct.html') #Структура и органы управления образовательной организацией
 
 def document(requests):
-    return render(requests, 'documents.html')
+    return render(requests, 'documents.html') #Документы
 
 def education(requests):
-    return render(requests, 'education.html')
+    return render(requests, 'education.html') #Образование
 
 def mag_opop(requests):
     return render(requests, 'mag_opop.html')
@@ -32,36 +32,36 @@ def bak_opop(requests):
     return render(requests, 'bak_opop.html')
 
 def eduStandarts(requests):
-    return render(requests, 'eduStandarts.html')
+    return render(requests, 'eduStandarts.html') #Образовательные стандарты и требования
 
 def managers(requests):
-    return render(requests, 'managers.html')
+    return render(requests, 'managers.html') #Руководство
 
 def employees(requests):
     # if HttpResponseNotFound:
     #     return render(requests,'404.html')     # Рабочая тема!
-    return render(requests, 'employees.html')
+    return render(requests, 'employees.html') #Педагогический состав
 
 def objects(requests):
-    return render(requests, 'objects.html')
+    return render(requests, 'objects.html') #Материально-техническое обеспечение и
 
 def grants(requests):
-    return render(requests, 'grants.html')
+    return render(requests, 'grants.html') #Стипендии и меры 
 
 def paid_edu(requests):
-    return render(requests, 'paid-edu.html')
+    return render(requests, 'paid-edu.html') #Платные образовательные услуги
 
 def budget(requests):
-    return render(requests, 'budget.html')
+    return render(requests, 'budget.html') #Финансово-хозяйственная деятельность
 
 def vacant(requests):
-    return render(requests, 'vacant.html')
+    return render(requests, 'vacant.html') #Вакантные места для приема (перевода)
 
 def inter(requests):
-    return render(requests, 'inter.html')
+    return render(requests, 'inter.html') #Международное сотрудничество
 
 def catering(requests):
-    return render(requests, 'catering.html')
+    return render(requests, 'catering.html') #Организация питания
 
 def career(requests):
     return render(requests, 'career.html')
@@ -80,3 +80,6 @@ def rabota_v_hgpu(requests):
 
 def test(requests):
     return render(requests, 'test.html')
+
+def gup(requests):
+    return render(requests, 'gup.html') #График учебного процесса
