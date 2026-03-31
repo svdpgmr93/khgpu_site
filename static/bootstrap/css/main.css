@@ -43,11 +43,11 @@ main.main {
 }
 
 .header-top {
-    background-color: #f4f2f2;
+    background-color: #cdc5c5;
 }
 
 .dpo {
-    background-color: #ffe877;
+    background-color: #ffd600;
     text-decoration: none;
     font-size: 14px;
     font-weight: 700;
@@ -61,7 +61,7 @@ main.main {
 }
 
 .search {
-    background-color: #ffe877;
+    background-color: #ffd600;
     color: #5d5c5b;
 }
 
@@ -93,7 +93,7 @@ main.main {
 }
 
 .header-menu {
-    background-color: #f9f9f9;
+    background-color: #f4f2f2;
     
 }
 
@@ -939,7 +939,7 @@ summary p {
     border-bottom-left-radius: 15px;
 }
 
-.career-section-divider {
+.red-section-divider {
     width: 80px;
     height: 3px;
     background-color: #ff5500;
@@ -1091,8 +1091,6 @@ summary p {
     left: 0;
     height: 100%;
     width: 100%;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
 }
 
 .media-news-publication:not(:last-child)::after {
@@ -1127,3 +1125,575 @@ summary p {
 }
 
 /* anti-corruption page styles end */
+
+/* mediapedagogika page styles start */
+
+.mediapedagogika-baner {
+    background-image: url('../img/mediapedagogika-banner.webp');
+    height: 420px;
+    border-radius: 30px;
+    background-position-y: 43%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mediaped-section {
+    padding-top: 120px;
+    padding-bottom: 135px;
+}
+
+.mediaped-section-targ {
+    padding-top: 105px;
+    padding-bottom: 105px;
+}
+
+.mediaped-target-text {
+    background-color: rgb(92, 92, 92);
+    color: #fff;
+}
+
+.triangle-left::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;  
+    width: 0;
+    height: 0; 
+    border-top: 25px solid transparent; 
+    border-right: 25px solid #fff; 
+    border-bottom: 25px solid transparent; 
+}
+
+.triangle-right::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0; 
+    width: 0;
+    height: 0; 
+    border-top: 25px solid transparent; 
+    border-left: 25px solid #ffffff; 
+    border-bottom: 25px solid transparent;
+}
+
+.mediaped-section-kino {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.mediaped-kino-card {
+    background-color: rgb(239, 239, 239);
+    padding: 60px 80px;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+    z-index: 10;
+}
+
+.mediaped-kino-card h1::after {
+    content: "";
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 20px;
+    width: 50px;
+    height: 3px;
+    background-color: #ffbf31;
+    opacity: 0.6;
+}
+
+.mediaped-kino-link {
+    display: inline-block;
+    padding: 20px 60px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 18px;
+    background-image: linear-gradient(0.75turn, rgba(255, 148, 21, 1) 0%, rgba(255, 199, 9, 1) 100%);
+    border-radius: 6px;
+}
+
+.mediaped-kino-link:hover {
+    box-shadow: 0px 5px 15px 0px rgba(255, 148, 21, 0.5) !important;
+    transition-duration: 0.2s;
+    transition-property: background-color, color, border-color, box-shadow, opacity, transform, gap;
+    transition-timing-function: ease-in-out;
+}
+
+.mediaped-kino-img {
+    width: 800px;
+    height: 520px;
+    border-radius: 10px;
+    position: absolute;
+    top: -60px;
+    right: 10px;
+}
+/* mediapedagogika page styles end */
+
+/* rector blog page styles  start */
+
+.blog-rektora-baner {
+    background-image: url('../img/blog-rectora/rector-blog-banner.webp');
+    height: 520px;
+    border-radius: 10px;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blog-rektora-second-baner {
+    background-image: url('../img/blog-rectora/rector-second-banner.webp');
+    border-radius: 10px;
+    height: 918px;
+    background-position-y: 35%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rector-second-banner-text {
+    max-width: 520px;
+    padding: 10px 16px;
+    background-color: #ffe877;
+}
+
+.rector-img {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+    border: 4px solid #ffe877;
+}
+
+.rector-mg-wrap {
+    margin-top: -100px;
+    text-align: center;
+}
+
+/* Стили для кнопки */
+.glare-link {
+    display: inline-block;
+    box-sizing: content-box;
+    border: none;
+    border-radius: 30px;
+    padding: 5px 20px;
+    background-color: #ffe877;
+    color: #333333;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 20px 60px;
+    box-shadow: 0px 2px 3px rgba(0, 11, 48, 0.25) !important;
+}
+
+.glare-link:hover {
+    box-shadow: 0px 5px 15px 0px #ffe877 !important;
+    transition-duration: 0.2s;
+    transition-property: background-color, color, border-color, box-shadow, opacity, transform, gap;
+    transition-timing-function: ease-in-out;
+}
+
+.glare-link:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70% 
+    );
+    top: 0;
+    left: -100px;
+    animation: shine 2s infinite linear;
+}
+
+@keyframes shine {
+    0% {
+        left: -100px;
+    }
+    20% {
+        left: 100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+.rector-green-bg-text {
+    background-color: #1ba58b;
+    padding: 50px 70px;
+    border-radius: 30px;
+}
+
+.red-section-divider-lg {
+    width: 80px;
+    height: 5px;
+    background-color: #ff5500;
+}
+
+.nebo-rector-img {
+    position: absolute;
+    top: 54%;
+    border-radius: 30px;
+    width: 470px;
+    height: 245px;
+}
+
+.rector-logo-line {
+    height: 2px;
+    background-image: linear-gradient(0turn, rgba(255, 148, 21, 1) 0%, rgba(255, 199, 9, 1) 100%);
+    opacity: .5;
+}
+
+/* rector blog page styles end */
+
+
+/* negative border-radius classes start */
+
+.nebo {
+  --nb-r: 30px;
+  --nb-w: 430px;
+  --nb-h: 200px;
+
+  /* Fine-tuned radiuses */
+  --nb-cor1-rw: var(--nb-r);
+  --nb-cor1-rh: var(--nb-r);
+  --nb-cor2-rw: var(--nb-r);
+  --nb-cor2-rh: var(--nb-r);
+  --nb-curve-rw: var(--nb-r);
+  --nb-curve-rh: var(--nb-r);
+
+  --_nb-smooth: 98%;
+
+  /* Curve positions list */
+  --_nb-curve-pos-tl: 0 0;
+  --_nb-curve-pos-tr: 100% 0;
+  --_nb-curve-pos-bl: 0 100%;
+  --_nb-curve-pos-br: 100% 100%;
+
+  /* Setting default curve position (bottom right corner) */
+  --_nb-curve-pos: var(--_nb-curve-pos-br);
+
+  --_nb-mask-image: 
+    linear-gradient(to bottom, #000, #000),
+    linear-gradient(to bottom, #000, #000),
+    linear-gradient(to bottom, #000, #000),
+    linear-gradient(to bottom, #000, #000),
+    radial-gradient(closest-side at center, #000 var(--_nb-smooth), transparent 100%),
+    radial-gradient(closest-side at center, #000 var(--_nb-smooth), transparent 100%),
+    radial-gradient(farthest-side at var(--_nb-curve-pos), transparent var(--_nb-smooth), #000 100%);
+
+  --_nb-mask-size: 
+    100% calc(100% - var(--nb-h) - var(--nb-cor1-rh) - var(--nb-curve-rh) - var(--nb-cor2-rh)),
+    calc(100% - var(--nb-cor1-rw)) calc(100% - var(--nb-h) - var(--nb-curve-rh) - var(--nb-cor2-rh)),
+    calc(100% - var(--nb-w) - var(--nb-curve-rw) - var(--nb-cor1-rw)) calc(100% - var(--nb-cor2-rh)),
+    calc(100% - var(--nb-w) - var(--nb-cor1-rw) - var(--nb-curve-rw) - var(--nb-cor2-rw)) 100%,
+    calc(var(--nb-cor1-rw) * 2) calc(var(--nb-cor1-rh) * 2),
+    calc(var(--nb-cor2-rw) * 2) calc(var(--nb-cor2-rh) * 2),
+    calc(var(--nb-curve-rw) + 0.5px) calc(var(--nb-curve-rh) + 0.5px);
+
+  /* Masks positions list */
+  --_nb-mask-position-tl: 
+    100% 100%,
+    100% 100%,
+    100% 100%,
+    100% 100%,
+    0 calc(var(--nb-h) + var(--nb-curve-rh) + var(--nb-cor2-rh)),
+    calc(var(--nb-w) + var(--nb-cor1-rw) + var(--nb-curve-rw)) 0,
+    calc(var(--nb-w) + var(--nb-cor1-rw)) calc(var(--nb-h) + var(--nb-cor2-rh));
+
+  --_nb-mask-position-tr: 
+    0 100%,
+    0 100%,
+    0 100%,
+    0 100%,
+    100% calc(var(--nb-h) + var(--nb-curve-rh) + var(--nb-cor2-rh)),
+    calc(100% - var(--nb-w) - var(--nb-curve-rw) - var(--nb-cor1-rw)) 0,
+    calc(100% - var(--nb-w) - var(--nb-cor1-rw)) calc(var(--nb-h) + var(--nb-cor2-rh));
+
+  --_nb-mask-position-bl: 
+    100% 0,
+    100% 0,
+    100% 0,
+    100% 0,
+    0 calc(100% - var(--nb-h) - var(--nb-curve-rh) - var(--nb-cor2-rh)),
+    calc(var(--nb-w) + var(--nb-curve-rw) + var(--nb-cor1-rw)) 100%,
+    calc(var(--nb-w) + var(--nb-cor1-rw)) calc(100% - var(--nb-h) - var(--nb-cor2-rh));
+
+  --_nb-mask-position-br: 
+    0 0,
+    0 0,
+    0 0,
+    0 0,
+    100% calc(100% - var(--nb-h) - var(--nb-curve-rh) - var(--nb-cor2-rh)),
+    calc(100% - var(--nb-w) - var(--nb-curve-rw) - var(--nb-cor1-rw)) 100%,
+    calc(100% - var(--nb-w) - var(--nb-cor1-rw)) calc(100% - var(--nb-h) - var(--nb-cor2-rh));
+
+  /* Setting default mask position (bottom right corner) */
+  --_nb-mask-position: var(--_nb-mask-position-br);
+
+  mask-image: var(--_nb-mask-image);
+  mask-size: var(--_nb-mask-size);
+  mask-position: var(--_nb-mask-position);
+  mask-repeat: no-repeat;
+}
+
+.nebo--tl {
+  --_nb-curve-pos: var(--_nb-curve-pos-tl);
+  --_nb-mask-position: var(--_nb-mask-position-tl);
+}
+
+.nebo--tr {
+  --_nb-curve-pos: var(--_nb-curve-pos-tr);
+  --_nb-mask-position: var(--_nb-mask-position-tr);
+}
+
+.nebo--bl {
+  --_nb-curve-pos: var(--_nb-curve-pos-bl);
+  --_nb-mask-position: var(--_nb-mask-position-bl);
+}
+
+.nebo--br {
+  --_nb-curve-pos: var(--_nb-curve-pos-br);
+  --_nb-mask-position: var(--_nb-mask-position-br);
+}
+
+/* negative border-radius classes end */
+
+/* institut-it-styles start */
+
+.it-introduce-sec {
+    background-image: url('../img/institut-it/institut_it_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.institut-tag {
+    display: inline-block;
+    padding: 6px 30px ;
+    margin-right: 10px;
+    border-radius: 40px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid #ffffff;
+}
+
+.institut-tag:hover {
+    background-color: #ffbf31;
+    border-color: #ffbf31;
+    color: #000;
+    scale: 1.05;
+    transition: ease-in-out;
+    transition-duration: .3s;
+}
+
+.card-institute {
+    background-color: #f4f2f2;
+    border: none;
+    border-radius: 15px;
+}
+
+.institut-photo-card {
+    height: 100%;
+    background-image: url('../img/institut-it/laptop-girl.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 45%;
+}
+
+.card-institute-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 50px;
+    padding: 15px;
+    border-radius: 100%;
+    background-color: #ffbf31;
+}
+
+.card-institut-fig {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.gear-icon {
+    width: 7%;
+    display: inline-block;
+    animation-name: rotation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Стили для кнопки */
+
+.glare-red-link {
+    display: inline-block;
+    box-sizing: content-box;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    background-color: #d80707;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0px 2px 3px rgba(0, 11, 48, 0.25) !important;
+}
+
+.glare-red-link:hover {
+    background-color: #ffaa00;
+    color: #000;
+    scale: 1.05;
+    transition-duration: 0.3s;
+    transition-property: background-color color scale;
+    transition-timing-function: ease-in-out;
+}
+
+.glare-red-link:before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 100%;
+    background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70% 
+    );
+    top: 0;
+    left: -100px;
+    animation: shine 5s infinite linear;
+}
+
+.title-yellow-marker::after {
+    content: '';
+    display: block;
+    height: 27px;
+    width: 120%;
+    background-color: #ffbf31;
+    border-radius: 5px;
+    position: absolute;
+    top: 55%;
+    z-index: -1;
+}
+
+.title-grey-marker::after {
+    content: '';
+    display: block;
+    height: 27px;
+    width: 120%;
+    background-color: #C4BFBF;
+    border-radius: 5px;
+    position: absolute;
+    top: 55%;
+    z-index: -1;
+}
+
+.title-white-marker::after {
+    content: '';
+    display: block;
+    height: 27px;
+    width: 120%;
+    background-color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top: 55%;
+    z-index: -1;
+}
+
+.bg-gray {
+    background-color: #f4f2f2
+}
+
+.glare-prog-link {
+    display: inline-block;
+    box-sizing: content-box;
+    border: none;
+    color: #333333;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.glare-prog-link:hover {
+    background-color: #333333;
+    color: #fff;
+    transition-duration: .3s;
+    transition-property: background-color, color, border-color, box-shadow, opacity, transform, gap;
+    transition-timing-function: ease-in-out;
+}
+
+.glare-prog-link:before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70% 
+    );
+    top: 0;
+    left: -50px;
+    animation: shine 3s infinite linear;
+}
+
+.glare-kaf-link {
+    width: 57%;
+    display: flex;
+    justify-content: center;
+    box-sizing: content-box;
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+.glare-kaf-link:hover {
+    background-color: #000000;
+    color: #fff;
+    transition-duration: .3s;
+    transition-property: background-color, color, border-color, box-shadow, opacity, transform, gap;
+    transition-timing-function: ease-in-out;
+}
+
+.glare-kaf-link:before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70% 
+    );
+    top: 0;
+    left: -50px;
+    animation: shine 3s infinite linear;
+}
+
+.text-ylw {
+    color: #ffbf31;
+}
+/* institut-it-styles end */

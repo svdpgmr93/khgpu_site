@@ -1,0 +1,922 @@
+{% extends 'base.html' %} {% load static %} {% block title %} Институт
+информационных технологий {%endblock %} {% block content %}
+<main class="main">
+  <div class="container">
+    <div class="py-4">
+      <nav style="--bs-breadcrumb-divider: '>>'" aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0 fw-semibold">
+          <li class="breadcrumb-item">
+            <a href="{%url 'main'%}">Главная</a>
+          </li>
+          <li class="breadcrumb-item" aria-current="page">
+            <a href="{%url 'main'%}">Университет</a>
+          </li>
+          <li class="breadcrumb-item" aria-current="page">
+            <a href="{%url 'sveden'%}">Институты</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            <a href="#">Институт информационных технологий</a>
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <div class="it-introduce-sec py-4">
+    <div class="container">
+      <div class="row">
+        <div
+          style="
+            background-image: url('{% static 'bootstrap/img/institut-it/institut-it-introduse-sec-bg-photo.jpg' %}');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: 30%;
+            z-index: 2;
+          "
+          class="col rounded-start-4 position-relative"
+        >
+          <div class="mb-3 position-absolute bottom-0 start-50">
+            <a href="" class="glare-red-link">
+              <i class="fa-solid fa-circle-chevron-right fa-lg"></i>
+              <span>Абитуриентам Института</span>
+            </a>
+          </div>
+        </div>
+        <div
+          style="
+            background-image: url('{% static 'bootstrap/img/institut-it/introduse-sec-text-bg.png' %}');
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: 2;
+          "
+          class="col rounded-end-4"
+        >
+          <div
+            class="h-100 py-4 px-5 d-flex flex-column justify-content-between"
+          >
+            <div>
+              <div class="px-4 py-2 mb-3 d-inline-block bg-ylw rounded-3">
+                <img
+                  src="{% static 'bootstrap/img/institut-it/icons/gear-b.svg' %}"
+                  alt="gear-icon"
+                  class="gear-icon"
+                />
+                <span class="fs-6 fw-medium text-black align-middle ps-3">
+                  Стань архитектором цифрового мира!
+                </span>
+              </div>
+              <p class="fs-1 fw-bold text-white lh-sm">
+                Институт информационных технологий
+              </p>
+            </div>
+            <div>
+              <div class="mb-2">
+                <a class="institut-tag" href="">Об институте</a>
+                <a class="institut-tag" href="">Дирекция</a>
+                <a class="institut-tag" href="">Кафедры</a>
+              </div>
+              <div class="mb-2">
+                <a class="institut-tag" href="">Наука</a>
+                <a class="institut-tag" href="">Проекты</a>
+                <a class="institut-tag" href="">Новости</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      style="
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background-color: rgba(177, 41, 41, 0.15);
+        z-index: 1;
+      "
+    ></div>
+  </div>
+  <div class="py-4">
+    <div class="container">
+      <div
+        class="mb-2 d-inline-block fw-bold fs-1 position-relative z-2 title-yellow-marker"
+      >
+        Об Институте
+      </div>
+      <p class="py-4 fs-5">
+        <span class="fw-bold">Институт информационных технологий</span>
+        осуществляет подготовку учителей математики, информатики, физики и
+        экономики, а также подготовку специалистов в области программной
+        инженерии для Херсонской области, Крыма, а также других регионов
+        Российской Федерации. Обучение проходит в смешанном формате с
+        использованием дистанционных образовательных технологий.
+      </p>
+      <div class="py-3">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+          <div class="col">
+            <div
+              style="
+                background-image: url('{% static 'bootstrap/img/institut-it/introduse-sec-text-bg.png' %}');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position-x: 20%;
+              "
+              class="card card-institute h-100"
+            >
+              <div class="institut-photo-card">
+                <div class="card-body px-4 py-4 position-relative">
+                  <div
+                    class="card-institute-icon bg-dark px-1 py-1 position-absolute"
+                  >
+                    <img
+                      src="{% static 'bootstrap\img\institut-it\icons\icon-it.webp' %}"
+                      alt=""
+                      class="w-100"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              style="
+                background-image: url('{% static 'bootstrap/img/institut-it/institut_it_bg.jpg' %}');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: 90% 40%;
+              "
+              class="card card-institute h-100"
+            >
+              <div class="card-body px-5 py-4">
+                <div class="card-institute-icon bg-white">
+                  <img
+                    src="{% static 'bootstrap\img\institut-it\icons\icon-it-2.svg' %}"
+                    alt=""
+                  />
+                </div>
+                <p class="card-institut-fig">6</p>
+                <p class="fs-5">
+                  <span class="fw-bold">Образовательных программ</span>
+                  реализуются в институте ИТ
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card card-institute h-100">
+              <div class="card-body px-5 py-4">
+                <div class="card-institute-icon">
+                  <img
+                    src="{% static 'bootstrap\img\institut-it\icons\icon-it-3.svg' %}"
+                    alt=""
+                  />
+                </div>
+                <p class="card-institut-fig">62%</p>
+                <p class="fs-5">
+                  Преподавателей института имеют
+                  <span class="fw-bold">ученую степень и ученое звание</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card card-institute h-100">
+              <div class="card-body px-5 py-4">
+                <div class="card-institute-icon">
+                  <img
+                    src="{% static 'bootstrap\img\institut-it\icons\icon-it-4.svg' %}"
+                    alt=""
+                  />
+                </div>
+                <p class="card-institut-fig">580+</p>
+                <p class="fs-5">
+                  <span class="fw-bold">Cтудентов</span> обучаются
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="py-4 fs-5">
+        Действующие педагоги, математики, физики, программисты и специалисты по
+        компьютерным сетям охотно делятся своим опытом со студентами – будущими
+        педагогическими и инженерными кадрами страны.
+      </p>
+      <div class="row mb-5">
+        <div class="col">
+          <img
+            class="w-100 h-100 rounded-3"
+            src="{% static 'bootstrap\img\institut-it\collage-1.jpg' %}"
+            alt=""
+          />
+        </div>
+        <div class="col">
+          <div class="row mb-3">
+            <div class="col">
+              <img
+                class="w-100 h-100 rounded-3"
+                src="{% static 'bootstrap\img\institut-it\collage-2.jpg' %}"
+                alt=""
+              />
+            </div>
+            <div class="col">
+              <img
+                class="w-100 h-100 rounded-3"
+                src="{% static 'bootstrap\img\institut-it\collage-3.webp' %}"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <img
+                class="w-100 h-100 rounded-3"
+                src="{% static 'bootstrap\img\institut-it\collage-4.jpg.webp' %}"
+                alt=""
+              />
+            </div>
+            <div class="col">
+              <img
+                class="w-100 h-100 rounded-3"
+                src="{% static 'bootstrap\img\institut-it\collage-5.jpg.webp' %}"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="mb-5 d-inline-block fw-bold fs-1 position-relative title-yellow-marker"
+      >
+        Образоватeльные программы
+      </div>
+      <div class="row mb-4 px-3 gap-0">
+        <div class="col px-0">
+          <button
+            role="tab"
+            aria-selected="true"
+            id="it-bak"
+            class="w-100 py-3 border border-secondary-subtle bg-transparent rounded-start-3 fs-5 fw-medium"
+          >
+            Бакалавриат
+          </button>
+        </div>
+        <div class="col px-0">
+          <button
+            role="tab"
+            aria-selected="false"
+            id="it-mag"
+            class="w-100 py-3 border border-secondary-subtle bg-transparent rounded-end-3 fs-5 fw-medium"
+          >
+            Магистратура
+          </button>
+        </div>
+      </div>
+      <div class="mb-4 row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div
+            class="card h-100 outline-none border-0 bg-gray rounded-4 overflow-hidden"
+          >
+            <img
+              src="{% static 'bootstrap\img\institut-it\edu_progs\bak-prog-1.jpg' %}"
+              class="card-img-top"
+              alt="..."
+            />
+            <div
+              class="card-body d-flex flex-column justify-content-between px-4 pb-4"
+            >
+              <p class="card-text">09.03.04<br />"Программная инженерия"</p>
+              <h5 class="card-title fw-bold pe-4">
+                Программно-информационные системы
+              </h5>
+              <div
+                class="mb-3 d-flex justify-content-between align-items-center"
+              >
+                <div class="w-50">
+                  <div class="border-top border-secondary-subtle"></div>
+                  <p class="mb-0 card-text">
+                    Кафедра программной инженерии и информационных технологий
+                  </p>
+                  <div class="border-top border-secondary-subtle"></div>
+                </div>
+                <a
+                  href=""
+                  class="bg-ylw px-3 py-3 fw-medium rounded-4 glare-prog-link"
+                  >Подробнее</a
+                >
+              </div>
+              <p class="card-text text-uppercase">
+                Институт информационных технологий
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card h-100 outline-none border-0 bg-gray rounded-4 overflow-hidden"
+          >
+            <img
+              src="{% static 'bootstrap\img\institut-it\edu_progs\bak-prog-2.jpg' %}"
+              class="card-img-top"
+              alt="..."
+            />
+            <div
+              class="card-body d-flex flex-column justify-content-between px-4 pb-4"
+            >
+              <p class="card-text">
+                44.03.05 "Педагогическое образование<br />(с двумя профилями
+                подготовки)"
+              </p>
+              <h5 class="card-title fw-bold pe-4">Математика и информатика</h5>
+              <div
+                class="mb-3 d-flex justify-content-between align-items-center"
+              >
+                <div class="w-50">
+                  <div class="border-top border-secondary-subtle"></div>
+                  <p class="mb-0 card-text pe-2">
+                    Кафедра цифрового образования, математики и физики
+                  </p>
+                  <div class="border-top border-secondary-subtle"></div>
+                </div>
+                <a
+                  href=""
+                  class="bg-ylw px-3 py-3 fw-medium rounded-4 glare-prog-link"
+                  >Подробнее</a
+                >
+              </div>
+              <p class="card-text text-uppercase">
+                Институт информационных технологий
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card h-100 outline-none border-0 bg-gray rounded-4 overflow-hidden"
+          >
+            <img
+              src="{% static 'bootstrap\img\institut-it\edu_progs\bak-prog-3.jpg' %}"
+              class="card-img-top"
+              alt="..."
+            />
+            <div
+              class="card-body d-flex flex-column justify-content-between px-4 pb-4"
+            >
+              <p class="card-text">
+                44.03.05 "Педагогическое образование<br />(с двумя профилями
+                подготовки)"
+              </p>
+              <h5 class="card-title fw-bold pe-4">Математика и экономика</h5>
+              <div
+                class="mb-3 d-flex justify-content-between align-items-center"
+              >
+                <div class="w-50">
+                  <div class="border-top border-secondary-subtle"></div>
+                  <p class="mb-0 card-text pe-2">
+                    Кафедра цифрового образования, математики и физики
+                  </p>
+                  <div class="border-top border-secondary-subtle"></div>
+                </div>
+                <a
+                  href=""
+                  class="bg-ylw px-3 py-3 fw-medium rounded-4 glare-prog-link"
+                  >Подробнее</a
+                >
+              </div>
+              <p class="card-text text-uppercase">
+                Институт информационных технологий
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-4">
+          <div
+            class="card h-100 outline-none border-0 bg-gray rounded-4 overflow-hidden"
+          >
+            <img
+              src="{% static 'bootstrap\img\institut-it\edu_progs\bak-prog-4.jpg' %}"
+              class="card-img-top"
+              alt="..."
+            />
+            <div
+              class="card-body d-flex flex-column justify-content-between px-4 pb-4"
+            >
+              <p class="card-text">
+                44.03.05 "Педагогическое образование<br />(с двумя профилями
+                подготовки)"
+              </p>
+              <h5 class="card-title fw-bold pe-4">Физика и информатика</h5>
+              <div
+                class="mb-3 d-flex justify-content-between align-items-center"
+              >
+                <div class="w-50">
+                  <div class="border-top border-secondary-subtle"></div>
+                  <p class="mb-0 card-text pe-2">
+                    Кафедра цифрового образования, математики и физики
+                  </p>
+                  <div class="border-top border-secondary-subtle"></div>
+                </div>
+                <a
+                  href=""
+                  class="bg-ylw px-3 py-3 fw-medium rounded-4 glare-prog-link"
+                  >Подробнее</a
+                >
+              </div>
+              <p class="card-text text-uppercase">
+                Институт информационных технологий
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            style="
+              background-image: url('{% static 'bootstrap\img\institut-it\edu_progs\it-edu-progs-bg.png' %}');
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position-y: 30%;
+              z-index: 2;
+            "
+            class="card h-100 outline-none border-0 rounded-4 overflow-hidden px-5 py-4"
+          >
+            <p class="fs-3">
+              <span class="fw-bold">Подробности о поступлении</span> на
+              образовательные программы
+              <span class="text-uppercase fw-bold">бакалавриата</span
+              ><br />университета
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5 bg-gray">
+    <div class="container">
+      <div
+        class="mb-4 d-inline-block fw-bold fs-1 position-relative z-2 title-grey-marker"
+      >
+        Дирекция Института
+      </div>
+      <div class="row py-4">
+        <div class="col-5">
+          <div class="mb-4 py-4 px-4 bg-ylw rounded-4">
+            <div class="mb-2 px-3 row align-items-center gap-4">
+              <div
+                style="
+                  background-image: url('{% static 'bootstrap/img/institut-it/institut-it-director-photo.png' %}');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-position: center;
+                  max-width: 150px;
+                "
+                class="col px-0 bg-white rounded-circle ratio ratio-1x1"
+              ></div>
+              <div class="col">
+                <a
+                  class="mb-2 pe-3 d-inline-block text-decoration-none text-black fs-5 fw-semibold"
+                  href=""
+                  ><span class="text-uppercase">Самчинская</span> Ярослава
+                  Борисовна</a
+                >
+                <p class="mb-0 fs-6 fw-semibold">
+                  Директор Института информационных технологий
+                </p>
+              </div>
+            </div>
+            <div class="px-3">
+              <div class="d-flex align-items-center gap-2">
+                <img
+                  style="width: 32px"
+                  src="{% static 'bootstrap/img/icons/scientist-hat.svg' %}"
+                  alt=""
+                />
+                <div>Кандидат экономических наук, доцент</div>
+              </div>
+              <div class="mx-2 mb-2 border-top border-black"></div>
+              <div class="mb-2 d-flex align-items-center gap-2">
+                <img
+                  style="width: 27px"
+                  src="{% static 'bootstrap/img/icons/phone-call.svg' %}"
+                  alt=""
+                />
+                <div>+7 (989) 533-26-06</div>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <img
+                  style="width: 27px"
+                  src="{% static 'bootstrap/img/icons/envelope.svg' %}"
+                  alt=""
+                />
+                <div>samchinskayayab@hgpurf.ru</div>
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              background-image: url('{% static 'bootstrap/img/institut-it/bg-carg-grey.webp' %}');
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center;
+            "
+            class="py-4 px-4 rounded-4"
+          >
+            <div class="px-3">
+              <a
+                class="mb-2 pe-3 d-inline-block text-decoration-none text-black fs-5 fw-semibold"
+                href=""
+                ><span class="text-uppercase">Поздняк </span> Надежда
+                Владимировна</a
+              >
+              <p class="fs-6 fw-semibold">Заместитель директора Института</p>
+              <div class="mx-2 mb-2 border-top border-warning"></div>
+              <div class="mb-2 d-flex align-items-center gap-2">
+                <img
+                  style="width: 27px"
+                  src="{% static 'bootstrap/img/icons/phone-call.svg' %}"
+                  alt=""
+                />
+                <div>+7(989) 704-07-48</div>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <img
+                  style="width: 27px"
+                  src="{% static 'bootstrap/img/icons/envelope.svg' %}"
+                  alt=""
+                />
+                <div>pozdnyaknv@hgpurf.ru</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            style="
+              background-image: url('{% static 'bootstrap/img/institut-it/introduse-sec-text-bg.png' %}');
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center;
+            "
+            class="mb-4 py-4 px-4 rounded-4"
+          >
+            <div class="row align-items-center px-3">
+              <div class="col-8">
+                <div class="mb-2 fw-bold fs-5 text-uppercase text-ylw">
+                  Контакты
+                </div>
+                <div class="mb-2 d-flex gap-3">
+                  <img
+                    style="max-width: 44px"
+                    src="{% static 'bootstrap/img/icons/envelope-w.svg' %}"
+                    alt=""
+                  />
+                  <div>
+                    <div class="fw-bold text-white fs-5 lh-sm">
+                      institut_it@hgpurf.ru
+                    </div>
+                    <div class="text-ylw fs-6 lh-sm">
+                      Официальный е-mail Института
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex gap-3">
+                  <img
+                    style="max-width: 44px; fill: #fff"
+                    src="{% static 'bootstrap/img/icons/TG-icon-w.svg' %}"
+                    alt=""
+                  />
+
+                  <div class="text-white fs-6 lh-sm">
+                    Новостной<br />telegram-канал<br />Института
+                  </div>
+                  <div class="align-self-end">
+                    <a
+                      href=""
+                      class="px-4 py-2 rounded-5 fs-6 glare-prog-link bg-ylw"
+                    >
+                      <i class="fa-solid fa-circle-chevron-right fa-lg"></i>
+                      <span>Перейти</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="px-2 py-3 rounded-4 text-center bg-white">
+                  <img
+                    style="max-width: 136px"
+                    src="{% static 'bootstrap/img/institut-it/qr-code_news_IIT.webp' %}"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-4 py-3 px-4 rounded-4 bg-white">
+            <div class="px-3">
+              <a
+                class="mb-2 pe-3 d-inline-block text-decoration-none text-black fs-5 fw-semibold"
+                href=""
+                ><span class="text-uppercase">Шевченко </span> Елена
+                Николаевна</a
+              >
+              <p class="mb-1 fs-6 fw-medium">
+                Специалист по учебно-методической работе
+              </p>
+              <div class="mb-2 border-top border-secondary-subtle"></div>
+              <div class="d-flex align-items-center gap-2">
+                <i
+                  class="fa-solid fa-envelope fa-xl"
+                  style="color: #f2bf16"
+                ></i>
+                <div>shevchenkoen@hgpurf.ru</div>
+              </div>
+            </div>
+          </div>
+          <div class="py-3 px-4 rounded-4 bg-white">
+            <div class="px-3">
+              <a
+                class="mb-2 pe-3 d-inline-block text-decoration-none text-black fs-5 fw-semibold"
+                href=""
+                ><span class="text-uppercase">Зинчик </span> Сергей Игоревич</a
+              >
+              <p class="mb-1 fs-6 fw-medium">Диспетчер дирекции Института</p>
+              <div class="mb-2 border-top border-secondary-subtle"></div>
+              <div class="d-flex align-items-center gap-2">
+                <i
+                  class="fa-solid fa-envelope fa-xl"
+                  style="color: #f2bf16"
+                ></i>
+                <div>zinchiksi@hgpurf.ru</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    style="
+      background-image: url('{% static 'bootstrap/img/institut-it/kaf-bg.png' %}');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      z-index: 2;
+    "
+    class="py-5"
+  >
+    <div class="container">
+      <div
+        class="mb-5 d-inline-block fw-bold fs-1 position-relative z-2 title-white-marker"
+      >
+        Кафедры
+      </div>
+      <div class="mb-4 px-5 py-4 rounded-4 bg-white">
+        <div class="row">
+          <div class="col-6">
+            <div class="mb-3 d-flex gap-3">
+              <img
+                src="{% static 'bootstrap/img/institut-it/icons/gear-y.svg' %}"
+                alt="gear-icon"
+                class="gear-icon"
+              />
+              <div class="fs-4 fw-bold lh-sm">
+                Кафедра цифрового образования, математики и физики
+              </div>
+            </div>
+            <div class="mb-3">Институт информационных технологий</div>
+            <a href="" class="py-3 rounded-4 glare-kaf-link">Перейти</a>
+          </div>
+          <div class="col">
+            <div class="row gap-3 h-100">
+              <div
+                style="
+                  background-image: url('{% static 'bootstrap/img/institut-it/kaf-1.jpg' %}');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-position: center;
+                "
+                class="col-8 rounded-4"
+              ></div>
+              <div
+                style="
+                  background-image: url('{% static 'bootstrap/img/institut-it/kaf-2.jpg' %}');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-position: center;
+                "
+                class="col rounded-4"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="px-5 py-4 rounded-4 bg-white">
+        <div class="row">
+          <div class="col-6">
+            <div class="mb-3 d-flex gap-3">
+              <img
+                src="{% static 'bootstrap/img/institut-it/icons/gear-y.svg' %}"
+                alt="gear-icon"
+                class="gear-icon"
+              />
+              <div class="fs-4 fw-bold lh-sm">
+                Кафедра программной инженерии и цифровых технологий
+              </div>
+            </div>
+            <div class="mb-3">Институт информационных технологий</div>
+            <a href="" class="py-3 rounded-4 glare-kaf-link">Перейти</a>
+          </div>
+          <div
+            style="
+              background-image: url('{% static 'bootstrap/img/institut-it/kaf-3.jpg' %}');
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center;
+            "
+            class="col rounded-4"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5">
+    <div class="container">
+      <div
+        class="mb-2 d-inline-block fw-bold fs-1 position-relative z-2 title-yellow-marker"
+      >
+        Наука
+      </div>
+      <p class="py-4 fs-5">
+        <span class="fw-medium">Научные мероприятия:</span>
+        конференции, форумы и другие научные мероприятия,<br />которые
+        проводятся в Институте
+      </p>
+      <div class="py-4">
+        <div class="row text-white">
+          <div class="col">
+            <div class="d-flex flex-column gap-4">
+              <div
+                style="
+                  background-image: url('{% static 'bootstrap/img/institut-it/sci-1.jpg' %}');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-position: center;
+                "
+                class="py-5 px-5 h-100 rounded-4 position-relative overflow-hidden"
+              >
+                <div class="position-relative z-2">
+                  <p class="fw-bold">
+                    Международная научно-практическая конференция "Образование в
+                    новых регионах Российской Федерации: реалии и перспективы"
+                  </p>
+                  <p>
+                    (совместно с Институтом педагогического и специального
+                    образования ХГПУ)
+                  </p>
+                  <div
+                    class="d-inline-block py-3 px-5 bg-ylw rounded-3 fs-6 text-black"
+                  >
+                    Ежегодно в ноябре
+                  </div>
+                </div>
+                <div class="media-banner-overlay"></div>
+              </div>
+              <div
+                style="
+                  background-image: url('{% static 'bootstrap/img/institut-it/sci-2.jpg' %}');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-position: center;
+                "
+                class="py-5 px-5 h-100 rounded-4 position-relative overflow-hidden"
+              >
+                <div class="position-relative z-2">
+                  <p class="fw-bold">
+                    Научно-методические семинары по проблемам и перспективам
+                    применения практико-ориентированного обучения математике в
+                    школе
+                  </p>
+                  <div
+                    class="d-inline-block py-3 px-4 bg-ylw rounded-3 fs-6 text-black"
+                  >
+                    Ко дню информатика в РФ
+                  </div>
+                </div>
+                <div class="media-banner-overlay"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-flex flex-column h-100 gap-4">
+              <div
+                style="
+                  background-image: url('{% static 'bootstrap/img/institut-it/sci-3.jpg' %}');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-position: center;
+                "
+                class="py-5 px-5 h-75 rounded-4 position-relative overflow-hidden"
+              >
+                <div class="position-relative z-2">
+                  <p class="fw-bold">
+                    Круглые столы, научно-методические вебинары, семинары по
+                    вопросам применения цифровых ресурсов в преподавании
+                    математики
+                  </p>
+                  <div
+                    class="d-inline-block py-3 px-5 bg-ylw rounded-3 fs-6 text-black"
+                  >
+                    Ко Дню математика в РФ
+                  </div>
+                </div>
+                <div class="media-banner-overlay"></div>
+              </div>
+              <div
+                style="
+                  background-image: url('{% static 'bootstrap/img/institut-it/sci-4.jpg' %}');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-position: center;
+                "
+                class="py-5 px-5 h-100 rounded-4 position-relative overflow-hidden"
+              >
+                <div class="position-relative z-2">
+                  <p class="fw-bold fs-5">
+                    Всероссийская научно-практическая конференция
+                    "Государственные приоритеты воспитания в новых регионах РФ:
+                    семья, защитники Отечества"
+                  </p>
+                  <div
+                    class="d-inline-block py-3 px-5 bg-ylw rounded-3 fs-6 text-black"
+                  >
+                    Ежегодно в марте
+                  </div>
+                </div>
+                <div class="media-banner-overlay"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="h-100 rounded-4 overflow-hidden">
+              <div
+                style="
+                  background-image: url('{% static 'bootstrap/img/institut-it/sci-5.jpg' %}');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-position: center;
+                  transition: 1s;
+                "
+                onmouseover="this.style.transform='scale(1.1)'"
+                onmouseout="this.style.transform='scale(1)'"
+                class="d-flex flex-column align-items-start justify-content-end py-5 px-4 h-100 position-relative"
+              >
+                <div class="position-relative z-2">
+                  <p class="fw-bold">
+                    Международная научно-практическая конференция "Дистанционные
+                    образовательные технологии"
+                  </p>
+                  <p>
+                    (совместно с Крымским федеральным университетом им. В.И.
+                    Вернадского)
+                  </p>
+                  <div
+                    class="d-inline-block py-3 px-5 bg-ylw rounded-3 fs-6 text-black"
+                  >
+                    Ежегодно в октябре
+                  </div>
+                </div>
+                <div class="media-banner-overlay"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="py-2 fs-5">
+        Студенческие научные сообщества Института информационных технологий
+      </p>
+      <div class="row">
+        <div class="col">
+          <div style="
+              background-image: url('{% static 'bootstrap/img/institut-it/bg-carg-grey.webp' %}');
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center;
+            " class="py-4 px-5 fs-5 rounded-4">
+            <p class="fw-bold fs-4">Формирование ИТ-компетенций и<br>подготовка к ИТ-олимпиадам</p>
+            <p class="mb-4">Студенческий научный кружок</p>
+            <ul>
+              <li><span class="fw-bold">Руководители:</span> Алешов Владимир Витальевич, Казанцев Юрий Алексеевич</li>
+              <li><span class="fw-bold">Аудитория:</span> более 50 участников</li>
+              <li><span class="fw-bold">Регулярность проведения мероприятий:</span> 1 раз в месяц</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-5">
+          <img src="{% static 'bootstrap/img/institut-it/sci-group-1.jpg' %}" alt="" class="w-100 rounded-4">
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

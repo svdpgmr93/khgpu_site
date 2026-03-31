@@ -45,10 +45,13 @@ urlpatterns = [
     path('sveden/inter', inter, name='inter'),
     path('sveden/catering', catering, name='catering'),
     path('rabota_v_hgpu', rabota_v_hgpu, name='rabota_v_hgpu'),
+    path('mediapedagogika', mediapedagogika, name='mediapedagogika'),
     path('test', test, name='test'),
     # -- END --
     path('career', career, name='career'),
     path('protivodeistvie-corrupcii', anti_corruption, name='anti_corruption'),
     path('media', media, name='media'),
     path('media/universitet_v_smi', universitet_v_smi, name='universitet_v_smi'),
+    path('media/blog_rectora', blog_rectora, name='blog_rectora'),
+    path('institutes/<str:institute_name>', institut, name='institute'),
 ]

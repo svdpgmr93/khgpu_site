@@ -23,6 +23,7 @@
       href="{% static 'bootstrap/css/main.css' %}"
       rel="stylesheet"
     />
+    <link rel="icon" href="{% static 'bootstrap/img/hgpu-yellow.webp' %}" type="image/png">
     <title>{% block title %}Base Template{% endblock %}</title>
   </head>
   <body>
@@ -184,7 +185,7 @@
                 >
                   <a href="#">Университет</a>
                 </li>
-                <li class="d-flex align-items-center header-menu-item">
+                <li class="d-flex align-items-center header-menu-item" id="#m-link-education">
                   <a href="#">Образование</a>
                 </li>
                 <li class="d-flex align-items-center header-menu-item">
@@ -250,7 +251,7 @@
                     <a class="d-inline-block" href=""
                       >Институт естествознания, физической культуры и спорта</a
                     >
-                    <a class="d-inline-block" href=""
+                    <a class="d-inline-block" href="{% url 'institute' 'institut-it' %}"
                       >Институт информационных технологий</a
                     >
                     <a class="d-inline-block" href=""
