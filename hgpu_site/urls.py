@@ -52,6 +52,7 @@ urlpatterns = [
     path('protivodeistvie-corrupcii', anti_corruption, name='anti_corruption'),
     path('media', media, name='media'),
     path('media/universitet_v_smi', universitet_v_smi, name='universitet_v_smi'),
+    path('gup', gup, name='gup'),
     path('media/blog_rectora', blog_rectora, name='blog_rectora'),
     path('institutes/<str:institute_name>', institut, name='institute'),
 ]
