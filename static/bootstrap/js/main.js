@@ -24,6 +24,12 @@
 
 // script for accordion
 
+// Yellow background for institute card
+const yellowBg = document.querySelector('.yellow-bg')
+if (yellowBg) {
+  yellowBg.style.backgroundColor = '#ffaa00';
+}
+
 //  vanilla js for dropdown main menu
 const menuLink = document.getElementById("#m-link-university");
 const univerMenu = document.getElementById("#univer-menu");
@@ -43,7 +49,7 @@ menuLink.addEventListener("click", menuOpen);
 univerMenu.addEventListener("mouseleave", menuOpen);
 
 menuLinkEdu.addEventListener("click", menuOpenEdu);
-eduMenu.addEventListener('mouseleave', menuOpenEdu)
+eduMenu.addEventListener("mouseleave", menuOpenEdu);
 
 // jquery for counter
 

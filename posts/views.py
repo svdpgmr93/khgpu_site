@@ -72,11 +72,20 @@ def media(requests):
 def universitet_v_smi(requests):
     return render(requests, 'templates_media/universitet_v_smi.html')
 
+def blog_rectora(requests):
+    return render(requests, 'templates_media/blog-rectora.html')
+
 def anti_corruption(requests):
     return render(requests, 'anti-corruption.html')
 
 def rabota_v_hgpu(requests):
     return render(requests, 'rabota-v-hgpu.html')
+
+def mediapedagogika(requests):
+    return render(requests, 'mediapedagogika.html')
+
+def institut(requests, institute_name):
+    return render(requests, f'templates_institutes/{institute_name}.html')
 
 def test(requests):
     return render(requests, 'test.html')
