@@ -1,7 +1,7 @@
-{% extends 'base.html' %} {% load static %} {% block title %} Институт
-информационных технологий {%endblock %} {% block content %}
+{% extends 'base.html' %} {% load static %} {% block title %} Институт культуры и искусств
+ {%endblock %} {% block content %}
 <main class="main">
-  <div class="container">
+  <div class="container"> <!--Container for breadcrubs-->
     <div class="py-4">
       <nav style="--bs-breadcrumb-divider: '>>'" aria-label="breadcrumb">
         <ol class="breadcrumb mb-0 fw-semibold">
@@ -15,18 +15,18 @@
             <a href="{%url 'sveden'%}">Институты</a>
           </li>
           <li class="breadcrumb-item active" aria-current="page">
-            <a href="#">Институт информационных технологий</a>
+            <a href="#">Институт культуры и искусств</a>
           </li>
         </ol>
       </nav>
     </div>
   </div>
-  <div class="it-introduce-sec py-4">
+  <div class="it-introduce-sec py-4"> <!--Container introduce block-->
     <div class="container">
       <div class="row">
         <div
           style="
-            background-image: url('{% static 'bootstrap/img/institut-it/institut-it-introduse-sec-bg-photo.jpg' %}');
+            background-image: url('{% static 'bootstrap/img/institut-ikii/Milwaukee-Ballet-Com.jpg' %}');
             background-repeat: no-repeat;
             background-size: cover;
             background-position-y: 30%;
@@ -61,11 +61,11 @@
                   class="gear-icon"
                 />
                 <span class="fs-6 fw-medium text-black align-middle ps-3">
-                  Стань архитектором цифрового мира!
+                  Раскрой свои таланты в живописи, музыке, хореографии, театре и других видах искусства!
                 </span>
               </div>
               <p class="fs-1 fw-bold text-white lh-sm">
-                Институт информационных технологий
+                Институт культуры и искусств
               </p>
             </div>
             <div>
@@ -95,20 +95,23 @@
       "
     ></div>
   </div>
-  <div class="py-4">
-    <div class="container">
+  <div class="py-4"> <!--Container for About and OPs-->
+    <div class="container"> <!--Container for About-->
       <div
         class="mb-2 d-inline-block fw-bold fs-1 position-relative z-2 title-yellow-marker"
       >
         Об Институте
       </div>
       <p class="py-4 fs-5">
-        <span class="fw-bold">Институт информационных технологий</span>
-        осуществляет подготовку учителей математики, информатики, физики и
-        экономики, а также подготовку специалистов в области программной
-        инженерии для Херсонской области, Крыма, а также других регионов
-        Российской Федерации. Обучение проходит в смешанном формате с
-        использованием дистанционных образовательных технологий.
+        <span class="fw-bold">Институт культуры и искусств</span>
+        – это динамично развивающееся образовательное подразделение, созданное на базе факультета 
+        культуры и искусств и ориентированное на предоставление высокого уровня образования 
+        в области культуры, искусства и творчества. В состав института входят четыре кафедры: 
+        культурологии, изобразительного искусства и дизайна, хореографии и изящных искусств.
+        Институт обладает богатой историей и активной творческой жизнью, выступая флагманом 
+        образовательной, научной и воспитательной деятельности. Мы формируем направление развития 
+        современных культурных тенденций и активно реализуем президентские программы, направленные 
+        на укрепление традиционных ценностей и развитие мощи культуры Великой России.
       </p>
       <div class="py-3">
         <div class="row row-cols-1 row-cols-md-4 g-4">
@@ -128,7 +131,7 @@
                     class="card-institute-icon bg-dark px-1 py-1 position-absolute"
                   >
                     <img
-                      src="{% static 'bootstrap\img\institut-it\icons\icon-it.webp' %}"
+                      src="{% static 'bootstrap\img\institut-ikii\icons\icon-ikii.png' %}"
                       alt=""
                       class="w-100"
                     />
@@ -154,10 +157,10 @@
                     alt=""
                   />
                 </div>
-                <p class="card-institut-fig">6</p>
+                <p class="card-institut-fig">14</p>
                 <p class="fs-5">
                   <span class="fw-bold">Образовательных программ</span>
-                  реализуются в институте ИТ
+                  реализуются в институте ИКИ
                 </p>
               </div>
             </div>
@@ -171,7 +174,7 @@
                     alt=""
                   />
                 </div>
-                <p class="card-institut-fig">62%</p>
+                <p class="card-institut-fig">47%</p>
                 <p class="fs-5">
                   Преподавателей института имеют
                   <span class="fw-bold">ученую степень и ученое звание</span>
@@ -188,7 +191,7 @@
                     alt=""
                   />
                 </div>
-                <p class="card-institut-fig">580+</p>
+                <p class="card-institut-fig">1240+</p>
                 <p class="fs-5">
                   <span class="fw-bold">Cтудентов</span> обучаются
                 </p>
@@ -198,9 +201,12 @@
         </div>
       </div>
       <p class="py-4 fs-5">
-        Действующие педагоги, математики, физики, программисты и специалисты по
-        компьютерным сетям охотно делятся своим опытом со студентами – будущими
-        педагогическими и инженерными кадрами страны.
+        Наша образовательная и научная работа направлена на подготовку квалифицированных 
+        специалистов, способных эффективно решать актуальные задачи в сфере культурной и 
+        творческой деятельности. Студенты института получают уникальные возможности для 
+        развития своих творческих талантов, участвуя в научных исследованиях, культурных 
+        мероприятиях и профессиональных конкурсах, что способствует их всестороннему развитию 
+        и успешной профессиональной карьере в области искусства и педагогики.
       </p>
       <div class="row mb-5">
         <div class="col">
@@ -245,6 +251,9 @@
           </div>
         </div>
       </div>
+      
+    </div>
+    <div class="container"> <!--Container for OP-->
       <div class="mb-5 d-inline-block fw-bold fs-1 position-relative title-yellow-marker">
         Образоватeльные программы
       </div>
@@ -441,7 +450,7 @@
       </div>
     </div>
   </div>
-  <div class="py-5 bg-gray">
+  <div class="py-5 bg-gray"> <!--Container for the management of the institute-->
     <div class="container">
       <div
         class="mb-4 d-inline-block fw-bold fs-1 position-relative z-2 title-grey-marker"
@@ -449,12 +458,12 @@
         Дирекция Института
       </div>
       <div class="row py-4">
-        <div class="col-5">
-          <div class="mb-4 py-4 px-4 bg-ylw rounded-4">
+        <div class="col-5 management">
+          <div class="py-4 px-4 bg-ylw rounded-4">
             <div class="mb-2 px-3 row align-items-center gap-4">
               <div
                 style="
-                  background-image: url('{% static 'bootstrap/img/institut-it/institut-it-director-photo.png' %}');
+                  background-image: url('{% static 'bootstrap/img/institut-ikii/director-ikii2.png' %}');
                   background-repeat: no-repeat;
                   background-size: cover;
                   background-position: center;
@@ -466,11 +475,11 @@
                 <a
                   class="mb-2 pe-3 d-inline-block text-decoration-none text-black fs-5 fw-semibold"
                   href=""
-                  ><span class="text-uppercase">Самчинская</span> Ярослава
-                  Борисовна</a
+                  ><span class="text-uppercase">Самарин</span> <br>Андрей 
+                  Николаевич</a
                 >
                 <p class="mb-0 fs-6 fw-semibold">
-                  Директор Института информационных технологий
+                  Директор Института культуры и искусств
                 </p>
               </div>
             </div>
@@ -481,7 +490,7 @@
                   src="{% static 'bootstrap/img/icons/scientist-hat.svg' %}"
                   alt=""
                 />
-                <div>Кандидат экономических наук, доцент</div>
+                <div>Кандидат филологических наук, доцент</div>
               </div>
               <div class="mx-2 mb-2 border-top border-black"></div>
               <div class="mb-2 d-flex align-items-center gap-2">
@@ -490,7 +499,7 @@
                   src="{% static 'bootstrap/img/icons/phone-call.svg' %}"
                   alt=""
                 />
-                <div>+7 (989) 533-26-06</div>
+                <div>+7 (990) 001-43-28</div>
               </div>
               <div class="d-flex align-items-center gap-2">
                 <img
@@ -498,25 +507,17 @@
                   src="{% static 'bootstrap/img/icons/envelope.svg' %}"
                   alt=""
                 />
-                <div>samchinskayayab@hgpurf.ru</div>
+                <div>samarinan@hgpurf.ru</div>
               </div>
             </div>
           </div>
-          <div
-            style="
-              background-image: url('{% static 'bootstrap/img/institut-it/bg-carg-grey.webp' %}');
-              background-repeat: no-repeat;
-              background-size: cover;
-              background-position: center;
-            "
-            class="py-4 px-4 rounded-4"
-          >
+          <div class="py-4 px-4 rounded-4 management-gray-back">
             <div class="px-3">
               <a
                 class="mb-2 pe-3 d-inline-block text-decoration-none text-black fs-5 fw-semibold"
                 href=""
-                ><span class="text-uppercase">Поздняк </span> Надежда
-                Владимировна</a
+                ><span class="text-uppercase">КОШКОДАЕВА </span> Анжелика
+                Николаевна</a
               >
               <p class="fs-6 fw-semibold">Заместитель директора Института</p>
               <div class="mx-2 mb-2 border-top border-warning"></div>
@@ -534,21 +535,40 @@
                   src="{% static 'bootstrap/img/icons/envelope.svg' %}"
                   alt=""
                 />
-                <div>pozdnyaknv@hgpurf.ru</div>
+                <div>koshkodaevaan@hgpurf.ru</div>
+              </div>
+            </div>
+          </div>
+          <div class="py-4 px-4 rounded-4 management-gray-back">
+            <div class="px-3">
+              <a
+                class="mb-2 pe-3 d-inline-block text-decoration-none text-black fs-5 fw-semibold"
+                href=""
+                ><span class="text-uppercase">БОРОДАЙ </span> Ольга Геннадьевна</a
+              >
+              <p class="fs-6 fw-semibold">Заместитель директора Института</p>
+              <div class="mx-2 mb-2 border-top border-warning"></div>
+              <div class="mb-2 d-flex align-items-center gap-2">
+                <img
+                  style="width: 27px"
+                  src="{% static 'bootstrap/img/icons/phone-call.svg' %}"
+                  alt=""
+                />
+                <div>+7 (978) 045-16-99</div>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <img
+                  style="width: 27px"
+                  src="{% static 'bootstrap/img/icons/envelope.svg' %}"
+                  alt=""
+                />
+                <div>borodayog@hgpurf.ru</div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div
-            style="
-              background-image: url('{% static 'bootstrap/img/institut-it/introduse-sec-text-bg.png' %}');
-              background-repeat: no-repeat;
-              background-size: cover;
-              background-position: center;
-            "
-            class="mb-4 py-4 px-4 rounded-4"
-          >
+        <div class="col management">
+          <div class="py-4 px-4 rounded-4 contact-gray-back">
             <div class="row align-items-center px-3">
               <div class="col-8">
                 <div class="mb-2 fw-bold fs-5 text-uppercase text-ylw">
@@ -562,7 +582,7 @@
                   />
                   <div>
                     <div class="fw-bold text-white fs-5 lh-sm">
-                      institut_it@hgpurf.ru
+                      institut_ki@hgpurf.ru
                     </div>
                     <div class="text-ylw fs-6 lh-sm">
                       Официальный е-mail Института
@@ -581,7 +601,7 @@
                   </div>
                   <div class="align-self-end">
                     <a
-                      href="https://t.me/hgpu_physmat"
+                      href="https://t.me/kultura_HGPU"
                       class="px-4 py-2 rounded-5 fs-6 glare-prog-link bg-ylw"
                     >
                       <i class="fa-solid fa-circle-chevron-right fa-lg"></i>
@@ -594,20 +614,19 @@
                 <div class="px-2 py-3 rounded-4 text-center bg-white">
                   <img
                     style="max-width: 136px"
-                    src="{% static 'bootstrap/img/institut-it/qr-code_news_IIT.webp' %}"
+                    src="{% static 'bootstrap/img/institut-ikii/qr-code_IKI.png' %}"
                     alt=""
                   />
                 </div>
               </div>
             </div>
           </div>
-          <div class="mb-4 py-3 px-4 rounded-4 bg-white">
+          <div class="py-3 px-4 rounded-4 bg-white">
             <div class="px-3">
               <a
                 class="mb-2 pe-3 d-inline-block text-decoration-none text-black fs-5 fw-semibold"
                 href=""
-                ><span class="text-uppercase">Шевченко </span> Елена
-                Николаевна</a
+                ><span class="text-uppercase">ШКИЛЬ </span> Андрей Геннадьевич</a
               >
               <p class="mb-1 fs-6 fw-medium">
                 Специалист по учебно-методической работе
@@ -618,7 +637,7 @@
                   class="fa-solid fa-envelope fa-xl"
                   style="color: #f2bf16"
                 ></i>
-                <div>shevchenkoen@hgpurf.ru</div>
+                <div>shkilag@hgpurf.ru</div>
               </div>
             </div>
           </div>
@@ -627,7 +646,7 @@
               <a
                 class="mb-2 pe-3 d-inline-block text-decoration-none text-black fs-5 fw-semibold"
                 href=""
-                ><span class="text-uppercase">Зинчик </span> Сергей Игоревич</a
+                ><span class="text-uppercase">БЛЕЩИНСКАЯ </span> Ангелина Владимировна</a
               >
               <p class="mb-1 fs-6 fw-medium">Диспетчер дирекции Института</p>
               <div class="mb-2 border-top border-secondary-subtle"></div>
@@ -636,7 +655,25 @@
                   class="fa-solid fa-envelope fa-xl"
                   style="color: #f2bf16"
                 ></i>
-                <div>zinchiksi@hgpurf.ru</div>
+                <div>bleshchinskaiaav@hgpurf.ru</div>
+              </div>
+            </div>
+          </div>
+          <div class="py-3 px-4 rounded-4 bg-white">
+            <div class="px-3">
+              <a
+                class="mb-2 pe-3 d-inline-block text-decoration-none text-black fs-5 fw-semibold"
+                href=""
+                ><span class="text-uppercase">СИРОТА </span> Андрей Сергеевич</a
+              >
+              <p class="mb-1 fs-6 fw-medium">Диспетчер дирекции Института</p>
+              <div class="mb-2 border-top border-secondary-subtle"></div>
+              <div class="d-flex align-items-center gap-2">
+                <i
+                  class="fa-solid fa-envelope fa-xl"
+                  style="color: #f2bf16"
+                ></i>
+                <div>sirotaas@hgpurf.ru</div>
               </div>
             </div>
           </div>
@@ -644,22 +681,14 @@
       </div>
     </div>
   </div>
-  <div
-    style="
-      background-image: url('{% static 'bootstrap/img/institut-it/kaf-bg.png' %}');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      z-index: 2;
-    "
-    class="py-5">
-    <div class="container">
+  <div class="py-5 cafedra-yellow-back"> <!--Container for cafedra-->
+    <div class="container cafedra">
       <div
-        class="mb-5 d-inline-block fw-bold fs-1 position-relative z-2 title-white-marker"
+        class="d-inline-block fw-bold fs-1 position-relative z-2 title-white-marker"
       >
         Кафедры
       </div>
-      <div class="mb-4 px-5 py-4 rounded-4 bg-white">
+      <div class="px-5 py-4 rounded-4 bg-white">
         <div class="row">
           <div class="col-6">
             <div class="mb-3 d-flex gap-3">
@@ -669,26 +698,26 @@
                 class="gear-icon"
               />
               <div class="fs-4 fw-bold lh-sm">
-                Кафедра цифрового образования, математики и физики
+                Кафедра изобразительного искусства
               </div>
             </div>
-            <div class="mb-3">Институт информационных технологий</div>
+            <div class="mb-3">Институт культуры и искусств</div>
             <a href="" class="py-3 rounded-4 glare-kaf-link">Перейти</a>
           </div>
           <div class="col">
             <div class="row gap-3 h-100">
               <div
                 style="
-                  background-image: url('{% static 'bootstrap/img/institut-it/kaf-1.jpg' %}');
+                  background-image: url('{% static 'bootstrap/img/institut-ikii/kaf-1.jpg' %}');
                   background-repeat: no-repeat;
                   background-size: cover;
                   background-position: center;
                 "
-                class="col-8 rounded-4"
+                class="col-8 rounded-4 mb-0"
               ></div>
               <div
                 style="
-                  background-image: url('{% static 'bootstrap/img/institut-it/kaf-2.jpg' %}');
+                  background-image: url('{% static 'bootstrap/img/institut-ikii/kaf-2.jpg' %}');
                   background-repeat: no-repeat;
                   background-size: cover;
                   background-position: center;
@@ -709,15 +738,69 @@
                 class="gear-icon"
               />
               <div class="fs-4 fw-bold lh-sm">
-                Кафедра программной инженерии и цифровых технологий
+                Кафедра изящных искусств
               </div>
             </div>
-            <div class="mb-3">Институт информационных технологий</div>
+            <div class="mb-3">Институт культуры и искусств</div>
             <a href="" class="py-3 rounded-4 glare-kaf-link">Перейти</a>
           </div>
           <div
             style="
-              background-image: url('{% static 'bootstrap/img/institut-it/kaf-3.jpg' %}');
+              background-image: url('{% static 'bootstrap/img/institut-ikii/kaf-3.jpg' %}');
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center;
+            "
+            class="col rounded-4"
+          ></div>
+        </div>
+      </div>
+      <div class="px-5 py-4 rounded-4 bg-white">
+        <div class="row">
+          <div class="col-6">
+            <div class="mb-3 d-flex gap-3">
+              <img
+                src="{% static 'bootstrap/img/institut-it/icons/gear-y.svg' %}"
+                alt="gear-icon"
+                class="gear-icon"
+              />
+              <div class="fs-4 fw-bold lh-sm">
+                Кафедра культурологии
+              </div>
+            </div>
+            <div class="mb-3">Институт культуры и искусств</div>
+            <a href="" class="py-3 rounded-4 glare-kaf-link">Перейти</a>
+          </div>
+          <div
+            style="
+              background-image: url('{% static 'bootstrap/img/institut-ikii/kaf-5.jpg' %}');
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center;
+            "
+            class="col rounded-4"
+          ></div>
+        </div>
+      </div>
+      <div class="px-5 py-4 rounded-4 bg-white">
+        <div class="row">
+          <div class="col-6">
+            <div class="mb-3 d-flex gap-3">
+              <img
+                src="{% static 'bootstrap/img/institut-it/icons/gear-y.svg' %}"
+                alt="gear-icon"
+                class="gear-icon"
+              />
+              <div class="fs-4 fw-bold lh-sm">
+                Кафедра хореографии
+              </div>
+            </div>
+            <div class="mb-3">Институт культуры и искусств</div>
+            <a href="" class="py-3 rounded-4 glare-kaf-link">Перейти</a>
+          </div>
+          <div
+            style="
+              background-image: url('{% static 'bootstrap/img/institut-ikii/kaf-6.jpg' %}');
               background-repeat: no-repeat;
               background-size: cover;
               background-position: center;
@@ -728,7 +811,7 @@
       </div>
     </div>
   </div>
-  <div class="py-5">
+  <div class="py-5"> <!--Container for science-->
     <div class="container">
       <div
         class="mb-2 d-inline-block fw-bold fs-1 position-relative z-2 title-yellow-marker"

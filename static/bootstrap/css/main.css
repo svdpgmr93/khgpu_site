@@ -1696,4 +1696,52 @@ summary p {
 .text-ylw {
     color: #ffbf31;
 }
+
+.institut-tab {
+    background-color: #ffffff;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid #ffffff;
+}
+
+.institut-tab:hover {
+    color: #ffbf31;;
+}
+
+.nav-pills .nav-link.active{
+    background-color: #ffbf31;
+    border-color: #ffbf31;
+    color: #000;
+}
+
+.cafedra-yellow-back {
+    background-image: url('../img/institut-it/kaf-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.management-gray-back {
+    background-image: url('../img/institut-it/bg-carg-grey.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-gray-back {
+    background-image: url('../img/institut-it/introduse-sec-text-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.management div:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
+
+.cafedra div:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
 /* institut-it-styles end */
