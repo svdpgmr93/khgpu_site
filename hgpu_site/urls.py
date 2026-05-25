@@ -56,5 +56,5 @@ urlpatterns = [
     path('gup', gup, name='gup'),
     path('media/blog_rectora', blog_rectora, name='blog_rectora'),
     path('institutes/<str:institute_name>', institut, name='institute'),
-    path('', include('edu_programs.urls', namespace='edu_programs')),
+    path('', include('education.urls', namespace='education')),
 ]
