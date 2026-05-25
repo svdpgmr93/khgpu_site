@@ -98,3 +98,37 @@ $(document).ready(function () {
     }
   });
 });
+
+
+// Play video script
+
+const vid = document.getElementById('#vid_1');
+const btnPlay = document.getElementById('#btnPlay1');
+const hideElems = document.querySelectorAll('.videoverlay')
+
+btnPlay.addEventListener('click', () => {
+  hideElems.forEach(hideElem => hideElem.classList.add('d-none'));
+  vid.src += '&autoplay=1'
+})
+
+// carousel jquery antiterror 
+
+$("#antiterror_carousel").owlCarousel({
+  itemsCustom: [
+    [0, 1],
+    [300, 1],
+    [700, 2],
+    [950, 2],
+    [1200, 3],
+  ],
+});
+
+$("#antiterror_carousel_2").owlCarousel({
+  itemsCustom: [
+    [0, 1],
+    [300, 1],
+    [700, 2],
+    [950, 2],
+    [1200, 3],
+  ],
+});

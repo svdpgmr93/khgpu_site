@@ -92,3 +92,6 @@ def test(requests):
 
 def gup(requests):
     return render(requests, 'gup.html') #График учебного процесса
+
+def antiterror(requests):
+    return render(requests, 'antiterror.html')

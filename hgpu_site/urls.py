@@ -46,6 +46,7 @@ urlpatterns = [
     path('sveden/catering', catering, name='catering'),
     path('rabota_v_hgpu', rabota_v_hgpu, name='rabota_v_hgpu'),
     path('mediapedagogika', mediapedagogika, name='mediapedagogika'),
+    path('antiterror', antiterror, name='antiterror'),
     path('test', test, name='test'),
     # -- END --
     path('career', career, name='career'),
@@ -55,4 +56,5 @@ urlpatterns = [
     path('gup', gup, name='gup'),
     path('media/blog_rectora', blog_rectora, name='blog_rectora'),
     path('institutes/<str:institute_name>', institut, name='institute'),
+    path('', include('edu_programs.urls', namespace='edu_programs')),
 ]

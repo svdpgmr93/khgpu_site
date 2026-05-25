@@ -1,0 +1,1090 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Антитеррор
+{% endblock %}
+{% block content %}
+<main class="main">
+  <div class="container">
+    <div class="pt-4">
+      <div style="
+        background-image: url('{% static 'bootstrap/img/antiterror/antiterror-banner-bg.jpg' %}');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: 30%;
+        border-radius: 30px;
+      " class="py-5 d-flex align-items-center justify-content-center position-relative overflow-hidden">
+        <div class="media-banner-overlay opacity-25"></div>
+        <h1 class="w-75 mb-0 z-2 text-white fw-bold text-center" style="font-size: 3rem;">Противодействие идеологии
+          терроризма и эстремизма</h1>
+      </div>
+    </div>
+    <div class="py-4">
+      <nav style="--bs-breadcrumb-divider: '>>';" aria-label="breadcrumb">
+        <ol class="breadcrumb fw-medium">
+          <li class="breadcrumb-item">
+            <a href="{% url 'main' %}">Главная</a>
+          </li>
+          <li class="breadcrumb-item" aria-current="page">
+            <a href="{% url 'main' %}">Университет</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            <a href="{% url 'antiterror' %}">Противодействие идеологии терроризма и экстремизма</a>
+          </li>
+        </ol>
+      </nav>
+    </div>
+    <h2 class="mb-4 fw-bold fs-2">Противодействие идеологии терроризма и экстремизма</h2>
+    <p class="mb-4 fs-5">Херсонский государственный педагогический университет уделяет повышенное внимание организации
+      предупредительно‑профилактической и учебно‑воспитательной работы со студентами в части недопущения распространения
+      в университетской среде радикальной и иной деструктивной идеологии терроризма и экстремизма.</p>
+    <p class="mb-4 fs-5">Мероприятия по противодействию терроризму и экстремизму реализуется на системной основе,
+      посредством взаимодействия административных подразделений, вспомогательного персонала,
+      профессорско-преподавательского состава, кураторов студенческих групп, органов студенческого самоуправления и
+      профильных специалистов (психологов, социальных педагогов).</p>
+    <p class="mb-5 fs-5">Деятельность по противодействию идеологии терроризма и экстремизма Университет осуществляет в
+      строгом соответствии с действующим законодательством Российской Федерации.</p>
+    <h3 class="mb-4 fw-bold">Правовая информация</h3>
+    <div class="mb-5 ps-5">
+      <details class="details border-top-secondary" name="basic-info-accordion">
+        <summary class="details-title">
+          <p class="fw-bold fs-5">Нормативные правовые акты, составляющие правовую основу борьбы с экстремизмом и
+            терроризмом в РФ</p>
+          <i class="fa-solid fa-angle-down fa-2xl my-accordion-icon"></i>
+        </summary>
+        <div class="details-content">
+          <ul>
+            <li>
+              <a href="https://mintrud.gov.ru/docs/mintrud/orders/157" target="_blank"
+                class="text-decoration-none fs-6 link-dark link-opacity-75-hover">Федеральный закон от 06.03.2006 г.
+                №35-ФЗ "О противодействии терроризму"</a>
+            </li>
+            <li>
+              <a href="https://mintrud.gov.ru/docs/mintrud/orders/157" target="_blank"
+                class="text-decoration-none link-dark link-opacity-75-hover fs-6">Федеральный Закон от 25.07.2002 г. №
+                114-ФЗ "О противодействии экстремистской деятельности"</a>
+            </li>
+            <li>
+              <a href="https://mintrud.gov.ru/docs/mintrud/orders/157" target="_blank"
+                class="text-decoration-none link-dark link-opacity-75-hover fs-6">Концепция противодействия терроризму в
+                Российской Федерации (утв. Президентом РФ 5 октября 2009 г.)</a>
+            </li>
+            <li>
+              <a href="https://mintrud.gov.ru/docs/mintrud/orders/157" target="_blank"
+                class="text-decoration-none link-dark link-opacity-75-hover fs-6">Указ Президента Российской Федерации
+                от 29 мая 2020 г. № 344 "Об утверждении противодействия экстремизму в Российской Федерации до 2025
+                года"</a>
+            </li>
+            <li>
+              <a href="https://mintrud.gov.ru/docs/mintrud/orders/157" target="_blank"
+                class="text-decoration-none link-dark link-opacity-75-hover fs-6">Комплексный план противодействия
+                идеологии терроризма в Российской Федерации на 2024 - 2028 годы (утв. Президентом РФ В. Путиным 30
+                декабря 2023 г. № Пр-2610)</a>
+            </li>
+            <li>
+              <a href="https://mintrud.gov.ru/docs/mintrud/orders/157" target="_blank"
+                class="text-decoration-none link-dark link-opacity-75-hover fs-6">Постановление Правительства Российской
+                Федерации от 2 августа 2019 г. N 1006 "Об утверждении требований к антитеррористической защищенности
+                объектов (территорий) Министерства просвещения Российской Федерации и объектов (территорий), относящихся
+                к сфере деятельности Министерства просвещения Российской Федерации, и формы паспорта безопасности этих
+                объектов (территорий)"</a>
+            </li>
+          </ul>
+        </div>
+      </details>
+      <details class="details border-top-secondary" name="basic-info-accordion">
+        <summary class="details-title">
+          <p class="fw-bold fs-5">Локальные нормативные акты ХГПУ</p>
+          <i class="fa-solid fa-angle-down fa-2xl my-accordion-icon"></i>
+        </summary>
+        <div class="details-content">
+          <ul>
+            <li>
+              <a href="https://mintrud.gov.ru/docs/mintrud/orders/157" target="_blank"
+                class="text-decoration-none fs-6 link-dark link-opacity-75-hover">План мероприятий по обеспечению
+                антитеррористической защищенности ФГБОУ ВО "Херсонский государственный педагогический университет" на
+                2026-2028 гг. (утв. приказом №153-О от 25.03.2026 г.)</a>
+            </li>
+            <li>
+              <a href="https://mintrud.gov.ru/docs/mintrud/orders/157" target="_blank"
+                class="text-decoration-none link-dark link-opacity-75-hover fs-6">Комплексный план противодействия
+                идеологии терроризма и экстремизма среди обучающихся на 2025-2026 учебный год</a>
+            </li>
+            <li>
+              <a href="https://mintrud.gov.ru/docs/mintrud/orders/157" target="_blank"
+                class="text-decoration-none link-dark link-opacity-75-hover fs-6">План действий при установлении уровней
+                террористической опасности ФГБОУ ВО "Херсонский государственный педагогический университет" (утв.
+                приказом №153-О от 27.03.2026 г.)</a>
+            </li>
+            <li>
+              <a href="https://mintrud.gov.ru/docs/mintrud/orders/157" target="_blank"
+                class="text-decoration-none link-dark link-opacity-75-hover fs-6">Программа инструктажа о б обеспечении
+                антитеррористической защищенности и действиям при угрозе совершения (совершении) террористического акта
+                ФГБОУ ВО "Херсонский государственный педагогический университет" (утв. приказом №112-О от 11.03.2026
+                г.)</a>
+            </li>
+            <li>
+              <a href="https://mintrud.gov.ru/docs/mintrud/orders/157" target="_blank"
+                class="text-decoration-none link-dark link-opacity-75-hover fs-6">Инструкция по действиям сотрудников
+                ФГБОУ ВО "Херсонский государственный педагогический университет" при установлении уровней
+                террористической опасности (утв. приказом №153-О от 27.03.2026 г.)</a>
+            </li>
+            <li>
+              <a href="https://mintrud.gov.ru/docs/mintrud/orders/157" target="_blank"
+                class="text-decoration-none link-dark link-opacity-75-hover fs-6">Алгоритмы действий персонала ФГБОУ ВО
+                "ХГПУ", работников частных охранных организаций и обучающихся при совершении (угрозе совершения)
+                преступления в формах вооруженного нападения, размещения взрывного устройства, захвата заложников,
+                срабатывания на территории образовательной организации взрывного устройства, в том числе доставленного
+                беспилотным летательным аппаратом, нападения с использованием горючих жидкостей, а также информационного
+                взаимодействия с территориальными органами МВД России, Росгвардии и ФСБ России (утв. приказом №112-О от
+                11.03.2026 г.)</a>
+            </li>
+          </ul>
+        </div>
+      </details>
+      <details class="details border-top-secondary" name="basic-info-accordion">
+        <summary class="details-title">
+          <p class="fw-bold fs-5">Ответственность за ложное сообщение об акте терроризма</p>
+          <i class="fa-solid fa-angle-down fa-2xl my-accordion-icon"></i>
+        </summary>
+        <div class="details-content">
+          <p class="mb-0">
+            В системе преступлений против общественной безопасности такое деяние, как "заведомо ложное сообщение об акте
+            терроризма, о готовящихся взрыве, поджоге или иных действиях, создающих опасность гибели людей, причинения
+            значительного имущественного ущерба либо наступления иных общественно опасных последствий", является одним
+            из наиболее тяжких. В результате подобных действий причиняется серьезный материальный ущерб гражданам в
+            частности и государству в целом, так как по ложному вызову незамедлительно выезжают сотрудники
+            правоохранительных органов, противопожарной службы, скорой медицинской помощи, срываются графики работы
+            различных учреждений и предприятий. В связи с такими сообщениями выезд «тревожных» групп, а также эвакуация
+            граждан должны проводиться обязательно, что приводит к появлению у людей чувства страха, беззащитности и
+            дискомфорта в создавшейся ситуации. Правоохранительные органы всегда действуют из предпосылки существования
+            реальной опасности, поэтому по всем поступившим подобного рода угрозам проводятся проверки, принимаются
+            неотложные меры по поиску взрывных устройств и недопущению возможных негативных последствий. Как следствие,
+            это приводит к вынужденному отвлечению сил и средств для предотвращения мнимой угрозы в ущерб решению задач
+            по обеспечению общественной безопасности.<br />
+          </p>
+          <p class="mb-0 fw-bold">Заведомо ложное сообщение об акте терроризма – уголовно наказуемое деяние!</p>
+          <ul>
+            <li>​​​​​​​Санкция ч. 1 ст. 207 УК РФ предусматривает наказание в виде штрафа в размере до двухсот тысяч
+              рублей или в размере заработной платы или иного дохода осужденного за период до восемнадцати месяцев, либо
+              обязательными работами на срок до четырехсот восьмидесяти часов, либо исправительными работами на срок от
+              одного года до двух лет, либо ограничением свободы на срок до трех лет, либо принудительными работами на
+              срок до трех лет, либо арестом на срок от трех до шести месяцев, либо лишением свободы на срок до трех
+              лет.</li>
+            <li>​​​​​​Санкция ч. 2 ст. 207 УК РФ предусматривает наказание в виде штрафа в размере до одного миллиона
+              рублей или в размере заработной платы или иного дохода осужденного за период от восемнадцати месяцев до
+              трех лет либо лишением свободы на срок до пяти лет. Кроме того, на основании судебного решения подлежат
+              возмещению все затраты и весь ущерб, причиненный таким сообщением. В случае, если такие действия были
+              совершены несовершеннолетними, то возмещение ущерба возлагается на их родителей или законных
+              представителей.</li>
+          </ul>
+          <p class="mb-0 fw-bold">Помните!</p>
+          <ul>
+            <li>Сообщая об акте терроризма, вы посягаете на общественную безопасность, в связи с чем, нарушается
+              нормальная деятельность учреждений, отвлекаются значительные силы и средства правоохранительных органов,
+              причиняется вред интересам конкретных граждан.</li>
+            <li>Ваши слова и действия могут образовать состав уголовно-наказуемого деяния, предусмотренного ст. 207 УК
+              РФ (заведомо ложное сообщение об акте терроризма).</li>
+            <li>Мотив ваших действий может быть любым: хулиганским, желание проверить "качество и быстроту" работы
+              правоохранительных органов, нарушить обычный порядок работы каких-либо организаций.</li>
+            <li>Ответственность за совершение данного преступления наступает с 14 лет.</li>
+          </ul>
+        </div>
+      </details>
+      <details class="details border-top-secondary" name="basic-info-accordion">
+        <summary class="details-title">
+          <p class="fw-bold fs-5">Террористические и экстремистские организации и материалы</p>
+          <i class="fa-solid fa-angle-down fa-2xl my-accordion-icon"></i>
+        </summary>
+        <div class="details-content">
+          <a href="https://mintrud.gov.ru/docs/mintrud/orders/157" target="_blank"
+            class="text-decoration-none fs-6 link-dark link-opacity-75-hover">Перечень террористических и экстремистских
+            организаций и материалов (сайт Национального антитеррористического комитета).</a>
+        </div>
+      </details>
+    </div>
+  </div>
+  <div class="py-5 bg-gray">
+    <div class="container">
+      <h3 class="mb-4 fw-bold">Методические рекомендации</h3>
+      <p class="fs-5">Методические рекомендации профильных министерств и ведомств по вопросам противодействия идеологии
+        терроризма и экстремизма</p>
+      <div class="row row-cols-1 row-cols-md-3 g-5">
+        <div class="col">
+          <a href="" class="card h-100 py-4 px-4 rounded-3 border-0 shadow text-decoration-none ylw-bg white-bg-hov">
+            <div class="card-body">
+              <h6 class="fw-semibold">Профилактика конфликтов, проявлений экстремизма и терроризма в поликультурной
+                образовательной среде</h6>
+              <p class="">Банк документов Министерства просвещения РФ</p>
+            </div>
+            <div class="px-3 d-flex align-items-center gap-2 text-black link-warning">
+              <span class="fw-bold">Ознакомиться</span><i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="" class="card h-100 py-4 px-4 rounded-3 border-0 shadow text-decoration-none ylw-bg white-bg-hov">
+            <div class="card-body">
+              <h6 class="fw-semibold">Рекомендации по особенностям выявления и профилактики деструктивного поведения
+                обучающихся, подверженных воздействию террористической и иной радикальной идеологии</h6>
+              <p class="">Банк документов Министерства просвещения РФ</p>
+            </div>
+            <div class="px-3 d-flex align-items-center gap-2 text-black link-warning">
+              <span class="fw-bold">Ознакомиться</span><i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="" class="card h-100 py-4 px-4 rounded-3 border-0 shadow text-decoration-none ylw-bg white-bg-hov">
+            <div class="card-body">
+              <h6 class="fw-semibold">Методические рекомендации по организации профилактической работы в образовательных
+                организациях высшего образования</h6>
+              <p class="">Банк документов Министерства просвещения РФ</p>
+            </div>
+            <div class="px-3 d-flex align-items-center gap-2 text-black link-warning">
+              <span class="fw-bold">Ознакомиться</span><i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5">
+    <div class="container">
+      <h3 class="mb-4 fw-bold">Правила поведения при террористической угрозе</h3>
+      <p class="mb-4 fs-5">Как вести себя в чрезвычайной ситуации, вызванной действиями террористов, – смотрите в
+        представленных ниже материалах. Изложенные правила и алгоритмы помогут правильно ориентироваться и действовать в
+        экстремальных и чрезвычайных ситуациях.</p>
+      <div class="mb-5">
+        <div class="row pb-4">
+          <div class="col-7">
+            <div class="position-relative h-100 rounded-3 overflow-hidden">
+              <iframe width="100%" height="100%" allow="encrypted-media; fullscreen; picture-in-picture"
+                src="https://vkvideo.ru/video_ext.php?oid=-112267450&id=456239098&hd=2" id="#vid_1"></iframe>
+              <div style="
+                      background-image: url('{% static 'bootstrap/img/antiterror/rules-bg.webp' %}');
+                      background-repeat: no-repeat;
+                      background-size: cover;" class="w-100 h-100 position-absolute top-0 left-0 z-1 videoverlay">
+              </div>
+              <div class="media-banner-overlay opacity-25 z-2 videoverlay"></div>
+              <div class="h-100 w-100 position-absolute z-3 top-0 left-0 py-5 px-5 videoverlay">
+                <div class="fw-semibold text-white text-uppercase">правила</div>
+                <div class="fw-semibold fs-4 text-white">Подозрительные предметы</div>
+                <button class="btn-play"><i class="fa-solid fa-play fa-2xl" style="color: #ffbf31;"
+                    id="#btnPlay1"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="py-5 px-5 bg-gray rounded-3">
+              <p class="fs-4 fw-bold">Правила поведения при обнаружении подозрительных предметов</p>
+              <p class="fs-5">Как вести себя в случае обнаружения бесхозных или подозрительных предметов в
+                образовательном учреждении.</p>
+              <div class="text-end">
+                <img src="{% static 'bootstrap/img/antiterror/bag.png' %}" width="80px" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3 class="mb-4 fw-bold">Алгоритм действий в случае вооруженного нападения на<br />образовательное учреждение</h3>
+      <div class="mb-5 py-4 row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <a href="" class="d-block rounded-3 overflow-hidden position-relative">
+            <img class="" width="100%" height="470px" src="{% static 'bootstrap/img/antiterror/algo-1.webp' %}"
+              alt="" />
+            <div style="background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.70));"
+              class="w-100 h-100 position-absolute top-0 left-0"></div>
+            <div class="py-5 px-5 position-absolute bottom-0 z-2 text-white traslating-card">
+              <div class="fs-4 fw-semibold lh-sm">В здании учебного заведения началась стрельба</div>
+              <div class="my-4 w-100 border-top border-warning-subtle"></div>
+              <div class="mb-4 fs-5">Что делать в такой ситуации?</div>
+              <div
+                class="px-3 py-2 d-inline-block text-black bg-ylw rounded-3 fs-6 fw-semibold position-relative overflow-hidden glare">
+                <i class="fa-solid fa-file-lines"></i>
+                <span>Ознакомиться</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="" class="d-block rounded-3 overflow-hidden position-relative">
+            <img class="" width="100%" height="470px" src="{% static 'bootstrap/img/antiterror/algo-2.webp' %}"
+              alt="" />
+            <div style="background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.70));"
+              class="w-100 h-100 position-absolute top-0 left-0"></div>
+            <div class="py-5 px-5 position-absolute bottom-0 z-2 text-white traslating-card">
+              <div class="fs-4 fw-semibold lh-sm">Алгоритм действий в случае вооруженного нападения на учебное заведение
+              </div>
+              <div class="my-4 w-100 border-top border-warning-subtle"></div>
+              <div class="mb-4 fs-5">Возможные ситуации и стратегии поведения</div>
+              <div
+                class="px-3 py-2 d-inline-block text-black bg-ylw rounded-3 fs-6 fw-semibold position-relative overflow-hidden glare">
+                <i class="fa-solid fa-circle-play"></i>
+                <span>Смотреть видео</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="" class="d-block rounded-3 overflow-hidden position-relative">
+            <img class="" width="100%" height="470px" src="{% static 'bootstrap/img/antiterror/algo-3.webp' %}"
+              alt="" />
+            <div style="background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.70));"
+              class="w-100 h-100 position-absolute top-0 left-0"></div>
+            <div class="py-5 px-5 position-absolute bottom-0 z-2 text-white traslating-card">
+              <div class="fs-4 fw-semibold lh-sm">Что делать, если на образовательную организацию напали</div>
+              <div class="my-4 w-100 border-top border-warning-subtle"></div>
+              <div class="mb-4 fs-5">Три стратегии поведения</div>
+              <div
+                class="px-3 py-2 d-inline-block text-black bg-ylw rounded-3 fs-6 fw-semibold position-relative overflow-hidden glare">
+                <i class="fa-solid fa-file-lines"></i>
+                <span>Ознакомиться</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <h3 class="mb-4 fw-bold">Алгоритм действий при угрозе атаки БПЛА</h3>
+      <p class="mb-4 fs-5">Материалы НЦПТИ (Национального центра информационного противодействия терроризму и
+        экстремизму в образовательной среде и сети Интернет), НИЦМП (Научно-исследовательского центра мониторинга и
+        профилактики деструктивных проявлений в образовательной среде)</p>
+      <div class="py-4 row row-cols-1 row-cols-md-2 g-5">
+        <div class="col">
+          <a href="" class="d-block rounded-3 overflow-hidden position-relative">
+            <img class="" width="100%" height="322px" src="{% static 'bootstrap/img/antiterror/algo-4.webp' %}"
+              alt="" />
+            <div style="background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.70));"
+              class="w-100 h-100 position-absolute top-0 left-0"></div>
+            <div class="py-5 px-5 w-100 position-absolute bottom-0 z-2 text-white traslating-card">
+              <div class="fs-4 fw-semibold lh-sm">
+                Ты оказался в зоне атаки БЛПА.<br />Что делать?
+              </div>
+              <div class="my-4 w-100 border-top border-warning-subtle"></div>
+              <div class="mb-3 fs-5">НЦПТИ</div>
+              <div
+                class="px-3 py-2 d-inline-block text-black bg-ylw rounded-3 fs-6 fw-semibold position-relative overflow-hidden glare">
+                <i class="fa-solid fa-file-lines"></i>
+                <span>Ознакомиться</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="" class="d-block rounded-3 overflow-hidden position-relative">
+            <img class="" width="100%" height="322px" src="{% static 'bootstrap/img/antiterror/algo-5.webp' %}"
+              alt="" />
+            <div style="background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.70));"
+              class="w-100 h-100 position-absolute top-0 left-0"></div>
+            <div class="py-5 px-5 position-absolute bottom-0 z-2 text-white traslating-card">
+              <div class="fs-4 fw-semibold lh-sm">Алгоритм действий при угрозе беспилотника (БПЛА)</div>
+              <div class="my-4 w-100 border-top border-warning-subtle"></div>
+              <div class="mb-3 fs-5">НЦПТИ</div>
+              <div
+                class="px-3 py-2 d-inline-block text-black bg-ylw rounded-3 fs-6 fw-semibold position-relative overflow-hidden glare">
+                <i class="fa-solid fa-circle-play"></i>
+                <span>Смотреть видео</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5 bg-ylw">
+    <div class="container">
+      <h3 class="mb-4 fw-bold">Алгоритмы действий обучающихся и сотрудников ФГБОУ ВО "ХГПУ"</h3>
+      <div class="row">
+        <div class="col">
+          <p class="mb-0 fs-5">Алгоритмы действий обучающихся и сотрудников ФГБОУ ВО "ХГПУ" при совершении (угрозе
+            совершения) преступления в формах вооруженного нападения, размещения взрывного устройства, захвата
+            заложников, срабатывания на территории образовательной организации взрывного устройства, в том числе
+            доставленного беспилотным летательным аппаратом, нападения с использованием горючих жидкостей, а также
+            информационного взаимодействия с территориальными органами МВД России, Росгвардии и ФСБ России.</p>
+        </div>
+        <div class="col-5">
+          <div class="h-100 d-flex flex-column justify-content-between">
+            <div>
+              <button type="button"
+                class="btn d-flex align-items-center gap-4 py-4 px-5 bg-white rounded-4 shadow grey-bg-hov"
+                data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <img style="width: 56px; height: 56px;" src="{% static 'bootstrap/img/antiterror/icon-book.png' %}"
+                  alt="" />
+                <span class="text-start fs-4 lh-sm fw-medium">Памятка для студентов университета</span>
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Памятка для студента</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <iframe src="{% static 'files/antiterror/pamyatka_stud.pdf' %}" width="100%"
+                        height="700px"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <button type="button"
+                class="btn d-flex align-items-center gap-4 py-4 px-5 bg-white rounded-4 shadow grey-bg-hov"
+                data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                <img style="width: 56px; height: 56px;" src="{% static 'bootstrap/img/antiterror/icon-book.png' %}"
+                  alt="" />
+                <span class="text-start fs-4 lh-sm fw-medium">Памятка для сотрудников университета</span>
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Памятка для сотрудников</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <iframe src="{% static 'files/antiterror/pamyatka_sotrudnika.pdf' %}" width="100%"
+                        height="700px"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5">
+    <div class="container">
+      <h3 class="mb-4 fw-bold">Профилактика деструктивных проявлений в образовательной среде</h3>
+      <p class="fs-5">Материалы по вопросам противодействия идеологии терроризма и экстремизма для ознакомления и
+        использования</p>
+      <div class="py-4 row gap-4">
+        <div class="col">
+          <a href="https://vkvideo.ru/playlist/-176685352_9" target="_blank" class="text-decoration-none">
+            <div class="card mb-3 h-100 bg-gray border-0">
+              <div class="row g-0 h-100">
+                <div class="col-md-5">
+                  <img src="{% static 'bootstrap/img/antiterror/nak.png' %}" class="img-fluid rounded-start h-100"
+                    alt="..." />
+                </div>
+                <div class="col align-self-center">
+                  <div class="card-body px-4 py-4">
+                    <h5 class="card-title fw-semibold">Национальный антитеррористический комитет (НАК)</h5>
+                    <p class="fs-5 fw-medium lh-sm">Видеоматериалы НАК (плейлист ВК "Антитеррористические ролики")</p>
+                    <div
+                      class="px-3 py-2 d-inline-block text-black bg-ylw rounded-3 fs-6 fw-semibold position-relative overflow-hidden glare">
+                      <i class="fa-solid fa-circle-play"></i>
+                      <span>Ознакомиться</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="https://ncpti.su/materialy" target="_blank" class="text-decoration-none">
+            <div class="card mb-3 h-100 bg-gray border-0">
+              <div class="row g-0 h-100">
+                <div class="col-md-5">
+                  <img src="{% static 'bootstrap/img/antiterror/ncpti.png' %}" class="img-fluid rounded-start h-100"
+                    alt="..." />
+                </div>
+                <div class="col align-self-center">
+                  <div class="card-body px-4 py-4">
+                    <h5 class="card-title fw-semibold">Национальный центр информационного противодействия терроризму и
+                      экстремизму (НЦПТИ)</h5>
+                    <p class="fs-5 fw-medium lh-sm">Полезные материалы: видео, методички, чек-листы, памятки</p>
+                    <div
+                      class="px-3 py-2 d-inline-block text-black bg-ylw rounded-3 fs-6 fw-semibold position-relative overflow-hidden glare">
+                      <i class="fa-solid fa-circle-play"></i>
+                      <span>Ознакомиться</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5 bg-gray overflow-hidden">
+    <div class="container">
+      <h3 class="mb-4 fw-bold">Социальные ролики</h3>
+      <p class="fs-5">Министерство внутренних дел Российской Федерации</p>
+      <div id="antiterror_carousel" class="py-4 owl-carousel owltheme">
+        <div>
+          <div style="height: 250px;" class="mb-3 position-relative rounded-3 overflow-hidden">
+            <iframe width="100%" height="100%" allow="encrypted-media; fullscreen; picture-in-picture"
+              src="https://vkvideo.ru/video-81401827_456242349?t=1m16s" id="#vid_2"></iframe>
+            <div style="
+                      background-image: url('{% static 'bootstrap/img/antiterror/social-vid-1.png' %}');
+                      background-repeat: no-repeat;
+                      background-size: cover;" class="w-100 h-100 position-absolute top-0 left-0 z-1 videoverlay">
+            </div>
+            <div class="media-banner-overlay opacity-25 z-2 videoverlay"></div>
+            <div class="h-100 w-100 position-absolute z-3 top-0 left-0 py-5 px-5 videoverlay">
+              <button class="btn-play"><i class="fa-solid fa-play fa-2xl" style="color: #ffbf31;"
+                  id="#btnPlay2"></i></button>
+            </div>
+          </div>
+          <p class="mb-0 fs-5 fw-bold">Об ответственности за экстремизм</p>
+        </div>
+        <div>
+          <div style="height: 250px;" class="mb-3 position-relative rounded-3 overflow-hidden">
+            <iframe width="100%" height="100%" allow="encrypted-media; fullscreen; picture-in-picture"
+              src="https://vkvideo.ru/video_ext.php?oid=-112267450&id=456239098&hd=2" id="#vid_3"></iframe>
+            <div style="
+                      background-image: url('{% static 'bootstrap/img/antiterror/social-vid-2.png' %}');
+                      background-repeat: no-repeat;
+                      background-size: cover;" class="w-100 h-100 position-absolute top-0 left-0 z-1 videoverlay">
+            </div>
+            <div class="media-banner-overlay opacity-25 z-2 videoverlay"></div>
+            <div class="h-100 w-100 position-absolute z-3 top-0 left-0 py-5 px-5 videoverlay">
+              <button class="btn-play"><i class="fa-solid fa-play fa-2xl" style="color: #ffbf31;"
+                  id="#btnPlay3"></i></button>
+            </div>
+          </div>
+          <p class="mb-0 fs-5 fw-bold">МВД предупреждает!</p>
+        </div>
+        <div>
+          <div style="height: 250px;" class="mb-3 position-relative rounded-3 overflow-hidden">
+            <iframe width="100%" height="100%" allow="encrypted-media; fullscreen; picture-in-picture"
+              src="https://vkvideo.ru/video_ext.php?oid=-112267450&id=456239098&hd=2" id="#vid_4"></iframe>
+            <div style="
+                      background-image: url('{% static 'bootstrap/img/antiterror/social-vid-3.png' %}');
+                      background-repeat: no-repeat;
+                      background-size: cover;" class="w-100 h-100 position-absolute top-0 left-0 z-1 videoverlay">
+            </div>
+            <div class="media-banner-overlay opacity-25 z-2 videoverlay"></div>
+            <div class="h-100 w-100 position-absolute z-3 top-0 left-0 py-5 px-5 videoverlay">
+              <button class="btn-play"><i class="fa-solid fa-play fa-2xl" style="color: #ffbf31;"
+                  id="#btnPlay4"></i></button>
+            </div>
+          </div>
+          <p class="mb-0 fs-5 fw-bold">Терроризм – угроза обществу!</p>
+        </div>
+        <div>
+          <div style="height: 250px;" class="mb-3 position-relative rounded-3 overflow-hidden">
+            <iframe width="100%" height="100%" allow="encrypted-media; fullscreen; picture-in-picture"
+              src="https://vkvideo.ru/video_ext.php?oid=-112267450&id=456239098&hd=2" id="#vid_5"></iframe>
+            <div style="
+                      background-image: url('{% static 'bootstrap/img/antiterror/social-vid-4.png' %}');
+                      background-repeat: no-repeat;
+                      background-size: cover;" class="w-100 h-100 position-absolute top-0 left-0 z-1 videoverlay">
+            </div>
+            <div class="media-banner-overlay opacity-25 z-2 videoverlay"></div>
+            <div class="h-100 w-100 position-absolute z-3 top-0 left-0 py-5 px-5 videoverlay">
+              <button class="btn-play"><i class="fa-solid fa-play fa-2xl" style="color: #ffbf31;"
+                  id="#btnPlay5"></i></button>
+            </div>
+          </div>
+          <p class="mb-0 fs-5 fw-bold">Что такое несанкционированный митинг?</p>
+        </div>
+        <div>
+          <div style="height: 250px;" class="mb-3 position-relative rounded-3 overflow-hidden">
+            <iframe width="100%" height="100%" allow="encrypted-media; fullscreen; picture-in-picture"
+              src="https://vkvideo.ru/video_ext.php?oid=-112267450&id=456239098&hd=2" id="#vid_6"></iframe>
+            <div style="
+                      background-image: url('{% static 'bootstrap/img/antiterror/social-vid-5.png' %}');
+                      background-repeat: no-repeat;
+                      background-size: cover;" class="w-100 h-100 position-absolute top-0 left-0 z-1 videoverlay">
+            </div>
+            <div class="media-banner-overlay opacity-25 z-2 videoverlay"></div>
+            <div class="h-100 w-100 position-absolute z-3 top-0 left-0 py-5 px-5 videoverlay">
+              <button class="btn-play"><i class="fa-solid fa-play fa-2xl" style="color: #ffbf31;"
+                  id="#btnPlay6"></i></button>
+            </div>
+          </div>
+          <p class="mb-0 fs-5 fw-bold">Радикализм, экстремизм, терроризм</p>
+        </div>
+        <div>
+          <div style="height: 250px;" class="mb-3 position-relative rounded-3 overflow-hidden">
+            <iframe width="100%" height="100%" allow="encrypted-media; fullscreen; picture-in-picture"
+              src="https://vkvideo.ru/video_ext.php?oid=-112267450&id=456239098&hd=2" id="#vid_7"></iframe>
+            <div style="
+                      background-image: url('{% static 'bootstrap/img/antiterror/social-vid-6.png' %}');
+                      background-repeat: no-repeat;
+                      background-size: cover;" class="w-100 h-100 position-absolute top-0 left-0 z-1 videoverlay">
+            </div>
+            <div class="media-banner-overlay opacity-25 z-2 videoverlay"></div>
+            <div class="h-100 w-100 position-absolute z-3 top-0 left-0 py-5 px-5 videoverlay">
+              <button class="btn-play"><i class="fa-solid fa-play fa-2xl" style="color: #ffbf31;"
+                  id="#btnPlay7"></i></button>
+            </div>
+          </div>
+          <p class="mb-0 fs-5 fw-bold">Правила поведения в социальных сетях</p>
+        </div>
+      </div>
+      <a href="https://rutube.ru/plst/201417/" target="_blank" class="text-decoration-none text-black fs-5"><img
+          style="width: 30px; margin-right: 10px;" src="{% static 'bootstrap/img/antiterror/rutube-icon.png' %}"
+          alt="" />Смотреть весь плейлист МВД РФ "Противодействие терроризму и экстремизму"</a>
+    </div>
+  </div>
+  <div class="py-5">
+    <div class="container">
+      <div class="py-4 d-flex gap-4">
+        <div class="w-25">
+          <a href="" class="d-block rounded-3 overflow-hidden position-relative">
+            <img class="" width="100%" src="{% static 'bootstrap/img/antiterror/profilakrika-1.png' %}" alt="" />
+            <div style="background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.70));"
+              class="w-100 h-100 position-absolute top-0 left-0"></div>
+            <div class="py-5 px-5 w-100 position-absolute bottom-0 z-2 text-white traslating-card">
+              <div class="fs-4 fw-semibold lh-sm">Диверсия и ее последствия</div>
+              <div class="my-4 w-100 border-top border-warning-subtle"></div>
+              <div class="mb-3 fs-5">Видеоролик</div>
+              <div
+                class="px-3 py-2 d-inline-block text-black bg-ylw rounded-3 fs-6 fw-semibold position-relative overflow-hidden glare">
+                <i class="fa-solid fa-circle-play"></i>
+                <span>Смотреть</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="w-25">
+          <a href="" class="d-block rounded-3 overflow-hidden position-relative">
+            <img class="" width="100%" src="{% static 'bootstrap/img/antiterror/profilakrika-2.png' %}" alt="" />
+            <div style="background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.70));"
+              class="w-100 h-100 position-absolute top-0 left-0"></div>
+            <div class="py-5 px-5 w-100 position-absolute bottom-0 z-2 text-white traslating-card">
+              <div class="fs-4 fw-semibold lh-sm">Вербовка и ее последствия</div>
+              <div class="my-4 w-100 border-top border-warning-subtle"></div>
+              <div class="mb-3 fs-5">Видеоролик</div>
+              <div
+                class="px-3 py-2 d-inline-block text-black bg-ylw rounded-3 fs-6 fw-semibold position-relative overflow-hidden glare">
+                <i class="fa-solid fa-circle-play"></i>
+                <span>Смотреть</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="w-50 px-5 py-5 position-relative bg-gray rounded-3">
+          <div class="mb-4 fs-5 fw-bold">Профилактические видеоролики</div>
+          <div class="w-75 fs-5">
+            Рекомендовано<br />
+            Министерством просвещения Российской Федерации
+          </div>
+          <img src="{% static 'bootstrap/img/antiterror/profilaktika-3.png' %}"
+            style="position: absolute; bottom: 0; left: 70%; width: 25%;" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5 bg-gray overflow-hidden">
+    <div class="container">
+      <div class="py-4 d-flex align-items-center gap-4">
+        <div class="w-25">
+          <img src="{% static 'bootstrap/img/antiterror/kinostudia.png' %}" class="w-100" alt="" />
+        </div>
+        <div class="w-75">
+          <p class="fs-4 fw-bold">Киностудия ХГПУ</p>
+          <p class="fs-5">Значительное внимание профилактике деструктивного поведения в образовательной среде
+            Университет уделяет посредством реализации проектов Киностудии ХГПУ. Короткометражные фильмы киностудии ХГПУ
+            затрагивают остросоциальные проблемы, в том числе вопросы противодействия экстремизму, терроризму,
+            проявлению националистических идей, а также профилактики деструктивного поведения в молодежной среде.</p>
+        </div>
+      </div>
+      <div class="py-5">
+        <div class="row row-cols-1 row-cols-md-3 g-5">
+          <div class="col">
+            <div class="card h-100 border-0">
+              <div class="position-relative h-100 rounded-3 overflow-hidden">
+                <iframe width="100%" height="220px" allow="encrypted-media; fullscreen; picture-in-picture"
+                  src="https://vkvideo.ru/video_ext.php?oid=-112267450&id=456239098&hd=2" id="#vid_1"></iframe>
+                <div style="
+                      background-image: url('{% static 'bootstrap/img/antiterror/kinostudia-1.jpg' %}');
+                      background-repeat: no-repeat;
+                      background-size: cover;" class="w-100 h-100 position-absolute top-0 left-0 z-1 videoverlay">
+                </div>
+                <div class="media-banner-overlay opacity-25 z-2 videoverlay"></div>
+                <div class="h-100 w-100 position-absolute z-3 top-0 left-0 py-5 px-5 videoverlay">
+                  <button class="btn-play bg-primary"><i class="fa-solid fa-play fa-2xl" style="color: #ffffff;"
+                      id="#btnPlay1"></i></button>
+                </div>
+              </div>
+              <div class="card-body px-0 bg-gray">
+                <h5 class="card-title fw-semibold">ПРИГОВОР, 2025</h5>
+                <p class="fs-6">Фильм снят в рамках комплекса мер по противодействию угрозам, связанным с активизацией
+                  украинских спецслужб и неонацистских организаций по вовлечению детей и молодежи в
+                  диверсионно-террористическую деятельность</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0">
+              <div class="position-relative h-100 rounded-3 overflow-hidden">
+                <iframe width="100%" height="220px" allow="encrypted-media; fullscreen; picture-in-picture"
+                  src="https://vkvideo.ru/video_ext.php?oid=-112267450&id=456239098&hd=2" id="#vid_1"></iframe>
+                <div style="
+                      background-image: url('{% static 'bootstrap/img/antiterror/kinostudia-2.jpg' %}');
+                      background-repeat: no-repeat;
+                      background-size: cover;" class="w-100 h-100 position-absolute top-0 left-0 z-1 videoverlay">
+                </div>
+                <div class="media-banner-overlay opacity-25 z-2 videoverlay"></div>
+                <div class="h-100 w-100 position-absolute z-3 top-0 left-0 py-5 px-5 videoverlay">
+                  <button class="btn-play bg-primary"><i class="fa-solid fa-play fa-2xl" style="color: #ffffff;"
+                      id="#btnPlay1"></i></button>
+                </div>
+              </div>
+              <div class="card-body px-0 bg-gray">
+                <h5 class="card-title fw-semibold">АНТИЭКСТРЕМИЗМ, 2025</h5>
+                <p class="fs-6">Сюжет фильма затрагивает проблему опасности вовлечения молодых людей в радикальные
+                  организации через интернет-пропаганду.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0">
+              <div class="position-relative h-100 rounded-3 overflow-hidden">
+                <iframe width="100%" height="220px" allow="encrypted-media; fullscreen; picture-in-picture"
+                  src="https://vkvideo.ru/video_ext.php?oid=-112267450&id=456239098&hd=2" id="#vid_1"></iframe>
+                <div style="
+                      background-image: url('{% static 'bootstrap/img/antiterror/kinostudia-3.jpg' %}');
+                      background-repeat: no-repeat;
+                      background-size: cover;" class="w-100 h-100 position-absolute top-0 left-0 z-1 videoverlay">
+                </div>
+                <div class="media-banner-overlay opacity-25 z-2 videoverlay"></div>
+                <div class="h-100 w-100 position-absolute z-3 top-0 left-0 py-5 px-5 videoverlay">
+                  <button class="btn-play bg-primary"><i class="fa-solid fa-play fa-2xl" style="color: #ffffff;"
+                      id="#btnPlay1"></i></button>
+                </div>
+              </div>
+              <div class="card-body px-0 bg-gray">
+                <h5 class="card-title fw-semibold">НА ДОВЕРИИ, 2025</h5>
+                <p class="fs-6">Короткометражный фильм о губительных последствиях употребления наркотиков. Фильм о
+                  вероятной и очень близкой трагедии, которую не ощущает в своей жизни главный герой, поддавшийся
+                  иллюзии наркотической эйфории.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5">
+    <div class="container">
+      <h3 class="mb-4 fw-bold">Противодействие информационно-психологическому влиянию</h3>
+      <p class="mb-5 fs-5">Умение противостоять информационно‑психологическому влиянию, в условиях современных
+        геополитических вызовов, приобретает особую значимость для обеспечения безопасности образовательной среды и
+        общества в целом. Целенаправленные информационные кампании, в т. ч. проводимые отдельными зарубежными
+        структурами и подразделениями (включая украинские), активно используют современные методы воздействия на
+        сознание и поведение граждан. Их цель - формирование искажённого восприятия реальности, провоцирование
+        социальной напряжённости, подрыв доверия к институтам власти и образовательным организациям, а также вовлечение
+        молодёжи в деструктивные сообщества.</p>
+      <div class="mb-5">
+        <div class="row pb-4">
+          <div class="col">
+            <div class="py-5 px-5 bg-gray rounded-3 position-relative">
+              <p class="fs-5">Методы информационно-психологического влияния, применяемые украинскими подразделениями
+                информационно-психологических операций против участников СВО, их родственников и других граждан</p>
+              <p class="fs-5">Д.В. Безсонов</p>
+              <a href=""
+                class="px-5 py-3 d-inline-block text-black bg-ylw rounded-3 fs-6 fw-semibold position-relative overflow-hidden glare text-decoration-none">
+                <i class="fa-solid fa-book" style="color: rgb(0, 0, 0);"></i>
+                <span>Читать</span>
+              </a>
+              <div style="position: absolute; bottom: 10%; right: 10%;">
+                <img src="{% static 'bootstrap/img/antiterror/psy-info-icon.png' %}" width="80px" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="col-7">
+            <div class="position-relative h-100 rounded-3 overflow-hidden">
+              <iframe width="100%" height="100%" allow="encrypted-media; fullscreen; picture-in-picture"
+                src="https://rutube.ru/796de49f-574f-437e-bb5f-295e8e02d44e" id="#vid_1"></iframe>
+              <div style="
+                      background-image: url('{% static 'bootstrap/img/antiterror/psycho-inf.jpg' %}');
+                      background-repeat: no-repeat;
+                      background-size: cover;" class="w-100 h-100 position-absolute top-0 left-0 z-1 videoverlay">
+              </div>
+              <div class="media-banner-overlay opacity-25 z-2 videoverlay"></div>
+              <div class="h-100 w-100 position-absolute z-3 top-0 left-0 py-5 px-5 videoverlay">
+                <div class="fw-semibold text-white text-uppercase">Документальный фильм</div>
+                <div class="w-75 fw-semibold fs-4 text-white">Методы информационно-психологического влияния</div>
+                <button class="btn-play"><i class="fa-solid fa-play fa-2xl" style="color: #ffbf31;"
+                    id="#btnPlay1"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="background-image: linear-gradient(to bottom, rgba(205, 197, 197, 0.75), rgba(244, 242, 242, 0.7));"
+    class="py-5">
+    <div class="container">
+      <div class="py-5">
+        <div class="row">
+          <div class="col-7">
+            <img class="w-100 h-100 rounded-4" src="{% static 'bootstrap/img/antiterror/doc-film.png' %}" alt="" />
+          </div>
+          <div class="col">
+            <div class="px-5">
+              <p class="fs-4 fw-bold">Документальный фильм "Предательство"</p>
+              <p class="fs-5">Фильм Андрея Медведева о гражданах страны, осужденных за террористическую и экстремистскую
+                деятельность, о тех, кто предал родных, близких, родину. В основе фильма – истории от отбывающих
+                наказание. Считают ли они себя предателями? Что толкнуло их на совершение преступления против своих же?
+                В каких семьях они выросли? Что видели в родном городе? О чем мечтали?</p>
+              <a href=""
+                class="px-5 py-3 d-inline-block text-black bg-ylw rounded-3 fs-6 fw-semibold position-relative overflow-hidden glare text-decoration-none">
+                <img style="width: 65px;" src="{% static 'bootstrap/img/antiterror/smotrim-logo.svg' %}" alt="" />
+                <span class="px-2">Перейти</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5 bg-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p class="fs-4 fw-bold">Документальный спецпроект<br>"Недетский террор"</p>
+          <p class="fs-5">Украинские спецслужбы всё чаще вербуют российских подростков для совершения терактов.</p>
+          <ul class="fs-5">
+            <li>Почему юноши и девушки из благополучных семей вдруг идут на тяжкие преступления?</li>
+            <li>Как преступники входят в ваш дом через смартфон?</li>
+            <li>Как они втираются в доверие и используют страх как инструмент?</li>
+            <li>Какие ещё методы в арсенале украинских спецслужб ?</li>
+            <li>Как не допустить вербовки ребёнка и превращения его в террориста?</li>
+          </ul>
+        </div>
+        <div class="col">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5 overflow-hidden">
+    <div class="container">
+      <h3 class="mb-4 fw-bold">Профилактика мошенничества</h3>
+      <div id="antiterror_carousel_2" class="py-4 owl-carousel owltheme">
+        <a href="" class="d-block rounded-3 overflow-hidden position-relative">
+          <img class="w-100" src="{% static 'bootstrap/img/antiterror/profilaktika-mosh-1.png' %}" alt="" />
+        </a>
+        <a href="" class="d-block rounded-3 overflow-hidden position-relative">
+          <img class="w-100" src="{% static 'bootstrap/img/antiterror/profilaktika-mosh-2.png' %}" alt="" />
+        </a>
+        <a href="" class="d-block rounded-3 overflow-hidden position-relative">
+          <img class="w-100" src="{% static 'bootstrap/img/antiterror/profilaktika-mosh-3.png' %}" alt="" />
+        </a>
+        <a href="" class="d-block rounded-3 overflow-hidden position-relative">
+          <img class="w-100" src="{% static 'bootstrap/img/antiterror/profilaktika-mosh-4.png' %}" alt="" />
+        </a>
+        <a href="" class="d-block rounded-3 overflow-hidden position-relative">
+          <img class="w-100" src="{% static 'bootstrap/img/antiterror/profilaktika-mosh-5.png' %}" alt="" />
+        </a>
+        <a href="" class="d-block rounded-3 overflow-hidden position-relative">
+          <img class="w-100" src="{% static 'bootstrap/img/antiterror/profilaktika-mosh-6.png' %}" alt="" />
+        </a>
+        <a href="" class="d-block rounded-3 overflow-hidden position-relative">
+          <img class="w-100" src="{% static 'bootstrap/img/antiterror/profilaktika-mosh-7.png' %}" alt="" />
+        </a>
+        <a href="" class="d-block rounded-3 overflow-hidden position-relative">
+          <img class="w-100" src="{% static 'bootstrap/img/antiterror/profilaktika-mosh-8.png' %}" alt="" />
+        </a>
+        <a href="" class="d-block rounded-3 overflow-hidden position-relative">
+          <img class="w-100" src="{% static 'bootstrap/img/antiterror/profilaktika-mosh-9.png' %}" alt="" />
+        </a>
+        <a href="" class="d-block rounded-3 overflow-hidden position-relative">
+          <img class="w-100" src="{% static 'bootstrap/img/antiterror/profilaktika-mosh-10.png' %}" alt="" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="py-5 bg-gray">
+    <div class="container">
+      <h3 class="mb-4 fw-bold">Телефоны экстренных служб</h3>
+      <div class="row mb-4">
+        <div class="col">
+          <img class="w-100 h-100 rounded-3" src="{% static 'bootstrap/img/antiterror/specphone.png' %}" alt="">
+        </div>
+        <div class="col-7">
+          <p class="mb-0 fs-5">Если Вам стало известно о приготовлениях к совершению преступлений
+            террористической/экстремисткой направленности или Вы являетесь свидетелем указанных действий, для
+            обеспечения общей и личной безопасности, Вы обязаны незамедлительно передать имеющуюся у Вас информацию по
+            указанным телефонам в орган территориальной безопасности и начальнику управления безопасности Университета.
+            В случае отсутствия такой возможности, необходимо принять все возможные меры для передачи оперативной
+            информации преподавательскому составу и/или сотруднику ближайшего поста охраны Университета.</p>
+        </div>
+      </div>
+      <p class="fw-bold fs-5">Контактные номера экстренных служб г. Скадовск</p>
+      <div class="row gap-2">
+        <div class="col">
+          <div class="mb-2 d-flex align-items-center justify-content-between fs-5">
+            <div>Администрация Херсонской области</div>
+            <div class="fw-semibold text-nowrap">+7 (990) 111-68-27</div>
+          </div>
+          <div class="mb-3 border-top border-secondary-subtle"></div>
+          <div class="mb-2 d-flex align-items-center justify-content-between fs-5">
+            <div>Управление ФСБ по Херсонской области</div>
+            <div class="fw-semibold text-nowrap">+7 (990) 001-04-17</div>
+          </div>
+          <div class="mb-3 border-top border-secondary-subtle"></div>
+          <div class="mb-2 d-flex align-items-center justify-content-between fs-5">
+            <div>МЧС г. Скадовск</div>
+            <div class="fw-semibold text-nowrap">+7 (990) 016-75-01</div>
+          </div>
+          <div class="mb-3 border-top border-secondary-subtle"></div>
+          <div class="mb-2 d-flex align-items-center justify-content-between fs-5">
+            <div>Полиция</div>
+            <div class="fw-semibold text-nowrap">+7 (990) 101-42-45</div>
+          </div>
+          <div class="mb-3 border-top border-secondary-subtle"></div>
+          <div class="mb-2 d-flex align-items-start justify-content-between fs-5">
+            <div>Центр экстренной медицинской помощи<br>и медицинских катастроф</div>
+            <div class="fw-semibold text-nowrap">+7 (990) 001-45-27</div>
+          </div>
+          <div class="mb-3 border-top border-secondary-subtle"></div>
+        </div>
+        <div class="col">
+          <div class="mb-2 d-flex align-items-center justify-content-between fs-5">
+            <div>Скорая медицинская помощь</div>
+            <div class="fw-semibold text-nowrap">+7 (990) 016-75-03</div>
+          </div>
+          <div class="mb-3 border-top border-secondary-subtle"></div>
+          <div class="mb-2 d-flex align-items-center justify-content-between fs-5">
+            <div>Служба газа "Херсонгаз</div>
+            <div class="fw-semibold text-nowrap">+7 (990) 016-75-04</div>
+          </div>
+          <div class="mb-3 border-top border-secondary-subtle"></div>
+          <div class="mb-2 d-flex align-items-center justify-content-between fs-5">
+            <div>ГУП "Херсоноблэнерго"</div>
+            <div class="fw-semibold text-nowrap">+7 (990) 016-75-05</div>
+          </div>
+          <div class="mb-3 border-top border-secondary-subtle"></div>
+          <div class="mb-2 d-flex align-items-center justify-content-between fs-5">
+            <div>Прокуратура по Херсонской области</div>
+            <div class="fw-semibold text-nowrap">+7 (922) 297-81-39</div>
+          </div>
+          <div class="mb-3 border-top border-secondary-subtle"></div>
+          <div class="mb-2 d-flex align-items-start justify-content-between fs-5">
+            <div class="d-inline">Военная комендатура<br>Дежурный</div>
+            <div class="fw-semibold text-nowrap">+7 (990) 001-45-47</div>
+          </div>
+          <div class="mb-3 border-top border-secondary-subtle"></div>
+        </div>
+      </div>
+      <div class="py-4">
+        <div style="
+        background-image: url('{% static 'bootstrap/img/antiterror/edds.jpg' %}');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 15px;
+        padding: 3rem 4rem;
+        background-position-y: 40%;
+      ">
+          <div class="mb-1 fs-1 fw-bold">ЕДДС</div>
+          <div class="fs-5 fw-semibold">Единая дежурная<br>диспетчерская служба</div>
+        </div>
+      </div>
+      <p class="mb-3 fw-bold fs-5">Контактные номера ответственных лиц, служб Университета</p>
+      <div class="row gap-2">
+        <div class="col">
+          <div class="mb-2 d-flex align-items-center justify-content-between fs-5">
+            <div>Кононенко Надежда Викторовна</div>
+            <div class="fw-semibold text-nowrap">+7(990) 017-71-95</div>
+          </div>
+          <div class="mb-3 border-top border-secondary-subtle"></div>
+          <div class="fs-5 text-secondary">Начальник управления безопасности ХГПУ</div>
+        </div>
+        <div class="col">
+          <div class="mb-2 d-flex align-items-center justify-content-between fs-5">
+            <div>Попельчук Галина Алексеевна</div>
+            <div class="fw-semibold text-nowrap">+7(989) 775-42-85</div>
+          </div>
+          <div class="mb-3 border-top border-secondary-subtle"></div>
+          <div class="fs-5 text-secondary">Центр психологической поддержки ХГПУ</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5">
+    <div class="container">
+      <div style="
+        background-image: url('{% static 'bootstrap/img/antiterror/psycho-support.jpg' %}');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 15px;
+        padding: 3rem 4rem;
+        background-position-y: 40%;
+      ">
+        <div class="d-flex">
+          <img style="width: 95px;" src="{% static 'bootstrap/img/antiterror/hgpu-logo-circle.png' %}" alt="">
+          <div class="mb-1 fs-2 fw-bold">Центр психологической<br>поддержки ХГПУ</div>
+        </div>
+        <div class="fs-5">Поддержка, которая рядом</div>
+      </div>
+      <div class="py-5 d-flex gap-5">
+        <div class="w-25 fw-bold fs-4">
+          Центр психологической поддержки ХГПУ
+        </div>
+        <div>
+          <p class="mb-3 fs-5">Центр психологической поддержки ХГПУ на регулярной основе в университетских сообществах в
+            социальных сетях
+            проводит вебинары, посвященные информированию и профилактике деструктивного поведения среди молодежи,
+            противодействия идеологии экстремизма и терроризма, а также проводит индивидуальные консультации.</p>
+          <div class="d-flex gap-3">
+            <a href="https://vk.com/club229251761"
+              class="px-5 py-3 d-inline-block text-black bg-ylw rounded-3 fs-6 fw-semibold position-relative overflow-hidden glare text-decoration-none">
+              <i class="fa-brands fa-vk fa-lg" style="color: rgb(0, 0, 0);"></i>
+              <span>Перейти</span>
+            </a>
+            <a href="https://forms.yandex.ru/u/68da6e10068ff000153d0b4e/"
+              class="px-5 py-3 d-inline-block text-white bg-secondary rounded-3 fs-6 fw-semibold position-relative overflow-hidden glare text-decoration-none">
+              <i class="fa-regular fa-circle-check fa-lg" style="color: rgb(255, 255, 255);"></i>
+              <span>Записаться</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5 bg-gray">
+    <div class="container">
+      <h2 class="mb-4 fw-bold text-center">Полезные ссылки</h2>
+      <div class="d-flex gap-5">
+        <div class="d-flex flex-column gap-5">
+          <div class="d-flex align-items-center gap-4 fs-5">
+            <div><img src="{% static 'bootstrap/img/antiterror/useful-link-1.svg' %}" alt=""></div>
+            <div>Национальный антитеррористический комитет</div>
+          </div>
+          <div class="d-flex align-items-center gap-4 fs-5">
+            <div><img style="width: 100px;" src="{% static 'bootstrap/img/antiterror/useful-link-2.png' %}" alt="">
+            </div>
+            <div>Сайт Минпросвещения России – Раздел "Противодействие терроризму и его идеологии"</div>
+          </div>
+          <div class="d-flex align-items-center gap-4 fs-5">
+            <div><img src="{% static 'bootstrap/img/antiterror/usefull-link-.png' %}" alt=""></div>
+            <div>
+              Федеральная служба безопасности Российской Федерации</div>
+          </div>
+        </div>
+        <div class="d-flex flex-column gap-5">
+          <div class="d-flex align-items-center gap-4 fs-5">
+            <div><img style="width: 100px;" src="{% static 'bootstrap/img/antiterror/useful-link-4.png' %}" alt=""></div>
+            <div>Национальный антитеррористический комитет</div>
+          </div>
+          <div class="d-flex align-items-center gap-4 fs-5">
+            <div><img style="width: 100px;" src="{% static 'bootstrap/img/antiterror/useful-link-5.png' %}" alt="">
+            </div>
+            <div>Сайт Минпросвещения России – Раздел "Противодействие терроризму и его идеологии"</div>
+          </div>
+          <div class="d-flex align-items-center gap-4 fs-5">
+            <div><img src="{% static 'bootstrap/img/antiterror/useful-link-6.svg' %}" alt=""></div>
+            <div>Национальный антитеррористический комитет</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

@@ -1693,7 +1693,79 @@ summary p {
     animation: shine 3s infinite linear;
 }
 
+/* institut-it-styles end */
 .text-ylw {
     color: #ffbf31;
 }
-/* institut-it-styles end */
+
+.ylw-bg {
+   background-color: #ffbf31;
+}
+
+.white-bg-hov:hover {
+    background-color: #fff;
+}
+
+.btn-play {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    background-color: #fff;
+    border-radius: 50%;
+    border-style: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: ease-in-out;
+    transition-duration: .3s;
+}
+
+.btn-play:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.traslating-card {
+    transform: translateY(45%);
+    transition-duration: .3s;
+}
+
+a:hover .traslating-card {
+    transform: translateY(0%);
+}
+
+.glare:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70% 
+    );
+    top: 0;
+    left: -100px;
+    animation: shine 3s infinite linear;
+}
+
+.grey-bg-hov:hover{
+    background-color: #5c5c5c !important;
+    color: #fff; 
+}
+
+/* carousel styles */
+
+.owl-carousel .owl-wrapper-outer {
+    overflow: visible !important;
+}
+
+.owl-wrapper {
+    display: flex !important;
+    gap: 30px;
+}
+
+#antiterror_carousel_2 .owl-item {
+    width: 300px !important;
+}
