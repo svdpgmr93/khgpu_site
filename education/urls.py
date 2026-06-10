@@ -5,5 +5,5 @@ from .views import *
 app_name='education'
 
 urlpatterns = [
-    path('', include('education.urls', )),
+    path('edu-programs-catalog/', get_edu_catalog, name='edu_catalog'),
 ]
