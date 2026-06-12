@@ -14,7 +14,7 @@ class Kafedra(models.Model):
     name = models.CharField(max_length=255, verbose_name='Название кафедры')
     institut = models.ForeignKey('Institut', on_delete=models.CASCADE)
     kafedra_url = models.URLField(max_length=255, verbose_name='Ссылка на страницу кафедры', default='https://hgpurf.ru/')
-    karedra_tags = models.TextField(verbose_name='Теги кафедры') #Ставить через пробел
+    #karedra_tags = models.TextField(verbose_name='Теги кафедры') #Ставить через пробел
     kafedra_card_img = models.ImageField(upload_to='kafedra_images/', verbose_name='Изображение кафедры', default='default_kaf.jpg')
     #director = models.ForeignKey('Employee', on_delete=models.PROTECT, verbose_name='Заведующий', related_name="+")
     #about = models.TextField(verbose_name='О кафедре', blank=True)
