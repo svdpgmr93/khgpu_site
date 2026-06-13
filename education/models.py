@@ -118,12 +118,12 @@ class EduProgram(models.Model):
     about_program = RichTextField(verbose_name='О программе')
     exam_ege = RichTextField(verbose_name='Экзамены ЕГЭ')
     exam_spo = RichTextField(verbose_name='Экзамены СПО')
-    advantage = models.ForeignKey('EduProgramAdvantageText', on_delete=models.DO_NOTHING, verbose_name='Преимущество')
-    suitable = models.ForeignKey('Suitable', on_delete=models.DO_NOTHING, verbose_name='Кому подходит')
-    key_skills = models.ForeignKey('KeySkills', on_delete=models.DO_NOTHING, verbose_name='Чему научитесь')
-    program_structure = models.ForeignKey('ProgramStructure', on_delete=models.DO_NOTHING, verbose_name='Что будете изучать')
-    position = models.ForeignKey('Position', on_delete=models.DO_NOTHING, verbose_name='Кем будете работать')
-    perspective = models.ForeignKey('Perspective', on_delete=models.DO_NOTHING, verbose_name='Перспективы трудоустройства')
+    #advantage = models.ForeignKey('EduProgramAdvantageText', on_delete=models.DO_NOTHING, verbose_name='Преимущество')
+    #suitable = models.ForeignKey('Suitable', on_delete=models.DO_NOTHING, verbose_name='Кому подходит')
+    #key_skills = models.ForeignKey('KeySkills', on_delete=models.DO_NOTHING, verbose_name='Чему научитесь')
+    #program_structure = models.ForeignKey('ProgramStructure', on_delete=models.DO_NOTHING, verbose_name='Что будете изучать')
+    #position = models.ForeignKey('Position', on_delete=models.DO_NOTHING, verbose_name='Кем будете работать')
+    #perspective = models.ForeignKey('Perspective', on_delete=models.DO_NOTHING, verbose_name='Перспективы трудоустройства')
     kafedra_name = models.ForeignKey('Kafedra', on_delete=models.DO_NOTHING, verbose_name='Выпускающая кафедра')
     edu_card_img = models.ImageField(upload_to='edu_program_images/', verbose_name='Изображение карточки ОП')
     edu_prog_banner_img = models.ImageField(upload_to='edu_program_images/', verbose_name='Изображение баннера ОП')
@@ -151,6 +151,7 @@ class EduProgramEduForm(models.Model):
 
 
 class EduProgramAdvantageText(models.Model):
+    op = models.ForeignKey('EduProgram', on_delete=models.CASCADE, verbose_name='ОП')
     name = models.CharField(max_length=255, verbose_name="Название преимущества")
     text = RichTextField(verbose_name="Описание преимущества")
 
@@ -164,6 +165,7 @@ class EduProgramAdvantageText(models.Model):
 
 
 class Suitable(models.Model):
+    op = models.ForeignKey('EduProgram', on_delete=models.CASCADE, verbose_name='ОП')
     text = RichTextField(verbose_name='Кому подходит программа')
 
 
@@ -176,6 +178,7 @@ class Suitable(models.Model):
 
 
 class KeySkills(models.Model):
+    op = models.ForeignKey('EduProgram', on_delete=models.CASCADE, verbose_name='ОП')
     text = RichTextField(verbose_name='Чему научитесь')
 
 
@@ -187,6 +190,7 @@ class KeySkills(models.Model):
         return f"{self.text[0:50:]}"
 
 class ProgramStructure(models.Model):
+    op = models.ForeignKey('EduProgram', on_delete=models.CASCADE, verbose_name='ОП')
     name = models.CharField(max_length=255, verbose_name="Название профиля")
     text = RichTextField(verbose_name='Что будете изучать')
 
@@ -199,6 +203,7 @@ class ProgramStructure(models.Model):
         return f"{self.name}"
 
 class Position(models.Model):
+    op = models.ForeignKey('EduProgram', on_delete=models.CASCADE, verbose_name='ОП')
     text = RichTextField(verbose_name='Кем будете работать')
 
 
@@ -210,6 +215,7 @@ class Position(models.Model):
         return f"{self.text[0:50:]}"
 
 class Perspective(models.Model):
+    op = models.ForeignKey('EduProgram', on_delete=models.CASCADE, verbose_name='ОП')
     text = RichTextField(verbose_name="Перспективы трудоустройства")
 
 
