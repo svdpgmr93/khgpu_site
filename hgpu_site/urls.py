@@ -57,4 +57,7 @@ urlpatterns = [
     path('media/blog_rectora', blog_rectora, name='blog_rectora'),
     path('institutes/<str:institute_name>', institut, name='institute'),
     path('', include('education.urls', namespace='education')),
+    # Служебные приложения
+    path('ckeditor/', include('ckeditor_uploader.urls')),
 ]
+
