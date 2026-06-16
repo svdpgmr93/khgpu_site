@@ -1,0 +1,525 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&amp;subset=latin,cyrillic"
+        rel="stylesheet" />
+    <link type="text/css" href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link type="text/css" href="{% static 'bootstrap/css/main.css' %}" rel="stylesheet" />
+    <link rel="icon" href="{% static 'bootstrap/img/hgpu-yellow.webp' %}" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+    <title>Название образовательной программы</title>
+</head>
+
+<body>
+    <div style="
+        background-image: url('{% static 'bootstrap/img/edu-programs/edu-program-banner.jpg' %}');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 68.841% 100%;
+      " class="py-5 position-relative">
+        <div class="media-banner-overlay"></div>
+        <div class="container position-relative z-2">
+            <div class="py-2 row">
+                <div class="col">
+                    <div>
+                        <a href=""
+                            class="d-inline-block mb-4 py-3 px-5 bg-ylw rounded-4 text-decoration-none text-black">
+                            #Бакалавриат
+                        </a>
+                        <div class="mb-3 fs-1 fw-bold text-white">Математика и экономика</div>
+                        <div class="mb-4 fs-5 fw-semibold text-white">44.03.05 "Педагогическое образование (с двумя
+                            профилями подготовки)"</div>
+                        <div class="mb-3 fs-5 fw-bold text-white">Задать вопрос о программе:</div>
+                        <div class="mb-4 d-flex align-items-center gap-2">
+                            <a href=""
+                                class="d-inline-flex align-items-center gap-2 py-2 px-3 bg-transparrent border border-warning rounded-4 text-decoration-none text-white edu-program-contact-link">
+                                <div class="edu-program-contact-link-icon">
+                                    <img class="d-block w-100"
+                                        src="{% static 'bootstrap/img/edu-programs/phone-icon.svg' %}" alt="">
+                                    <img class="d-block w-100"
+                                        src="{% static 'bootstrap/img/edu-programs/phone-icon-hover.svg' %}" alt="">
+                                </div>
+                                <span>+7(989) 533-26-06</span>
+                            </a>
+                            <a href=""
+                                class="d-inline-flex align-items-center gap-2 py-2 px-3 bg-transparrent border border-warning rounded-4 text-decoration-none text-white edu-program-contact-link">
+                                <div class="edu-program-contact-link-icon">
+                                    <img class="d-block w-100"
+                                        src="{% static 'bootstrap/img/edu-programs/max-icon.svg' %}" alt="">
+                                    <img class="d-block w-100"
+                                        src="{% static 'bootstrap/img/edu-programs/max-icon-hover.png' %}" alt="">
+                                </div>
+                                <span>Чат абитуриентов института</span>
+                            </a>
+                            <a href=""
+                                class="d-inline-flex align-items-center gap-2 py-2 px-3 bg-transparrent border border-warning rounded-4 text-decoration-none text-white edu-program-contact-link">
+                                <div class="edu-program-contact-link-icon">
+                                    <img class="d-block w-100"
+                                        src="{% static 'bootstrap/img/edu-programs/tg-icon.svg' %}" alt="">
+                                    <img class="d-block w-100"
+                                        src="{% static 'bootstrap/img/edu-programs/tg-icon-hover.svg' %}" alt="">
+                                </div>
+                                <span>Чат абитуриентов института</span>
+                            </a>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <img src="{% static 'bootstrap\img\institut-it\icons\icon-it.webp' %}" alt="" />
+                            <div>
+                                <a href="" class="d-block text-decoration-none text-white fs-5">Кафедра цифрового
+                                    образования, математики и физики</a>
+                                <a href="" class="d-block text-decoration-none text-white fs-5 fw-bold">Институт
+                                    информационных технологий</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="bg-ylw px-5 py-3 rounded-4">
+                        <div class="text-uppercase fs-3 fw-medium text-black">Поступление 2026</div>
+                        <div class="contact-gray-back mb-4 px-4 py-4 rounded-4 fs-7 text-white">
+                            <div class="mb-3 d-flex">
+                                <div class="d-flex flex-column w-50">
+                                    <img src="{% static 'bootstrap/img/edu-programs/book-icon.svg' %}" alt=""
+                                        class="w-25">
+                                    <div class="fw-bold">Форма и период обучения</div>
+                                </div>
+                                <div class="d-flex flex-column w-50">
+                                    <img src="{% static 'bootstrap/img/edu-programs/places-icon.svg' %}" alt=""
+                                        class="w-25">
+                                    <div class="fw-bold">Количество мест <span class="fw-medium opacity-75">Бюджет
+                                            Коммерция</span></div>
+                                </div>
+                            </div>
+                            <div class="mb-3 border-top border-white opacity-75"></div>
+                            <div class="fw-bold text-uppercase fs-6">очная:</div>
+                            <div class="d-flex fs-6">
+                                <div class="w-50">-</div>
+                                <div class="w-25 text-center">-</div>
+                                <div class="w-25 text-center">-</div>
+                            </div>
+                            <div class="fw-bold text-uppercase fs-6">заочная:</div>
+                            <div class="d-flex fs-6">
+                                <div class="w-50">5 лет 6 месяцев</div>
+                                <div class="w-25 text-center">14</div>
+                                <div class="w-25 text-center">10</div>
+                            </div>
+                        </div>
+                        <a href=""
+                            class="mb-3 bg-red py-2 glare-link black-bg-hov d-block text-center rounded-3 fs-6 text-white">Как
+                            поступить</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-100 py-3 bg-ylw overflow-hidden fs-5 fw-medium">
+        <ul class="running-line">
+            <li class="pe-2">Диплом государственного образца</li>
+            <li class="pe-2">Более 1 500 бюджетных мест</li>
+            <li class="pe-2">Гибкий формат обучения</li>
+            <li class="pe-2">Возможность совмещать учебу и работу</li>
+            <li class="pe-2">Практикоориентированность обучения</li>
+            <li class="pe-2">Помощь в трудоустройстве</li>
+            <li class="pe-2">Диплом государственного образца</li>
+            <li class="pe-2">Более 1 500 бюджетных мест</li>
+            <li class="pe-2">Гибкий формат обучения</li>
+            <li class="pe-2">Возможность совмещать учебу и работу</li>
+            <li class="pe-2">Практикоориентированность обучения</li>
+            <li class="pe-2">Помощь в трудоустройстве</li>
+        </ul>
+    </div>
+    <div class="container mb-5 py-5">
+        <div class="mb-4">
+            <div class="row align-items-end">
+                <div class="col">
+                    <h1 class="fw-bold">Описание<br>образовательной программы</h1>
+                    <p class="fs-5">Программа направлена на подготовку компетентных педагогов, специализирующихся
+                        одновременно в двух
+                        областях знаний – <span class="fw-bold">математике и экономике.</span></p>
+                    <p class="mb-0 fs-5">Современное образование требует педагогов нового формата – тех, кто не просто
+                        владеет предметными
+                        знаниями, а умеет показать их связь с реальной жизнью, объяснить, как математические законы
+                        управляют экономическими процессами, а экономические решения опираются на строгий расчет.</p>
+                    <p class="mb-0 fs-5">Образовательная программа создана, чтобы подготовить именно таких специалистов.
+                    </p>
+                </div>
+                <div class="col">
+                    <p class="mb-0 fs-5">
+                        <span class="fw-bold">"Математика и экономика"</span> – междисциплинарная программа
+                        педагогического
+                        направления для тех, кто
+                        хочет профессионально <span class="fw-bold">преподавать сразу два востребованных школьных
+                            предмета</span>, развивать у учеников
+                        математическое и экономическое мышление и уверенно работать с цифровыми образовательными
+                        технологиями.
+                    </p>
+                    <p class="fs-5">Учебный план построен в соответствии с ФГОС ВО по направлению "Педагогическое
+                        образование (с двумя
+                        профилями подготовки)" и сочетает фундаментальную математическую подготовку, основы экономики и
+                        методики преподавания обоих предметов.</p>
+                    <p class="mb-0 fs-5 fw-bold">
+                        Выпускники программы становятся педагогами, способными вдохновлять учеников на изучение точных
+                        наук
+                        через призму актуальных экономических задач.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-ylw rounded-4">
+            <div class="px-5 py-3 d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center gap-2">
+                    <img style="width: 60px" src="{% static 'bootstrap/img/edu-programs/edu-prog-info-icon.svg' %}"
+                        alt="">
+                    <div>
+                        <div class="fw-bold fs-5">Образовательная программа "Математика и экономика" | бакалавриат</div>
+                        <div>44.03.05 "Педагогическое образование (с двумя профилями подготовки)"</div>
+                    </div>
+                </div>
+                <div class="px-5 py-2 bg-white fw-bold rounded-3">
+                    2026
+                </div>
+            </div>
+            <div class="px-5 py-5 rounded-4 management-gray-back">
+                <div class="row">
+                    <div class="col-3 h-100">
+                        <div class="py-3 px-4 bg-ylw rounded-4 fw-bold fs-5">
+                            Минимальное количество баллов для участия в конкурсе
+                        </div>
+                    </div>
+                    <div class="col-4 h-100">
+                        <div class="mb-2 fs-5 fw-bold lh-sm">
+                            Общеобразовательные вступительные испытания / результаты ЕГЭ
+                        </div>
+                        <ol class="mb-0">
+                            <li>Обществознание (42)</li>
+                            <li>Математика (40) / Информатика (45)</li>
+                            <li>Русский язык (42)</li>
+                        </ol>
+                    </div>
+                    <div class="col h-100">
+                        <div class="mb-2 fs-5 fw-bold lh-sm">
+                            Вступительные испытания на базе профессионального образования
+                        </div>
+                        <ol class="mb-0">
+                            <li>Основы математики (35)</li>
+                            <li>Информатика и информационно-коммуникационные технологии (35)</li>
+                            <li>Русский язык (42)</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="py-5 bg-gray position-relative">
+        <div class="container">
+            <div class="mb-5 w-75 fs-1 fw-bold">Преимущества образовательной программы</div>
+            <div class="row row-cols-2 w-75 g-5">
+                <div class="col mt-3">
+                    <div class="d-flex flex-column gap-3">
+                        <img style="width: 60px;"
+                            src="{% static 'bootstrap/img/edu-programs/advantage-mark-icon.svg' %}" alt="">
+                        <div class="fw-bold fs-5">Двойной профиль подготовки педагогов</div>
+                        <div class="fs-5">Больше возможностей трудоустройства и профессионального роста</div>
+                    </div>
+                </div>
+                <div class="col mt-3">
+                    <div class="d-flex flex-column gap-3">
+                        <img style="width: 60px;"
+                            src="{% static 'bootstrap/img/edu-programs/advantage-mark-icon.svg' %}" alt="">
+                        <div class="fw-bold fs-5">Преподаватели</div>
+                        <div class="fs-5">Кандидаты и доктора наук, практикующие педагоги-математики и экономисты</div>
+                    </div>
+                </div>
+                <div class="col mt-3">
+                    <div class="d-flex flex-column gap-3">
+                        <img style="width: 60px;"
+                            src="{% static 'bootstrap/img/edu-programs/advantage-mark-icon.svg' %}" alt="">
+                        <div class="fw-bold fs-5">Доступ к электронным образовательным ресурсам университета</div>
+                        <div class="fs-5">Обучение ведется на базе электронной образовательной платформы ХГПУ</div>
+                    </div>
+                </div>
+                <div class="col mt-3">
+                    <div class="d-flex flex-column gap-3">
+                        <img style="width: 60px;"
+                            src="{% static 'bootstrap/img/edu-programs/advantage-mark-icon.svg' %}" alt="">
+                        <div class="fw-bold fs-5">Реальная практическая
+                            подготовка</div>
+                        <div class="fs-5">Сотрудничество с образовательными организациями и платформами для прохождения
+                            практик и стажировок</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img class="edu-program-advantage-img"
+            src="{% static 'bootstrap/img/edu-programs/edu-program-advantage-img.jpg' %}" alt="">
+    </div>
+    <div style="background-color: rgb(249, 249, 249);" class="mb-5 pt-5">
+        <div class="container">
+            <div class="mb-5 fs-1 fw-bold text-center">Кому подходит программа</div>
+            <div class="row g-5">
+                <div class="col text-center border-end border-dark">
+                    <img style="margin-bottom: 30px; width: 100px;"
+                        src="{% static 'bootstrap/img/edu-programs/suitable-icon1.svg' %}" alt="">
+                    <div class="fs-5">Абитуриентам, которым близки <span class="fw-bold">точные науки</span> и <span
+                            class="fw-bold">социально-экономические дисциплины</span></div>
+                </div>
+                <div class="col text-center border-end border-dark">
+                    <img style="margin-bottom: 30px; width: 100px;"
+                        src="{% static 'bootstrap/img/edu-programs/suitable-icon2.svg' %}" alt="">
+                    <div class="fs-5">Тем, кто видит себя <span class="fw-bold">учителем</span> математики и экономики,
+                        <span class="fw-bold">тьютором</span>, <span class="fw-bold">классным руководителем</span>,
+                        <span class="fw-bold">наставником</span> проектной деятельности
+                    </div>
+                </div>
+                <div class="col text-center">
+                    <img style="margin-bottom: 30px; width: 100px;"
+                        src="{% static 'bootstrap/img/edu-programs/suitable-icon3.svg' %}" alt="">
+                    <div class="fs-5">Выпускникам, ориентированным на работу в <span class="fw-bold">школе</span>,<span
+                            class="fw-bold">колледже</span>, <span class="fw-bold">центрах допобразования</span>,
+                        а также на дальнейшую <span class="fw-bold">магистратуру</span></div>
+                </div>
+            </div>
+        </div>
+        <svg role="presentation" class="t796__svg" style="height:8vw; width: 100%; fill: #fff;"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 200" preserveAspectRatio="none">
+            <path d="M640 195.5L0 0v200h1280V0"></path>
+        </svg>
+    </div>
+    <div class="container">
+        <div class="py-5">
+            <div class="mb-4 fs-1 fw-bold">Чему вы научитесь</div>
+            <div class="mb-3 fs-5">Ключевые навыки после обучения</div>
+            <div class="ps-5">
+                <div class="mb-3 d-flex align-items-center gap-5">
+                    <div class="num-circle bg-ylw fs-5 fw-bold">1</div>
+                    <div class="fs-5 fw-medium">Глубоко понимать школьный курс математики, ориентироваться в экономике,
+                        применять современные методики в педагогической деятельности</div>
+                </div>
+                <div class="mb-3 d-flex align-items-center gap-5">
+                    <div class="num-circle bg-ylw fs-5 fw-bold">2</div>
+                    <div class="fs-5 fw-medium">Глубоко понимать школьный курс математики, ориентироваться в экономике,
+                        применять современные методики в педагогической деятельности</div>
+                </div>
+                <div class="mb-3 d-flex align-items-center gap-5">
+                    <div class="num-circle bg-ylw fs-5 fw-bold">3</div>
+                    <div class="fs-5 fw-medium">Глубоко понимать школьный курс математики, ориентироваться в экономике,
+                        применять современные методики в педагогической деятельности</div>
+                </div>
+                <div class="mb-3 d-flex align-items-center gap-5">
+                    <div class="num-circle bg-ylw fs-5 fw-bold">4</div>
+                    <div class="fs-5 fw-medium">Глубоко понимать школьный курс математики, ориентироваться в экономике,
+                        применять современные методики в педагогической деятельности</div>
+                </div>
+            </div>
+        </div>
+        <div class="py-5">
+            <div class="row align-items-center">
+                <div class="col">
+                    <div class="w-75">
+                        <div class="mb-2 fs-1 fw-bold">Что будете изучать</div>
+                        <div class="mb-2 fs-6 opacity-75">Структура программы<br>
+                            (содержательные блоки/модули, дисциплины)</div>
+                        <img class="w-100 rounded-4" src="{% static 'bootstrap/img/edu-programs/structure-img.png' %}"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <details class="details border-top-secondary" name="basic-info-accordion">
+                        <summary class="details-title">
+                            <p class="fw-bold fs-4">Математический профиль</p>
+                            <i class="fa-solid fa-angle-down fa-2xl my-accordion-icon"></i>
+                        </summary>
+                        <div class="details-content">
+                            <ul class="fs-5">
+                                <li>Математический анализ</li>
+                                <li>Линейная алгебра</li>
+                                <li>Геометрия</li>
+                                <li>Теория вероятностей и математическая статистика</li>
+                                <li>Комбинаторика и графы</li>
+                                <li>Методы решения задач</li>
+                                <li>Дискретная математика</li>
+                                <li>Методы оптимизации</li>
+                            </ul>
+                        </div>
+                    </details>
+                    <details class="details border-top-secondary" name="basic-info-accordion">
+                        <summary class="details-title">
+                            <p class="fw-bold fs-4">Экономический профиль</p>
+                            <i class="fa-solid fa-angle-down fa-2xl my-accordion-icon"></i>
+                        </summary>
+                        <div class="details-content">
+                            <ul class="fs-5">
+                                <li>Микроэкономика</li>
+                                <li>Макроэкономика</li>
+                                <li>Финансы и кредит</li>
+                                <li>Основы бухгалтерского учёта</li>
+                                <li>Эконометрика</li>
+                                <li>Предпринимательство и проектирование бизнес-моделей</li>
+                                <li>Исновы финансового анализа</li>
+                                <li>Экономика предприятия</li>
+                            </ul>
+                        </div>
+                    </details>
+                    <details class="details border-top-secondary" name="basic-info-accordion">
+                        <summary class="details-title">
+                            <p class="fw-bold fs-4">Педагогический блок</p>
+                            <i class="fa-solid fa-angle-down fa-2xl my-accordion-icon"></i>
+                        </summary>
+                        <div class="details-content">
+                            <ul class="fs-5">
+                                <li>Общая и возрастная психология</li>
+                                <li>Педагогика</li>
+                                <li>Методика преподавания математики</li>
+                                <li>Методика преподавания экономики</li>
+                                <li>Инклюзивное образование</li>
+                                <li>Современные образовательные технологии (EdTech-инструменты учителя, LMS и
+                                    онлайн-курсы, визуализация данных, учебные симуляторы)</li>
+                                <li>Конструирование учебных курсов и оценочных средств, подготовка к ОГЭ/ЕГЭ</li>
+                            </ul>
+                        </div>
+                    </details>
+                    <details class="details border-top-secondary mb-0" name="basic-info-accordion">
+                        <summary class="details-title">
+                            <p class="fw-bold fs-4">Практический блок</p>
+                            <i class="fa-solid fa-angle-down fa-2xl my-accordion-icon"></i>
+                        </summary>
+                        <div class="details-content">
+                            <ul class="fs-5">
+                                <li>Учебные практики по математике и экономике на младших курсах</li>
+                                <li>Педагогическая практика в школах под руководством опытных наставников</li>
+                                <li>Научно‑исследовательская работа</li>
+                                <li>Подготовка и защита выпускной квалификационной работы</li>
+                            </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="py-5 cafedra-yellow-back">
+        <div class="container">
+            <div class="mb-3 fs-1 fw-bold">Кем вы сможете работать</div>
+            <div class="mb-5 fs-5">Выпускники образовательной программы успешно занимают должности</div>
+            <div class="fs-5">
+                <span class="mb-3 me-3 py-3 px-5 d-inline-block bg-white rounded-5">Математик</span>
+                <span class="mb-3 me-3 py-3 px-5 d-inline-block bg-white rounded-5">Учитель математики</span>
+                <span class="mb-3 me-3 py-3 px-5 d-inline-block bg-white rounded-5">Экономист</span>
+                <span class="mb-3 me-3 py-3 px-5 d-inline-block bg-white rounded-5">Учитель экономических
+                    дисциплин</span>
+                <span class="mb-3 me-3 py-3 px-5 d-inline-block bg-white rounded-5">Руководитель математических кружков
+                    и секций</span>
+                <span class="mb-3 me-3 py-3 px-5 d-inline-block bg-white rounded-5">Тьютор</span>
+                <span class="mb-3 me-3 py-3 px-5 d-inline-block bg-white rounded-5">Репетитор</span>
+                <span class="mb-3 me-3 py-3 px-5 d-inline-block bg-white rounded-5">Педагог-организатор в школе</span>
+            </div>
+        </div>
+    </div>
+    <div class="py-5">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col h-100">
+                    <div class="position-relative h-100">
+                        <img style="width: 380px; height: 450px; border-radius: 15px; position: absolute; top: 0; left: 0;"
+                            src="{% static 'bootstrap/img/edu-programs/perspective-img-1.jpg' %}" alt="">
+                        <img style="width: 220px; height: 260px; border-radius: 15px; position: absolute; top: 70px; left: 54%;"
+                            src="{% static 'bootstrap/img/edu-programs/perspective-img-2.jpg' %}" alt="">
+                        <img style="width: 350px; height: 220px; border-radius: 15px; position: absolute; top: 350px; left: 20%;"
+                            src="{% static 'bootstrap/img/edu-programs/perspective-img-3.jpg' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-5 h-100">
+                    <div class="mb-4 fw-bold fs-1 lh-sm">Перспективы трудоустройства</div>
+                    <div class="mb-3 fw-bold fs-5">Выпускники программы готовы к профессиональной деятельности в:</div>
+                    <div>
+                        <ul class="fs-5">
+                            <li>Общеобразовательных школах, лицеях и гимназиях</li>
+                            <li>Учреждениях среднего специального образования</li>
+                            <li>Центрах дополнительного образования и олимпиадной подготовки</li>
+                            <li>Онлайн-школах и образовательных платформах</li>
+                            <li>Органах управления образованием</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pt-5">
+        <div class="container">
+            <div class="py-5 px-5 rounded-4 contact-gray-back">
+                <div class="row px-4 align-items-center">
+                    <div class="col">
+                        <div class="mb-3 fw-bold fs-4 text-ylw">Выпускающая кафедра</div>
+                        <div class="mb-4 d-flex align-items-center gap-2">
+                            <img src="{% static 'bootstrap\img\institut-it\icons\icon-it.webp' %}" alt="" />
+                            <div>
+                                <a href="" class="d-block text-decoration-none text-white fw-bold fs-2 lh-sm">Кафедра
+                                    цифрового
+                                    образования, математики и физики</a>
+                            </div>
+                        </div>
+                        <div class="fw-medium fs-6">
+                            <span class="mb-3 me-3 py-2 px-3 d-inline-block bg-white rounded-5">#Базы_практики</span>
+                            <span class="mb-3 me-3 py-2 px-3 d-inline-block bg-white rounded-5">#Преподаватели</span>
+                            <span class="mb-3 me-3 py-2 px-3 d-inline-block bg-white rounded-5">#Наука</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <img style="width: 100%; height: 90%; border-radius: 15px;"
+                            src="{% static 'bootstrap/img/edu-programs/edu-prog-kaf.jpg' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg role="presentation" class="t796__svg" style="height:8vw; width: 100%; fill: #efefef;"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 200" preserveAspectRatio="none">
+            <path d="M640 195.5L0 0v200h1280V0"></path>
+        </svg>
+    </div>
+    <div style="background-color: #efefef;" class="py-5">
+        <div class="container">
+            <div class="mb-5 fw-bold fs-1 text-center">
+                Стань студентом Херсонского государственного педагогического университета
+            </div>
+            <div class="row align-items-center">
+                <div class="col">
+                    <a href="" class="mb-2 glare-link bg-dark text-white rounded-4 pinky-link">
+                        <img style="width: 30px;" class="me-2" src="{% static 'bootstrap/img/edu-programs/hgpu-icon.png' %}" alt="">
+                        Перейти на сайт приемной комиссии
+                    </a>
+                    <a href="" class="mb-3 glare-link ylw-bg text-black rounded-4 pinky-link">
+                        <img style="width: 30px;" class="me-2" src="{% static 'bootstrap/img/edu-programs/epgu-icon.png' %}" alt="">
+                        Подать документы
+                    </a>
+                    <div class="fw-bold fs-6">
+                        Узнай все о поступлении в ХГПУ
+                    </div>
+                    <ul class="fs-6">
+                        <li>правила приема и направления подготовки</li>
+                        <li>ключевые даты и этапы зачисления</li>
+                        <li>перечень документов</li>
+                        <li>предоставление особых прав и преимуществ, учет индивидуальных достижений</li>
+                        <li>программы вступительных испытаний</li>
+                        <li>стоимость обучения</li>
+                        <li>конкурсные списки и результаты поступления</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <img class="w-100" src="{% static 'bootstrap/img/edu-programs/priemka.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+<script src="{% static 'bootstrap/js/main.js'%}"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>

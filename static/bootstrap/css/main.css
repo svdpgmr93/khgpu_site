@@ -1307,7 +1307,7 @@ summary p {
     );
     top: 0;
     left: -100px;
-    animation: shine 2s infinite linear;
+    animation: shine 4s infinite linear;
 }
 
 @keyframes shine {
@@ -1818,3 +1818,199 @@ a:hover .traslating-card {
 #antiterror_carousel_2 .owl-item {
     width: 300px !important;
 }
+
+/* edu catalog */
+.fs-0 {
+    font-size: 50px;
+}
+
+.outline-none {
+    outline: none;
+}
+
+.edu-program-card-link:hover{
+    background-color: #ffbf31;
+    box-shadow: 0px 10px 40px -2px rgba(0, 11, 48, 0.3);
+    transition: opacity .2s ease-out, box-shadow .3s ease-in-out;
+}
+
+.edu-prog-tab.active {
+    background-color: #ffffff !important;
+}
+
+.form-check-input:checked {
+    background-color: #ffbf31 !important;
+}
+
+.edu-catalog-img {
+    width: 50%;
+    position: absolute;
+    top: 0; 
+    left: 50%;
+}
+
+/* responsive edu-catalog styles */
+
+@media (max-width: 576px) {
+    .edu-catalog-text {
+        font-size: 16px !important;
+        padding-top: 10px !important;
+    }
+    .edu-catalog-title {
+        width: 100% !important;
+        font-size: 24px !important;
+        line-height: 1 !important;
+    }
+    .edu-catalog-subtitle {
+        margin-bottom: 40px !important;
+        font-size: 13px !important;
+        width: 50%;
+        line-height: 1;
+    }
+    .edu-catalog-banner-content {
+        width: 100% !important;
+        gap: 10px !important;
+    }
+    .edu-catalog-banner {
+        padding: 20px !important;
+    }
+    .edu-catalog-switcher {
+        padding: 10px !important;
+        gap: 4px !important;
+    }
+    .edu-catalog-switch-btn {
+        padding: 5px 10px !important;
+        font-size: 14px;
+    }
+    .edu-catalog-img {
+        top: 25%; 
+        left: 50%;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 375px) {
+    .edu-catalog-text {
+        font-size: 16px !important;
+        padding-top: 10px !important;
+    }
+    .edu-catalog-title {
+        width: 100% !important;
+        font-size: 20px !important;
+        line-height: 1 !important;
+    }
+    .edu-catalog-subtitle {
+        margin-bottom: 40px !important;
+        font-size: 12px !important;
+        width: 50%;
+        line-height: 1;
+    }
+    .edu-catalog-banner-content {
+        width: 100% !important;
+        gap: 10px !important;
+    }
+    .edu-catalog-banner {
+        padding: 20px !important;
+    }
+    .edu-catalog-switcher {
+        padding: 10px !important;
+        gap: 4px !important;
+    }
+    .edu-catalog-switch-btn {
+        padding: 5px 10px !important;
+        font-size: 12px;
+    }
+    .edu-catalog-img {
+        width: 60%;
+        top: 24%; 
+        left: 40%;
+        z-index: 1;
+    }
+}
+
+/* edu catalog */
+
+/* edu program */
+
+.edu-program-contact-link:hover .edu-program-contact-link-icon img:first-child {
+    order: 1;
+}
+
+.edu-program-contact-link:hover {
+    background-color: #ffbf31;
+}
+
+.edu-program-contact-link:hover span{
+    color: #000;
+}
+
+.edu-program-contact-link-icon {
+    width: 22px;
+    display: flex;
+    overflow: hidden;
+}
+
+.fs-7 {
+    font-size: 12px;
+}
+
+.bg-red {
+    background-color: #d80707;
+}
+
+.black-bg-hov:hover {
+    background-color: #000;
+}
+
+.running-line {
+    margin-bottom: 0;
+    display: inline-flex;
+    gap: 2rem;
+    white-space: nowrap;
+    animation: running-line 40s linear infinite;
+}
+
+@keyframes running-line {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.edu-program-advantage-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 750px;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.angle-block {
+    /* height:  120px;
+    background-color: rgb(249, 249, 249); */
+    width: 0;
+    height: 0;
+    border-top: 120px solid #20a3bf;
+    border-left: 1250px solid transparent;
+    border-right: 1250px solid transparent;
+}
+
+.num-circle {
+    width: 60px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pinky-link:hover {
+    box-shadow: none !important;
+    background-color: #db0986 !important;
+    color: #fff !important;
+}
+
+/* edu program */

@@ -1,0 +1,770 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&amp;subset=latin,cyrillic"
+        rel="stylesheet" />
+    <link type="text/css" href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link type="text/css" href="{% static 'bootstrap/css/main.css' %}" rel="stylesheet" />
+    <link rel="icon" href="{% static 'bootstrap/img/hgpu-yellow.webp' %}" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+    <title>ХГПУ | Каталог образовательных программ</title>
+</head>
+<body>
+    <div class="container py-4">
+        <div style="
+        background-image: url('{% static 'bootstrap/img/edu-programs/edu-catalog-bg.png' %}');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+      " class="py-5 px-5 position-relative overflow-hidden rounded-4 edu-catalog-banner">
+            <div class="d-flex flex-column gap-4 w-100 edu-catalog-banner-content position-relative z-2">
+                <div class="w-50 fw-bold fs-0 lh-sm text-white edu-catalog-title">Каталог образовательных<br>программ</div>
+                <div class="mb-3 fw-semibold fs-5 text-white edu-catalog-subtitle w-50">Найдите подходящий вариант в пару кликов и узнайте подробности,
+                    чтобы сделать осознанный выбор!
+                </div>
+                <div>
+                    <ul class="nav nav-pills d-inline-flex gap-4 bg-ylw px-4 py-3 rounded-5 edu-catalog-switcher" id="pills-tab"
+                        role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="edu-prog-tab bg-transparent border-0 px-4 py-2 text-black rounded-5 active edu-catalog-switch-btn"
+                                id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button"
+                                role="tab" aria-controls="pills-home" aria-selected="true">
+                                Бакалавриат
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="edu-prog-tab bg-transparent border-0 px-4 py-2 text-black rounded-5 edu-catalog-switch-btn"
+                                id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                                type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">Магистратура</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <img class="edu-catalog-img"
+                src="{% static 'bootstrap/img/edu-programs/edu-catalog-bg-people.png' %}" alt="">
+        </div>
+        <div class="pt-5 pb-2 fs-5 edu-catalog-text">
+            <p class="mb-4">Добро пожаловать в сервис навигации по образовательным программам Херсонского
+                государственного
+                педагогического университета!</p>
+            <p class="mb-4">Сервис представлен в виде каталога и содержит структурированный перечень образовательных
+                программ
+                университета, на которые вы можете поступить в 2026 году. В каталоге вы найдёте программы по институтам,
+                кафедрам и направлениям подготовки. Для каждой программы на отдельной странице представлены ключевые
+                сведения: форма и период обучения, количество мест, вступительные испытания, ключевые блоки/модули
+                дисциплин, преимущества и перспективы трудоустройства.</p>
+            <p>Удобный интерфейс позволяет быстро фильтровать программы для последующего перехода на страницу
+                образовательной программы для ознакомления с ее содержанием, условиями и возможностями поступления.</p>
+        </div>
+        <div class="mb-5 py-5 px-5 cafedra-yellow-back rounded-4">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <button type="button"
+                        class="w-100 px-3 py-3 d-flex align-items-center justify-content-between border-0 outline-none rounded-3 bg-white"
+                        data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                        <div>Форма обучения</div><i class="fa-solid fa-caret-down fa-lg" style="color: #ffbf31;"></i>
+                    </button>
+                    <div class="position-relative">
+                        <form class="dropdown-menu p-4 position-absolute w-100">
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduForm1">
+                                <label class="form-check-label" for="eduForm1">
+                                    Заочная
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduForm2">
+                                <label class="form-check-label" for="eduForm2">
+                                    Очная
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduForm3">
+                                <label class="form-check-label" for="eduForm3">
+                                    Очно-заочная
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col">
+                    <button type="button"
+                        class="w-100 px-3 py-3 d-flex align-items-center justify-content-between border-0 outline-none rounded-3 bg-white"
+                        data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                        <div>Основа финансирования</div><i class="fa-solid fa-caret-down fa-lg"
+                            style="color: #ffbf31;"></i>
+                    </button>
+                    <div class="position-relative">
+                        <form class="dropdown-menu p-4 position-absolute w-100">
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduBudget">
+                                <label class="form-check-label" for="eduBudget">
+                                    Бюджет
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduContract">
+                                <label class="form-check-label" for="eduContract">
+                                    Коммерция
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col">
+                    <button type="button"
+                        class="w-100 px-3 py-3 d-flex align-items-center justify-content-between border-0 outline-none rounded-3 bg-white"
+                        data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                        <div>Период обучения</div><i class="fa-solid fa-caret-down fa-lg" style="color: #ffbf31;"></i>
+                    </button>
+                    <div class="position-relative">
+                        <form class="dropdown-menu p-4 position-absolute w-100">
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduPeriod1">
+                                <label class="form-check-label" for="eduPeriod1">
+                                    4 года
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduPeriod2">
+                                <label class="form-check-label" for="eduPeriod2">
+                                    4 года 6 месяцев
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduPeriod3">
+                                <label class="form-check-label" for="eduPeriod3">
+                                    5 лет
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduPeriod4">
+                                <label class="form-check-label" for="eduPeriod4">
+                                    5 лет 6 месяцев
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col">
+                    <button type="button"
+                        class="w-100 px-3 py-3 d-flex align-items-center justify-content-between border-0 outline-none rounded-3 bg-white"
+                        data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                        <div>Направление подготовки</div><i class="fa-solid fa-caret-down fa-lg"
+                            style="color: #ffbf31;"></i>
+                    </button>
+                    <div class="position-relative">
+                        <form style="max-height: 350px; overflow-y: scroll;"
+                            class="dropdown-menu p-4 position-absolute w-100">
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduBakProgName1">
+                                <label class="form-check-label" for="eduBakProgName1">
+                                    05.03.06 "Экология и природопользование"
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduBakProgName2">
+                                <label class="form-check-label" for="eduBakProgName2">
+                                    06.03.01 "Биология"
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduBakProgName3">
+                                <label class="form-check-label" for="eduBakProgName3">
+                                    09.03.04 "Программная инженерия"
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduBakProgName4">
+                                <label class="form-check-label" for="eduBakProgName4">
+                                    37.03.01 "Психология"
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduBakProgName5">
+                                <label class="form-check-label" for="eduBakProgName5">
+                                    38.03.02 "Менеджмент"
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduBakProgName6">
+                                <label class="form-check-label" for="eduBakProgName6">
+                                    38.03.04 "Государственное и муниципальное управление"
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduBakProgName7">
+                                <label class="form-check-label" for="eduBakProgName7">
+                                    39.03.03 "Организация работы с молодежью"
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduBakProgName8">
+                                <label class="form-check-label" for="eduBakProgName8">
+                                    40.03.01 "Юриспруденция"
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduBakProgName9">
+                                <label class="form-check-label" for="eduBakProgName9">
+                                    42.03.02 "Журналистика"
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduBakProgName10">
+                                <label class="form-check-label" for="eduBakProgName10">
+                                    42.03.04 Телевидение
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduBakProgName11">
+                                <label class="form-check-label" for="eduBakProgName11">
+                                    43.03.01 "Сервис"
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduBakProgName12">
+                                <label class="form-check-label" for="eduBakProgName12">
+                                    43.03.02 "Туризм"
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduBakProgName13">
+                                <label class="form-check-label" for="eduBakProgName13">
+                                    43.03.03 "Гостиничное дело"
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduBakProgName14">
+                                <label class="form-check-label" for="eduBakProgName14">
+                                    44.03.01 "Педагогическое образование"
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduBakProgName15">
+                                <label class="form-check-label" for="eduBakProgName15">
+                                    44.03.01 «Педагогическое образование»
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduBakProgName16">
+                                <label class="form-check-label" for="eduBakProgName16">
+                                    44.03.01 Педагогическое образование
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduBakProgName17">
+                                <label class="form-check-label" for="eduBakProgName17">
+                                    44.03.02 "Психолого-педагогическое образование"
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduBakProgName18">
+                                <label class="form-check-label" for="eduBakProgName18">
+                                    44.03.03 "Специальное (дефектологическое) образование"
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduBakProgName19">
+                                <label class="form-check-label" for="eduBakProgName19">
+                                    44.03.05 "Педагогическое образование (с двумя профилями подготовки)"
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduBakProgName20">
+                                <label class="form-check-label" for="eduBakProgName20">
+                                    44.03.05 «Педагогическое образование (с двумя профилями подготовки)»
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduBakProgName21">
+                                <label class="form-check-label" for="eduBakProgName21">
+                                    44.03.05 Педагогическое образование (с двумя профилями подготовки)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduBakProgName22">
+                                <label class="form-check-label" for="eduBakProgName22">
+                                    44.04.03 "Специальное (дефектологическое) образование"
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduBakProgName23">
+                                <label class="form-check-label" for="eduBakProgName23">
+                                    45.03.02 "Лингвистика"
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduBakProgName24">
+                                <label class="form-check-label" for="eduBakProgName24">
+                                    49.03.02 "Физическая культура для лиц с отклонениями в состоянии здоровья
+                                    (адаптивная физическая культура)"
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduBakProgName25">
+                                <label class="form-check-label" for="eduBakProgName25">
+                                    49.03.04 "Спорт"
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduBakProgName26">
+                                <label class="form-check-label" for="eduBakProgName26">
+                                    51.03.01 Культурология
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduBakProgName27">
+                                <label class="form-check-label" for="eduBakProgName27">
+                                    54.03.01 Дизайн
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col">
+                    <button type="button"
+                        class="w-100 px-3 py-3 d-flex align-items-center justify-content-between border-0 outline-none rounded-3 bg-white"
+                        data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                        <div>Институт</div><i class="fa-solid fa-caret-down fa-lg" style="color: #ffbf31;"></i>
+                    </button>
+                    <div class="position-relative">
+                        <form class="dropdown-menu p-4 position-absolute w-100">
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="institutName1">
+                                <label class="form-check-label" for="institutName1">
+                                    Институт естествознания, физической культуры и спорта
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="institutName2">
+                                <label class="form-check-label" for="institutName2">
+                                    Институт информационных технологий
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="institutName3">
+                                <label class="form-check-label" for="institutName3">
+                                    Институт культуры и искусств
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="institutName4">
+                                <label class="form-check-label" for="institutName4">
+                                    Институт педагогического и специального образования
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="institutName5">
+                                <label class="form-check-label" for="institutName5">
+                                    Институт психологии
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="institutName6">
+                                <label class="form-check-label" for="institutName6">
+                                    Институт управления и права
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="institutName7">
+                                <label class="form-check-label" for="institutName7">
+                                    Институт филологии и социальных коммуникаций
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col">
+                    <button type="button"
+                        class="w-100 px-3 py-3 d-flex align-items-center justify-content-between border-0 outline-none rounded-3 bg-white"
+                        data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                        <div>Кафедра</div><i class="fa-solid fa-caret-down fa-lg" style="color: #ffbf31;"></i>
+                    </button>
+                    <div class="position-relative">
+                        <form style="max-height: 350px; overflow-y: scroll;"
+                            class="dropdown-menu p-4 position-absolute w-100">
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduFormKafName1">
+                                <label class="form-check-label" for="eduFormKafName1">
+                                    Кафедра естественных наук
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduFormKafName2">
+                                <label class="form-check-label" for="eduFormKafName2">
+                                    Кафедра журналистики и социальных коммуникаций
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduFormKafName3">
+                                <label class="form-check-label" for="eduFormKafName3">
+                                    Кафедра изобразительного искусства и дизайна
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduFormKafName4">
+                                <label class="form-check-label" for="eduFormKafName4">
+                                    Кафедра изящных искусств
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduFormKafName5">
+                                <label class="form-check-label" for="eduFormKafName5">
+                                    Кафедра иностранной филологии
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduFormKafName6">
+                                <label class="form-check-label" for="eduFormKafName6">
+                                    Кафедра культурологии
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduFormKafName7">
+                                <label class="form-check-label" for="eduFormKafName7">
+                                    Кафедра менеджмента, сервиса и туризма
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduFormKafName8">
+                                <label class="form-check-label" for="eduFormKafName8">
+                                    Кафедра общей и социальной психологии
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduFormKafName9">
+                                <label class="form-check-label" for="eduFormKafName9">
+                                    Кафедра педагогики и образовательных технологий
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduFormKafName10">
+                                <label class="form-check-label" for="eduFormKafName10">
+                                    Кафедра прикладной психологии и развития личности
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduFormKafName11">
+                                <label class="form-check-label" for="eduFormKafName11">
+                                    Кафедра программной инженерии и информационных технологи
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduFormKafName12">
+                                <label class="form-check-label" for="eduFormKafName12">
+                                    Кафедра публичного управления и делового администрирования
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduFormKafName13">
+                                <label class="form-check-label" for="eduFormKafName13">
+                                    Кафедра русского языка и литературы
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduFormKafName14">
+                                <label class="form-check-label" for="eduFormKafName14">
+                                    Кафедра специального образования
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduFormKafName15">
+                                <label class="form-check-label" for="eduFormKafName15">
+                                    Кафедра спорта и оздоровительных технологий
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduFormKafName16">
+                                <label class="form-check-label" for="eduFormKafName16">
+                                    Кафедра философии и истории
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduFormKafName17">
+                                <label class="form-check-label" for="eduFormKafName17">
+                                    Кафедра хореографии
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduFormKafName18">
+                                <label class="form-check-label" for="eduFormKafName18">
+                                    Кафедра цифрового образования, математики и физики
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-warning rounded-0" type="checkbox" value=""
+                                    id="eduFormKafName19">
+                                <label class="form-check-label" for="eduFormKafName19">
+                                    Кафедра юриспреденции
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form class="mb-4">
+            <div class="d-flex mb-3 border border-secondary-subtle rounded-4 overflow-hidden bg-light">
+                <input type="text" class="d-block w-100 border-0 px-4 py-3 bg-transparent outline-none"
+                    id="edu-prog-search" placeholder="ОБЩИЙ ПОИСК: введите название образовательной программы">
+                <button type="submit" class="bg-transparent border-0 outline-none"><i
+                        class="fa-brands fa-sistrix fa-rotate-90 fa-xl" style="color: rgb(0, 0, 0);"></i></button>
+            </div>
+        </form>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                tabindex="0">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <div class="col">
+                        <a href=""
+                            class="card h-100 text-decoration-none outline-none border-0 bg-gray rounded-4 overflow-hidden edu-program-card-link">
+                            <img src="{% static 'bootstrap\img\institut-it\edu_progs\bak-prog-3.jpg' %}"
+                                class="card-img-top" alt="..." />
+                            <div class="card-body d-flex flex-column justify-content-between px-4 pb-4">
+                                <h5 class="card-title fw-bold">Математика и экономика</h5>
+                                <p class="fs-6 pe-4">
+                                    44.03.05 "Педагогическое образование
+                                    (с двумя профилями подготовки)"
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href=""
+                            class="card h-100 text-decoration-none outline-none border-0 bg-gray rounded-4 overflow-hidden edu-program-card-link">
+                            <img src="{% static 'bootstrap\img\institut-it\edu_progs\bak-prog-1.jpg' %}"
+                                class="card-img-top" alt="..." />
+                            <div class="card-body d-flex flex-column justify-content-between px-4 pb-4">
+                                <h5 class="card-title fw-bold">Программно-информационные системы</h5>
+                                <p class="fs-6 pe-4">
+                                    09.03.04 "Программная инженерия"
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href=""
+                            class="card h-100 text-decoration-none outline-none border-0 bg-gray rounded-4 overflow-hidden edu-program-card-link">
+                            <img src="{% static 'bootstrap\img\institut-it\edu_progs\bak-prog-2.jpg' %}"
+                                class="card-img-top" alt="..." />
+                            <div class="card-body d-flex flex-column justify-content-between px-4 pb-4">
+                                <h5 class="card-title fw-bold">Математика и информатика</h5>
+                                <p class="fs-6 pe-4">
+                                    44.03.05 "Педагогическое образование
+                                    (с двумя профилями подготовки)"
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href=""
+                            class="card h-100 text-decoration-none outline-none border-0 bg-gray rounded-4 overflow-hidden edu-program-card-link">
+                            <img src="{% static 'bootstrap\img\institut-it\edu_progs\bak-prog-3.jpg' %}"
+                                class="card-img-top" alt="..." />
+                            <div class="card-body d-flex flex-column justify-content-between px-4 pb-4">
+                                <h5 class="card-title fw-bold">Математика и экономика</h5>
+                                <p class="fs-6 pe-4">
+                                    44.03.05 "Педагогическое образование
+                                    (с двумя профилями подготовки)"
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href=""
+                            class="card h-100 text-decoration-none outline-none border-0 bg-gray rounded-4 overflow-hidden edu-program-card-link">
+                            <img src="{% static 'bootstrap\img\institut-it\edu_progs\bak-prog-1.jpg' %}"
+                                class="card-img-top" alt="..." />
+                            <div class="card-body d-flex flex-column justify-content-between px-4 pb-4">
+                                <h5 class="card-title fw-bold">Программно-информационные системы</h5>
+                                <p class="fs-6 pe-4">
+                                    09.03.04 "Программная инженерия"
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href=""
+                            class="card h-100 text-decoration-none outline-none border-0 bg-gray rounded-4 overflow-hidden edu-program-card-link">
+                            <img src="{% static 'bootstrap\img\institut-it\edu_progs\bak-prog-2.jpg' %}"
+                                class="card-img-top" alt="..." />
+                            <div class="card-body d-flex flex-column justify-content-between px-4 pb-4">
+                                <h5 class="card-title fw-bold">Математика и информатика</h5>
+                                <p class="fs-6 pe-4">
+                                    44.03.05 "Педагогическое образование
+                                    (с двумя профилями подготовки)"
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center py-5">
+                    <button type="button" class="px-5 py-3 border-0 rounded-4 shadow bg-ylw">Загрузить еще</button>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                tabindex="0">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <div class="col">
+                        <a href=""
+                            class="card h-100 text-decoration-none outline-none border-0 bg-gray rounded-4 overflow-hidden edu-program-card-link">
+                            <img src="{% static 'bootstrap\img\institut-it\edu_progs\bak-prog-3.jpg' %}"
+                                class="card-img-top" alt="..." />
+                            <div class="card-body d-flex flex-column justify-content-between px-4 pb-4">
+                                <h5 class="card-title fw-bold">Математика и экономика</h5>
+                                <p class="fs-6 pe-4">
+                                    44.03.05 "Педагогическое образование
+                                    (с двумя профилями подготовки)"
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href=""
+                            class="card h-100 text-decoration-none outline-none border-0 bg-gray rounded-4 overflow-hidden edu-program-card-link">
+                            <img src="{% static 'bootstrap\img\institut-it\edu_progs\bak-prog-1.jpg' %}"
+                                class="card-img-top" alt="..." />
+                            <div class="card-body d-flex flex-column justify-content-between px-4 pb-4">
+                                <h5 class="card-title fw-bold">Программно-информационные системы</h5>
+                                <p class="fs-6 pe-4">
+                                    09.03.04 "Программная инженерия"
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href=""
+                            class="card h-100 text-decoration-none outline-none border-0 bg-gray rounded-4 overflow-hidden edu-program-card-link">
+                            <img src="{% static 'bootstrap\img\institut-it\edu_progs\bak-prog-2.jpg' %}"
+                                class="card-img-top" alt="..." />
+                            <div class="card-body d-flex flex-column justify-content-between px-4 pb-4">
+                                <h5 class="card-title fw-bold">Математика и информатика</h5>
+                                <p class="fs-6 pe-4">
+                                    44.03.05 "Педагогическое образование
+                                    (с двумя профилями подготовки)"
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href=""
+                            class="card h-100 text-decoration-none outline-none border-0 bg-gray rounded-4 overflow-hidden edu-program-card-link">
+                            <img src="{% static 'bootstrap\img\institut-it\edu_progs\bak-prog-3.jpg' %}"
+                                class="card-img-top" alt="..." />
+                            <div class="card-body d-flex flex-column justify-content-between px-4 pb-4">
+                                <h5 class="card-title fw-bold">Математика и экономика</h5>
+                                <p class="fs-6 pe-4">
+                                    44.03.05 "Педагогическое образование
+                                    (с двумя профилями подготовки)"
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href=""
+                            class="card h-100 text-decoration-none outline-none border-0 bg-gray rounded-4 overflow-hidden edu-program-card-link">
+                            <img src="{% static 'bootstrap\img\institut-it\edu_progs\bak-prog-1.jpg' %}"
+                                class="card-img-top" alt="..." />
+                            <div class="card-body d-flex flex-column justify-content-between px-4 pb-4">
+                                <h5 class="card-title fw-bold">Программно-информационные системы</h5>
+                                <p class="fs-6 pe-4">
+                                    09.03.04 "Программная инженерия"
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href=""
+                            class="card h-100 text-decoration-none outline-none border-0 bg-gray rounded-4 overflow-hidden edu-program-card-link">
+                            <img src="{% static 'bootstrap\img\institut-it\edu_progs\bak-prog-2.jpg' %}"
+                                class="card-img-top" alt="..." />
+                            <div class="card-body d-flex flex-column justify-content-between px-4 pb-4">
+                                <h5 class="card-title fw-bold">Математика и информатика</h5>
+                                <p class="fs-6 pe-4">
+                                    44.03.05 "Педагогическое образование
+                                    (с двумя профилями подготовки)"
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+<script src="{% static 'bootstrap/js/main.js'%}"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
