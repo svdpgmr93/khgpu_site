@@ -8,5 +8,5 @@ def get_edu_catalog(request):
     return render(request, 'edu-programs-catalog.html', context={'programs_bak': programs_bak, 'programs_mag': programs_mag})
 
 def edu_program(request, program_id):
-    edu_program = EduProgram.objects.get(id=program_id)
-    return render(request, 'edu-program.html', context=edu_program)
+    program = EduProgram.objects.get(id=program_id)
+    return render(request, 'edu-program.html', context=program)
