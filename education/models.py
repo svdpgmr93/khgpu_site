@@ -149,6 +149,14 @@ class EduProgramEduForm(models.Model):
     budget_places = models.IntegerField()
     contract_places = models.IntegerField()
 
+    class Meta:
+        verbose_name = 'Форма и период обучения'
+        verbose_name_plural = 'Формы и периоды обучения'
+
+    def __str__(self):
+        concat = str(self.edu_program.edu_number) + '---' + str(self.edu_form.name)
+        return f"{concat}"
+
 
 class EduProgramAdvantageText(models.Model):
     op = models.ForeignKey('EduProgram', on_delete=models.CASCADE, verbose_name='ОП')
