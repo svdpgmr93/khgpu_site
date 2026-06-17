@@ -1683,3 +1683,10 @@ staticfiles/ckeditor/galleriffic/js/jquery.opacityrollover.js
 staticfiles/ckeditor/galleriffic/js/jush.js
 staticfiles/files/antiterror/pamyatka_sotrudnika.pdf
 staticfiles/files/antiterror/pamyatka_stud.pdf
+education/__pycache__/__init__.cpython-313.pyc
+education/__pycache__/admin.cpython-313.pyc
+education/__pycache__/apps.cpython-313.pyc
+education/__pycache__/models.cpython-313.pyc
+education/__pycache__/urls.cpython-313.pyc
+education/__pycache__/views.cpython-313.pyc
+.gitignore
