@@ -3,8 +3,10 @@ from .models import EduProgram
 
 
 def get_edu_catalog(request):
-    programs = EduProgram.objects.all()
-    return render(request, 'edu-programs-catalog.html', context={'programs': programs})
+    programs_bak = EduProgram.objects.filter(level__contains='Бакалавриат')
+    programs_mag = EduProgram.objects.filter(level__contains='Магистратура')
+    return render(request, 'edu-programs-catalog.html', context={'programs_bak': programs_bak, 'programs_mag': programs_mag})
 
-def get_edu_program(request):
-    return render(request, 'edu-program.html')
+def edu_program(request, program_id):
+    edu_program = EduProgram.objects.get(id=program_id)
+    return render(request, 'edu-program.html', context=edu_program)
