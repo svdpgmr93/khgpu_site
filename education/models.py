@@ -88,6 +88,9 @@ class EduLevel(models.TextChoices):
 
 
 class LerningTime(models.TextChoices):
+    two = '2 года'
+    two_half = '2 года 6 месяцев'
+    three = '3 года'
     four = '4 года'
     four_half = '4 года 6 месяцев'
     five = '5 лет'
