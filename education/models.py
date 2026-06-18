@@ -2,6 +2,9 @@ from django.db import models
 from ckeditor.fields import RichTextField
 class Institut(models.Model):
     name = models.CharField(max_length=255, verbose_name='Название института')
+    institut_url = models.URLField(max_length=255, verbose_name='Ссылка на страницу института', default='https://hgpurf.ru/')
+    institut_img = models.ImageField(upload_to='institut_images/', verbose_name='Изображение института', blank=True)
+    institut_logo = models.ImageField(upload_to='institut_images/', verbose_name='Лого института', blank=True)
     
     class Meta:
         verbose_name = 'Институт'
@@ -16,10 +19,13 @@ class Kafedra(models.Model):
     kafedra_url = models.URLField(max_length=255, verbose_name='Ссылка на страницу кафедры', default='https://hgpurf.ru/')
     #karedra_tags = RichTextField(verbose_name='Теги кафедры') #Ставить через пробел
     kafedra_card_img = models.ImageField(upload_to='kafedra_images/', verbose_name='Изображение кафедры', default='default_kaf.jpg')
+    kafedra_logo = models.ImageField(upload_to='kafedra_images/', verbose_name='Лого кафедры', blank=True)
+    kafedra_url_max = models.URLField(max_length=255, verbose_name='Ссылка на чат в MAX', default='https://hgpurf.ru/')
+    kafedra_url_tg = models.URLField(max_length=255, verbose_name='Ссылка на чат в ТГ', default='https://hgpurf.ru/')
     #director = models.ForeignKey('Employee', on_delete=models.PROTECT, verbose_name='Заведующий', related_name="+")
     #about = RichTextField(verbose_name='О кафедре', blank=True)
     #email = models.EmailField(verbose_name='E-mail', blank=True)
-    #phone = models.CharField(max_length=255, verbose_name='Телефон', blank=True)
+    phone = models.CharField(max_length=255, verbose_name='Телефон', blank=True)
     #employees = models.ManyToManyField('Employee')
     #about_employees = RichTextField(blank=True)
     # education program in model EducationProgram (foreighn key)

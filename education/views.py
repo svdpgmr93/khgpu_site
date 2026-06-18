@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import EduProgram
+from .models import EduProgram, EduProgramEduForm
 
 
 def get_edu_catalog(request):
@@ -9,4 +9,5 @@ def get_edu_catalog(request):
 
 def edu_program(request, program_id):
     program = EduProgram.objects.get(id=program_id)
-    return render(request, 'edu-program.html', context=program)
+    epef=EduProgramEduForm.objects.filter(edu_program=program_id)
+    return render(request, 'edu-program.html', context={'program':program, 'epef':epef})

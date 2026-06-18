@@ -31,11 +31,10 @@
                     <div>
                         <a href=""
                             class="d-inline-block mb-4 py-3 px-5 bg-ylw rounded-4 text-decoration-none text-black">
-                            #Бакалавриат
+                            #{{program.level}}
                         </a>
-                        <div class="mb-3 fs-1 fw-bold text-white">Математика и экономика</div>
-                        <div class="mb-4 fs-5 fw-semibold text-white">44.03.05 "Педагогическое образование (с двумя
-                            профилями подготовки)"</div>
+                        <div class="mb-3 fs-1 fw-bold text-white">{{program.name}}</div>
+                        <div class="mb-4 fs-5 fw-semibold text-white">{{program.edu_number}}"</div>
                         <div class="mb-3 fs-5 fw-bold text-white">Задать вопрос о программе:</div>
                         <div class="mb-4 d-flex align-items-center gap-2">
                             <a href=""
@@ -70,12 +69,10 @@
                             </a>
                         </div>
                         <div class="d-flex align-items-center gap-2">
-                            <img src="{% static 'bootstrap\img\institut-it\icons\icon-it.webp' %}" alt="" />
+                            <img src="{{program.kafedra_name.institut.institut_logo.url}}" style="height: 80px; object-fit: cover; filter: grayscale(100%);" alt="" />
                             <div>
-                                <a href="" class="d-block text-decoration-none text-white fs-5">Кафедра цифрового
-                                    образования, математики и физики</a>
-                                <a href="" class="d-block text-decoration-none text-white fs-5 fw-bold">Институт
-                                    информационных технологий</a>
+                                <a href="{{ program.kafedra_name.kafedra_url }}" class="d-block text-decoration-none text-white fs-5">{{program.kafedra_name.name}}</a>
+                                <a href="{{program.kafedra_name.institut.institut_url}}" class="d-block text-decoration-none text-white fs-5 fw-bold">{{program.kafedra_name.institut.name}}</a>
                             </div>
                         </div>
                     </div>
@@ -98,20 +95,18 @@
                                 </div>
                             </div>
                             <div class="mb-3 border-top border-white opacity-75"></div>
-                            <div class="fw-bold text-uppercase fs-6">очная:</div>
-                            <div class="d-flex fs-6">
-                                <div class="w-50">-</div>
-                                <div class="w-25 text-center">-</div>
-                                <div class="w-25 text-center">-</div>
+                            {% for form in epef %}
+                            <div>
+                                <div class="fw-bold text-uppercase fs-6">{{form.edu_form}}:</div>
+                                <div class="d-flex fs-6">
+                                    <div class="w-50">{{form.lerning_time}}</div>
+                                    <div class="w-25 text-center">{{form.budget_places}}</div>
+                                    <div class="w-25 text-center">{{form.contract_places}}</div>
+                                </div>
                             </div>
-                            <div class="fw-bold text-uppercase fs-6">заочная:</div>
-                            <div class="d-flex fs-6">
-                                <div class="w-50">5 лет 6 месяцев</div>
-                                <div class="w-25 text-center">14</div>
-                                <div class="w-25 text-center">10</div>
-                            </div>
+                            {%endfor%}
                         </div>
-                        <a href=""
+                        <a href="https://pk.hgpurf.ru/" target="_blank"
                             class="mb-3 bg-red py-2 glare-link black-bg-hov d-block text-center rounded-3 fs-6 text-white">Как
                             поступить</a>
                     </div>
@@ -178,8 +173,8 @@
                     <img style="width: 60px" src="{% static 'bootstrap/img/edu-programs/edu-prog-info-icon.svg' %}"
                         alt="">
                     <div>
-                        <div class="fw-bold fs-5">Образовательная программа "Математика и экономика" | бакалавриат</div>
-                        <div>44.03.05 "Педагогическое образование (с двумя профилями подготовки)"</div>
+                        <div class="fw-bold fs-5">{{program.name}} | {{program.level}}</div>
+                        <div>{{program.edu_number}}</div>
                     </div>
                 </div>
                 <div class="px-5 py-2 bg-white fw-bold rounded-3">
