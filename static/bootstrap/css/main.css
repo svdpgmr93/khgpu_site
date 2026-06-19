@@ -1986,6 +1986,7 @@ a:hover .traslating-card {
     width: 750px;
     height: 100%;
     border-radius: 15px;
+    object-fit: cover;
 }
 
 .angle-block {
@@ -1999,12 +2000,13 @@ a:hover .traslating-card {
 }
 
 .num-circle {
-    width: 60px;
+    width: 45px;
     height: 45px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 .pinky-link:hover {
@@ -2014,3 +2016,25 @@ a:hover .traslating-card {
 }
 
 /* edu program */
+.edu-prog-desc {
+    column-count: 2;
+    gap: 30px;
+}
+
+.exam-list p {
+    margin-bottom: 0;
+}
+
+.position-tag p {
+    margin-bottom: 0;
+}
+
+.perspective-item p {
+    margin-bottom: 0;
+}
+
+@media (max-width: 1440px) {
+    .edu-program-advantage-img {
+        width: 430px;
+    }
+}
