@@ -2033,8 +2033,71 @@ a:hover .traslating-card {
     margin-bottom: 0;
 }
 
+.edu-prog-insitut-logo {
+    height: 80px; 
+    object-fit: cover; 
+    filter: grayscale(100%);
+}
+
 @media (max-width: 1440px) {
     .edu-program-advantage-img {
         width: 430px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .edu-text{
+        font-size: 16px !important;
+    }
+    .edu-text.title{
+        font-size: 30px !important;
+        line-height: 1 !important;
+    }
+    .edu-prog-insitut-logo {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .edu-prog-banner-card {
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+    .edu-prog-banner-card .title {
+        text-align: center !important;
+    }
+    .edu-prog-insitut {
+        display: none !important;
+    }
+    .edu-prog-desc {
+    column-count: 1;
+    font-size: 18px !important;
+    }
+    .exam-card {
+        display: flex !important;
+        flex-direction: column;
+    }
+    .advantage-block {
+        width: 100% !important;
+        margin-top: 60px !important;
+    }
+    .edu-program-advantage-img {
+        height: 250px;
+        display: block;
+        top: 0;
+        border-radius: 0;
+    }
+    .structure-img {
+        width: 100% !important;
+    }
+
+    .position-tag p {
+        font-size: 14px;
+    }
+    .abit-block {
+        display: flex !important;
+        flex-direction: column;
     }
 }

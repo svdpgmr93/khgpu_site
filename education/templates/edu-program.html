@@ -24,20 +24,20 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 68.841% 100%;
-      " class="py-5 position-relative">
+      " class="py-3 py-xl-5 position-relative">
         <div class="media-banner-overlay"></div>
         <div class="container position-relative z-2">
             <div class="py-2 row">
-                <div class="col-xl-8 col-md-7">
+                <div class="col-xl-8 col-lg-7 col-md-6">
                     <div>
                         <a href=""
-                            class="d-inline-block mb-4 py-3 px-5 bg-ylw rounded-4 text-decoration-none text-black">
+                            class="d-inline-block mb-2 mb-lg-4 mb-sm-1 py-1 px-3 py-lg-3 px-lg-5 bg-ylw rounded-4 text-decoration-none text-black">
                             #{{program.level}}
                         </a>
-                        <div class="mb-xl-3 mb-md-1 fs-1 fw-bold text-white">{{program.name}}</div>
-                        <div class="mb-xl-4 mb-md-1 fs-5 fw-semibold text-white">{{program.edu_number}}"</div>
+                        <div class="mb-xl-3 mb-md-1 fs-1 fw-bold text-white edu-text title">{{program.name}}</div>
+                        <div class="mb-xl-4 mb-md-1 fs-5 fw-semibold text-white edu-text">{{program.edu_number}}"</div>
                         <div class="mb-xl-3 mb-md-1 fs-5 fw-bold text-white">Задать вопрос о программе:</div>
-                        <div class="mb-xl-4 mb-md-1 d-flex align-items-center gap-2 flex-sm-wrap">
+                        <div class="mb-xl-4 mb-md-1 mb-2 d-flex align-items-center gap-2 flex-wrap flex-xl-nowrap">
                             <a href=""
                                 class="d-inline-flex align-items-center gap-2 py-2 px-3 bg-transparrent border border-warning rounded-4 text-decoration-none text-white edu-program-contact-link">
                                 <div class="edu-program-contact-link-icon">
@@ -69,21 +69,21 @@
                                 <span>Чат абитуриентов института</span>
                             </a>
                         </div>
-                        <div class="d-flex align-items-center gap-2">
-                            <img src="{{program.kafedra_name.institut.institut_logo.url}}"
-                                style="height: 80px; object-fit: cover; filter: grayscale(100%);" alt="" />
-                            <div>
+                        <div class="d-flex align-items-center gap-2 edu-prog-insitut">
+                            <img src="{{program.kafedra_name.institut.institut_logo.url}}" class="edu-prog-insitut-logo"
+                                alt="" />
+                            <div class="edu-banner-kaf-ins">
                                 <a href="{{ program.kafedra_name.kafedra_url }}"
-                                    class="d-block text-decoration-none text-white fs-5">{{program.kafedra_name.name}}</a>
+                                    class="d-block text-decoration-none text-white fs-5 edu-text">{{program.kafedra_name.name}}</a>
                                 <a href="{{program.kafedra_name.institut.institut_url}}"
-                                    class="d-block text-decoration-none text-white fs-5 fw-bold">{{program.kafedra_name.institut.name}}</a>
+                                    class="d-block text-decoration-none text-white fs-5 fw-bold edu-text">{{program.kafedra_name.institut.name}}</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 col-xl-4">
-                    <div class="bg-ylw px-xl-5 px-md-3 py-3 rounded-4">
-                        <div class="text-uppercase fs-3 fw-medium text-black">Поступление 2026</div>
+                <div class="col-lg-5 col-xl-4 col-md-6">
+                    <div class="bg-ylw px-xl-5 px-md-3 py-3 rounded-4 edu-prog-banner-card">
+                        <div class="text-uppercase fs-3 fw-medium text-black title">Поступление 2026</div>
                         <div class="contact-gray-back mb-4 px-4 py-4 rounded-4 fs-7 text-white">
                             <div class="mb-3 d-flex">
                                 <div class="d-flex flex-column w-50">
@@ -94,8 +94,11 @@
                                 <div class="d-flex flex-column w-50">
                                     <img src="{% static 'bootstrap/img/edu-programs/places-icon.svg' %}" alt=""
                                         class="w-25">
-                                    <div class="fw-bold">Количество мест <span class="fw-medium opacity-75">Бюджет
-                                            Коммерция</span></div>
+                                    <div class="d-flex flex-column fw-bold">
+                                        <div>Количество мест</div>
+                                        <div><span class="fw-medium opacity-75">Бюджет
+                                                Коммерция</span></div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="mb-3 border-top border-white opacity-75"></div>
@@ -113,6 +116,16 @@
                         <a href="https://pk.hgpurf.ru/" target="_blank"
                             class="mb-3 bg-red py-2 glare-link black-bg-hov d-block text-center rounded-3 fs-6 text-white">Как
                             поступить</a>
+                    </div>
+                    <div class="d-flex align-items-center gap-2 d-sm-none">
+                        <img src="{{program.kafedra_name.institut.institut_logo.url}}" class="edu-prog-insitut-logo"
+                            alt="" />
+                        <div class="edu-banner-kaf-ins">
+                            <a href="{{ program.kafedra_name.kafedra_url }}"
+                                class="d-block text-decoration-none text-white fs-5 edu-text">{{program.kafedra_name.name}}</a>
+                            <a href="{{program.kafedra_name.institut.institut_url}}"
+                                class="d-block text-decoration-none text-white fs-5 fw-bold edu-text">{{program.kafedra_name.institut.name}}</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -176,29 +189,29 @@
             </div> -->
         </div>
         <div class="bg-ylw rounded-4">
-            <div class="px-5 py-3 d-flex justify-content-between align-items-center">
+            <div class="px-2 px-sm-5 py-3 d-flex-column d-sm-flex justify-content-between align-items-center">
                 <div class="d-flex align-items-center gap-2">
                     <img style="width: 60px" src="{% static 'bootstrap/img/edu-programs/edu-prog-info-icon.svg' %}"
                         alt="">
                     <div>
-                        <div class="fw-bold fs-5">{{program.name}} | {{program.level}}</div>
+                        <div class="fw-bold fs-5 edu-text">{{program.name}} | {{program.level}}</div>
                         <div>{{program.edu_number}}</div>
                     </div>
                 </div>
-                <div class="px-5 py-2 bg-white fw-bold rounded-3">
+                <div class="px-5 py-2 bg-white fw-bold rounded-3 d-none d-sm-block">
                     2026
                 </div>
             </div>
-            <div class="px-5 py-5 rounded-4 management-gray-back">
-                <div class="row">
-                    <div class="{% if program.level == 'Магистратура' %}col-6{% else %}col-3{% endif %} h-100">
-                        <div class="py-3 px-4 bg-ylw rounded-4 fw-bold fs-5">
+            <div class="px-4 py-3 px-sm-5 py-sm-5 rounded-4 management-gray-back">
+                <div class="row exam-card">
+                    <div class="{% if program.level == 'Магистратура' %}col col-sm-6{% else %}col col-md-4{% endif %} h-100">
+                        <div class="mb-2 mb-sm-0 py-2 px-2 py-sm-3 py-md-4-3 px-sm-5 bg-ylw rounded-4 fw-bold fs-5 text-center text-sm-start edu-text">
                             Минимальное количество баллов для участия в конкурсе
                         </div>
                     </div>
                     {% if program.level == 'Бакалавриат' %}
-                    <div class="col-4 h-100">
-                        <div class="mb-2 fs-5 fw-bold lh-sm">
+                    <div class="col col-sm-4 h-100">
+                        <div class="mb-2 fs-5 fw-bold lh-sm edu-text text-center text-sm-start">
                             Общеобразовательные вступительные испытания / результаты ЕГЭ
                         </div>
                         <ol class="mb-0 ps-0 exam-list">
@@ -209,7 +222,7 @@
                         </ol>
                     </div>
                     <div class="col h-100">
-                        <div class="mb-2 fs-5 fw-bold lh-sm">
+                        <div class="mb-2 fs-5 fw-bold lh-sm edu-text text-center text-sm-start">
                             Вступительные испытания на базе профессионального образования
                         </div>
                         <ol class="mb-0 ps-0 exam-list">
@@ -221,11 +234,11 @@
                     </div>
                     {% endif %}
                     {% if program.level == 'Магистратура'%}
-                    <div class="col-6 h-100">
-                        <div class="mb-2 fs-5 fw-bold lh-sm">
+                    <div class="col col-sm-6 h-100">
+                        <div class="mb-2 fs-5 fw-bold lh-sm edu-text text-center text-sm-start">
                             Вступительные испытания
                         </div>
-                        <ol class="mb-0 ps-0 exam-list">
+                        <ol class="mb-0 ps-0 exam-list edu-text">
                             {{ program.exam_ege|safe }}
                             <!-- <li>Обществознание (42)</li>
                             <li>Математика (40) / Информатика (45)</li>
@@ -240,7 +253,7 @@
     <div class="py-5 bg-gray position-relative">
         <div class="container">
             <div class="mb-5 w-75 fs-1 fw-bold">Преимущества образовательной программы</div>
-            <div class="row row-cols-2 w-75 g-5">
+            <div class="row row-cols-sm-2 w-75 g-5 advantage-block">
                 {% for a in advantage %}
                 <div class="col mt-3">
                     <div class="d-flex flex-column gap-3">
@@ -286,13 +299,13 @@
     <div style="background-color: rgb(249, 249, 249);" class="mb-5 pt-5">
         <div class="container">
             <div class="mb-5 fs-1 fw-bold text-center">Кому подходит программа</div>
-            <div class="row g-5">
-                <div class="col text-center border-end border-dark">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+                <div class="col text-center border-0 border-sm-end border-dark">
                     <img style="margin-bottom: 30px; width: 100px;"
                         src="{% static 'bootstrap/img/edu-programs/suitable-icon1.svg' %}" alt="">
                     <div class="fs-5">{{ suitable.0.text|safe }}</div>
                 </div>
-                <div class="col text-center border-end border-dark">
+                <div class="col text-center border-0 border-sm-end border-dark">
                     <img style="margin-bottom: 30px; width: 100px;"
                         src="{% static 'bootstrap/img/edu-programs/suitable-icon2.svg' %}" alt="">
                     <div class="fs-5">{{ suitable.1.text|safe }}</div>
@@ -313,9 +326,9 @@
         <div class="py-5">
             <div class="mb-4 fs-1 fw-bold">Чему вы научитесь</div>
             <div class="mb-3 fs-5">Ключевые навыки после обучения</div>
-            <div class="ps-5">
+            <div class="ps-0 ps-sm-5">
                 {% for skill in key_skills %}
-                <div class="mb-3 d-flex align-items-center gap-5">
+                <div class="mb-3 d-flex align-items-start align-items-sm-center gap-2 gap-sm-5">
                     <div class="num-circle bg-ylw fs-5 fw-bold">{{forloop.counter}}</div>
                     <div class="fs-5 fw-medium">{{skill.text|safe}}</div>
                 </div>
@@ -340,12 +353,11 @@
         <div class="py-5">
             <div class="row align-items-center">
                 <div class="col">
-                    <div class="w-75">
+                    <div class="w-75 structure-img">
                         <div class="mb-2 fs-1 fw-bold">Что будете изучать</div>
                         <div class="mb-2 fs-6 opacity-75">Структура программы<br>
                             (содержательные блоки/модули, дисциплины)</div>
-                        <img class="w-100 rounded-4" src="{{program.edu_prog_structure_img.url}}"
-                            alt="">
+                        <img class="w-100 rounded-4" src="{{program.edu_prog_structure_img.url}}" alt="">
                     </div>
                 </div>
                 <div class="col">
@@ -427,10 +439,10 @@
     <div class="py-5 cafedra-yellow-back">
         <div class="container">
             <div class="mb-3 fs-1 fw-bold">Кем вы сможете работать</div>
-            <div class="mb-5 fs-5">Выпускники образовательной программы успешно занимают должности</div>
+            <div class="mb-3 mb-sm-5 fs-5">Выпускники образовательной программы успешно занимают должности</div>
             <div class="fs-5">
                 {% for p in position %}
-                <span class="mb-3 me-3 py-3 px-5 d-inline-block bg-white rounded-5 position-tag">{{p.text|safe}}</span>
+                <span class="mb-3 me-3 py-3 px-4 px-sm-5 d-inline-block bg-white rounded-5 position-tag">{{p.text|safe}}</span>
                 {% endfor %}
                 <!-- <span class="mb-3 me-3 py-3 px-5 d-inline-block bg-white rounded-5">Учитель математики</span>
                 <span class="mb-3 me-3 py-3 px-5 d-inline-block bg-white rounded-5">Экономист</span>
@@ -447,7 +459,7 @@
     <div class="py-5">
         <div class="container">
             <div class="row py-5">
-                <div class="col h-100">
+                <div class="col h-100 d-none d-sm-block">
                     <div class="position-relative h-100">
                         <img style="width: 380px; height: 450px; border-radius: 15px; position: absolute; top: 0; left: 0; object-fit: cover;"
                             src="{{program.edu_prog_perspective_img1.url}}" alt="">
@@ -457,7 +469,7 @@
                             src="{{program.edu_prog_perspective_img3.url}}" alt="">
                     </div>
                 </div>
-                <div class="col-5 h-100">
+                <div class="col col-sm-5 h-100">
                     <div class="mb-4 fw-bold fs-1 lh-sm">Перспективы трудоустройства</div>
                     <div class="mb-3 fw-bold fs-5">Выпускники программы готовы к профессиональной деятельности в:</div>
                     <div>
@@ -476,16 +488,18 @@
             </div>
         </div>
     </div>
-    <div class="pt-5">
+    <div class="pt-5 d-none">
         <div class="container">
             <div class="py-5 px-5 rounded-4 contact-gray-back">
                 <div class="row px-4 align-items-center">
                     <div class="col">
                         <div class="mb-3 fw-bold fs-4 text-ylw">Выпускающая кафедра</div>
                         <div class="mb-4 d-flex align-items-center gap-2">
-                            <img src="{{program.kafedra_name.institut.institut_logo.url}}" style="height: 80px; object-fit: cover; filter: grayscale(100%);" alt="" />
+                            <img src="{{program.kafedra_name.institut.institut_logo.url}}"
+                                style="height: 80px; object-fit: cover; filter: grayscale(100%);" alt="" />
                             <div>
-                                <a href="{{program.kafedra_name.kafedra_url}}" class="d-block text-decoration-none text-white fw-bold fs-2 lh-sm">{{program.kafedra_name}}</a>
+                                <a href="{{program.kafedra_name.kafedra_url}}"
+                                    class="d-block text-decoration-none text-white fw-bold fs-2 lh-sm">{{program.kafedra_name}}</a>
                             </div>
                         </div>
                         <div class="fw-medium fs-6">
@@ -511,14 +525,14 @@
             <div class="mb-5 fw-bold fs-1 text-center">
                 Стань студентом Херсонского государственного педагогического университета
             </div>
-            <div class="row align-items-center">
+            <div class="row align-items-center abit-block">
                 <div class="col">
-                    <a href="" class="mb-2 glare-link bg-dark text-white rounded-4 pinky-link">
+                    <a href="https://pk.hgpurf.ru/" target="_blank" class="mb-2 glare-link bg-dark text-white rounded-4 pinky-link">
                         <img style="width: 30px;" class="me-2"
                             src="{% static 'bootstrap/img/edu-programs/hgpu-icon.png' %}" alt="">
                         Перейти на сайт приемной комиссии
                     </a>
-                    <a href="" class="mb-3 glare-link ylw-bg text-black rounded-4 pinky-link">
+                    <a href="https://www.gosuslugi.ru/vuzonline" target="_blank" class="mb-3 glare-link ylw-bg text-black rounded-4 pinky-link">
                         <img style="width: 30px;" class="me-2"
                             src="{% static 'bootstrap/img/edu-programs/epgu-icon.png' %}" alt="">
                         Подать документы
