@@ -3,9 +3,9 @@ from .models import EduProgram, EduProgramEduForm, EduProgramAdvantageText, Suit
 
 
 def get_edu_catalog(request):
+
     programs_bak = EduProgram.objects.filter(level__contains='Бакалавриат')
     programs_mag = EduProgram.objects.filter(level__contains='Магистратура')
-
     print(request.GET)
 
     return render(request, 'edu-programs-catalog.html', context={'programs_bak': programs_bak, 'programs_mag': programs_mag})

@@ -80,555 +80,604 @@
         <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
                 tabindex="0">
-                        <div class="mb-5 py-5 px-5 cafedra-yellow-back rounded-4">
-            <form action="{% url 'education:edu_catalog' %}" method="get">
-                <div class="mb-2 row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                    <div class="col">
-                        <button type="button"
-                            class="w-100 px-3 py-3 d-flex align-items-center justify-content-between border-0 outline-none rounded-3 bg-white"
-                            data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                            <div>Форма обучения</div><i class="fa-solid fa-caret-down fa-lg"
-                                style="color: #ffbf31;"></i>
-                        </button>
-                        <div class="position-relative">
-                            <div class="dropdown-menu p-4 position-absolute w-100">
-                                <div class="form-check">
-                                    <div><input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="form_z" value="Заочная" id="eduForm1">
-                                        <label class="form-check-label" for="eduForm1">
-                                            Заочная
-                                        </label>
-                                    </div>
-                                    <div><input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="form_o" value="Очная" id="eduForm2">
-                                        <label class="form-check-label" for="eduForm2">
-                                            Очная
-                                        </label>
-                                    </div>
-                                    <div><input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="form_oz" value="Очно-заочная" id="eduForm3">
-                                        <label class="form-check-label" for="eduForm3">
-                                            Очно-заочная
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <button type="button"
-                            class="w-100 px-3 py-3 d-flex align-items-center justify-content-between border-0 outline-none rounded-3 bg-white"
-                            data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                            <div>Основа финансирования</div><i class="fa-solid fa-caret-down fa-lg"
-                                style="color: #ffbf31;"></i>
-                        </button>
-                        <div class="position-relative">
-                            <div class="dropdown-menu p-4 position-absolute w-100">
-                                <div class="form-check">
-                                    <div><input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBudget" value="Бюджет" id="eduBudget">
-                                        <label class="form-check-label" for="eduBudget">
-                                            Бюджет
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduContract" value="Коммерция" id="eduContract">
-                                        <label class="form-check-label" for="eduContract">
-                                            Коммерция
-                                        </label>
+                <div class="mb-5 py-5 px-5 cafedra-yellow-back rounded-4">
+                    <form action="{% url 'education:edu_catalog' %}" method="get">
+                        <div class="mb-2 row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                            <div class="col">
+                                <button type="button"
+                                    class="w-100 px-3 py-3 d-flex align-items-center justify-content-between border-0 outline-none rounded-3 bg-white"
+                                    data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                    <div>Форма обучения</div><i class="fa-solid fa-caret-down fa-lg"
+                                        style="color: #ffbf31;"></i>
+                                </button>
+                                <div class="position-relative">
+                                    <div class="dropdown-menu p-4 position-absolute w-100">
+                                        <div class="form-check">
+                                            <div><input class="d-none" type="checkbox" name="edu_level" value="Бакалавриат"
+                                                    checked="true">
+                                            </div>
+                                            <div><input class="form-check-input border-warning rounded-0"
+                                                    type="checkbox" name="form_z" value="Заочная" id="eduForm1">
+                                                <label class="form-check-label" for="eduForm1">
+                                                    Заочная
+                                                </label>
+                                            </div>
+                                            <div><input class="form-check-input border-warning rounded-0"
+                                                    type="checkbox" name="form_o" value="Очная" id="eduForm2">
+                                                <label class="form-check-label" for="eduForm2">
+                                                    Очная
+                                                </label>
+                                            </div>
+                                            <div><input class="form-check-input border-warning rounded-0"
+                                                    type="checkbox" name="form_oz" value="Очно-заочная" id="eduForm3">
+                                                <label class="form-check-label" for="eduForm3">
+                                                    Очно-заочная
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <button type="button"
-                            class="w-100 px-3 py-3 d-flex align-items-center justify-content-between border-0 outline-none rounded-3 bg-white"
-                            data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                            <div>Период обучения</div><i class="fa-solid fa-caret-down fa-lg"
-                                style="color: #ffbf31;"></i>
-                        </button>
-                        <div class="position-relative">
-                            <div class="dropdown-menu p-4 position-absolute w-100">
-                                <div class="form-check">
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduPeriod1" value="4 года" id="eduPeriod1">
-                                        <label class="form-check-label" for="eduPeriod1">
-                                            4 года
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduPeriod2" value="4 года 6 месяцев" id="eduPeriod2">
-                                        <label class="form-check-label" for="eduPeriod2">
-                                            4 года 6 месяцев
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduPeriod3" value="5 лет" id="eduPeriod3">
-                                        <label class="form-check-label" for="eduPeriod3">
-                                            5 лет
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduPeriod4" value="5 лет 6 месяцев" id="eduPeriod4">
-                                        <label class="form-check-label" for="eduPeriod4">
-                                            5 лет 6 месяцев
-                                        </label>
+                            <div class="col">
+                                <button type="button"
+                                    class="w-100 px-3 py-3 d-flex align-items-center justify-content-between border-0 outline-none rounded-3 bg-white"
+                                    data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                    <div>Основа финансирования</div><i class="fa-solid fa-caret-down fa-lg"
+                                        style="color: #ffbf31;"></i>
+                                </button>
+                                <div class="position-relative">
+                                    <div class="dropdown-menu p-4 position-absolute w-100">
+                                        <div class="form-check">
+                                            <div><input class="form-check-input border-warning rounded-0"
+                                                    type="checkbox" name="eduBudget" value="Бюджет" id="eduBudget">
+                                                <label class="form-check-label" for="eduBudget">
+                                                    Бюджет
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduContract" value="Коммерция" id="eduContract">
+                                                <label class="form-check-label" for="eduContract">
+                                                    Коммерция
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <button type="button"
-                            class="w-100 px-3 py-3 d-flex align-items-center justify-content-between border-0 outline-none rounded-3 bg-white"
-                            data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                            <div>Направление подготовки</div><i class="fa-solid fa-caret-down fa-lg"
-                                style="color: #ffbf31;"></i>
-                        </button>
-                        <div class="position-relative">
-                            <div style="max-height: 350px; overflow-y: scroll;"
-                                class="dropdown-menu p-4 position-absolute w-100">
-                                <div class="form-check">
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName1" value='05.03.06 "Экология и природопользование"' id="eduBakProgName1">
-                                        <label class="form-check-label" for="eduBakProgName1">
-                                            05.03.06 "Экология и природопользование"
-                                        </label>
+                            <div class="col">
+                                <button type="button"
+                                    class="w-100 px-3 py-3 d-flex align-items-center justify-content-between border-0 outline-none rounded-3 bg-white"
+                                    data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                    <div>Период обучения</div><i class="fa-solid fa-caret-down fa-lg"
+                                        style="color: #ffbf31;"></i>
+                                </button>
+                                <div class="position-relative">
+                                    <div class="dropdown-menu p-4 position-absolute w-100">
+                                        <div class="form-check">
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduPeriod1" value="4 года" id="eduPeriod1">
+                                                <label class="form-check-label" for="eduPeriod1">
+                                                    4 года
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduPeriod2" value="4 года 6 месяцев" id="eduPeriod2">
+                                                <label class="form-check-label" for="eduPeriod2">
+                                                    4 года 6 месяцев
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduPeriod3" value="5 лет" id="eduPeriod3">
+                                                <label class="form-check-label" for="eduPeriod3">
+                                                    5 лет
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduPeriod4" value="5 лет 6 месяцев" id="eduPeriod4">
+                                                <label class="form-check-label" for="eduPeriod4">
+                                                    5 лет 6 месяцев
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName2" value='06.03.01 "Биология"' id="eduBakProgName2">
-                                        <label class="form-check-label" for="eduBakProgName2">
-                                            06.03.01 "Биология"
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName3" value='09.03.04 "Программная инженерия"' id="eduBakProgName3">
-                                        <label class="form-check-label" for="eduBakProgName3">
-                                            09.03.04 "Программная инженерия"
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName4" value='37.03.01 "Психология"' id="eduBakProgName4">
-                                        <label class="form-check-label" for="eduBakProgName4">
-                                            37.03.01 "Психология"
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName5" value='38.03.02 "Менеджмент"' id="eduBakProgName5">
-                                        <label class="form-check-label" for="eduBakProgName5">
-                                            38.03.02 "Менеджмент"
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName6" value='38.03.04 "Государственное и муниципальное управление"' id="eduBakProgName6">
-                                        <label class="form-check-label" for="eduBakProgName6">
-                                            38.03.04 "Государственное и муниципальное управление"
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName7" value='39.03.03 "Организация работы с молодежью"' id="eduBakProgName7">
-                                        <label class="form-check-label" for="eduBakProgName7">
-                                            39.03.03 "Организация работы с молодежью"
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName8" value='40.03.01 "Юриспруденция"' id="eduBakProgName8">
-                                        <label class="form-check-label" for="eduBakProgName8">
-                                            40.03.01 "Юриспруденция"
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName9" value='42.03.02 "Журналистика"' id="eduBakProgName9">
-                                        <label class="form-check-label" for="eduBakProgName9">
-                                            42.03.02 "Журналистика"
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName10" value='42.03.04 Телевидение' id="eduBakProgName10">
-                                        <label class="form-check-label" for="eduBakProgName10">
-                                            42.03.04 Телевидение
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName11" value='43.03.01 "Сервис"' id="eduBakProgName11">
-                                        <label class="form-check-label" for="eduBakProgName11">
-                                            43.03.01 "Сервис"
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName12" value='43.03.02 "Туризм"' id="eduBakProgName12">
-                                        <label class="form-check-label" for="eduBakProgName12">
-                                            43.03.02 "Туризм"
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName13" value='43.03.03 "Гостиничное дело"' id="eduBakProgName13">
-                                        <label class="form-check-label" for="eduBakProgName13">
-                                            43.03.03 "Гостиничное дело"
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName14" value='44.03.01 "Педагогическое образование"' id="eduBakProgName14">
-                                        <label class="form-check-label" for="eduBakProgName14">
-                                            44.03.01 "Педагогическое образование"
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName15" value='44.03.01 «Педагогическое образование»' id="eduBakProgName15">
-                                        <label class="form-check-label" for="eduBakProgName15">
-                                            44.03.01 «Педагогическое образование»
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName16" value='44.03.01 Педагогическое образование' id="eduBakProgName16">
-                                        <label class="form-check-label" for="eduBakProgName16">
-                                            44.03.01 Педагогическое образование
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName17" value='44.03.02 "Психолого-педагогическое образование"' id="eduBakProgName17">
-                                        <label class="form-check-label" for="eduBakProgName17">
-                                            44.03.02 "Психолого-педагогическое образование"
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName18" value='44.03.03 "Специальное (дефектологическое) образование"' id="eduBakProgName18">
-                                        <label class="form-check-label" for="eduBakProgName18">
-                                            44.03.03 "Специальное (дефектологическое) образование"
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName19" value='44.03.05 "Педагогическое образование (с двумя профилями подготовки)"' id="eduBakProgName19">
-                                        <label class="form-check-label" for="eduBakProgName19">
-                                            44.03.05 "Педагогическое образование (с двумя профилями подготовки)"
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName20" value='44.03.05 «Педагогическое образование (с двумя профилями подготовки)»' id="eduBakProgName20">
-                                        <label class="form-check-label" for="eduBakProgName20">
-                                            44.03.05 «Педагогическое образование (с двумя профилями подготовки)»
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName21" value='44.03.05 Педагогическое образование (с двумя профилями подготовки)' id="eduBakProgName21">
-                                        <label class="form-check-label" for="eduBakProgName21">
-                                            44.03.05 Педагогическое образование (с двумя профилями подготовки)
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName22" value='44.04.03 "Специальное (дефектологическое) образование"' id="eduBakProgName22">
-                                        <label class="form-check-label" for="eduBakProgName22">
-                                            44.04.03 "Специальное (дефектологическое) образование"
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName23" value='45.03.02 "Лингвистика"' id="eduBakProgName23">
-                                        <label class="form-check-label" for="eduBakProgName23">
-                                            45.03.02 "Лингвистика"
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName24" value='49.03.02 "Физическая культура для лиц с отклонениями в состоянии здоровья
+                                </div>
+                            </div>
+                            <div class="col">
+                                <button type="button"
+                                    class="w-100 px-3 py-3 d-flex align-items-center justify-content-between border-0 outline-none rounded-3 bg-white"
+                                    data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                    <div>Направление подготовки</div><i class="fa-solid fa-caret-down fa-lg"
+                                        style="color: #ffbf31;"></i>
+                                </button>
+                                <div class="position-relative">
+                                    <div style="max-height: 350px; overflow-y: scroll;"
+                                        class="dropdown-menu p-4 position-absolute w-100">
+                                        <div class="form-check">
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName1"
+                                                    value='05.03.06 "Экология и природопользование"'
+                                                    id="eduBakProgName1">
+                                                <label class="form-check-label" for="eduBakProgName1">
+                                                    05.03.06 "Экология и природопользование"
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName2" value='06.03.01 "Биология"'
+                                                    id="eduBakProgName2">
+                                                <label class="form-check-label" for="eduBakProgName2">
+                                                    06.03.01 "Биология"
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName3" value='09.03.04 "Программная инженерия"'
+                                                    id="eduBakProgName3">
+                                                <label class="form-check-label" for="eduBakProgName3">
+                                                    09.03.04 "Программная инженерия"
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName4" value='37.03.01 "Психология"'
+                                                    id="eduBakProgName4">
+                                                <label class="form-check-label" for="eduBakProgName4">
+                                                    37.03.01 "Психология"
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName5" value='38.03.02 "Менеджмент"'
+                                                    id="eduBakProgName5">
+                                                <label class="form-check-label" for="eduBakProgName5">
+                                                    38.03.02 "Менеджмент"
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName6"
+                                                    value='38.03.04 "Государственное и муниципальное управление"'
+                                                    id="eduBakProgName6">
+                                                <label class="form-check-label" for="eduBakProgName6">
+                                                    38.03.04 "Государственное и муниципальное управление"
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName7"
+                                                    value='39.03.03 "Организация работы с молодежью"'
+                                                    id="eduBakProgName7">
+                                                <label class="form-check-label" for="eduBakProgName7">
+                                                    39.03.03 "Организация работы с молодежью"
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName8" value='40.03.01 "Юриспруденция"'
+                                                    id="eduBakProgName8">
+                                                <label class="form-check-label" for="eduBakProgName8">
+                                                    40.03.01 "Юриспруденция"
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName9" value='42.03.02 "Журналистика"'
+                                                    id="eduBakProgName9">
+                                                <label class="form-check-label" for="eduBakProgName9">
+                                                    42.03.02 "Журналистика"
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName10" value='42.03.04 Телевидение'
+                                                    id="eduBakProgName10">
+                                                <label class="form-check-label" for="eduBakProgName10">
+                                                    42.03.04 Телевидение
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName11" value='43.03.01 "Сервис"'
+                                                    id="eduBakProgName11">
+                                                <label class="form-check-label" for="eduBakProgName11">
+                                                    43.03.01 "Сервис"
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName12" value='43.03.02 "Туризм"'
+                                                    id="eduBakProgName12">
+                                                <label class="form-check-label" for="eduBakProgName12">
+                                                    43.03.02 "Туризм"
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName13" value='43.03.03 "Гостиничное дело"'
+                                                    id="eduBakProgName13">
+                                                <label class="form-check-label" for="eduBakProgName13">
+                                                    43.03.03 "Гостиничное дело"
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName14"
+                                                    value='44.03.01 "Педагогическое образование"' id="eduBakProgName14">
+                                                <label class="form-check-label" for="eduBakProgName14">
+                                                    44.03.01 "Педагогическое образование"
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName15"
+                                                    value='44.03.01 «Педагогическое образование»' id="eduBakProgName15">
+                                                <label class="form-check-label" for="eduBakProgName15">
+                                                    44.03.01 «Педагогическое образование»
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName16" value='44.03.01 Педагогическое образование'
+                                                    id="eduBakProgName16">
+                                                <label class="form-check-label" for="eduBakProgName16">
+                                                    44.03.01 Педагогическое образование
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName17"
+                                                    value='44.03.02 "Психолого-педагогическое образование"'
+                                                    id="eduBakProgName17">
+                                                <label class="form-check-label" for="eduBakProgName17">
+                                                    44.03.02 "Психолого-педагогическое образование"
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName18"
+                                                    value='44.03.03 "Специальное (дефектологическое) образование"'
+                                                    id="eduBakProgName18">
+                                                <label class="form-check-label" for="eduBakProgName18">
+                                                    44.03.03 "Специальное (дефектологическое) образование"
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName19"
+                                                    value='44.03.05 "Педагогическое образование (с двумя профилями подготовки)"'
+                                                    id="eduBakProgName19">
+                                                <label class="form-check-label" for="eduBakProgName19">
+                                                    44.03.05 "Педагогическое образование (с двумя профилями подготовки)"
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName20"
+                                                    value='44.03.05 «Педагогическое образование (с двумя профилями подготовки)»'
+                                                    id="eduBakProgName20">
+                                                <label class="form-check-label" for="eduBakProgName20">
+                                                    44.03.05 «Педагогическое образование (с двумя профилями подготовки)»
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName21"
+                                                    value='44.03.05 Педагогическое образование (с двумя профилями подготовки)'
+                                                    id="eduBakProgName21">
+                                                <label class="form-check-label" for="eduBakProgName21">
+                                                    44.03.05 Педагогическое образование (с двумя профилями подготовки)
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName22"
+                                                    value='44.04.03 "Специальное (дефектологическое) образование"'
+                                                    id="eduBakProgName22">
+                                                <label class="form-check-label" for="eduBakProgName22">
+                                                    44.04.03 "Специальное (дефектологическое) образование"
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName23" value='45.03.02 "Лингвистика"'
+                                                    id="eduBakProgName23">
+                                                <label class="form-check-label" for="eduBakProgName23">
+                                                    45.03.02 "Лингвистика"
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName24" value='49.03.02 "Физическая культура для лиц с отклонениями в состоянии здоровья
                                             (адаптивная физическая культура)"' id="eduBakProgName24">
-                                        <label class="form-check-label" for="eduBakProgName24">
-                                            49.03.02 "Физическая культура для лиц с отклонениями в состоянии здоровья (адаптивная физическая культура)"
-                                        </label>
+                                                <label class="form-check-label" for="eduBakProgName24">
+                                                    49.03.02 "Физическая культура для лиц с отклонениями в состоянии
+                                                    здоровья (адаптивная физическая культура)"
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName25" value='49.03.04 "Спорт"'
+                                                    id="eduBakProgName25">
+                                                <label class="form-check-label" for="eduBakProgName25">
+                                                    49.03.04 "Спорт"
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName26" value='51.03.01 Культурология'
+                                                    id="eduBakProgName26">
+                                                <label class="form-check-label" for="eduBakProgName26">
+                                                    51.03.01 Культурология
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName27" value='54.03.01 Дизайн'
+                                                    id="eduBakProgName27">
+                                                <label class="form-check-label" for="eduBakProgName27">
+                                                    54.03.01 Дизайн
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName25" value='49.03.04 "Спорт"' id="eduBakProgName25">
-                                        <label class="form-check-label" for="eduBakProgName25">
-                                            49.03.04 "Спорт"
-                                        </label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <button type="button"
+                                    class="w-100 px-3 py-3 d-flex align-items-center justify-content-between border-0 outline-none rounded-3 bg-white"
+                                    data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                    <div>Институт</div><i class="fa-solid fa-caret-down fa-lg"
+                                        style="color: #ffbf31;"></i>
+                                </button>
+                                <div class="position-relative">
+                                    <div class="dropdown-menu p-4 position-absolute w-100">
+                                        <div class="form-check">
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="institutName1"
+                                                    value="Институт естествознания, физической культуры и спорта"
+                                                    id="institutName1">
+                                                <label class="form-check-label" for="institutName1">
+                                                    Институт естествознания, физической культуры и спорта
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="institutName2" value="Институт информационных технологий"
+                                                    id="institutName2">
+                                                <label class="form-check-label" for="institutName2">
+                                                    Институт информационных технологий
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="institutName3" value="Институт культуры и искусств"
+                                                    id="institutName3">
+                                                <label class="form-check-label" for="institutName3">
+                                                    Институт культуры и искусств
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="institutName4"
+                                                    value="Институт педагогического и специального образования"
+                                                    id="institutName4">
+                                                <label class="form-check-label" for="institutName4">
+                                                    Институт педагогического и специального образования
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="institutName5" value="Институт психологии" id="institutName5">
+                                                <label class="form-check-label" for="institutName5">
+                                                    Институт психологии
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="institutName6" value="Институт управления и права"
+                                                    id="institutName6">
+                                                <label class="form-check-label" for="institutName6">
+                                                    Институт управления и права
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="institutName7"
+                                                    value="Институт филологии и социальных коммуникаций"
+                                                    id="institutName7">
+                                                <label class="form-check-label" for="institutName7">
+                                                    Институт филологии и социальных коммуникаций
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName26" value='51.03.01 Культурология' id="eduBakProgName26">
-                                        <label class="form-check-label" for="eduBakProgName26">
-                                            51.03.01 Культурология
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName27" value='54.03.01 Дизайн' id="eduBakProgName27">
-                                        <label class="form-check-label" for="eduBakProgName27">
-                                            54.03.01 Дизайн
-                                        </label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <button type="button"
+                                    class="w-100 px-3 py-3 d-flex align-items-center justify-content-between border-0 outline-none rounded-3 bg-white"
+                                    data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                    <div>Кафедра</div><i class="fa-solid fa-caret-down fa-lg"
+                                        style="color: #ffbf31;"></i>
+                                </button>
+                                <div class="position-relative">
+                                    <div style="max-height: 350px; overflow-y: scroll;"
+                                        class="dropdown-menu p-4 position-absolute w-100">
+                                        <div class="form-check">
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduFormKafName1" value="Кафедра естественных наук"
+                                                    id="eduFormKafName1">
+                                                <label class="form-check-label" for="eduFormKafName1">
+                                                    Кафедра естественных наук
+                                                </label>
+                                            </div>
+                                            <div><input class="form-check-input border-warning rounded-0"
+                                                    type="checkbox" name="eduFormKafName2"
+                                                    value="Кафедра журналистики и социальных коммуникаций"
+                                                    id="eduFormKafName2">
+                                                <label class="form-check-label" for="eduFormKafName2">
+                                                    Кафедра журналистики и социальных коммуникаций
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduFormKafName3"
+                                                    value="Кафедра изобразительного искусства и дизайна"
+                                                    id="eduFormKafName3">
+                                                <label class="form-check-label" for="eduFormKafName3">
+                                                    Кафедра изобразительного искусства и дизайна
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduFormKafName4" value="Кафедра изящных искусств"
+                                                    id="eduFormKafName4">
+                                                <label class="form-check-label" for="eduFormKafName4">
+                                                    Кафедра изящных искусств
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduFormKafName5" value="Кафедра иностранной филологии"
+                                                    id="eduFormKafName5">
+                                                <label class="form-check-label" for="eduFormKafName5">
+                                                    Кафедра иностранной филологии
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduFormKafName6" value="Кафедра культурологии"
+                                                    id="eduFormKafName6">
+                                                <label class="form-check-label" for="eduFormKafName6">
+                                                    Кафедра культурологии
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduFormKafName7"
+                                                    value="Кафедра менеджмента, сервиса и туризма" id="eduFormKafName7">
+                                                <label class="form-check-label" for="eduFormKafName7">
+                                                    Кафедра менеджмента, сервиса и туризма
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduFormKafName8" value="Кафедра общей и социальной психологии"
+                                                    id="eduFormKafName8">
+                                                <label class="form-check-label" for="eduFormKafName8">
+                                                    Кафедра общей и социальной психологии
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduFormKafName9"
+                                                    value="Кафедра педагогики и образовательных технологий"
+                                                    id="eduFormKafName9">
+                                                <label class="form-check-label" for="eduFormKafName9">
+                                                    Кафедра педагогики и образовательных технологий
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduFormKafName10"
+                                                    value="Кафедра прикладной психологии и развития личности"
+                                                    id="eduFormKafName10">
+                                                <label class="form-check-label" for="eduFormKafName10">
+                                                    Кафедра прикладной психологии и развития личности
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduFormKafName11"
+                                                    value="Кафедра программной инженерии и информационных технологи"
+                                                    id="eduFormKafName11">
+                                                <label class="form-check-label" for="eduFormKafName11">
+                                                    Кафедра программной инженерии и информационных технологи
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduFormKafName12"
+                                                    value="Кафедра публичного управления и делового администрирования"
+                                                    id="eduFormKafName12">
+                                                <label class="form-check-label" for="eduFormKafName12">
+                                                    Кафедра публичного управления и делового администрирования
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduFormKafName13" value="Кафедра русского языка и литературы"
+                                                    id="eduFormKafName13">
+                                                <label class="form-check-label" for="eduFormKafName13">
+                                                    Кафедра русского языка и литературы
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduFormKafName14" value="Кафедра специального образования"
+                                                    id="eduFormKafName14">
+                                                <label class="form-check-label" for="eduFormKafName14">
+                                                    Кафедра специального образования
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduFormKafName15"
+                                                    value="Кафедра спорта и оздоровительных технологий"
+                                                    id="eduFormKafName15">
+                                                <label class="form-check-label" for="eduFormKafName15">
+                                                    Кафедра спорта и оздоровительных технологий
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduFormKafName16" value="Кафедра философии и истории"
+                                                    id="eduFormKafName16">
+                                                <label class="form-check-label" for="eduFormKafName16">
+                                                    Кафедра философии и истории
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduFormKafName17" value="Кафедра хореографии"
+                                                    id="eduFormKafName17">
+                                                <label class="form-check-label" for="eduFormKafName17">
+                                                    Кафедра хореографии
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduFormKafName18"
+                                                    value="Кафедра цифрового образования, математики и физики"
+                                                    id="eduFormKafName18">
+                                                <label class="form-check-label" for="eduFormKafName18">
+                                                    Кафедра цифрового образования, математики и физики
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduFormKafName19" value="Кафедра юриспреденции"
+                                                    id="eduFormKafName19">
+                                                <label class="form-check-label" for="eduFormKafName19">
+                                                    Кафедра юриспреденции
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <button type="button"
-                            class="w-100 px-3 py-3 d-flex align-items-center justify-content-between border-0 outline-none rounded-3 bg-white"
-                            data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                            <div>Институт</div><i class="fa-solid fa-caret-down fa-lg" style="color: #ffbf31;"></i>
-                        </button>
-                        <div class="position-relative">
-                            <div class="dropdown-menu p-4 position-absolute w-100">
-                                <div class="form-check">
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="institutName1"
-                                            value="Институт естествознания, физической культуры и спорта"
-                                            id="institutName1">
-                                        <label class="form-check-label" for="institutName1">
-                                            Институт естествознания, физической культуры и спорта
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="institutName2" value="Институт информационных технологий"
-                                            id="institutName2">
-                                        <label class="form-check-label" for="institutName2">
-                                            Институт информационных технологий
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="institutName3" value="Институт культуры и искусств"
-                                            id="institutName3">
-                                        <label class="form-check-label" for="institutName3">
-                                            Институт культуры и искусств
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="institutName4"
-                                            value="Институт педагогического и специального образования"
-                                            id="institutName4">
-                                        <label class="form-check-label" for="institutName4">
-                                            Институт педагогического и специального образования
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="institutName5" value="Институт психологии" id="institutName5">
-                                        <label class="form-check-label" for="institutName5">
-                                            Институт психологии
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="institutName6" value="Институт управления и права" id="institutName6">
-                                        <label class="form-check-label" for="institutName6">
-                                            Институт управления и права
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="institutName7" value="Институт филологии и социальных коммуникаций"
-                                            id="institutName7">
-                                        <label class="form-check-label" for="institutName7">
-                                            Институт филологии и социальных коммуникаций
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <button type="button"
-                            class="w-100 px-3 py-3 d-flex align-items-center justify-content-between border-0 outline-none rounded-3 bg-white"
-                            data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                            <div>Кафедра</div><i class="fa-solid fa-caret-down fa-lg" style="color: #ffbf31;"></i>
-                        </button>
-                        <div class="position-relative">
-                            <div style="max-height: 350px; overflow-y: scroll;"
-                                class="dropdown-menu p-4 position-absolute w-100">
-                                <div class="form-check">
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduFormKafName1" value="Кафедра естественных наук"
-                                            id="eduFormKafName1">
-                                        <label class="form-check-label" for="eduFormKafName1">
-                                            Кафедра естественных наук
-                                        </label>
-                                    </div>
-                                    <div><input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduFormKafName2"
-                                            value="Кафедра журналистики и социальных коммуникаций" id="eduFormKafName2">
-                                        <label class="form-check-label" for="eduFormKafName2">
-                                            Кафедра журналистики и социальных коммуникаций
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduFormKafName3" value="Кафедра изобразительного искусства и дизайна"
-                                            id="eduFormKafName3">
-                                        <label class="form-check-label" for="eduFormKafName3">
-                                            Кафедра изобразительного искусства и дизайна
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduFormKafName4" value="Кафедра изящных искусств"
-                                            id="eduFormKafName4">
-                                        <label class="form-check-label" for="eduFormKafName4">
-                                            Кафедра изящных искусств
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduFormKafName5" value="Кафедра иностранной филологии"
-                                            id="eduFormKafName5">
-                                        <label class="form-check-label" for="eduFormKafName5">
-                                            Кафедра иностранной филологии
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduFormKafName6" value="Кафедра культурологии" id="eduFormKafName6">
-                                        <label class="form-check-label" for="eduFormKafName6">
-                                            Кафедра культурологии
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduFormKafName7" value="Кафедра менеджмента, сервиса и туризма"
-                                            id="eduFormKafName7">
-                                        <label class="form-check-label" for="eduFormKafName7">
-                                            Кафедра менеджмента, сервиса и туризма
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduFormKafName8" value="Кафедра общей и социальной психологии"
-                                            id="eduFormKafName8">
-                                        <label class="form-check-label" for="eduFormKafName8">
-                                            Кафедра общей и социальной психологии
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduFormKafName9"
-                                            value="Кафедра педагогики и образовательных технологий"
-                                            id="eduFormKafName9">
-                                        <label class="form-check-label" for="eduFormKafName9">
-                                            Кафедра педагогики и образовательных технологий
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduFormKafName10"
-                                            value="Кафедра прикладной психологии и развития личности"
-                                            id="eduFormKafName10">
-                                        <label class="form-check-label" for="eduFormKafName10">
-                                            Кафедра прикладной психологии и развития личности
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduFormKafName11"
-                                            value="Кафедра программной инженерии и информационных технологи"
-                                            id="eduFormKafName11">
-                                        <label class="form-check-label" for="eduFormKafName11">
-                                            Кафедра программной инженерии и информационных технологи
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduFormKafName12"
-                                            value="Кафедра публичного управления и делового администрирования"
-                                            id="eduFormKafName12">
-                                        <label class="form-check-label" for="eduFormKafName12">
-                                            Кафедра публичного управления и делового администрирования
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduFormKafName13" value="Кафедра русского языка и литературы"
-                                            id="eduFormKafName13">
-                                        <label class="form-check-label" for="eduFormKafName13">
-                                            Кафедра русского языка и литературы
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduFormKafName14" value="Кафедра специального образования"
-                                            id="eduFormKafName14">
-                                        <label class="form-check-label" for="eduFormKafName14">
-                                            Кафедра специального образования
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduFormKafName15" value="Кафедра спорта и оздоровительных технологий"
-                                            id="eduFormKafName15">
-                                        <label class="form-check-label" for="eduFormKafName15">
-                                            Кафедра спорта и оздоровительных технологий
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduFormKafName16" value="Кафедра философии и истории"
-                                            id="eduFormKafName16">
-                                        <label class="form-check-label" for="eduFormKafName16">
-                                            Кафедра философии и истории
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduFormKafName17" value="Кафедра хореографии" id="eduFormKafName17">
-                                        <label class="form-check-label" for="eduFormKafName17">
-                                            Кафедра хореографии
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduFormKafName18"
-                                            value="Кафедра цифрового образования, математики и физики"
-                                            id="eduFormKafName18">
-                                        <label class="form-check-label" for="eduFormKafName18">
-                                            Кафедра цифрового образования, математики и физики
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduFormKafName19" value="Кафедра юриспреденции" id="eduFormKafName19">
-                                        <label class="form-check-label" for="eduFormKafName19">
-                                            Кафедра юриспреденции
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        <button class="btn bg-white" type="submit">Выбрать</button>
+                    </form>
                 </div>
-                <button class="btn bg-white" type="submit">Выбрать</button>
-            </form>
-        </div>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                     {% for program in programs_bak %}
                     <div class="col">
@@ -720,541 +769,590 @@
             </div>
             <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
                 tabindex="0">
-                        <div class="mb-5 py-5 px-5 cafedra-yellow-back rounded-4">
-            <form action="{% url 'education:edu_catalog' %}" method="get">
-                <div class="mb-2 row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                    <div class="col">
-                        <button type="button"
-                            class="w-100 px-3 py-3 d-flex align-items-center justify-content-between border-0 outline-none rounded-3 bg-white"
-                            data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                            <div>Форма обучения</div><i class="fa-solid fa-caret-down fa-lg"
-                                style="color: #ffbf31;"></i>
-                        </button>
-                        <div class="position-relative">
-                            <div class="dropdown-menu p-4 position-absolute w-100">
-                                <div class="form-check">
-                                    <div><input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="form_z" value="Заочная" id="eduForm1">
-                                        <label class="form-check-label" for="eduForm1">
-                                            Заочная
-                                        </label>
-                                    </div>
-                                    <div><input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="form_o" value="Очная" id="eduForm2">
-                                        <label class="form-check-label" for="eduForm2">
-                                            Очная
-                                        </label>
-                                    </div>
-                                    <div><input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="form_oz" value="Очно-заочная" id="eduForm3">
-                                        <label class="form-check-label" for="eduForm3">
-                                            Очно-заочная
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <button type="button"
-                            class="w-100 px-3 py-3 d-flex align-items-center justify-content-between border-0 outline-none rounded-3 bg-white"
-                            data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                            <div>Основа финансирования</div><i class="fa-solid fa-caret-down fa-lg"
-                                style="color: #ffbf31;"></i>
-                        </button>
-                        <div class="position-relative">
-                            <div class="dropdown-menu p-4 position-absolute w-100">
-                                <div class="form-check">
-                                    <div><input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBudget" value="Бюджет" id="eduBudget">
-                                        <label class="form-check-label" for="eduBudget">
-                                            Бюджет
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduContract" value="Коммерция" id="eduContract">
-                                        <label class="form-check-label" for="eduContract">
-                                            Коммерция
-                                        </label>
+                <div class="mb-5 py-5 px-5 cafedra-yellow-back rounded-4">
+                    <form action="{% url 'education:edu_catalog' %}" method="get">
+                        <div class="mb-2 row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                            <div class="col">
+                                <button type="button"
+                                    class="w-100 px-3 py-3 d-flex align-items-center justify-content-between border-0 outline-none rounded-3 bg-white"
+                                    data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                    <div>Форма обучения</div><i class="fa-solid fa-caret-down fa-lg"
+                                        style="color: #ffbf31;"></i>
+                                </button>
+                                <div class="position-relative">
+                                    <div class="dropdown-menu p-4 position-absolute w-100">
+                                        <div><input class="d-none" type="checkbox" name="edu_level" value="Магистратура"
+                                                checked="true">
+                                        </div>
+                                        <div class="form-check">
+                                            <div><input class="form-check-input border-warning rounded-0"
+                                                    type="checkbox" name="form_z" value="Заочная" id="eduForm1">
+                                                <label class="form-check-label" for="eduForm1">
+                                                    Заочная
+                                                </label>
+                                            </div>
+                                            <div><input class="form-check-input border-warning rounded-0"
+                                                    type="checkbox" name="form_o" value="Очная" id="eduForm2">
+                                                <label class="form-check-label" for="eduForm2">
+                                                    Очная
+                                                </label>
+                                            </div>
+                                            <div><input class="form-check-input border-warning rounded-0"
+                                                    type="checkbox" name="form_oz" value="Очно-заочная" id="eduForm3">
+                                                <label class="form-check-label" for="eduForm3">
+                                                    Очно-заочная
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <button type="button"
-                            class="w-100 px-3 py-3 d-flex align-items-center justify-content-between border-0 outline-none rounded-3 bg-white"
-                            data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                            <div>Период обучения</div><i class="fa-solid fa-caret-down fa-lg"
-                                style="color: #ffbf31;"></i>
-                        </button>
-                        <div class="position-relative">
-                            <div class="dropdown-menu p-4 position-absolute w-100">
-                                <div class="form-check">
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduPeriod1" value="2 года" id="eduPeriod1">
-                                        <label class="form-check-label" for="eduPeriod1">
-                                            2 года
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduPeriod2" value="2 года 6 месяцев" id="eduPeriod2">
-                                        <label class="form-check-label" for="eduPeriod2">
-                                            2 года 6 месяцев
-                                        </label>
+                            <div class="col">
+                                <button type="button"
+                                    class="w-100 px-3 py-3 d-flex align-items-center justify-content-between border-0 outline-none rounded-3 bg-white"
+                                    data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                    <div>Основа финансирования</div><i class="fa-solid fa-caret-down fa-lg"
+                                        style="color: #ffbf31;"></i>
+                                </button>
+                                <div class="position-relative">
+                                    <div class="dropdown-menu p-4 position-absolute w-100">
+                                        <div class="form-check">
+                                            <div><input class="form-check-input border-warning rounded-0"
+                                                    type="checkbox" name="eduBudget" value="Бюджет" id="eduBudget">
+                                                <label class="form-check-label" for="eduBudget">
+                                                    Бюджет
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduContract" value="Коммерция" id="eduContract">
+                                                <label class="form-check-label" for="eduContract">
+                                                    Коммерция
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <button type="button"
-                            class="w-100 px-3 py-3 d-flex align-items-center justify-content-between border-0 outline-none rounded-3 bg-white"
-                            data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                            <div>Направление подготовки</div><i class="fa-solid fa-caret-down fa-lg"
-                                style="color: #ffbf31;"></i>
-                        </button>
-                        <div class="position-relative">
-                            <div style="max-height: 350px; overflow-y: scroll;"
-                                class="dropdown-menu p-4 position-absolute w-100">
-                                <div class="form-check">
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName1" value='05.03.06 "Экология и природопользование"' id="eduBakProgName1">
-                                        <label class="form-check-label" for="eduBakProgName1">
-                                            05.03.06 "Экология и природопользование"
-                                        </label>
+                            <div class="col">
+                                <button type="button"
+                                    class="w-100 px-3 py-3 d-flex align-items-center justify-content-between border-0 outline-none rounded-3 bg-white"
+                                    data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                    <div>Период обучения</div><i class="fa-solid fa-caret-down fa-lg"
+                                        style="color: #ffbf31;"></i>
+                                </button>
+                                <div class="position-relative">
+                                    <div class="dropdown-menu p-4 position-absolute w-100">
+                                        <div class="form-check">
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduPeriod1" value="2 года" id="eduPeriod1">
+                                                <label class="form-check-label" for="eduPeriod1">
+                                                    2 года
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduPeriod2" value="2 года 6 месяцев" id="eduPeriod2">
+                                                <label class="form-check-label" for="eduPeriod2">
+                                                    2 года 6 месяцев
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName2" value='06.03.01 "Биология"' id="eduBakProgName2">
-                                        <label class="form-check-label" for="eduBakProgName2">
-                                            06.03.01 "Биология"
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName3" value='09.03.04 "Программная инженерия"' id="eduBakProgName3">
-                                        <label class="form-check-label" for="eduBakProgName3">
-                                            09.03.04 "Программная инженерия"
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName4" value='37.03.01 "Психология"' id="eduBakProgName4">
-                                        <label class="form-check-label" for="eduBakProgName4">
-                                            37.03.01 "Психология"
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName5" value='38.03.02 "Менеджмент"' id="eduBakProgName5">
-                                        <label class="form-check-label" for="eduBakProgName5">
-                                            38.03.02 "Менеджмент"
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName6" value='38.03.04 "Государственное и муниципальное управление"' id="eduBakProgName6">
-                                        <label class="form-check-label" for="eduBakProgName6">
-                                            38.03.04 "Государственное и муниципальное управление"
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName7" value='39.03.03 "Организация работы с молодежью"' id="eduBakProgName7">
-                                        <label class="form-check-label" for="eduBakProgName7">
-                                            39.03.03 "Организация работы с молодежью"
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName8" value='40.03.01 "Юриспруденция"' id="eduBakProgName8">
-                                        <label class="form-check-label" for="eduBakProgName8">
-                                            40.03.01 "Юриспруденция"
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName9" value='42.03.02 "Журналистика"' id="eduBakProgName9">
-                                        <label class="form-check-label" for="eduBakProgName9">
-                                            42.03.02 "Журналистика"
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName10" value='42.03.04 Телевидение' id="eduBakProgName10">
-                                        <label class="form-check-label" for="eduBakProgName10">
-                                            42.03.04 Телевидение
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName11" value='43.03.01 "Сервис"' id="eduBakProgName11">
-                                        <label class="form-check-label" for="eduBakProgName11">
-                                            43.03.01 "Сервис"
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName12" value='43.03.02 "Туризм"' id="eduBakProgName12">
-                                        <label class="form-check-label" for="eduBakProgName12">
-                                            43.03.02 "Туризм"
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName13" value='43.03.03 "Гостиничное дело"' id="eduBakProgName13">
-                                        <label class="form-check-label" for="eduBakProgName13">
-                                            43.03.03 "Гостиничное дело"
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName14" value='44.03.01 "Педагогическое образование"' id="eduBakProgName14">
-                                        <label class="form-check-label" for="eduBakProgName14">
-                                            44.03.01 "Педагогическое образование"
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName15" value='44.03.01 «Педагогическое образование»' id="eduBakProgName15">
-                                        <label class="form-check-label" for="eduBakProgName15">
-                                            44.03.01 «Педагогическое образование»
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName16" value='44.03.01 Педагогическое образование' id="eduBakProgName16">
-                                        <label class="form-check-label" for="eduBakProgName16">
-                                            44.03.01 Педагогическое образование
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName17" value='44.03.02 "Психолого-педагогическое образование"' id="eduBakProgName17">
-                                        <label class="form-check-label" for="eduBakProgName17">
-                                            44.03.02 "Психолого-педагогическое образование"
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName18" value='44.03.03 "Специальное (дефектологическое) образование"' id="eduBakProgName18">
-                                        <label class="form-check-label" for="eduBakProgName18">
-                                            44.03.03 "Специальное (дефектологическое) образование"
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName19" value='44.03.05 "Педагогическое образование (с двумя профилями подготовки)"' id="eduBakProgName19">
-                                        <label class="form-check-label" for="eduBakProgName19">
-                                            44.03.05 "Педагогическое образование (с двумя профилями подготовки)"
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName20" value='44.03.05 «Педагогическое образование (с двумя профилями подготовки)»' id="eduBakProgName20">
-                                        <label class="form-check-label" for="eduBakProgName20">
-                                            44.03.05 «Педагогическое образование (с двумя профилями подготовки)»
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName21" value='44.03.05 Педагогическое образование (с двумя профилями подготовки)' id="eduBakProgName21">
-                                        <label class="form-check-label" for="eduBakProgName21">
-                                            44.03.05 Педагогическое образование (с двумя профилями подготовки)
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName22" value='44.04.03 "Специальное (дефектологическое) образование"' id="eduBakProgName22">
-                                        <label class="form-check-label" for="eduBakProgName22">
-                                            44.04.03 "Специальное (дефектологическое) образование"
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName23" value='45.03.02 "Лингвистика"' id="eduBakProgName23">
-                                        <label class="form-check-label" for="eduBakProgName23">
-                                            45.03.02 "Лингвистика"
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName24" value='49.03.02 "Физическая культура для лиц с отклонениями в состоянии здоровья
+                                </div>
+                            </div>
+                            <div class="col">
+                                <button type="button"
+                                    class="w-100 px-3 py-3 d-flex align-items-center justify-content-between border-0 outline-none rounded-3 bg-white"
+                                    data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                    <div>Направление подготовки</div><i class="fa-solid fa-caret-down fa-lg"
+                                        style="color: #ffbf31;"></i>
+                                </button>
+                                <div class="position-relative">
+                                    <div style="max-height: 350px; overflow-y: scroll;"
+                                        class="dropdown-menu p-4 position-absolute w-100">
+                                        <div class="form-check">
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName1"
+                                                    value='05.03.06 "Экология и природопользование"'
+                                                    id="eduBakProgName1">
+                                                <label class="form-check-label" for="eduBakProgName1">
+                                                    05.03.06 "Экология и природопользование"
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName2" value='06.03.01 "Биология"'
+                                                    id="eduBakProgName2">
+                                                <label class="form-check-label" for="eduBakProgName2">
+                                                    06.03.01 "Биология"
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName3" value='09.03.04 "Программная инженерия"'
+                                                    id="eduBakProgName3">
+                                                <label class="form-check-label" for="eduBakProgName3">
+                                                    09.03.04 "Программная инженерия"
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName4" value='37.03.01 "Психология"'
+                                                    id="eduBakProgName4">
+                                                <label class="form-check-label" for="eduBakProgName4">
+                                                    37.03.01 "Психология"
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName5" value='38.03.02 "Менеджмент"'
+                                                    id="eduBakProgName5">
+                                                <label class="form-check-label" for="eduBakProgName5">
+                                                    38.03.02 "Менеджмент"
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName6"
+                                                    value='38.03.04 "Государственное и муниципальное управление"'
+                                                    id="eduBakProgName6">
+                                                <label class="form-check-label" for="eduBakProgName6">
+                                                    38.03.04 "Государственное и муниципальное управление"
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName7"
+                                                    value='39.03.03 "Организация работы с молодежью"'
+                                                    id="eduBakProgName7">
+                                                <label class="form-check-label" for="eduBakProgName7">
+                                                    39.03.03 "Организация работы с молодежью"
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName8" value='40.03.01 "Юриспруденция"'
+                                                    id="eduBakProgName8">
+                                                <label class="form-check-label" for="eduBakProgName8">
+                                                    40.03.01 "Юриспруденция"
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName9" value='42.03.02 "Журналистика"'
+                                                    id="eduBakProgName9">
+                                                <label class="form-check-label" for="eduBakProgName9">
+                                                    42.03.02 "Журналистика"
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName10" value='42.03.04 Телевидение'
+                                                    id="eduBakProgName10">
+                                                <label class="form-check-label" for="eduBakProgName10">
+                                                    42.03.04 Телевидение
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName11" value='43.03.01 "Сервис"'
+                                                    id="eduBakProgName11">
+                                                <label class="form-check-label" for="eduBakProgName11">
+                                                    43.03.01 "Сервис"
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName12" value='43.03.02 "Туризм"'
+                                                    id="eduBakProgName12">
+                                                <label class="form-check-label" for="eduBakProgName12">
+                                                    43.03.02 "Туризм"
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName13" value='43.03.03 "Гостиничное дело"'
+                                                    id="eduBakProgName13">
+                                                <label class="form-check-label" for="eduBakProgName13">
+                                                    43.03.03 "Гостиничное дело"
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName14"
+                                                    value='44.03.01 "Педагогическое образование"' id="eduBakProgName14">
+                                                <label class="form-check-label" for="eduBakProgName14">
+                                                    44.03.01 "Педагогическое образование"
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName15"
+                                                    value='44.03.01 «Педагогическое образование»' id="eduBakProgName15">
+                                                <label class="form-check-label" for="eduBakProgName15">
+                                                    44.03.01 «Педагогическое образование»
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName16" value='44.03.01 Педагогическое образование'
+                                                    id="eduBakProgName16">
+                                                <label class="form-check-label" for="eduBakProgName16">
+                                                    44.03.01 Педагогическое образование
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName17"
+                                                    value='44.03.02 "Психолого-педагогическое образование"'
+                                                    id="eduBakProgName17">
+                                                <label class="form-check-label" for="eduBakProgName17">
+                                                    44.03.02 "Психолого-педагогическое образование"
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName18"
+                                                    value='44.03.03 "Специальное (дефектологическое) образование"'
+                                                    id="eduBakProgName18">
+                                                <label class="form-check-label" for="eduBakProgName18">
+                                                    44.03.03 "Специальное (дефектологическое) образование"
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName19"
+                                                    value='44.03.05 "Педагогическое образование (с двумя профилями подготовки)"'
+                                                    id="eduBakProgName19">
+                                                <label class="form-check-label" for="eduBakProgName19">
+                                                    44.03.05 "Педагогическое образование (с двумя профилями подготовки)"
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName20"
+                                                    value='44.03.05 «Педагогическое образование (с двумя профилями подготовки)»'
+                                                    id="eduBakProgName20">
+                                                <label class="form-check-label" for="eduBakProgName20">
+                                                    44.03.05 «Педагогическое образование (с двумя профилями подготовки)»
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName21"
+                                                    value='44.03.05 Педагогическое образование (с двумя профилями подготовки)'
+                                                    id="eduBakProgName21">
+                                                <label class="form-check-label" for="eduBakProgName21">
+                                                    44.03.05 Педагогическое образование (с двумя профилями подготовки)
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName22"
+                                                    value='44.04.03 "Специальное (дефектологическое) образование"'
+                                                    id="eduBakProgName22">
+                                                <label class="form-check-label" for="eduBakProgName22">
+                                                    44.04.03 "Специальное (дефектологическое) образование"
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName23" value='45.03.02 "Лингвистика"'
+                                                    id="eduBakProgName23">
+                                                <label class="form-check-label" for="eduBakProgName23">
+                                                    45.03.02 "Лингвистика"
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName24" value='49.03.02 "Физическая культура для лиц с отклонениями в состоянии здоровья
                                             (адаптивная физическая культура)"' id="eduBakProgName24">
-                                        <label class="form-check-label" for="eduBakProgName24">
-                                            49.03.02 "Физическая культура для лиц с отклонениями в состоянии здоровья (адаптивная физическая культура)"
-                                        </label>
+                                                <label class="form-check-label" for="eduBakProgName24">
+                                                    49.03.02 "Физическая культура для лиц с отклонениями в состоянии
+                                                    здоровья (адаптивная физическая культура)"
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName25" value='49.03.04 "Спорт"'
+                                                    id="eduBakProgName25">
+                                                <label class="form-check-label" for="eduBakProgName25">
+                                                    49.03.04 "Спорт"
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName26" value='51.03.01 Культурология'
+                                                    id="eduBakProgName26">
+                                                <label class="form-check-label" for="eduBakProgName26">
+                                                    51.03.01 Культурология
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduBakProgName27" value='54.03.01 Дизайн'
+                                                    id="eduBakProgName27">
+                                                <label class="form-check-label" for="eduBakProgName27">
+                                                    54.03.01 Дизайн
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName25" value='49.03.04 "Спорт"' id="eduBakProgName25">
-                                        <label class="form-check-label" for="eduBakProgName25">
-                                            49.03.04 "Спорт"
-                                        </label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <button type="button"
+                                    class="w-100 px-3 py-3 d-flex align-items-center justify-content-between border-0 outline-none rounded-3 bg-white"
+                                    data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                    <div>Институт</div><i class="fa-solid fa-caret-down fa-lg"
+                                        style="color: #ffbf31;"></i>
+                                </button>
+                                <div class="position-relative">
+                                    <div class="dropdown-menu p-4 position-absolute w-100">
+                                        <div class="form-check">
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="institutName1"
+                                                    value="Институт естествознания, физической культуры и спорта"
+                                                    id="institutName1">
+                                                <label class="form-check-label" for="institutName1">
+                                                    Институт естествознания, физической культуры и спорта
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="institutName2" value="Институт информационных технологий"
+                                                    id="institutName2">
+                                                <label class="form-check-label" for="institutName2">
+                                                    Институт информационных технологий
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="institutName3" value="Институт культуры и искусств"
+                                                    id="institutName3">
+                                                <label class="form-check-label" for="institutName3">
+                                                    Институт культуры и искусств
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="institutName4"
+                                                    value="Институт педагогического и специального образования"
+                                                    id="institutName4">
+                                                <label class="form-check-label" for="institutName4">
+                                                    Институт педагогического и специального образования
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="institutName5" value="Институт психологии" id="institutName5">
+                                                <label class="form-check-label" for="institutName5">
+                                                    Институт психологии
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="institutName6" value="Институт управления и права"
+                                                    id="institutName6">
+                                                <label class="form-check-label" for="institutName6">
+                                                    Институт управления и права
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="institutName7"
+                                                    value="Институт филологии и социальных коммуникаций"
+                                                    id="institutName7">
+                                                <label class="form-check-label" for="institutName7">
+                                                    Институт филологии и социальных коммуникаций
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName26" value='51.03.01 Культурология' id="eduBakProgName26">
-                                        <label class="form-check-label" for="eduBakProgName26">
-                                            51.03.01 Культурология
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduBakProgName27" value='54.03.01 Дизайн' id="eduBakProgName27">
-                                        <label class="form-check-label" for="eduBakProgName27">
-                                            54.03.01 Дизайн
-                                        </label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <button type="button"
+                                    class="w-100 px-3 py-3 d-flex align-items-center justify-content-between border-0 outline-none rounded-3 bg-white"
+                                    data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                    <div>Кафедра</div><i class="fa-solid fa-caret-down fa-lg"
+                                        style="color: #ffbf31;"></i>
+                                </button>
+                                <div class="position-relative">
+                                    <div style="max-height: 350px; overflow-y: scroll;"
+                                        class="dropdown-menu p-4 position-absolute w-100">
+                                        <div class="form-check">
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduFormKafName1" value="Кафедра естественных наук"
+                                                    id="eduFormKafName1">
+                                                <label class="form-check-label" for="eduFormKafName1">
+                                                    Кафедра естественных наук
+                                                </label>
+                                            </div>
+                                            <div><input class="form-check-input border-warning rounded-0"
+                                                    type="checkbox" name="eduFormKafName2"
+                                                    value="Кафедра журналистики и социальных коммуникаций"
+                                                    id="eduFormKafName2">
+                                                <label class="form-check-label" for="eduFormKafName2">
+                                                    Кафедра журналистики и социальных коммуникаций
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduFormKafName3"
+                                                    value="Кафедра изобразительного искусства и дизайна"
+                                                    id="eduFormKafName3">
+                                                <label class="form-check-label" for="eduFormKafName3">
+                                                    Кафедра изобразительного искусства и дизайна
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduFormKafName4" value="Кафедра изящных искусств"
+                                                    id="eduFormKafName4">
+                                                <label class="form-check-label" for="eduFormKafName4">
+                                                    Кафедра изящных искусств
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduFormKafName5" value="Кафедра иностранной филологии"
+                                                    id="eduFormKafName5">
+                                                <label class="form-check-label" for="eduFormKafName5">
+                                                    Кафедра иностранной филологии
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduFormKafName6" value="Кафедра культурологии"
+                                                    id="eduFormKafName6">
+                                                <label class="form-check-label" for="eduFormKafName6">
+                                                    Кафедра культурологии
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduFormKafName7"
+                                                    value="Кафедра менеджмента, сервиса и туризма" id="eduFormKafName7">
+                                                <label class="form-check-label" for="eduFormKafName7">
+                                                    Кафедра менеджмента, сервиса и туризма
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduFormKafName8" value="Кафедра общей и социальной психологии"
+                                                    id="eduFormKafName8">
+                                                <label class="form-check-label" for="eduFormKafName8">
+                                                    Кафедра общей и социальной психологии
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduFormKafName9"
+                                                    value="Кафедра педагогики и образовательных технологий"
+                                                    id="eduFormKafName9">
+                                                <label class="form-check-label" for="eduFormKafName9">
+                                                    Кафедра педагогики и образовательных технологий
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduFormKafName10"
+                                                    value="Кафедра прикладной психологии и развития личности"
+                                                    id="eduFormKafName10">
+                                                <label class="form-check-label" for="eduFormKafName10">
+                                                    Кафедра прикладной психологии и развития личности
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduFormKafName11"
+                                                    value="Кафедра программной инженерии и информационных технологи"
+                                                    id="eduFormKafName11">
+                                                <label class="form-check-label" for="eduFormKafName11">
+                                                    Кафедра программной инженерии и информационных технологи
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduFormKafName12"
+                                                    value="Кафедра публичного управления и делового администрирования"
+                                                    id="eduFormKafName12">
+                                                <label class="form-check-label" for="eduFormKafName12">
+                                                    Кафедра публичного управления и делового администрирования
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduFormKafName13" value="Кафедра русского языка и литературы"
+                                                    id="eduFormKafName13">
+                                                <label class="form-check-label" for="eduFormKafName13">
+                                                    Кафедра русского языка и литературы
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduFormKafName14" value="Кафедра специального образования"
+                                                    id="eduFormKafName14">
+                                                <label class="form-check-label" for="eduFormKafName14">
+                                                    Кафедра специального образования
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduFormKafName15"
+                                                    value="Кафедра спорта и оздоровительных технологий"
+                                                    id="eduFormKafName15">
+                                                <label class="form-check-label" for="eduFormKafName15">
+                                                    Кафедра спорта и оздоровительных технологий
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduFormKafName16" value="Кафедра философии и истории"
+                                                    id="eduFormKafName16">
+                                                <label class="form-check-label" for="eduFormKafName16">
+                                                    Кафедра философии и истории
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduFormKafName17" value="Кафедра хореографии"
+                                                    id="eduFormKafName17">
+                                                <label class="form-check-label" for="eduFormKafName17">
+                                                    Кафедра хореографии
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduFormKafName18"
+                                                    value="Кафедра цифрового образования, математики и физики"
+                                                    id="eduFormKafName18">
+                                                <label class="form-check-label" for="eduFormKafName18">
+                                                    Кафедра цифрового образования, математики и физики
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input border-warning rounded-0" type="checkbox"
+                                                    name="eduFormKafName19" value="Кафедра юриспреденции"
+                                                    id="eduFormKafName19">
+                                                <label class="form-check-label" for="eduFormKafName19">
+                                                    Кафедра юриспреденции
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <button type="button"
-                            class="w-100 px-3 py-3 d-flex align-items-center justify-content-between border-0 outline-none rounded-3 bg-white"
-                            data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                            <div>Институт</div><i class="fa-solid fa-caret-down fa-lg" style="color: #ffbf31;"></i>
-                        </button>
-                        <div class="position-relative">
-                            <div class="dropdown-menu p-4 position-absolute w-100">
-                                <div class="form-check">
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="institutName1"
-                                            value="Институт естествознания, физической культуры и спорта"
-                                            id="institutName1">
-                                        <label class="form-check-label" for="institutName1">
-                                            Институт естествознания, физической культуры и спорта
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="institutName2" value="Институт информационных технологий"
-                                            id="institutName2">
-                                        <label class="form-check-label" for="institutName2">
-                                            Институт информационных технологий
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="institutName3" value="Институт культуры и искусств"
-                                            id="institutName3">
-                                        <label class="form-check-label" for="institutName3">
-                                            Институт культуры и искусств
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="institutName4"
-                                            value="Институт педагогического и специального образования"
-                                            id="institutName4">
-                                        <label class="form-check-label" for="institutName4">
-                                            Институт педагогического и специального образования
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="institutName5" value="Институт психологии" id="institutName5">
-                                        <label class="form-check-label" for="institutName5">
-                                            Институт психологии
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="institutName6" value="Институт управления и права" id="institutName6">
-                                        <label class="form-check-label" for="institutName6">
-                                            Институт управления и права
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="institutName7" value="Институт филологии и социальных коммуникаций"
-                                            id="institutName7">
-                                        <label class="form-check-label" for="institutName7">
-                                            Институт филологии и социальных коммуникаций
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <button type="button"
-                            class="w-100 px-3 py-3 d-flex align-items-center justify-content-between border-0 outline-none rounded-3 bg-white"
-                            data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                            <div>Кафедра</div><i class="fa-solid fa-caret-down fa-lg" style="color: #ffbf31;"></i>
-                        </button>
-                        <div class="position-relative">
-                            <div style="max-height: 350px; overflow-y: scroll;"
-                                class="dropdown-menu p-4 position-absolute w-100">
-                                <div class="form-check">
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduFormKafName1" value="Кафедра естественных наук"
-                                            id="eduFormKafName1">
-                                        <label class="form-check-label" for="eduFormKafName1">
-                                            Кафедра естественных наук
-                                        </label>
-                                    </div>
-                                    <div><input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduFormKafName2"
-                                            value="Кафедра журналистики и социальных коммуникаций" id="eduFormKafName2">
-                                        <label class="form-check-label" for="eduFormKafName2">
-                                            Кафедра журналистики и социальных коммуникаций
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduFormKafName3" value="Кафедра изобразительного искусства и дизайна"
-                                            id="eduFormKafName3">
-                                        <label class="form-check-label" for="eduFormKafName3">
-                                            Кафедра изобразительного искусства и дизайна
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduFormKafName4" value="Кафедра изящных искусств"
-                                            id="eduFormKafName4">
-                                        <label class="form-check-label" for="eduFormKafName4">
-                                            Кафедра изящных искусств
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduFormKafName5" value="Кафедра иностранной филологии"
-                                            id="eduFormKafName5">
-                                        <label class="form-check-label" for="eduFormKafName5">
-                                            Кафедра иностранной филологии
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduFormKafName6" value="Кафедра культурологии" id="eduFormKafName6">
-                                        <label class="form-check-label" for="eduFormKafName6">
-                                            Кафедра культурологии
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduFormKafName7" value="Кафедра менеджмента, сервиса и туризма"
-                                            id="eduFormKafName7">
-                                        <label class="form-check-label" for="eduFormKafName7">
-                                            Кафедра менеджмента, сервиса и туризма
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduFormKafName8" value="Кафедра общей и социальной психологии"
-                                            id="eduFormKafName8">
-                                        <label class="form-check-label" for="eduFormKafName8">
-                                            Кафедра общей и социальной психологии
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduFormKafName9"
-                                            value="Кафедра педагогики и образовательных технологий"
-                                            id="eduFormKafName9">
-                                        <label class="form-check-label" for="eduFormKafName9">
-                                            Кафедра педагогики и образовательных технологий
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduFormKafName10"
-                                            value="Кафедра прикладной психологии и развития личности"
-                                            id="eduFormKafName10">
-                                        <label class="form-check-label" for="eduFormKafName10">
-                                            Кафедра прикладной психологии и развития личности
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduFormKafName11"
-                                            value="Кафедра программной инженерии и информационных технологи"
-                                            id="eduFormKafName11">
-                                        <label class="form-check-label" for="eduFormKafName11">
-                                            Кафедра программной инженерии и информационных технологи
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduFormKafName12"
-                                            value="Кафедра публичного управления и делового администрирования"
-                                            id="eduFormKafName12">
-                                        <label class="form-check-label" for="eduFormKafName12">
-                                            Кафедра публичного управления и делового администрирования
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduFormKafName13" value="Кафедра русского языка и литературы"
-                                            id="eduFormKafName13">
-                                        <label class="form-check-label" for="eduFormKafName13">
-                                            Кафедра русского языка и литературы
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduFormKafName14" value="Кафедра специального образования"
-                                            id="eduFormKafName14">
-                                        <label class="form-check-label" for="eduFormKafName14">
-                                            Кафедра специального образования
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduFormKafName15" value="Кафедра спорта и оздоровительных технологий"
-                                            id="eduFormKafName15">
-                                        <label class="form-check-label" for="eduFormKafName15">
-                                            Кафедра спорта и оздоровительных технологий
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduFormKafName16" value="Кафедра философии и истории"
-                                            id="eduFormKafName16">
-                                        <label class="form-check-label" for="eduFormKafName16">
-                                            Кафедра философии и истории
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduFormKafName17" value="Кафедра хореографии" id="eduFormKafName17">
-                                        <label class="form-check-label" for="eduFormKafName17">
-                                            Кафедра хореографии
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduFormKafName18"
-                                            value="Кафедра цифрового образования, математики и физики"
-                                            id="eduFormKafName18">
-                                        <label class="form-check-label" for="eduFormKafName18">
-                                            Кафедра цифрового образования, математики и физики
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input border-warning rounded-0" type="checkbox"
-                                            name="eduFormKafName19" value="Кафедра юриспреденции" id="eduFormKafName19">
-                                        <label class="form-check-label" for="eduFormKafName19">
-                                            Кафедра юриспреденции
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        <button class="btn bg-white" type="submit">Выбрать</button>
+                    </form>
                 </div>
-                <button class="btn bg-white" type="submit">Выбрать</button>
-            </form>
-        </div>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                     {% for program in programs_mag %}
                     <div class="col">
