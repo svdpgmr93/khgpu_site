@@ -1726,6 +1726,7 @@ summary p {
 
 .management-gray-back {
     background-image: url('../img/institut-it/bg-carg-grey.webp');
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../img/institut-it/bg-carg-grey.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -2039,6 +2040,13 @@ a:hover .traslating-card {
     filter: grayscale(100%);
 }
 
+.hgpu-catalog-logo {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    width: 80px;
+}
+
 @media (max-width: 1440px) {
     .edu-program-advantage-img {
         width: 430px;
@@ -2099,5 +2107,15 @@ a:hover .traslating-card {
     .abit-block {
         display: flex !important;
         flex-direction: column;
+    }
+    .hgpu-catalog-logo {
+        position: absolute;
+        top: 17%;
+        right: 5%;
+        width: 50px;
+    }
+    .edu-catalog-subtitle {
+        line-height: 1.2;
+        margin-bottom: 20px !important;
     }
 }
