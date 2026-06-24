@@ -93,3 +93,12 @@ def edu_program(request, program_id):
         'position': position,
         'perspective': perspective 
         })
+
+
+def searching_bak(request):
+    programs = EduProgram.objects.filter(level__contains='Бакалавриат').filter(name__contains=request.GET.get('searching'))
+    return render(request, 'program_cards.html', context={'programs': programs})
+
+def searching_mag(request):
+    programs = EduProgram.objects.filter(level__contains='Магистратура').filter(name__contains=request.GET.get('searching'))
+    return render(request, 'program_cards.html', context={'programs': programs})
