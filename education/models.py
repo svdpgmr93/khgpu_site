@@ -123,7 +123,7 @@ class EduProgram(models.Model):
     name = models.CharField(max_length=255, verbose_name='Название программы')
     edu_number = models.CharField(max_length=100, verbose_name='Шифр')
     level = models.CharField(choices=EduLevel.choices, max_length=100)
-    edu_form = models.ManyToManyField(EduForms, through='EduProgramEduForm')
+    edu_form = models.ManyToManyField(EduForms, through='EduProgramEduForm', through_fields=('edu_program','edu_form'))
     about_program = RichTextField(verbose_name='О программе')
     exam_ege = RichTextField(verbose_name='Экзамены ЕГЭ')
     exam_spo = RichTextField(verbose_name='Экзамены СПО')
@@ -142,6 +142,9 @@ class EduProgram(models.Model):
     edu_prog_perspective_img2 = models.ImageField(upload_to='edu_program_images/', verbose_name='Изображение2 блока перспектив ОП')
     edu_prog_perspective_img3 = models.ImageField(upload_to='edu_program_images/', verbose_name='Изображение3 блока перспектив ОП')
     
+    def get_forms(self):
+        forms = EduProgramEduForm.objects.filter(edu_program=self.pk)
+        return forms
 
     class Meta:
         verbose_name = 'Образовательная программа'
@@ -152,7 +155,7 @@ class EduProgram(models.Model):
         return f"{name_kod}"
     
 class EduProgramEduForm(models.Model):
-    edu_program = models.ForeignKey(EduProgram, on_delete=models.CASCADE)
+    edu_program = models.ForeignKey(EduProgram, on_delete=models.CASCADE, related_name='eduprogramseduform')
     edu_form = models.ForeignKey(EduForms, on_delete=models.PROTECT)
     lerning_time = models.CharField(choices=LerningTime.choices, max_length=100)
     budget_places = models.IntegerField()
