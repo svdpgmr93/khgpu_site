@@ -81,6 +81,9 @@ def anti_corruption(requests):
 def rabota_v_hgpu(requests):
     return render(requests, 'rabota-v-hgpu.html')
 
+def partners(requests):
+    return render(requests, 'partners.html')
+
 def mediapedagogika(requests):
     return render(requests, 'mediapedagogika.html')
 
@@ -95,3 +98,9 @@ def gup(requests):
 
 def antiterror(requests):
     return render(requests, 'antiterror.html')
+
+def grants(requests):
+    return render(requests, 'templates_science/grants.html')
+
+def contacts(requests):
+    return render(requests, 'contacts.html')

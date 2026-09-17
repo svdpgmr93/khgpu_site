@@ -220,17 +220,14 @@
                       <a href="{%url 'sveden'%}"><p>Сведения об образовательной организации</p></a>
                       <a href="#"><p>Ректор ХГПУ</p></a>
                       <a href="{%url 'struct'%}"><p>Структура университета</p></a>
-                      <a href="#"><p>Партнеры</p></a>
-                      <a href="#"><p>Учебно-педагогический округ #37</p></a>
-                      <a href="#"><p>Ассоциация выпускников</p></a>
+                      <a href="{%url 'partners'%}"><p>Партнеры</p></a>
                       <a href="{%url 'rabota_v_hgpu'%}"><p>Работа в ХГПУ</p></a>
-                      <a href="#"><p>Брендбук ХГПУ</p></a>
-                      <a href="#"><p class="mb-0">Контакты</p></a>
+                      <!-- <a href="#"><p>Брендбук ХГПУ</p></a> -->
+                      <a href="{%url 'contacts'%}"><p class="mb-0">Контакты</p></a>
                     </div>
                     <div class="col-6 rounded">
                       <a href="{% url 'antiterror' %}"><p>Противодействие идеологии терроризма и экстремизма</p></a>
                       <a href="{%url 'anti_corruption'%}"><p>Противодействие коррупции</p></a>
-                      <a href="#"><p>Борьба с мошенничеством</p></a>
                     </div>
                   </div>
                 </div>
@@ -259,14 +256,14 @@
                   </div>
                 </div>
                 <div class="col-3 rounded gap-5">
-                  <div class="row rounded hgpu-card mb-3 py-4">
+                  <div class="row rounded hgpu-card yellow-bg mb-3 py-4">
                     <div
                       class="col-6 justify-content-center align-items-center"
                     >
                       <img
                         src="{% static 'bootstrap\img\hgpu.png' %}"
                         alt=""
-                        class="opacity-25"
+                        class="opacity-75"
                       />
                     </div>
                     <div class="col">
@@ -281,14 +278,13 @@
                           <div class="col">
                             <i
                               class="fa-solid fa-circle-arrow-right fa-xl"
-                              style="color: #ffba55"
                             ></i>
                           </div>
                         </div>
                       </a>
                     </div>
                   </div>
-                  <div class="row rounded hgpu-card">
+                  <div class="row rounded white-bg">
                     <div class="col p-4">
                       <p class="h5 mb-5 fw-bold">
                         Ключевые проекты университета
@@ -300,17 +296,17 @@
                 </div>
               </div>
               <div class="row justify-content-around py-2 px-2 gap-2">
-                <div class="col hgpu-card rounded p-1 text-center">
+                <div class="col hgpu-card orange-hover rounded p-1 text-center">
+                  Обращение граждан
+                </div>
+                <div class="col hgpu-card red-hover rounded p-1 text-center">
                   Разговоры о важном
                 </div>
-                <div class="col hgpu-card rounded p-1 text-center">
+                <div class="col hgpu-card violet-hover rounded p-1 text-center">
                   Обучение служением
                 </div>
-                <div class="col hgpu-card rounded p-1 text-center">
-                  Движение первых
-                </div>
-                <div class="col hgpu-card rounded p-1 text-center">
-                  2025 - Год защитника Отечества
+                <div class="col hgpu-card blue-hover rounded p-1 text-center">
+                  2026 - Год дошкольного образования
                 </div>
               </div>
             </div>
@@ -319,7 +315,7 @@
               class="container-xxl rounded-bottom-3 py-5 gap-5 custom-drop-menu d-none position-absolute top-100 start-0 z-1"
               id="#edu-menu">
                 <div class="row rounded mb-5 mx-3 gap-4">
-                  <div class="col-8 rounded">
+                  <div class="col-6 rounded">
                     <div class="row rounded py-3">
                       <div class="col-3 fw-bold fs-5">Образование</div>
                       <div class="col-9">

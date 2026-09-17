@@ -1,0 +1,55 @@
+{% extends 'base.html' %} {% load static %} {% block title %}Работа в
+ХГПУ{%endblock %} {% block content %}
+<main class="main">
+  <div class="container">
+    <div class="row gap-4 py-5">
+      <div class="col">
+        <img
+          class="w-100 rounded-3"
+          src="{% static 'bootstrap/img/rabota-v-hgpu.jpg'%}"
+          alt="rabota-v-hgpu"/>
+      </div>
+      <div class="col">
+        <div class="d-flex flex-column">
+          <p class="mb-3">
+            <span class="text-body-tertiary fw-semibold fs-6">28 августа 2025</span>
+          </p>
+          <h2 class="mb-3 fw-semibold fs-1">Замещение вакантных должностей</h2>
+          <p class="mb-3">
+            <span class="text-body-tertiary fw-semibold fs-6 text-uppercase">объявление</span>
+          </p>
+          <p class="mb-3">
+            <a href="https://hgpurf.ru/wp-content/uploads/2025/06/Объявление_выборы_28.06.2025_Дир.институтов-и-завкафедрой.pdf"
+              target="_blank"
+              class="link-color fs-5 link-offset-2">ОБЪЯВЛЕНИЕ (от 28.06.2025) ФГБОУ ВО «Херсонский государственный
+              педагогический университет» объявляет
+              <span class="fw-bold">выборы на замещение вакантных должностей директоров институтов,
+                заведующих кафедрами</span></a></p>
+          <p class="mb-3">
+            <a
+              href="https://hgpurf.ru/wp-content/uploads/2025/06/Объявление_конкурс_28.06.2025_ППС.pdf"
+              target="_blank"
+              class="link-color fs-5 link-offset-2"
+              >ОБЪЯВЛЕНИЕ (от 28.06.2025) ФГБОУ ВО «Херсонский государственный
+              педагогический университет» объявляет
+              <span class="fw-bold">конкурс на замещение вакантных должностей педагогических
+                работников, относящихся к профессорско-преподавательскому
+                составу университета</span></a></p>
+          <p class="mb-3">
+            <a href="https://hgpurf.ru/wp-content/uploads/2025/07/Положение_о_конкурсе_для_размещения_на_сайт.pdf"
+              target="_blank"
+              class="link-color fs-5 link-offset-2">ПОЛОЖЕНИЕ о порядке замещения должностей педагогических работников, относящихся к
+              <span class="fw-bold">профессорско-преподавательскому составу</span> ФГБОУ ВО «Херсонский государственный педагогический университет»</a>
+          </p>
+           <p class="mb-3">
+            <a href="https://hgpurf.ru/wp-content/uploads/2025/07/Положение_о_назначении_директоров_для_размещения_на_сайт.pdf"
+              target="_blank"
+              class="link-color fs-5 link-offset-2">ПОЛОЖЕНИЕ о порядке назначения на должности
+              <span class="fw-bold">директора института и заведующего кафедрой</span></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

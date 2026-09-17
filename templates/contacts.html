@@ -1,0 +1,485 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block title %}Партнеры университета{%endblock %} 
+{% block content %}
+<main class="main">
+  <div class="container mb-3">
+    <div class="pt-4">
+      <div style="
+        background-image: url('{% static 'bootstrap/img/contacts/banner.jpeg' %}');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: 10%;
+        border-radius: 30px;
+      " class="py-5 d-flex align-items-center justify-content-center position-relative overflow-hidden">
+        <div class="media-banner-overlay opacity-25"></div>
+        <h1 class="w-60 mb-0 z-2 text-white fw-bold " style="font-size: 3rem;">Контакты</h1>
+      </div>
+    </div>
+    <div class="py-4">
+      <nav style="--bs-breadcrumb-divider: '>>';" aria-label="breadcrumb">
+        <ol class="breadcrumb fw-medium">
+          <li class="breadcrumb-item">
+            <a href="{% url 'main' %}">Главная</a>
+          </li>
+          <li class="breadcrumb-item" aria-current="page">
+            <a href="{% url 'main' %}">Университет</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            <a href="{% url 'contacts' %}">Контакты</a>
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <div class="container text-black mb-3">
+    <h1 class="fw-bold">Контакты</h1>
+    <p class="fs-5">На странице собраны основные официальные каналы связи Университета и обеспечена навигация.</p>
+    <h2 class="fw-bold">Официальные контактные данные Университета</h2>
+  </div>
+  <div class="container text-black py-2">
+    <div class="d-flex align-items-center gap-3 my-1">
+      <div>
+        <img src="{% static 'bootstrap/img/contacts/phone.svg' %}" class="w-10 rounded-2" width="30" height="30">
+      </div>
+      <div>
+        <h5 class="fw-bold">Номер телефона:</h5>
+      </div>
+      <div>
+        <h5>+7 (990) 140-21-00</h5>
+      </div>
+    </div>
+    <div class="d-flex align-items-center gap-3 my-1">
+      <div>
+        <img src="{% static 'bootstrap/img/contacts/email.svg' %}" class="w-10 rounded-2" width="30" height="30">
+      </div>
+      <div>
+        <h5 class="fw-bold">Адрес электронной почты:</h5>
+      </div>
+      <div>
+        <h5>hgpurf@yandex.ru</h5>
+      </div>
+    </div>
+    <div class="d-flex align-items-center gap-3 my-1">
+      <div>
+        <img src="{% static 'bootstrap/img/contacts/mail.svg' %}" class="w-10 rounded-2" width="30" height="30">
+      </div>
+      <div>
+        <h5 class="fw-bold">Почтовый адрес:</h5>
+      </div>
+      <div>
+        <h5>275722, Херсонская область, Скадовский муниципальный округ, г. Скадовск, ул. Покровская, д. 7а</h5>
+      </div>
+    </div>
+    <hr class="border-warning border-2 mt-5"></hr>
+  </div>
+  <div class="container text-black">
+    <h2 class="fw-bold my-3">Официальное наименование Университета</h2>
+    <table class="my-5 fs-4-5">
+      <tbody>
+                    <tr class="tr-light">
+                      <td class="w-25 px-4 py-3 fw-bold table-bd">
+                        Полное наименование образовательной организации на
+                        русском языке
+                      </td>
+                      <td class="px-4 py-3 table-bd">
+                        Федеральное государственное бюджетное образовательное
+                        учреждение высшего образования "Херсонский
+                        государственный педагогический университет"
+                      </td>
+                    </tr>
+                    <tr class="tr-dark">
+                      <td class="w-25 px-4 py-3 fw-bold table-bd">
+                        Сокращенное наименование образовательной организации на
+                        русском языке
+                      </td>
+                      <td class="px-4 py-3 table-bd">
+                        ФГБОУ ВО "Херсонский государственный педагогический
+                        университет", Херсонский государственный педагогический
+                        университет, ФГБОУ ВО "ХГПУ", ХГПУ
+                      </td>
+                    </tr>
+                    <tr class="tr-light">
+                      <td class="w-25 px-4 py-3 fw-bold table-bd">
+                        Полное наименование образовательной организации на
+                        английском языке
+                      </td>
+                      <td class="px-4 py-3 table-bd">
+                        Federal State-Financed Educational Institution of Higher
+                        Education "Kherson State Pedagogical University"
+                      </td>
+                    </tr>
+                    <tr class="tr-dark">
+                      <td class="w-25 px-4 py-3 fw-bold table-bd">
+                        Сокращенное наименование образовательной организации на
+                        английском языке
+                      </td>
+                      <td class="px-4 py-3 table-bd">
+                        Kherson State Pedagogical University, KSPU
+                      </td>
+                    </tr>
+                  </tbody>
+    </table>
+  </div>
+  <div class="container text-black">
+    <h2 class="fw-bold my-3">Приемная комиссия</h2>
+    <p class="fw-bold">КОНТАКТЫ по вопросам поступления</p>
+    <p class="fs-5">
+      Здесь Вы можете получить консультацию по перечню документов, срокам подачи заявлений, проходным баллам и особенностям поступления на разные образовательные программы.
+    </p>
+    <div class="row ">
+      <div class="col-12 col-md-5 d-flex flex-md-column justify-content-between">
+        <p class="fw-bold fs-5">Телефоны:</p>
+        +7 (918) 204-82-15
+        <br>
+        +7 (978) 879-14-73
+        <br>
+        +7 (990) 189-12-59
+        <br>
+        +7 (990) 140-21-00
+        <br>
+        <p class="fw-bold fs-5 mt-3">Адрес электронной почты Приемной комисси: <a class="text-decoration-none text-black fw-normal" href="pk@hgpurf.ru">pk@hgpurf.ru</a></p>
+        <p class="fw-bold fs-5">Сайт Приемной комиссии: <a class="text-decoration-none text-black fw-normal" href="https://pk.hgpurf.ru">https://pk.hgpurf.ru</a></p>
+        <a href="https://forms.yandex.ru/u/68da6e10068ff000153d0b4e/" class="px-5 py-3 mb-3 d-inline-block text-white darkest-grey-bg rounded-3 fs-6 fw-semibold position-relative overflow-hidden glare text-decoration-none">
+              <img src="{% static 'bootstrap/img/contacts/gerb.png' %}" class="w-10 rounded-2 mx-2" width="25" height="25">
+              <span>Перейти на сайт приемной комиссии ХГПУ</span>
+            </a>
+      </div>
+      <div class="col-12 col-md-7">
+        <img src="{% static 'bootstrap/img/contacts/pk.png' %}" class="img-fluid">
+      </div>
+    </div>
+    <hr class="border-warning border-2 mt-5"></hr>
+  </div>
+  <div class="container">
+    <h2 class="fw-bold text-black ">Руководство университета</h2>
+    <table class="table-second-var my-5" itemprop="rucovodstvoZam">
+      <thead>
+        <tr>
+          <td class="p-3 fw-bold">Должность</td>
+          <td class="p-3">Ф.И.О.</td>
+          <td class="p-3">Контактный телефон</td>
+          <td class="p-3">Адрес электронной почты</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="p-3 fw-bold" itemprop="post">Ректор</td>
+          <td class="p-3" itemprop="fio">ШАШКОВА Нина Игоревна</td>
+          <td class="p-3" itemprop="telephone">+7 (990) 140-21-00</td>
+          <td class="p-3" itemprop="email">rector@hgpurf.ru</td>
+        </tr>
+        <tr class="tr-dark">
+          <td class="p-3 fw-bold" itemprop="post">Первый проректор</td>
+          <td class="p-3" itemprop="fio">КРУГЛАЯ Наталия Анатольевна</td>
+          <td class="p-3" itemprop="telephone">+7 (990) 002-55-15</td>
+          <td class="p-3" itemprop="email">kruglayana@hgpurf.ru</td>
+        </tr>
+        <tr>
+          <td class="p-3 fw-bold" itemprop="post">Проректор по научной и инновационной деятельности</td>
+          <td class="p-3" itemprop="fio">ШУШАРА Татьяна Викторовна</td>
+          <td class="p-3" itemprop="telephone">+7 (978) 887-69-45</td>
+          <td class="p-3" itemprop="email">shusharatv@hgpurf.ru</td>
+        </tr>
+        <tr class="tr-dark">
+          <td class="p-3 fw-bold" itemprop="post">Проректор по информационному обеспечению и общим вопросам</td>
+          <td class="p-3" itemprop="fio">БЛЫЩИК Надежда Олеговна</td>
+          <td class="p-3" itemprop="telephone">+7 (990) 050-86-23</td>
+          <td class="p-3" itemprop="email">blyshchikno@hgpurf.ru</td>
+        </tr>
+        <tr>
+          <td class="p-3 fw-bold" itemprop="post">Проректор по воспитательной работе и молодежной политике</td>
+          <td class="p-3" itemprop="fio">ОРЛЕНКО Елена Владиславовна</td>
+          <td class="p-3" itemprop="telephone">+7 (990) 001-45-31</td>
+          <td class="p-3" itemprop="email">orlenkoev@hgpurf.ru</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="container">
+    <div class="pt-4">
+      <div style="
+        background-image: url('{% static 'bootstrap/img/contacts/banner_citizien.jpg' %}');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: 40%;
+        border-radius: 30px;
+      " class="py-5 d-flex align-items-center justify-content-center position-relative overflow-hidden">
+        <div class="media-banner-overlay opacity-25"></div>
+        <div class="d-flex justify-content-end align-items-center gap-5">
+          <div class="col">
+            <h1 class="w-60 mb-0 z-2 text-white fw-bold " style="font-size: 4rem;">Обращения граждан</h1>
+          </div>
+          <div class="col">
+            <div
+            class="px-5 py-3 d-inline-block text-black bg-ylw rounded-3 fs-6 fw-semibold position-relative overflow-hidden glare">
+            <i class="fa-solid fa-circle-play"></i>
+            <span>Перейти</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="border-warning border-2 my-5"></hr>
+  </div>
+  <div class="container">
+    <p class="pt-5 fw-bold font-color-gray">КОНТАКТЫ ПОДРАЗДЕЛЕНИЙ</p>
+    <h2 class="pt-1 fw-bold text-black">Институты</h2>
+    <table class="table-second-var my-5">
+      <thead>
+        <tr>
+          <th class="p-3 fw-bold">Институт</td>
+          <th class="p-3">Ф.И.О. директора</td>
+          <th class="p-3 class="w-auto fit-content"">Контактный телефон</td>
+          <th class="p-3">Официальный e-mail Института</td>
+          <th class="p-3">Страница Института</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="p-3 fw-bold">Институт культуры и искусств</td>
+          <td class="p-3">САМАРИН Андрей Николаевич</td>
+          <td class="p-3">+7 (990) 001-43-28</td>
+          <td class="p-3">institut_ki@hgpurf.ru</td>
+          <td class="p-3"><a class="text-decoration-none text-black" href="#">Перейти</a></td>
+        </tr>
+        <tr class="tr-dark">
+          <td class="p-3 fw-bold">Институт психологии</td>
+          <td class="p-3">РЕВЕНКО Светлана Павловна</td>
+          <td class="p-3">+7 (999) 206-62-11</td>
+          <td class="p-3">institut_p@hgpurf.ru</td>
+          <td class="p-3"><a class="text-decoration-none text-black" href="#">Перейти</a></td>
+        </tr>
+        <tr>
+          <td class="p-3 fw-bold">Институт управления и права</td>
+          <td class="p-3">ШУЛЬГА Марина Александровна</td>
+          <td class="p-3">+7 (990) 245-00-63</td>
+          <td class="p-3">institut_up@hgpurf.ru</td>
+          <td class="p-3"><a class="text-decoration-none text-black" href="#">Перейти</a></td>
+        </tr>
+        <tr class="tr-dark">
+          <td class="p-3 fw-bold">Институт естествознания, физической культуры и спорта</td>
+          <td class="p-3">АНДРЕЕВА Регина Игоревна</td>
+          <td class="p-3">+7 (918) 201-58-91</td>
+          <td class="p-3">institut_efks@hgpurf.ru</td>
+          <td class="p-3"><a class="text-decoration-none text-black" href="#">Перейти</a></td>
+        </tr>
+        <tr>
+          <td class="p-3 fw-bold">Институт информационных технологий</td>
+          <td class="p-3">САМЧИНСКАЯ Ярослава Борисовна</td>
+          <td class="p-3">+7 (989) 533-26-06</td>
+          <td class="p-3">institut_it@hgpurf.ru</td>
+          <td class="p-3"><a class="text-decoration-none text-black" href="#">Перейти</a></td>
+        </tr>
+        <tr class="tr-dark">
+          <td class="p-3 fw-bold">Институт педагогического и специального образования</td>
+          <td class="p-3">ШЕВЦОВА Яна Викторовна</td>
+          <td class="p-3">+7 (995) 184-02-64</td>
+          <td class="p-3">institut_pso@hgpurf.ru</td>
+          <td class="p-3"><a class="text-decoration-none text-black" href="#">Перейти</a></td>
+        </tr>
+        <tr>
+          <td class="p-3 fw-bold">Институт филологии и социальных коммуникаций</td>
+          <td class="p-3">БАНДУРКО Зинаида Валериевна</td>
+          <td class="p-3">+7 (978) 203-57-87</td>
+          <td class="p-3">institut_fsk@hgpurf.ru</td>
+          <td class="p-3"><a class="text-decoration-none text-black" href="#">Перейти</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="container text-black">
+    <h2 class="my-3 fw-bold">Иные подразделения</h2>
+    <h5 class="mb-3">Контакты иных подразделений, обеспечивающих деятельность Университета</h5>
+    <div class="row row-cols-1 row-cols-md-3 g-5">
+        <div class="col">
+          <a href="" class="card h-100 py-4 px-4 rounded-3 border-0 shadow text-decoration-none ylw-bg white-bg-hov">
+            <div class="card-body">
+              <h5 class="fw-semibold">Управление безопасности</h5>
+              <p class="">КОНОНЕНКО Надежда Викторовна</p>
+              <ul>
+                <li>
+                  <strong>Тел. (МАХ):</strong>+7(990) 017-71-95
+                </li>
+                <li>
+                  <strong>E-mail:</strong>kononenkonv@hgpurf.ru
+                </li>
+              </ul>
+            </div>
+            <div class="px-3 d-flex align-items-center gap-2 text-black link-warning">
+              <span class="fw-bold">Антитеррор</span><i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="" class="card h-100 py-4 px-4 rounded-3 border-0 shadow text-decoration-none ylw-bg white-bg-hov">
+            <div class="card-body">
+              <h5 class="fw-semibold">Центр психологической поддержки ХГПУ</h5>
+              <p class="">ПОПЕЛЬЧУК Галина Алексеевна</p>
+              <ul>
+                <li>
+                  <strong>Тел. (МАХ):</strong>+7(989) 775-42-85
+                </li>
+                <li>
+                  <strong>E-mail:</strong>center_pp@hgpurf.ru
+                </li>
+              </ul>
+            </div>
+            <div class="px-3 d-flex align-items-center gap-2 text-black link-warning">
+              <span class="fw-bold">Страница Центра</span><i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="" class="card h-100 py-4 px-4 rounded-3 border-0 shadow text-decoration-none ylw-bg white-bg-hov">
+            <div class="card-body">
+              <h5 class="fw-semibold">Управление бухгалтерского учета и финансовое контроля</h5>
+              <ul>
+                <li>
+                  <strong>Тел. (МАХ):</strong>+7(978) 502-17-99
+                </li>
+                <li>
+                  <strong>E-mail:</strong>buhkhgpu@yandex.ru
+                </li>
+              </ul>
+            </div>
+            <div class="px-3 d-flex align-items-center gap-2 text-black link-warning">
+              <span class="fw-bold">Оплата обучения</span><i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="" class="card h-100 py-4 px-4 rounded-3 border-0 shadow text-decoration-none ylw-bg white-bg-hov">
+            <div class="card-body">
+              <h5 class="fw-semibold">Отдел аспирантуры и докторантуры</h5>
+              <p class="">КОТ Тамара Алексеевна</p>
+              <ul>
+                <li>
+                  <strong>Тел. (МАХ):</strong>+7(978) 888-72-86
+                </li>
+                <li>
+                  <strong>E-mail:</strong>otdel_asp_doc@hgpurf.ru 
+                </li>
+              </ul>
+            </div>
+            <div class="px-3 d-flex align-items-center gap-2 text-black link-warning">
+              <span class="fw-bold">Перейти на страницу</span><i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="" class="card h-100 py-4 px-4 rounded-3 border-0 shadow text-decoration-none ylw-bg white-bg-hov">
+            <div class="card-body">
+              <h5 class="fw-semibold">Центр компетенций</h5>
+              <p class="">АЛЕШИНА Татьяна Владимировна</p>
+              <ul>
+                <li>
+                  <strong>Тел. (МАХ):</strong>+7(922) 134-01-04
+                </li>
+                <li>
+                  <strong>E-mail:</strong>competency@hgpurf.ru
+                </li>
+              </ul>
+            </div>
+            <div class="px-3 d-flex align-items-center gap-2 text-black link-warning">
+              <span class="fw-bold">Страница Центра</span><i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="" class="card h-100 py-4 px-4 rounded-3 border-0 shadow text-decoration-none ylw-bg white-bg-hov">
+            <div class="card-body">
+              <h5 class="fw-semibold">Центр карьеры и содействия трудоустройству выпускников</h5>
+              <p class="">КУЗЬМИНЫХ Евгения Владимировна</p>
+              <ul>
+                <li>
+                  <strong>Тел. (МАХ):</strong>+7(978) 683-38-29
+                </li>
+                <li>
+                  <strong>E-mail:</strong>dpo.hgpu@yandex.ru
+                </li>
+              </ul>
+            </div>
+            <div class="px-3 d-flex align-items-center gap-2 text-black link-warning">
+              <span class="fw-bold">Страница Центра</span><i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </a>
+        </div>
+    </div>
+    <hr class="border-warning border-2 my-5"></hr>
+  </div>
+  <div class="container">
+    <p class="pt-5 fw-bold font-color-gray">ТЕЛЕФОНЫ ЭКСТРЕННЫХ СЛУЖБ</p>
+    <div class="py-4">
+        <div style="
+        background-image: url('/static/bootstrap/img/antiterror/edds.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 15px;
+        padding: 3rem 4rem;
+        background-position-y: 40%;
+        ">
+          <div class="mb-1 fs-1 fw-bold">ЕДДС</div>
+          <div class="fs-5 fw-semibold">Единая дежурная<br>диспетчерская служба</div>
+        </div>
+    </div>
+    <h3 class="fw-semibold">Контактные номера экстренных служб г. Скадовск</h3>
+    <div class="row gap-2">
+        <div class="col">
+          <div class="mb-2 d-flex align-items-center justify-content-between fs-5">
+            <div>Администрация Херсонской области</div>
+            <div class="fw-semibold text-nowrap">+7 (990) 111-68-27</div>
+          </div>
+          <div class="mb-3 border-top border-secondary-subtle"></div>
+          <div class="mb-2 d-flex align-items-center justify-content-between fs-5">
+            <div>Управление ФСБ по Херсонской области</div>
+            <div class="fw-semibold text-nowrap">+7 (990) 001-04-17</div>
+          </div>
+          <div class="mb-3 border-top border-secondary-subtle"></div>
+          <div class="mb-2 d-flex align-items-center justify-content-between fs-5">
+            <div>МЧС г. Скадовск</div>
+            <div class="fw-semibold text-nowrap">+7 (990) 016-75-01</div>
+          </div>
+          <div class="mb-3 border-top border-secondary-subtle"></div>
+          <div class="mb-2 d-flex align-items-center justify-content-between fs-5">
+            <div>Полиция</div>
+            <div class="fw-semibold text-nowrap">+7 (990) 101-42-45</div>
+          </div>
+          <div class="mb-3 border-top border-secondary-subtle"></div>
+          <div class="mb-2 d-flex align-items-start justify-content-between fs-5">
+            <div>Центр экстренной медицинской помощи<br>и медицинских катастроф</div>
+            <div class="fw-semibold text-nowrap">+7 (990) 001-45-27</div>
+          </div>
+          <div class="mb-3 border-top border-secondary-subtle"></div>
+        </div>
+        <div class="col">
+          <div class="mb-2 d-flex align-items-center justify-content-between fs-5">
+            <div>Скорая медицинская помощь</div>
+            <div class="fw-semibold text-nowrap">+7 (990) 016-75-03</div>
+          </div>
+          <div class="mb-3 border-top border-secondary-subtle"></div>
+          <div class="mb-2 d-flex align-items-center justify-content-between fs-5">
+            <div>Служба газа "Херсонгаз</div>
+            <div class="fw-semibold text-nowrap">+7 (990) 016-75-04</div>
+          </div>
+          <div class="mb-3 border-top border-secondary-subtle"></div>
+          <div class="mb-2 d-flex align-items-center justify-content-between fs-5">
+            <div>ГУП "Херсоноблэнерго"</div>
+            <div class="fw-semibold text-nowrap">+7 (990) 016-75-05</div>
+          </div>
+          <div class="mb-3 border-top border-secondary-subtle"></div>
+          <div class="mb-2 d-flex align-items-center justify-content-between fs-5">
+            <div>Прокуратура по Херсонской области</div>
+            <div class="fw-semibold text-nowrap">+7 (922) 297-81-39</div>
+          </div>
+          <div class="mb-3 border-top border-secondary-subtle"></div>
+          <div class="mb-2 d-flex align-items-start justify-content-between fs-5">
+            <div class="d-inline">Военная комендатура<br>Дежурный</div>
+            <div class="fw-semibold text-nowrap">+7 (990) 001-45-47</div>
+          </div>
+          <div class="mb-3 border-top border-secondary-subtle"></div>
+        </div>
+      </div>
+  </div>
+</main>
+{% endblock %}

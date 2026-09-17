@@ -25,11 +25,8 @@ urlpatterns = [
     path('', main, name='main'),
     path('index/', index),
     # Меню УНИВЕРСИТЕТ
-    # -- START --
     path('sveden/', sveden, name='sveden'),
-    # -- END --
     # Сведения об образовательной организации 
-    # -- START --
     path('sveden/common', common, name='common'),
     path('sveden/struct', struct, name='struct'),
     path('sveden/document', document,  name='document'),
@@ -46,21 +43,29 @@ urlpatterns = [
     path('sveden/vacant', vacant, name='vacant'),
     path('sveden/inter', inter, name='inter'),
     path('sveden/catering', catering, name='catering'),
+    # Сведения об образовательной организации  -- END --
     path('rabota_v_hgpu', rabota_v_hgpu, name='rabota_v_hgpu'),
+    path('partners', partners, name='partners'),
     path('mediapedagogika', mediapedagogika, name='mediapedagogika'),
     path('antiterror', antiterror, name='antiterror'),
-    path('test', test, name='test'),
-    # -- END --
-    path('career', career, name='career'),
     path('protivodeistvie-corrupcii', anti_corruption, name='anti_corruption'),
+    path('institutes/<str:institute_name>', institut, name='institute'),
+    path('contacts', contacts, name='contacts'),
+
+    # ОБРАЗОВАНИЕ
+    path('gup', gup, name='gup'),
+    path('career', career, name='career'),
+    path('', include('education.urls', namespace='education')),
+    # НАУКА
+    path('science/grants', grants, name='grants'),
+    # СТУД. ЖИЗНЬ 
+    # МЕДИА
     path('media', media, name='media'),
     path('media/universitet_v_smi', universitet_v_smi, name='universitet_v_smi'),
-    path('gup', gup, name='gup'),
     path('media/blog_rectora', blog_rectora, name='blog_rectora'),
-    path('institutes/<str:institute_name>', institut, name='institute'),
-    path('', include('education.urls', namespace='education')),
     # Служебные приложения
     path('ckeditor/', include('ckeditor_uploader.urls')),
+    path('test', test, name='test'),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

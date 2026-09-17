@@ -23,7 +23,7 @@ class KafedraAdmin(admin.ModelAdmin):
     list_display = ("name", "institut")
 
 class EduProgramAdmin(admin.ModelAdmin):
-    list_display = ("name", "kafedra_name", "level")
+    list_display = ("id", "name", "kafedra_name", "level")
     inlines = [AdvantagesInline, SuitableInline, KeySkillsInline, ProgramStructureInline, PositionInline, PerspectiveInline]
     
 

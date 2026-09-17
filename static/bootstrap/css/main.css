@@ -124,18 +124,18 @@ main.main {
 }
 
 .instituts-column {
-    background-color:#ffe877;
+    background-color:#ffbf31;
 }
 
 .custom-drop-menu {
     font-size: 14px;
-    font-weight: 400;
-    background-color: #fff;
+    font-weight: 500;
+    background-color: #f4f2f2;
 }
 
 .custom-drop-menu a {
     text-decoration: none;
-    color: #5c5c5c;
+    color: #333333;
 }
 
 .custom-drop-menu a:hover {
@@ -144,11 +144,178 @@ main.main {
 }
 
 .hgpu-card{
-    background-color:#f4f2f2
+    background-color:#cdc5c5;
+}
+
+.grey-bg {
+    background-color: #f4f2f2;
+}
+
+.dark-grey-bg {
+    background-color: #d8d1d1;
+}
+
+.darkest-grey-bg {
+    background-color: #333333;
+}
+
+.white-bg{
+    background-color:#ffffff ;
+}
+
+.yellow-bg{
+    background-color:#ffd600 ;
+}
+
+.light-yellow-bg {
+    background-color: #fef9f0;
+}
+.orange-bg{
+    background-color:#ffbf31 ;
+}
+
+.red-bg{
+    background-color:#d80707 ;
+}
+
+.violet-bg{
+    background-color:#5c1e80 ;
+}
+
+.blue-bg{
+    background-color:#2b4d99 ;
+}
+
+.orange-hover:hover{
+    background-color:#ffbf31 ;
+}
+
+.red-hover:hover{
+    background-color:#d80707 ;
+    color:#fff
+}
+
+.violet-hover:hover{
+    background-color:#5c1e80 ;
+    color:#fff
+}
+
+.blue-hover:hover{
+    background-color:#2b4d99 ;
+    color:#fff
+}
+
+.dark-blue-hover:hover{
+    background-color:#123f4c ;
+    color:#fff
+}
+
+.green-bg{
+    background-color:#1ba58b ;
+    color: #fff;
+}
+
+.dark-blue-bg{
+    background-color:#123f4c ;
+    color: #fff;
+}
+
+.pink-bg{
+    background-color:#db0986 ;
+}
+
+.violet-border{
+    border-color:#5c1e80 ;
+}
+
+.instruction-section {
+    color:#000000;
+    padding: 20px 0;
+}
+
+.steps-wrapper {
+            position: relative;
+            padding-top: 10px;
+}
+
+.steps-wrapper::before {
+            content: '';
+            position: absolute;
+            top: 35px; /* Выравнивание по центру кружков */
+            left: 25px;
+            right: 25px;
+            height: 1px;
+            background-color: #e0e0e0;
+            z-index: 0;
+}
+
+.step-item {
+            position: relative;
+            z-index: 1;
+            text-align: left;
+            height: 100%;
+}
+
+.step-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background-color: #fbc02d; /* Желтый цвет */
+            border-radius: 50%;
+            color: #1a1a1a;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            /* Убираем margin-left: auto, чтобы кружок был слева, как на картинке */
+}
+
+/* Заголовок шага */
+        .step-title {
+            font-weight: 700;
+            font-size: 18px;
+            color: #1a1a1a;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        /* Текст шага */
+        .step-desc {
+            font-size: 15px;
+            color: #4a4a4a;
+            line-height: 1.6;
+        }
+
+/* Адаптация для мобильных устройств (убираем линию, если колонки встают друг под друга) */
+        @media (max-width: 767.98px) {
+            .steps-wrapper::before {
+                display: none;
+            }
+            .step-number {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .step-item {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+        }
+
+.text-black {
+    color: #000000;
+}
+
+.text-yellow {
+    color: #ffbf31;
+}
+
+.fs-4-5 {
+    font-size: 18px;
 }
 
 .hgpu-card img {
-    width: 80%;
+    width: 100%;
 }
 
 .hgpu-card  p {
@@ -587,13 +754,16 @@ main.main {
     background-color: #f4f2f2;
 }
 
+.tr-dark td{
+    border-color: #f4f2f2;
+}
+
 .tr-light {
     background-color: #f9f9f9;
 }
 
 .table-bd {
     border: 1px solid #ffffff;
-    font-size: 14px;
 }
 
 .ruobr-info {
@@ -2045,6 +2215,24 @@ a:hover .traslating-card {
     top: 10%;
     right: 5%;
     width: 80px;
+}
+.table-second-var{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+}
+
+.table-second-var tbody td{
+    border-bottom: 1px solid #cdc5c5;
+    font-size: 16px;
+}
+
+.table-second-var thead tr{
+    background-color: #ffbf31;
+}
+
+.table-second-var thead tr td{
+    border-color: #ffbf31;
 }
 
 @media (max-width: 1440px) {

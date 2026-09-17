@@ -1,0 +1,391 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block title %}Партнеры университета{%endblock %} 
+{% block content %}
+<main class="main">
+  <div class="container mb-5">
+    <div class="pt-4">
+      <div style="
+        background-image: url('{% static 'bootstrap/img/partners/partners-banner.jpeg' %}');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: 60%;
+        border-radius: 30px;
+      " class="py-5 d-flex align-items-center justify-content-center position-relative overflow-hidden">
+        <div class="media-banner-overlay opacity-25"></div>
+        <h1 class="w-75 mb-0 z-2 text-white fw-bold " style="font-size: 3rem;">Партнеры университета</h1>
+      </div>
+    </div>
+    <div class="py-4">
+      <nav style="--bs-breadcrumb-divider: '>>';" aria-label="breadcrumb">
+        <ol class="breadcrumb fw-medium">
+          <li class="breadcrumb-item">
+            <a href="{% url 'main' %}">Главная</a>
+          </li>
+          <li class="breadcrumb-item" aria-current="page">
+            <a href="{% url 'main' %}">Университет</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            <a href="{% url 'partners' %}">Партнеры университета</a>
+          </li>
+        </ol>
+      </nav>
+    </div>
+    <div class="py-5 text-black">
+      <h2 class="mb-4 fw-bold fs-2">ХГПУ: синергия образования, науки и практики через партнерство</h2>
+      <p class="mb-4 fs-5">
+        Херсонский государственный педагогический университет выстраивает стратегическое партнерство 
+        с ведущими организациями - образовательными учреждениями, научными центрами, органами управления образованием, 
+        государственными организациями, профильными предприятиями и бизнес-структурами.
+      </p>
+      <p class="mb-4 fs-5">
+        Благодаря сотрудничеству студенты получают практику в реальных условиях, участвуют в проектах и находят первые 
+        рабочие места еще до выпуска. Вместе с партнерами мы развиваем образовательные программы, проводим исследования 
+        и создаем условия для профессионального роста.
+      </p>
+      <h4 class="mb-4 fw-semi-bold">Предлагаем познакомиться с ключевыми организациями, с которыми осуществляется взаимодействие по значимым направлениям деятельности Университета.</h4>
+    </div>
+  </div>
+  <div class="container mb-5">
+    <div class="py-5 text-black">
+      <h2 class="mb-4 fw-bold fs-2">Вузы-кураторы</h2>
+      <p class="mb-1 fs-5">
+        Вузы‑кураторы ХГПУ - наши стратегические партнеры в развитии педагогического образования. 
+        Они обеспечивают методическую поддержку и доступ к передовым образовательным практикам.
+      </p>
+    </div>
+    <hr class="border-warning border-2"></hr>
+    <div class="row">
+      <div class="col col-md-2">
+          <img src="{% static 'bootstrap/img/partners/mpgu.svg' %}" class="rounded-2 my-3 img-fluid">
+      </div>
+      <div class="col col-md-10 col-12 py-5">
+        <a class="text-decoration-none fs-5 link-dark link-opacity-75-hover" href="https://mpgu.su/">
+          <h4 class="mb-2 fw-semi-bold d-flex">
+          ФГБОУ ВО "Московский педагогический государственный университет"
+        </h4>
+        </a>
+        <p class="mb-1 fs-5 d-flex">
+          Стратегический партнер ХГПУ в сфере методической поддержки и практической подготовки педагогических кадров. 
+          Совместная работа направлена на повышение качества профессиональной подготовки обучающихся и внедрение 
+          инновационных подходов в образовательный процесс.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-md-2">
+          <img src="{% static 'bootstrap/img/partners/rpgu-herzen.svg' %}" class="rounded-2 my-3 img-fluid">
+      </div>
+      <div class="col col-md-10 col-12 py-5">
+        <a class="text-decoration-none fs-5 link-dark link-opacity-75-hover" href="https://mpgu.su/">
+          <h4 class="mb-2 fw-semi-bold d-flex">
+          ФГБОУ ВО "Российский государственный педагогический университет им. А.И. Герцена"
+        </h4>
+        </a>
+        <p class="mb-1 fs-5 d-flex">
+          Ключевой партнер ХГПУ по реализации научно‑исследовательской деятельности и развитию образования. 
+          Сотрудничество включает координацию студенческих и преподавательских научных проектов, проведение 
+          совместных конференций и семинаров, подготовку публикаций и участие в грантовых инициативах. 
+          Совместная деятельность способствует укреплению научного потенциала университета и формированию 
+          исследовательских компетенций будущих педагогов.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container mb-5 py-5">
+    <div class="py-5 text-black">
+      <h2 class="mb-4 fw-bold fs-2">Академическое партнерство</h2>
+      <p class="mb-1 fs-5">
+        ХГПУ развивает академическое взаимодействие для повышения качества образования и научной работы. 
+        Совместные инициативы открывают новые возможности для студентов и преподавателей.
+      </p>
+    </div>
+    <hr class="border-warning border-2"></hr>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <a class="text-decoration-none fs-5 link-dark link-opacity-75-hover" href="https://uspu.ru/">
+          <div class="row align-items-center ">
+            <div class="col col-md-4">
+              <img src="{% static 'bootstrap/img/partners/urgpu.jpg' %}" class="rounded-2 my-3 img-fluid">
+            </div>
+            <div class="col col-md-8">
+              <span class="d-block">ФГБОУ ВО "Уральский государственный педагогический университет"</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-md-6">
+        <a class="text-decoration-none fs-5 link-dark link-opacity-75-hover" href="https://yspu.org/">
+          <div class="row align-items-center ">
+            <div class="col col-md-4">
+              <img src="{% static 'bootstrap/img/partners/yagpu-ushinskogo.png' %}" class="rounded-2 my-3 img-fluid">
+            </div>
+            <div class="col col-md-8">
+              <span class="d-block">ФГБОУ ВО "Ярославский государственный педагогический университет им. К.Д. Ушинского"</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <a class="text-decoration-none fs-5 link-dark link-opacity-75-hover" href="https://e.lanbook.com/">
+          <div class="row align-items-center ">
+            <div class="col col-md-4">
+              <img src="{% static 'bootstrap/img/partners/ebs-lanj.svg' %}" class="rounded-2 my-3 img-fluid">
+            </div>
+            <div class="col col-md-8">
+              <span class="d-block">Электронная библиотечная система "Лань"</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-md-6">
+        <a class="text-decoration-none fs-5 link-dark link-opacity-75-hover" href="https://urait.ru/">
+          <div class="row align-items-center ">
+            <div class="col col-md-4">
+              <img src="{% static 'bootstrap/img/partners/yourajt.svg' %}" class="rounded-2 my-3 img-fluid">
+            </div>
+            <div class="col col-md-8">
+              <span class="d-block">Образовательная платформа "ЮРАЙТ"</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="py-5 text-black">
+      <h2 class="mb-4 fw-bold fs-2">Государственные и муниципальные учреждения</h2>
+      <p class="mb-1 fs-5">
+        Взаимодействие с государственными и муниципальными учреждениями (
+          министерства, ведомства, органы власти) способствует интеграции 
+          Университета в региональную повестку и расширяет возможности для студентов и преподавателей.
+      </p>
+    </div>
+    <hr class="border-warning border-2"></hr>
+    <div class="row py-5 px-5">
+      <div class="col-12 col-md-6">
+        <a class="text-decoration-none fs-5 link-dark link-opacity-75-hover" href="https://edu.khogov.ru/">
+          <div class="row align-items-center ">
+            <div class="col col-md-4">
+              <img src="{% static 'bootstrap/img/partners/minobrHO.jpg' %}" class="rounded-2 my-3 img-fluid">
+            </div>
+            <div class="col col-md-8">
+              <span class="d-block">Министерство образования и науки Херсонской области</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-md-6">
+        <a class="text-decoration-none fs-5 link-dark link-opacity-75-hover" href="https://minkult.khogov.ru/">
+          <div class="row align-items-center ">
+            <div class="col col-md-4">
+              <img src="{% static 'bootstrap/img/partners/minkultHO.jpg' %}" class="rounded-2 my-3 img-fluid">
+            </div>
+            <div class="col col-md-8">
+              <span class="d-block">Министерство культуры Херсонской области</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-md-6">
+        <a class="text-decoration-none fs-5 link-dark link-opacity-75-hover" href="https://rusacademedu.ru/">
+          <div class="row align-items-center ">
+            <div class="col col-md-4">
+              <img src="{% static 'bootstrap/img/partners/rao.webp' %}" class="rounded-2 my-3 img-fluid">
+            </div>
+            <div class="col col-md-8">
+              <span class="d-block">Федеральное государственное бюджетное учреждение "Российская академия образования"</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-md-6">
+        <a class="text-decoration-none fs-5 link-dark link-opacity-75-hover" href="https://rco.edu.khogov.ru/">
+          <div class="row align-items-center ">
+            <div class="col col-md-4">
+              <img src="{% static 'bootstrap/img/partners/rzo.png' %}" class="rounded-2 my-3 img-fluid">
+            </div>
+            <div class="col col-md-8">
+              <span class="d-block">Государственное казенное учреждение Херсонской области "Региональный центр образования"</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-md-6">
+        <a class="text-decoration-none fs-5 link-dark link-opacity-75-hover" href="https://мойбизнесхо.рф/o-nas.php">
+          <div class="row align-items-center ">
+            <div class="col col-md-4">
+              <img src="{% static 'bootstrap/img/partners/my-business.png' %}" class="rounded-2 my-3 img-fluid">
+            </div>
+            <div class="col col-md-8">
+              <span class="d-block">Центр "Мой бизнес"- государственное учреждение, созданное в целях развития и поддержки малого и среднего предпринимательства в Херсонской области</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-md-6">
+        <a class="text-decoration-none fs-5 link-dark link-opacity-75-hover" href="https://cbr.ru/herson/contacts/">
+          <div class="row align-items-center ">
+            <div class="col col-md-4">
+              <img src="{% static 'bootstrap/img/partners/bank.png' %}" class="rounded-2 my-3 img-fluid">
+            </div>
+            <div class="col col-md-8">
+              <span class="d-block">Отделение по Херсонской области Южного главного управления Центрального банка Российской Федерации</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-md-6">
+        <a class="text-decoration-none fs-5 link-dark link-opacity-75-hover" href="https://czn.khogov.ru/">
+          <div class="row align-items-center ">
+            <div class="col col-md-4">
+              <img src="{% static 'bootstrap/img/partners/sznHO.jpg' %}" class="rounded-2 my-3 img-fluid">
+            </div>
+            <div class="col col-md-8">
+              <span class="d-block">Служба занятости населения Херсонской области</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="py-5 text-black">
+      <h2 class="mb-4 fw-bold fs-2">Сотрудничество с некоммерческими и общественными организациями</h2>
+      <p class="mb-1 fs-5">
+        ХГПУ сотрудничает с некоммерческими и общественными организациями 
+        (НКО, фонды, ассоциации) для реализации социально значимых инициатив 
+        для региона и страны. Совместная работа расширяет возможности студентов и 
+        усиливает вклад Университета в развитие общества.
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-3 mb-5">
+        <a class="text-decoration-none fs-5 link-dark link-opacity-75-hover" href="https://vsks.su/contacts/khersonskaya-oblast/">
+          <div class="row align-items-center ">
+            <div class="col">
+              <img src="{% static 'bootstrap/img/partners/vsks.png' %}" class="rounded-2 my-3 img-fluid">
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-5">
+        <a class="text-decoration-none fs-5 link-dark link-opacity-75-hover" href="https://vrns.ru/">
+          <div class="row align-items-center ">
+            <div class="col">
+              <img src="{% static 'bootstrap/img/partners/sobor.png' %}" class="rounded-2 my-3 img-fluid">
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-5">
+        <a class="text-decoration-none fs-5 link-dark link-opacity-75-hover" href="https://rosstudent.ru/">
+          <div class="row align-items-center ">
+            <div class="col">
+              <img src="{% static 'bootstrap/img/partners/stud-soyuz.jpg' %}" class="rounded-2 my-3 img-fluid">
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-5">
+        <a class="text-decoration-none fs-5 link-dark link-opacity-75-hover" href="https://profsobranie.ru/">
+          <div class="row align-items-center ">
+            <div class="col">
+              <img src="{% static 'bootstrap/img/partners/rps.png' %}" class="rounded-2 my-3 img-fluid">
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="py-5 text-black">
+      <h2 class="mb-4 fw-bold fs-2">Интеграция отраслевого опыта</h2>
+      <p class="mb-1 fs-5">
+        Сотрудничество с организациями различных сфер деятельности помогает интегрировать отраслевой опыт в образовательный процесс и студенческую жизнь. 
+        Студенты получают доступ к практикам, стажировкам и реальным проектам, 
+        а Университет - к актуальным профессиональным задачам и возможностям для развития прикладных компетенций.
+        <br>
+        <br>Кроме этого, в рамках взаимодействия с организациями различных сфер деятельности реализуются совместные проекты, проводятся конкурсы, фестивали, событийные мероприятия.
+      </p>
+    </div>
+    <hr class="border-warning border-2"></hr>
+    <div class="row py-3 px-5">
+      <div class="col-12 col-md-6">
+        <a class="text-decoration-none fs-5 link-dark link-opacity-75-hover" href="http://херсонес.рф/">
+          <div class="row align-items-center ">
+            <div class="col col-md-4">
+              <img src="{% static 'bootstrap/img/partners/khersones.jpg' %}" class="rounded-2 my-3 img-fluid">
+            </div>
+            <div class="col col-md-8">
+              <span class="d-block">Музейно-храмовый комплекс "Новый Херсонес"</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-md-6">
+        <a class="text-decoration-none fs-5 link-dark link-opacity-75-hover" href="https://www.chersonesos-sev.ru/">
+          <div class="row align-items-center ">
+            <div class="col col-md-4">
+              <img src="{% static 'bootstrap/img/partners/khersones-tavr.png' %}" class="rounded-2 my-3 img-fluid">
+            </div>
+            <div class="col col-md-8">
+              <span class="d-block">Государственный музей‑заповедник "Херсонес Таврический"</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-md-6">
+        <a class="text-decoration-none fs-5 link-dark link-opacity-75-hover" href="https://yelizarov.dance/">
+          <div class="row align-items-center ">
+            <div class="col col-md-4">
+              <img src="{% static 'bootstrap/img/partners/teatr.png' %}" class="rounded-2 my-3 img-fluid">
+            </div>
+            <div class="col col-md-8">
+              <span class="d-block">Севастопольский Академический театр танца им. Вадима Елизарова</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-md-6">
+        <a class="text-decoration-none fs-5 link-dark link-opacity-75-hover" href="https://vk.ru/horamdt">
+          <div class="row align-items-center ">
+            <div class="col col-md-4">
+              <img src="{% static 'bootstrap/img/partners/muz-dram-teatr.jpg' %}" class="rounded-2 my-3 img-fluid">
+            </div>
+            <div class="col col-md-8">
+              <span class="d-block">Херсонский областной русский академический музыкально-драматический театр</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-md-6">
+        <a class="text-decoration-none fs-5 link-dark link-opacity-75-hover" href="https://muzteatr.net/">
+          <div class="row align-items-center ">
+            <div class="col col-md-4">
+              <img src="{% static 'bootstrap/img/partners/gos-muz-teatr.jpg' %}" class="rounded-2 my-3 img-fluid">
+            </div>
+            <div class="col col-md-8">
+              <span class="d-block">Государственный академический Музыкальный театр РК</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-md-6">
+        <a class="text-decoration-none fs-5 link-dark link-opacity-75-hover" href="https://www.palmira-palace.com/">
+          <div class="row align-items-center ">
+            <div class="col col-md-4">
+              <img src="{% static 'bootstrap/img/partners/palmira.png' %}" class="rounded-2 my-3 img-fluid">
+            </div>
+            <div class="col col-md-8">
+              <span class="d-block">Спа-отель 5* <br> "Пальмира Палас"</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

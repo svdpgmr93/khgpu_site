@@ -1,55 +1,319 @@
-{% extends 'base.html' %} {% load static %} {% block title %}Работа в
-ХГПУ{%endblock %} {% block content %}
+{% extends 'base.html' %} 
+{% load static %} 
+{% block title %}Работа в ХГПУ{%endblock %} 
+{% block content %}
 <main class="main">
   <div class="container">
-    <div class="row gap-4 py-5">
-      <div class="col">
-        <img
-          class="w-100 rounded-3"
-          src="{% static 'bootstrap/img/rabota-v-hgpu.jpg'%}"
-          alt="rabota-v-hgpu"/>
+    <div class="pt-4">
+      <div style="
+        background-image: url('{% static 'bootstrap/img/rabota-v-hgpu/rabota-v-hgpu-banner.jpg' %}');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: 60%;
+        border-radius: 30px;
+      " class="py-5 d-flex align-items-center justify-content-center position-relative overflow-hidden">
+        <div class="media-banner-overlay opacity-25"></div>
+        <h1 class="w-75 mb-0 z-2 text-white fw-bold text-center" style="font-size: 3rem;">Замещение вакантных должностей в ХГПУ</h1>
       </div>
-      <div class="col">
-        <div class="d-flex flex-column">
-          <p class="mb-3">
-            <span class="text-body-tertiary fw-semibold fs-6">28 августа 2025</span>
-          </p>
-          <h2 class="mb-3 fw-semibold fs-1">Замещение вакантных должностей</h2>
-          <p class="mb-3">
-            <span class="text-body-tertiary fw-semibold fs-6 text-uppercase">объявление</span>
-          </p>
-          <p class="mb-3">
-            <a href="https://hgpurf.ru/wp-content/uploads/2025/06/Объявление_выборы_28.06.2025_Дир.институтов-и-завкафедрой.pdf"
-              target="_blank"
-              class="link-color fs-5 link-offset-2">ОБЪЯВЛЕНИЕ (от 28.06.2025) ФГБОУ ВО «Херсонский государственный
-              педагогический университет» объявляет
-              <span class="fw-bold">выборы на замещение вакантных должностей директоров институтов,
-                заведующих кафедрами</span></a></p>
-          <p class="mb-3">
-            <a
-              href="https://hgpurf.ru/wp-content/uploads/2025/06/Объявление_конкурс_28.06.2025_ППС.pdf"
-              target="_blank"
-              class="link-color fs-5 link-offset-2"
-              >ОБЪЯВЛЕНИЕ (от 28.06.2025) ФГБОУ ВО «Херсонский государственный
-              педагогический университет» объявляет
-              <span class="fw-bold">конкурс на замещение вакантных должностей педагогических
-                работников, относящихся к профессорско-преподавательскому
-                составу университета</span></a></p>
-          <p class="mb-3">
-            <a href="https://hgpurf.ru/wp-content/uploads/2025/07/Положение_о_конкурсе_для_размещения_на_сайт.pdf"
-              target="_blank"
-              class="link-color fs-5 link-offset-2">ПОЛОЖЕНИЕ о порядке замещения должностей педагогических работников, относящихся к
-              <span class="fw-bold">профессорско-преподавательскому составу</span> ФГБОУ ВО «Херсонский государственный педагогический университет»</a>
-          </p>
-           <p class="mb-3">
-            <a href="https://hgpurf.ru/wp-content/uploads/2025/07/Положение_о_назначении_директоров_для_размещения_на_сайт.pdf"
-              target="_blank"
-              class="link-color fs-5 link-offset-2">ПОЛОЖЕНИЕ о порядке назначения на должности
-              <span class="fw-bold">директора института и заведующего кафедрой</span></a>
-          </p>
+    </div>
+    <div class="py-4">
+      <nav style="--bs-breadcrumb-divider: '>>';" aria-label="breadcrumb">
+        <ol class="breadcrumb fw-medium">
+          <li class="breadcrumb-item">
+            <a href="{% url 'main' %}">Главная</a>
+          </li>
+          <li class="breadcrumb-item" aria-current="page">
+            <a href="{% url 'main' %}">Университет</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            <a href="{% url 'rabota_v_hgpu' %}">Замещение вакантных должностей в ХГПУ</a>
+          </li>
+        </ol>
+      </nav>
+    </div>
+    <h2 class="mb-4 fw-bold fs-2">Объявления о конкурсах и выборах на должности профессорско‑преподавательского состава и иных работников университета</h2>
+    <p class="mb-4 fs-5">На этой странице публикуются официальные объявления о проведении конкурсов и выборов на замещение вакантных должностей в 
+      Херсонском государственном педагогическом университете. Здесь вы найдёте требования к кандидатам, сроки приёма документов, порядок участия 
+      и ссылки на нормативные акты. Вся информация поддерживается в актуальном состоянии.</p>
+  </div>
+  <div class="py-5 light-yellow-bg">
+    <div class="container">
+      <h3 class="mb-4 fw-bold">Объявления о вакансиях</h3>
+      <div class="py-4 row gap-4">
+        <div class="col">
+          <a href="" target="_blank" class="text-decoration-none">
+            <div class="card mb-3 h-100 dark-grey-bg border-0 rounded-4">
+              <div class="row g-0 h-100">
+                <div class="col-md-5">
+                  <img src="{% static 'bootstrap/img/rabota-v-hgpu/photo-1606761568499-.jpg' %}" class="img-fluid object-fit-cover rounded-start-4 h-100"
+                    alt="..." />
+                </div>
+                <div class="col">
+                  <div class="card-body px-4 py-4">
+                    <h4 class="card-title fw-bold">30.06.2026</h4>
+                    <p class="fs-5 fw-medium lh-sm">Объявление о конкурсе на на замещение вакантных должностей педагогических работников, относящихся к профессорско-преподавательскому составу университета</p>
+                    <div
+                      class="px-3 py-2 d-inline-block text-black bg-ylw rounded-3 fs-6 fw-semibold position-relative overflow-hidden glare">
+                      <i class="fa-solid fa-circle-play"></i>
+                      <span>Ознакомиться</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="" target="_blank" class="text-decoration-none">
+            <div class="card mb-3 h-100 dark-grey-bg border-0 rounded-4">
+              <div class="row g-0 h-100">
+                <div class="col-md-5">
+                  <img src="{% static 'bootstrap/img/rabota-v-hgpu/photo-1704655295066-.jpg' %}" class="img-fluid object-fit-cover rounded-start-4 h-100"
+                    alt="..." />
+                </div>
+                <div class="col">
+                  <div class="card-body px-4 py-4">
+                    <h4 class="card-title fw-bold">30.06.2026</h4>
+                    <p class="fs-5 fw-medium lh-sm">Объявление о выборах на замещение вакантной должности заведующего кафедрой</p>
+                    <div
+                      class="px-3 py-2 d-inline-block text-black bg-ylw rounded-3 fs-6 fw-semibold position-relative overflow-hidden glare">
+                      <i class="fa-solid fa-circle-play"></i>
+                      <span>Ознакомиться</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <details>
+          <summary>Архив объявлений</summary>
+          <ol class="list-group list-group-flush">
+            <li>
+              <a class="text-decoration-none fs-6 link-dark link-opacity-75-hover"
+                href="https://hgpurf.ru/wp-content/uploads/2026/03/%D0%9E%D0%B1%D1%8A%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_27.03.2025_%D0%97%D0%B0%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B4%D0%BE%D0%BB%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B0.pdf">
+                Объявление (от 27.03.2026) ФГБОУ ВО "Херсонский государственный педагогический университет" о выборах на замещение вакантной должности директора Института
+              </a>
+            </li>
+                        <li>
+              <a class="text-decoration-none fs-6 link-dark link-opacity-75-hover"
+                href="https://hgpurf.ru/wp-content/uploads/2026/03/%D0%9E%D0%B1%D1%8A%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_27.03.2025_%D0%97%D0%B0%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B4%D0%BE%D0%BB%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B0.pdf">
+                Объявление (от 27.03.2026) ФГБОУ ВО "Херсонский государственный педагогический университет" о выборах на замещение вакантной должности директора Института
+              </a>
+            </li>
+                        <li>
+              <a class="text-decoration-none fs-6 link-dark link-opacity-75-hover"
+                href="https://hgpurf.ru/wp-content/uploads/2025/06/%D0%9E%D0%B1%D1%8A%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BA%D0%BE%D0%BD%D0%BA%D1%83%D1%80%D1%81_28.06.2025_%D0%9F%D0%9F%D0%A1.pdf">
+                Объявление (от 28.06.2025) ФГБОУ ВО "Херсонский государственный педагогический университет" объявляет конкурс на замещение вакантных должностей педагогических работников, относящихся к профессорско-преподавательскому составу Университета
+              </a>
+            </li>
+          </ol>
+        </details>
+      </div>
+    </div>
+  </div>
+  <div class="py-5 container text-black">
+    <h2 class="mb-4 fw-bold fs-2">Нормативные правовые и иные акты, регламентирующие проведение конкурсов выборов на замещение вакантных должностей</h2>
+    <p class="mb-4 fs-5">Процедура замещения вакантных должностей в ФГБОУ ВО "Херсонский государственный педагогический университет" осуществляется в соответствии с:</p>
+    <div class="container fs-20">
+      <ul class="list-group list-group-flush ms-5 fs-20">
+        <h5>Нормативные правовые и иные акты</h5>
+        <li>Федеральный закон от 29.12.2012 № 273‑ФЗ "Об образовании в Российской Федерации"</li>
+        <li>Трудовой кодекс Российской Федерации</li>
+        <li>Методические рекомендации по определению срока избрания по конкурсу на замещение должностей педагогических работников, отнесенных к профессорско-преподавательскому составу, образовательными организациями высшего образования (рассмотрены и одобрены на заседании Отраслевой комиссии по регулированию социально-трудовых отношений в образовательных организациях, находящихся в ведении Министерства науки и высшего образования РФ 18 декабря 2025 год протокол № 2 | письмо Минобрнауки России от 08.04.2026 № МН-10/485)</li>
+        <li>Приказ Минобрнауки России от 04.12.2023 № 1138 (в части замещения должностей ППС)</li>
+      </ul>
+      <br>
+      <ul class="list-group list-group-flush ms-5 fs-20">
+        <h5>Локальные нормативные акты ХГПУ</h5>
+        <li><a href="https://cloud.hgpurf.ru/index.php/s/H8r6dbrrqdqETPE" class="text-decoration-none fs-6 link-dark link-opacity-75-hover">Устав федерального государственного бюджетного образовательного учреждения высшего образования "Херсонский государственный педагогический университет" (новая редакция | 28.02.2025)</a></li>
+        <li><a href="https://hgpurf.ru/wp-content/uploads/2025/07/Положение_о_конкурсе_для_размещения_на_сайт.pdf" class="text-decoration-none fs-6 link-dark link-opacity-75-hover">Положение о порядке замещения должностей педагогических работников, относящихся к профессорско-преподавательскому составу ФГБОУ ВО "Херсонский государственный педагогический университет"</a></li>
+        <li><a href="https://hgpurf.ru/wp-content/uploads/2025/07/Положение_о_назначении_директоров_для_размещения_на_сайт.pdf" class="text-decoration-none fs-6 link-dark link-opacity-75-hover">Приказ Минобрнауки России от 04.12.2023 № 1138 (в части замещения должностей ППС)</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="py-5 light-yellow-bg ">
+      <div class="container">
+        <div class="instruction-section">
+            <h2 class="main-title mb-3">Инструкция для претендентов</h2>
+
+            <div class="row steps-wrapper">
+                <!-- Шаг 1 -->
+                <div class="col-md-3 col-12 step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-title">Проверьте соответствие требованиям</div>
+                    <div class="step-desc">
+                        Ознакомьтесь с квалификационными требованиями к должности (образование, стаж, учёная степень, иные критерии).
+                    </div>
+                </div>
+
+                <!-- Шаг 2 -->
+                <div class="col-md-3 col-12 step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-title">Подготовьте пакет документов</div>
+                    <div class="step-desc">
+                        Заполните заявление и приложите к нему необходимые документы, перечисленные в Положениях.
+                    </div>
+                </div>
+
+                <!-- Шаг 3 -->
+                <div class="col-md-3 col-12 step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-title">Подайте документы в срок</div>
+                    <div class="step-desc">
+                        Документы принимаются в срок, указанный в объявлении, на представленную в объявлении почту.
+                    </div>
+                </div>
+
+                <!-- Шаг 4 -->
+                <div class="col-md-3 col-12 step-item">
+                    <div class="step-number">4</div>
+                    <div class="step-title">Следите за уведомлениями</div>
+                    <div class="step-desc">
+                        Вся информация о прохождении конкурсного / выборного отбора направляется на электронную почту претендента.
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+  </div>
+  <div class="py-5 container text-black">
+    <h2 class="mb-4 fw-bold fs-2">Формы и бланки документов для участия в кадровых процедурах</h2>
+    <p class="mb-4 fs-5">
+      Скачайте официальные формы для участия в конкурсе или в выборах. 
+      Используйте только актуальные версии с этой страницы. 
+      Формы документов размещены в двух архивах: отдельно для конкурса и отдельно для выборов - 
+      в соответствии с разными процедурами и требованиями локальных актов ХГПУ. 
+      Для Вашего удобства файлы доступны в редактируемом формате DOC.
+      Заполненные документы направляйте согласно порядку, указанному в Положениях.
+    </p>
+    <div class="row my-4 mx-4 gap-4 light-yellow-bg rounded-2">
+      <div class="d-flex flex-column flex-lg-row align-items-center gap-4">
+        <div class="d-flex w-25 px-3">
+          <img src="{% static 'bootstrap/img/rabota-v-hgpu/photo-1629904888780-.jpg' %}" class="rounded-2 my-3 img-fluid">
+        </div>
+        <div class="py-4 d-flex flex-column justify-content-center w-50">
+            <h3 class="custom-title">Участие в конкурсе на замещение должности</h3>
+            <p class="custom-text mb-0">
+                Для претендентов на должности профессорско-преподавательского состава.
+            </p>
+        </div>
+        <div class="vr my-4"></div>
+        <div class="d-inline-flex align-items-center justify-content-center w-25">
+          <div
+            class="d-flex px-4 py-4 text-black bg-ylw d-inline-block rounded-3 fs-6 fw-semibold overflow-hidden glare">
+            <i class="fa-solid fa-download"></i>
+            <span>Скачать архив</span>
+          </div>
         </div>
       </div>
     </div>
+    <div class="row my-4 mx-4 gap-4 light-yellow-bg rounded-2">
+      <div class="d-flex flex-column flex-lg-row align-items-center gap-4">
+        <div class="d-flex w-25 px-3">
+          <img src="{% static 'bootstrap/img/rabota-v-hgpu/photo-1450101499163-.jpg' %}" class="rounded-2 my-3 img-fluid">
+        </div>
+        <div class="py-4 d-flex flex-column justify-content-center w-50">
+            <h3 class="custom-title">Участие в выборах на должность</h3>
+            <p class="custom-text mb-0">
+                Для должностей, замещаемых путём выборов.
+                Процедура и комплект документов отличаются от конкурса.
+            </p>
+        </div>
+        <div class="vr my-4"></div>
+        <div class="d-inline-flex align-items-center justify-content-center w-25">
+          <div
+            class="d-flex px-4 py-4 text-black bg-ylw d-inline-block rounded-3 fs-6 fw-semibold overflow-hidden glare">
+            <i class="fa-solid fa-download"></i>
+            <span>Скачать архив</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-3">
+      <h2 class="text-yellow fw-bold">Вопрос - Ответ</h2>
+      <p>Ответы на часто задаваемые вопросы по процедуре замещения вакантных должностей в Университете</p>
+    </div>
+    <div class="col-9 px-4">
+      <div class="my-accordion">
+              <details class="details rounded-4 grey-bg px-4 mb-2" name="basic-info-accordion">
+                <summary class="details-title">
+                  <p>
+                    Какой минимальный срок приёма документов?
+                  </p>
+                  <i class="fa-solid fa-angle-down fa-2xl my-accordion-icon"></i>
+                </summary>
+                <div class="details-content">
+                  <p>Срок приема документов указывается в объявлении, размещенном на официальном сайте университета не менее чем за два месяца до даты проведения конкурса / выборов.</p>
+                </div>
+              </details>
+      </div>
+      <div class="my-accordion">
+              <details class="details rounded-4 grey-bg px-4 mb-2" name="basic-info-accordion">
+                <summary class="details-title">
+                  <p>
+                    Можно ли подать документы в электронном виде?
+                  </p>
+                  <i class="fa-solid fa-angle-down fa-2xl my-accordion-icon"></i>
+                </summary>
+                <div class="details-content">
+                  <p>Способ подачи документов на конкурс / выборы указывается в объявлении, размещенном на официальном сайте университета.</p>
+                </div>
+              </details>
+      </div>
+      <div class="my-accordion">
+              <details class="details rounded-4 grey-bg px-4 mb-2" name="basic-info-accordion">
+                <summary class="details-title">
+                  <p>
+                    Что делать, если срок подачи документов пропущен?
+                  </p>
+                  <i class="fa-solid fa-angle-down fa-2xl my-accordion-icon"></i>
+                </summary>
+                <div class="details-content">
+                  <p>Согласно локальным нормативным актам университета такие документы не принимаются для участия в процедуре конкурсного отбора / выборов на замещение вакантных должностей.</p>
+                </div>
+              </details>
+      </div>
+      <div class="my-accordion">
+              <details class="details rounded-4 grey-bg px-4 mb-2" name="basic-info-accordion">
+                <summary class="details-title">
+                  <p>
+                    Где узнать результаты конкурса?
+                  </p>
+                  <i class="fa-solid fa-angle-down fa-2xl my-accordion-icon"></i>
+                </summary>
+                <div class="details-content">
+                  <p>Результаты конкурсного отбора / выборов на замещение вакантных должностей размещаются на официальном сайте Университета и направляются претендентам на электронную почту.</p>
+                </div>
+              </details>
+      </div>
+      <div class="my-accordion">
+              <details class="details rounded-4 grey-bg px-4 mb-2" name="basic-info-accordion">
+                <summary class="details-title">
+                  <p>
+                    Чем отличаются "конкурс" и "выборы" на должность?
+                  </p>
+                  <i class="fa-solid fa-angle-down fa-2xl my-accordion-icon"></i>
+                </summary>
+                <div class="details-content">
+                  <p>Конкурсный отбор применяется для замещения должностей профессорско‑преподавательского состава (ассистент, преподаватель, старший преподаватель, доцент, профессор); процедура выборов предусмотрена для замещения должностей заведующего кафедрой и директора института в порядке, установленном локальными актами.</p>
+                </div>
+              </details>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="container py-5 px-5 mb-5 rounded-3 light-yellow-bg border border-2 border-warning">
+    <h2 class="fw-bold">Важно знать</h2>
+    <ul class="fs-5 text-black">
+      <li>Всем претендентам обеспечиваются равные условия участия в конкурсе.</li>
+      <li>Основания для отказа в допуске к конкурсу строго регламентированы и указаны в Положениях.</li>
+      <li>Внесение изменений в объявление или отмена конкурса осуществляются в установленном порядке.</li>
+      <li>Информация на странице является официальной и приоритетной по отношению к иным источникам.</li>
+    </ul>
   </div>
 </main>
 {% endblock %}
