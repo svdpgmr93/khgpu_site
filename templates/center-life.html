@@ -1,0 +1,453 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Центр защиты материнства и детства "Жизнь"
+{% endblock %}
+{% block content %}
+<main class="main">
+    <div class="container">
+        <div class="py-4">
+            <nav style="--bs-breadcrumb-divider: '»'" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">Главная</a></li>
+                    <li class="breadcrumb-item" aria-current="page">
+                        <a href="#">Университет</a>
+                    </li>
+                    <li class="breadcrumb-item" aria-current="page">
+                        <a href="#">Центр защиты материнства и детства "Жизнь"</a>
+                    </li>
+                </ol>
+            </nav>
+            <div class="py-4 text-black">
+                <h1 class="mb-5 fw-bold">Центр защиты материнства и детства "Жизнь"</h1>
+                <p class="fs-5">С 2022 года на базе Херсонского государственного педагогического университета работает
+                    Центр защиты
+                    материнства и детства "Жизнь" - <span class="fw-bold">площадка поддержки семей, содействия
+                        укреплению семейных ценностей и
+                        заботы о благополучии самых уязвимых членов общества: будущих мам и детей.</span></p>
+            </div>
+        </div>
+        <div class="py-5">
+            <div class="mb-5 row g-5">
+                <div class="col-4">
+                    <img class="w-100 h-100 rounded-4 object-fit-cover"
+                        src="{% static 'bootstrap/img/life-center/life-center-1.jpg' %}" alt="">
+                </div>
+                <div class="col-4 d-flex flex-column gap-4">
+                    <img style="height: 300px;" class="w-100 object-fit-cover rounded-4"
+                        src="{% static 'bootstrap/img/life-center/life-center-2.jpg' %}" alt="">
+                    <div>
+                        <p>Наша миссия</p>
+                        <p class="mb-0 fs-5">Создать безопасную и поддерживающую среду, где каждая женщина, ожидающая
+                            ребёнка или
+                            воспитывающая малыша, может получить необходимую помощь, консультацию и опору в сложных
+                            жизненных ситуациях.</p>
+                    </div>
+                </div>
+                <div class="col-4 d-flex flex-column gap-4">
+                    <img style="height: 300px;" class="w-100 object-fit-cover rounded-4"
+                        src="{% static 'bootstrap/img/life-center/life-center-3.jpg' %}" alt="">
+                    <img style="height: 300px;" class="w-100 object-fit-cover rounded-4"
+                        src="{% static 'bootstrap/img/life-center/life-center-4.jpg' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="padding-top: 200px; padding-bottom: 200px;" class="bg-beige position-relative">
+        <div class="container">
+            <div class="w-75 m-auto">
+                <div class="mb-5 text-center fw-bold fs-4">Мы объединяем усилия учёных, преподавателей, студентов и
+                    социальных
+                    работников,
+                    чтобы превратить академические знания в реальную помощь людям.</div>
+                <div class="text-center fs-4">Благодаря базе Херсонского государственного педагогического университета
+                    Центр
+                    имеет доступ к новейшим научным исследованиям, методической базе и квалифицированным кадрам – всё
+                    это
+                    позволяет оказывать поддержку на высоком профессиональном уровне.</div>
+            </div>
+        </div>
+        <img style="width: 150px; height: 150px; top: 10%; right: 68%"
+            class="position-absolute object-fit-cover rounded-circle"
+            src="{% static 'bootstrap/img/life-center/life-center-circle-1.jpg' %}" alt="">
+        <img style="width: 100px; height: 100px; top: 15%; right: 30%"
+            class="position-absolute object-fit-cover rounded-circle"
+            src="{% static 'bootstrap/img/life-center/life-center-circle-2.jpg' %}" alt="">
+        <img style="width: 190px; height: 190px; top: 35%; right: 22%"
+            class="position-absolute object-fit-cover rounded-circle"
+            src="{% static 'bootstrap/img/life-center/life-center-circle-3.jpg' %}" alt="">
+        <img style="width: 120px; height: 120px; top: 70%; right: 30%"
+            class="position-absolute object-fit-cover rounded-circle"
+            src="{% static 'bootstrap/img/life-center/life-center-circle-4.jpeg' %}" alt="">
+        <img style="width: 140px; height: 140px; top: 72%; right: 65%"
+            class="position-absolute object-fit-cover rounded-circle"
+            src="{% static 'bootstrap/img/life-center/life-center-circle-5.jpg' %}" alt="">
+        <img style="width: 180px; height: 180px; top: 40%; right: 70%"
+            class="position-absolute object-fit-cover rounded-circle"
+            src="{% static 'bootstrap/img/life-center/life-center-circle-6.jpg' %}" alt="">
+    </div>
+    <div class="py-5 bg-ylw">
+        <div class="container">
+            <div style="font-size: 3.5rem;"
+                class="mb-4 py-2 fw-bold text-black text-uppercase border-bottom border-3 border-black">история центра
+            </div>
+            <div class="d-flex align-items-start gap-4">
+                <div class="nav flex-column align-items-start gap-3 nav-pills me-3 fs-2 fw-bold" id="v-pills-tab"
+                    role="tablist" aria-orientation="vertical">
+                    <button class="nav-link p-0 text-black opacity-50 active-text active" id="v-pills-2018-tab"
+                        data-bs-toggle="pill" data-bs-target="#v-pills-2018" type="button" role="tab"
+                        aria-controls="v-pills-2018" aria-selected="true">2018</button>
+                    <button class="nav-link p-0 text-black opacity-50 active-text" id="v-pills-2022-tab"
+                        data-bs-toggle="pill" data-bs-target="#v-pills-2022" type="button" role="tab"
+                        aria-controls="v-pills-2022" aria-selected="false">2022</button>
+                    <button class="nav-link p-0 text-black opacity-50 active-text" id="v-pills-2023-tab"
+                        data-bs-toggle="pill" data-bs-target="#v-pills-2023" type="button" role="tab"
+                        aria-controls="v-pills-2023" aria-selected="false">2023-<br>2024</button>
+                    <button class="nav-link p-0 text-black opacity-50 active-text" id="v-pills-2025-tab"
+                        data-bs-toggle="pill" data-bs-target="#v-pills-2025" type="button" role="tab"
+                        aria-controls="v-pills-2025" aria-selected="false">2025</button>
+                    <button class="nav-link p-0 text-black opacity-50 active-text" id="v-pills-2026-tab"
+                        data-bs-toggle="pill" data-bs-target="#v-pills-2026" type="button" role="tab"
+                        aria-controls="v-pills-2026" aria-selected="false">2026</button>
+                </div>
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-2018" role="tabpanel"
+                        aria-labelledby="v-pills-2018-tab" tabindex="0">
+                        <div
+                            class="mb-3 d-inline-flex px-3 py-1 bg-light-black rounded-2 fw-medium text-white text-uppercase">
+                            Учреждение
+                        </div>
+                        <div class="mb-3 fw-semibold fs-1 lh-1 text-black">Начало работы Центра защиты<br>материнства и
+                            детства "Жизнь" в Херсоне</div>
+                        <div class="mb-3 fs-5 fw-medium text-black">Проект создан по инициативе Шашковой Нины Игоревны,
+                            которая взяла на себя не только
+                            организационные задачи, но и участвовала в разработке социальной рекламы, работе горячей
+                            линии и поддержке женщин лично. Порядка 50 волонтёров учились помогать женщинам в кризисной
+                            беременности, спасали жизни ещё не рождённых детей, оказывали материальную и психологическую
+                            помощь.</div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-2022" role="tabpanel" aria-labelledby="v-pills-2022-tab"
+                        tabindex="0">
+                        <div
+                            class="mb-3 d-inline-flex px-3 py-1 bg-light-black rounded-2 fw-medium text-white text-uppercase">
+                            Эвакуация
+                        </div>
+                        <div class="mb-3 fw-semibold fs-1 lh-1 text-black">Временная приостановка работы Центра</div>
+                        <div class="mb-3 fs-5 fw-medium text-black">С 2022 года деятельность организации была временно
+                            приостановлена, однако часть волонтёров продолжила реализацию её идей на территории России -
+                            на базе Херсонского государственного педагогического университета в Скадовске.</div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-2023" role="tabpanel" aria-labelledby="v-pills-2023-tab"
+                        tabindex="0">
+                        <div
+                            class="mb-3 d-inline-flex px-3 py-1 bg-light-black rounded-2 fw-medium text-white text-uppercase">
+                            Возрождение
+                        </div>
+                        <div class="mb-3 fw-semibold fs-1 lh-1 text-black">Начало активной деятельности на базе ХГПУ
+                        </div>
+                        <div class="mb-3 fs-5 fw-medium text-black">Значимым достижением стала победа команды
+                            Херсонского педуниверситета на Международном конкурсе "Святость материнства - 2024"
+                            (организован Фондом Андрея Первозванного при поддержке Фонда Президентских грантов,
+                            Минздрава РФ и Федерального медико-биологического агентства России).</div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-2025" role="tabpanel" aria-labelledby="v-pills-2025-tab"
+                        tabindex="0">
+                        <div
+                            class="mb-3 d-inline-flex px-3 py-1 bg-light-black rounded-2 fw-medium text-white text-uppercase">
+                            Расширение взаимодействия
+                        </div>
+                        <div class="mb-3 fw-semibold fs-1 lh-1 text-black">Атмосфера доверия
+                        </div>
+                        <div class="mb-3 fs-5 fw-medium text-black">
+                            <p class="mb-0">Значимым достижением стала победа команды
+                                Начало взаимодействия с отделением развития Патриаршей гуманитарной миссии на новых
+                                территориях.</p>
+                            <p class="mb-0">Коллектив Центра материнства и детства "Жизнь" (Лена Горшкова, Нина Шашкова,
+                                Игорь
+                                Гаркуша,
+                                студенты ХГПУ Ольга Мамыкина и Ксения Тарасенко) одержал победу в номинации "Лучшая
+                                командная работа по организации просветительской деятельности".</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-2026" role="tabpanel" aria-labelledby="v-pills-2026-tab"
+                        tabindex="0">
+                        <div
+                            class="mb-3 d-inline-flex px-3 py-1 bg-light-black rounded-2 fw-medium text-white text-uppercase">
+                            Продолжение активной деятельности
+                        </div>
+                        <div class="mb-3 fw-semibold fs-1 lh-1 text-black">Новые форматы работы
+                        </div>
+                        <div class="mb-3 fs-5 fw-medium text-black">
+                            К работе Центра активно подключились и принимают участие структурные подразделения
+                            университета: Центр психологической поддержки, Киностудия ХГПУ. Результатом сотрудничества
+                            становятся новые форматы работы просветительской деятельности Центра: выездные акции
+                            (просветительский десант) на площадках региона с демонстрацией социальных роликов Киностудии
+                            ХГПУ и просветительская деятельность в интерактивном игровом формате.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="py-5">
+        <div class="container py-5">
+            <h1 class="mb-5 fw-bold">Чем занимается Центр</h1>
+            <div class="d-flex align-items-stretch gap-4">
+                <div class="w-50 d-flex flex-column gap-4 flex-grow-1">
+                    <div style="
+                                background-image: url('{% static 'bootstrap/img/life-center/what-does-1.png' %}');
+                                background-repeat: no-repeat;
+                                background-position-y: 30%;
+                                background-size: cover;"
+                        class="px-4 py-5 d-flex flex-column justify-content-end flex-grow-1 rounded-3 text-white position-relative overflow-hidden">
+                        <div class="z-2">
+                            <div class="mb-3 fw-bold fs-5">Организует просветительские мероприятия для студентов и
+                                жителей
+                                региона:</div>
+                            <div>лекции, семинары и тренинги по вопросам репродуктивного здоровья, ответственного
+                                родительства и детской психологии</div>
+                        </div>
+                        <div class="media-banner-overlay"></div>
+                    </div>
+                    <div class="d-flex gap-4">
+                        <div style="
+                                background-image: url('{% static 'bootstrap/img/life-center/what-does-2.png' %}');
+                                background-repeat: no-repeat;
+                                background-position-y: 30%;
+                                background-size: cover;"
+                            class="w-50 px-4 py-5 d-flex flex-column justify-content-end flex-grow-1 rounded-3 text-white position-relative overflow-hidden">
+                            <div class="z-2">
+                                <div class="mb-3 fw-bold fs-5">Оказывает психологическую поддержку</div>
+                                <div>беременным женщинам и молодым мамам, оказавшимся в кризисной ситуации</div>
+                            </div>
+                            <div class="media-banner-overlay"></div>
+                        </div>
+                        <div style="
+                                background-image: url('{% static 'bootstrap/img/life-center/what-does-3.png' %}');
+                                background-repeat: no-repeat;
+                                background-position-y: 30%;
+                                background-size: cover;"
+                            class="w-50 px-4 py-5 d-flex flex-column justify-content-end flex-grow-1 rounded-3 text-white position-relative overflow-hidden">
+                            <div class="z-2">
+                                <div class="mb-3 fw-bold fs-5">Предоставляет социально‑ правовую консультацию:</div>
+                                <div>помогаем разобраться в мерах господдержки, оформлении пособий и защите законных
+                                    прав
+                                </div>
+                            </div>
+                            <div class="media-banner-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-25">
+                    <div style="
+                                background-image: url('{% static 'bootstrap/img/life-center/what-does-4.png' %}');
+                                background-repeat: no-repeat;
+                                background-position-y: 30%;
+                                background-size: cover;"
+                        class="d-flex flex-column justify-content-end flex-grow-1 h-100 px-4 py-5 rounded-3 text-white position-relative overflow-hidden">
+                        <div class="z-2">
+                            <div class="mb-3 fw-bold fs-5">Развивает волонтёрское сопровождение:</div>
+                            <div>студенты профильных направлений (педагогика, психология, социальная работа) под
+                                руководством опытных наставников помогают семьям на дому и в Центре</div>
+                        </div>
+                        <div class="media-banner-overlay"></div>
+                    </div>
+                </div>
+                <div class="w-25 d-flex flex-column gap-4 flex-grow-1">
+                    <div style="
+                                background-image: url('{% static 'bootstrap/img/life-center/what-does-5.png' %}');
+                                background-repeat: no-repeat;
+                                background-position-y: 30%;
+                                background-size: cover;"
+                        class="px-4 py-5 d-flex flex-column justify-content-end flex-grow-1 rounded-3 text-white position-relative overflow-hidden">
+                        <div class="z-2">
+                            <div class="mb-3 fw-bold fs-5">Реализует программы ранней помощи детям с особенностями
+                                развития:
+                            </div>
+                            <div>консультации дефектолога, логопеда и психолога</div>
+                        </div>
+                        <div class="media-banner-overlay"></div>
+                    </div>
+                    <div style="
+                                background-image: url('{% static 'bootstrap/img/life-center/what-does-6.png' %}');
+                                background-repeat: no-repeat;
+                                background-position-y: 30%;
+                                background-size: cover;"
+                        class="px-4 py-5 d-flex flex-column justify-content-end flex-grow-1 rounded-3 text-white position-relative overflow-hidden">
+                        <div class="z-2">
+                            <div class="mb-3 fw-bold">Создаёт сообщества взаимоподдержки для мам:</div>
+                            <div>регулярные встречи, обмен опытом, мастер‑классы и совместные активности для детей</div>
+                        </div>
+                        <div class="media-banner-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="py-5 bg-ylw">
+        <div class="py-5 container">
+            <h1 class="mb-4 fw-bold text-black">Освещение деятельности Центра</h1>
+            <a href="https://tavria.tv/news/society/v-hersonskoj-oblasti-otmetili-vserossijskij-den-beremennyh/"
+                class="mb-4 d-inline-flex text-decoration-none text-black fs-5">Сюжет
+                ТРК "Таврия" о просветительском десанте Центра материнства и детства "Жизнь" по школам Херсонской
+                области | 24.04.2026</a>
+            <div style="max-width: 80%;" class="m-auto ratio ratio-16x9 rounded-4 overflow-hidden">
+                <iframe width="100%" allow="encrypted-media; fullscreen; picture-in-picture"
+                    src="https://hgpurf.ru/wp-content/uploads/2026/04/VID_20260424_190203.mp4"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="py-5">
+        <div class="container">
+            <h1 class="mb-4 fw-bold text-black">О нас пишут</h1>
+            <p class="fs-5">Освещение деятельности Центра защиты материнства и детства "Жизнь" в социальных медиа и СМИ
+            </p>
+            <div class="mb-4">
+                <a href="" class="text-reset text-decoration-none media-news-publication">
+                    <div class="d-flex gap-5 py-4 media-news-publication">
+                        <div>
+                            <img style="width: 190px; height: 150px;" class="rounded-3"
+                                src="{% static 'bootstrap/img/life-center/about-1.png' %}" alt="" />
+                        </div>
+                        <div>
+                            <p class="fw-semibold fs-3">
+                                И снова наша миссия: "Жизнь: продолжение следует...". На этот раз три школы Скадовского
+                                МО.
+                            </p>
+                            <p class="fs-6">
+                                <span class="me-4 text-body-tertiary fw-semibold">19 мая 2026</span><span
+                                    class="text-body-tertiary text-uppercase fw-semibold text-uppercase">Блог
+                                    ректора</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="text-reset text-decoration-none media-news-publication">
+                    <div class="d-flex gap-5 py-4 media-news-publication">
+                        <div>
+                            <img style="width: 190px; height: 150px;" class="rounded-3"
+                                src="{% static 'bootstrap/img/life-center/about-2.png' %}" alt="" />
+                        </div>
+                        <div>
+                            <p class="fw-semibold fs-3">
+                                Апрельский пролайф-десант в учебных заведениях ХО
+                            </p>
+                            <p class="fs-6">
+                                <span class="me-4 text-body-tertiary fw-semibold">26 апреля 2026</span><span
+                                    class="text-body-tertiary text-uppercase fw-semibold text-uppercase">Блог
+                                    ректора</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="text-reset text-decoration-none media-news-publication">
+                    <div class="d-flex gap-5 py-4 media-news-publication">
+                        <div>
+                            <img style="width: 190px; height: 150px;" class="rounded-3"
+                                src="{% static 'bootstrap/img/life-center/about-3.jpg' %}" alt="" />
+                        </div>
+                        <div>
+                            <p class="fw-semibold fs-3">
+                                Взаимодействие с ООП "Всебеременным.рф"
+                            </p>
+                            <p class="fs-6">
+                                <span class="me-4 text-body-tertiary fw-semibold">28 февраля 2026</span><span
+                                    class="text-body-tertiary text-uppercase fw-semibold text-uppercase">Блог
+                                    ректора</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="text-reset text-decoration-none media-news-publication">
+                    <div class="d-flex gap-5 py-4 media-news-publication">
+                        <div>
+                            <img style="width: 190px; height: 150px;" class="rounded-3"
+                                src="{% static 'bootstrap/img/life-center/about-4.jpg' %}" alt="" />
+                        </div>
+                        <div>
+                            <p class="fw-semibold fs-3">
+                                Лектор "Знания" Шашкова Н.И. рассказала студентам ХГПУ о важности семьи и традиций
+                            </p>
+                            <p class="fs-6">
+                                <span class="me-4 text-body-tertiary fw-semibold">16 сентября 2025</span><span
+                                    class="text-body-tertiary text-uppercase fw-semibold text-uppercase">новости
+                                    хгпу</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="py-5 bg-beige">
+        <div class="container">
+            <div class="py-5 d-flex align-items-stretch gap-5">
+                <div class="w-50">
+                    <img class="w-100 h-100 object-fit-cover rounded-4"
+                        src="{% static 'bootstrap/img/life-center/volonter-sec.jpg' %}" alt="">
+                </div>
+                <div class="w-50">
+                    <div class="mb-4 fw-bold fs-2">Хотите внести вклад в благое дело и помочь семьям обрести уверенность
+                        в
+                        завтрашнем дне?</div>
+                    <div class="row row-cols-2 g-4">
+                        <div class="d-flex flex-column align-items-start gap-3">
+                            <div
+                                class="px-3 py-2 d-flex align-items-center justify-content-center bg-ylw rounded-3 fw-bold">
+                                1</div>
+                            <div class="fw-medium fs-5">Стать волонтером</div>
+                            <div class="opacity-75">Помогать в организации мероприятий, сопровождать семьи, участвовать
+                                в просветительских
+                                акциях</div>
+                        </div>
+                        <div class="d-flex flex-column align-items-start gap-3">
+                            <div
+                                class="px-3 py-2 d-flex align-items-center justify-content-center bg-ylw rounded-3 fw-bold">
+                                2</div>
+                            <div class="fw-medium fs-5">Предложить профессиональные навыки</div>
+                            <div class="opacity-75">Если вы психолог, юрист, педагог или медик</div>
+                        </div>
+                        <div class="d-flex flex-column align-items-start gap-3">
+                            <div
+                                class="px-3 py-2 d-flex align-items-center justify-content-center bg-ylw rounded-3 fw-bold">
+                                3</div>
+                            <div class="fw-medium fs-5">Инициировать студенческий проект</div>
+                            <div class="opacity-75">В рамках учебной или научной работы, направленный на решение
+                                актуальных задач семьи и детства</div>
+                        </div>
+                        <div class="d-flex flex-column align-items-start gap-3">
+                            <div
+                                class="px-3 py-2 d-flex align-items-center justify-content-center bg-ylw rounded-3 fw-bold">
+                                4</div>
+                            <div class="fw-medium fs-5">Поддержать работу Центра информационно</div>
+                            <div class="opacity-75">Распространять наши материалы, рассказывать о наших программах</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="padding-top: 150px; padding-bottom: 150px;">
+        <div style="
+                    background-image: url('{% static 'bootstrap/img/life-center/puzzles.jpg' %}');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    background-attachment: fixed;
+                    height: 1350px;
+                    width: 90%;
+                    margin: 0 auto;
+                    border-radius: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;">
+            <div style="max-width: 750px;" class="px-5 py-5 d-flex flex-column gap-3 bg-white text-center rounded-4">
+                <div class="fw-semibold fs-1">Вместе мы можем сделать больше!</div>
+                <div style="width: 50px; height: 3px;" class="bg-ylw align-self-center"></div>
+                <div class="fw-medium fs-5">Свяжитесь с нами, чтобы узнать, как присоединиться к нашей команде.</div>
+                <div class="fw-bold fs-4">E-mail: <a href="mailto:hgpurf@yandex.ru" class="text-decoration-none text-black text-ylw-hov">hgpurf@yandex.ru</a></div>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}
