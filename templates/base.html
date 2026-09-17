@@ -368,257 +368,201 @@
               </div>
               <!-- CUSTOM DROP MENU  END-->
         </div>
-      </header>
-      {%  block content%}
-      {% endblock %}
-      <footer class="footer">
-        <div class="footer-top">
-          <div class="container">
-            <div class="d-flex justify-content-center">
-              <ul
-                class="d-flex py-5 px-0 social-links align-items-center justify-content-between w-75 mb-0"
-              >
+    </header>
+    {% block content%}
+    {% endblock %}
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="d-flex justify-content-center">
+            <ul class="d-flex py-5 px-0 social-links align-items-center justify-content-between w-75 mb-0">
+              <li>
+                <a href="" class="d-inline-block social-link">
+                  <img src="{% static 'bootstrap\img\icons\TG-icon.svg' %}" alt="" class="social-links-icon" />
+                </a>
+              </li>
+              <li>
+                <a href="" class="d-inline-block social-link">
+                  <img src="{% static 'bootstrap\img\icons\VK-icon.webp' %}" alt="" class="social-links-icon" />
+                </a>
+              </li>
+              <li>
+                <a href="" class="d-inline-block social-link">
+                  <img src="{% static 'bootstrap\img\icons\dzen-icon.svg' %}" alt="" class="social-links-icon" />
+                </a>
+              </li>
+              <li>
+                <a href="" class="d-inline-block social-link">
+                  <img src="{% static 'bootstrap\img\icons\OK-icon.webp' %}" alt="" class="social-links-icon" />
+                </a>
+              </li>
+              <li>
+                <a href="" class="d-inline-block social-link">
+                  <img src="{% static 'bootstrap\img\icons\max-icon.webp' %}" alt="" class="social-links-icon" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-main">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col">
+              <p class="footer-col-title">Абитуриентам</p>
+              <ul class="footer-col-list">
                 <li>
-                  <a href="" class="d-inline-block social-link">
-                    <img
-                      src="{% static 'bootstrap\img\icons\TG-icon.svg' %}"
-                      alt=""
-                      class="social-links-icon"
-                    />
+                  <a href="" class="footer-item-link">Правила приёма</a>
+                </li>
+                <li>
+                  <a href="" class="footer-item-link">Приемная комиссия</a>
+                </li>
+                <li>
+                  <a href="" class="footer-item-link">Бакалавриат</a>
+                </li>
+                <li>
+                  <a href="" class="footer-item-link">Магистратура</a>
+                </li>
+                <li>
+                  <a href="" class="footer-item-link">Дни открытых дверей</a>
+                </li>
+                <li>
+                  <a href="" class="footer-item-link">Подготовительные курсы</a>
+                </li>
+                <li>
+                  <a href="" class="footer-item-link fw-bold">Личный кабинет абитуриента</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <p class="footer-col-title">Студентам</p>
+              <ul class="footer-col-list">
+                <li>
+                  <a href="" class="footer-item-link">Расписание</a>
+                </li>
+                <li>
+                  <a href="" class="footer-item-link">Совет обучающихся</a>
+                </li>
+                <li>
+                  <a href="" class="footer-item-link">Участие в проектах</a>
+                </li>
+                <li>
+                  <a href="" class="footer-item-link d-inline-block w-75">Стипендии и иные меры социальной поддержки</a>
+                </li>
+                <li>
+                  <a href="" class="footer-item-link">Оплата обучения</a>
+                </li>
+                <li>
+                  <a href="" class="footer-item-link">Доступная среда</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <p class="footer-col-title">Сотрудникам</p>
+              <ul class="footer-col-list">
+                <li>
+                  <a href="" class="footer-item-link">Педагогический состав</a>
+                </li>
+                <li>
+                  <a href="" class="footer-item-link">Факультеты, кафедры</a>
+                </li>
+                <li>
+                  <a href="" class="footer-item-link">Учёный совет</a>
+                </li>
+                <li>
+                  <a href="" class="footer-item-link">Научные мероприятия</a>
+                </li>
+                <li>
+                  <a href="" class="footer-item-link">Документы университета</a>
+                </li>
+                <li>
+                  <a href="" class="footer-item-link">Противодействие коррупции</a>
+                </li>
+                <li>
+                  <a href="" class="footer-item-link">Постановка на воинский учет</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <p class="footer-col-title">КОНТАКТЫ</p>
+              <ul class="d-flex flex-column gap-2 footer-col-list">
+                <li>
+                  <a href="" class="footer-item-link d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-at"></i>
+                    <p class="mb-0">hgpurf@yandex.ru</p>
                   </a>
                 </li>
                 <li>
-                  <a href="" class="d-inline-block social-link">
-                    <img
-                      src="{% static 'bootstrap\img\icons\VK-icon.webp' %}"
-                      alt=""
-                      class="social-links-icon"
-                    />
+                  <a href="" class="footer-item-link d-flex align-items-center gap-2">
+                    <img src="{% static 'bootstrap\img\icons\footer-phone-icon.png' %}" alt="" />
+                    <p class="mb-0">+7 (990) 140-21-00</p>
                   </a>
                 </li>
                 <li>
-                  <a href="" class="d-inline-block social-link">
-                    <img
-                      src="{% static 'bootstrap\img\icons\dzen-icon.svg' %}"
-                      alt=""
-                      class="social-links-icon"
-                    />
+                  <a href="" class="footer-item-link d-flex align-items-baseline gap-2">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <p class="mb-0 pe-5">
+                      ХГПУ официально | Официальный ТГ-канал ХГПУ
+                    </p>
                   </a>
                 </li>
                 <li>
-                  <a href="" class="d-inline-block social-link">
-                    <img
-                      src="{% static 'bootstrap\img\icons\OK-icon.webp' %}"
-                      alt=""
-                      class="social-links-icon"
-                    />
+                  <a href="" class="footer-item-link d-flex align-items-baseline gap-2">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <p class="mb-0">ТГ-канал ректора ХГПУ</p>
                   </a>
                 </li>
                 <li>
-                  <a href="" class="d-inline-block social-link">
-                    <img
-                      src="{% static 'bootstrap\img\icons\max-icon.webp' %}"
-                      alt=""
-                      class="social-links-icon"
-                    />
+                  <a href="" class="footer-item-link d-flex align-items-baseline gap-2">
+                    <i class="fa-brands fa-vk"></i>
+                    <p class="mb-0">Официальная группа ХГПУ Вконтакте</p>
                   </a>
                 </li>
               </ul>
             </div>
           </div>
-        </div>
-        <div class="footer-main">
-          <div class="container">
-            <div class="row mb-4">
-              <div class="col">
-                <p class="footer-col-title">Абитуриентам</p>
-                <ul class="footer-col-list">
-                  <li>
-                    <a href="" class="footer-item-link">Правила приёма</a>
-                  </li>
-                  <li>
-                    <a href="" class="footer-item-link">Приемная комиссия</a>
-                  </li>
-                  <li>
-                    <a href="" class="footer-item-link">Бакалавриат</a>
-                  </li>
-                  <li>
-                    <a href="" class="footer-item-link">Магистратура</a>
-                  </li>
-                  <li>
-                    <a href="" class="footer-item-link">Дни открытых дверей</a>
-                  </li>
-                  <li>
-                    <a href="" class="footer-item-link"
-                      >Подготовительные курсы</a
-                    >
-                  </li>
-                  <li>
-                    <a href="" class="footer-item-link fw-bold"
-                      >Личный кабинет абитуриента</a
-                    >
-                  </li>
-                </ul>
-              </div>
-              <div class="col">
-                <p class="footer-col-title">Студентам</p>
-                <ul class="footer-col-list">
-                  <li>
-                    <a href="" class="footer-item-link">Расписание</a>
-                  </li>
-                  <li>
-                    <a href="" class="footer-item-link">Совет обучающихся</a>
-                  </li>
-                  <li>
-                    <a href="" class="footer-item-link">Участие в проектах</a>
-                  </li>
-                  <li>
-                    <a href="" class="footer-item-link d-inline-block w-75"
-                      >Стипендии и иные меры социальной поддержки</a
-                    >
-                  </li>
-                  <li>
-                    <a href="" class="footer-item-link">Оплата обучения</a>
-                  </li>
-                  <li>
-                    <a href="" class="footer-item-link">Доступная среда</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col">
-                <p class="footer-col-title">Сотрудникам</p>
-                <ul class="footer-col-list">
-                  <li>
-                    <a href="" class="footer-item-link"
-                      >Педагогический состав</a
-                    >
-                  </li>
-                  <li>
-                    <a href="" class="footer-item-link">Факультеты, кафедры</a>
-                  </li>
-                  <li>
-                    <a href="" class="footer-item-link">Учёный совет</a>
-                  </li>
-                  <li>
-                    <a href="" class="footer-item-link">Научные мероприятия</a>
-                  </li>
-                  <li>
-                    <a href="" class="footer-item-link"
-                      >Документы университета</a
-                    >
-                  </li>
-                  <li>
-                    <a href="" class="footer-item-link"
-                      >Противодействие коррупции</a
-                    >
-                  </li>
-                  <li>
-                    <a href="" class="footer-item-link"
-                      >Постановка на воинский учет</a
-                    >
-                  </li>
-                </ul>
-              </div>
-              <div class="col">
-                <p class="footer-col-title">КОНТАКТЫ</p>
-                <ul class="d-flex flex-column gap-2 footer-col-list">
-                  <li>
-                    <a
-                      href=""
-                      class="footer-item-link d-flex align-items-center gap-2"
-                    >
-                      <i class="fa-solid fa-at"></i>
-                      <p class="mb-0">hgpurf@yandex.ru</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href=""
-                      class="footer-item-link d-flex align-items-center gap-2"
-                    >
-                      <img
-                        src="{% static 'bootstrap\img\icons\footer-phone-icon.png' %}"
-                        alt=""
-                      />
-                      <p class="mb-0">+7 (990) 140-21-00</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href=""
-                      class="footer-item-link d-flex align-items-baseline gap-2"
-                    >
-                      <i class="fa-solid fa-paper-plane"></i>
-                      <p class="mb-0 pe-5">
-                        ХГПУ официально | Официальный ТГ-канал ХГПУ
-                      </p>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href=""
-                      class="footer-item-link d-flex align-items-baseline gap-2"
-                    >
-                      <i class="fa-solid fa-paper-plane"></i>
-                      <p class="mb-0">ТГ-канал ректора ХГПУ</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href=""
-                      class="footer-item-link d-flex align-items-baseline gap-2"
-                    >
-                      <i class="fa-brands fa-vk"></i>
-                      <p class="mb-0">Официальная группа ХГПУ Вконтакте</p>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+          <div class="d-flex align-items-center justify-content-center gap-2 mb-4">
+            <div class="w-100 footer-logo-line"></div>
+            <div>
+              <a href=""><img src="{% static 'bootstrap\img\footer-hgpu-logo.webp' %}" alt=""
+                  class="d-block rounded w-100" /></a>
             </div>
-            <div
-              class="d-flex align-items-center justify-content-center gap-2 mb-4"
-            >
-              <div class="w-100 footer-logo-line"></div>
-              <div>
-                <a href=""
-                  ><img
-                    src="{% static 'bootstrap\img\footer-hgpu-logo.webp' %}"
-                    alt=""
-                    class="d-block rounded w-100"
-                /></a>
-              </div>
-              <div class="w-100 footer-logo-line"></div>
-            </div>
-            <p class="text-center text-light mb-0">
-              ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ
-              ВЫСШЕГО ОБРАЗОВАНИЯ
-            </p>
-            <p class="text-center text-light mb-4">
-              "ХЕРСОНСКИЙ ГОСУДАРСТВЕННЫЙ ПЕДАГОГИЧЕСКИЙ УНИВЕРСИТЕТ"
-            </p>
-            <div class="d-flex justify-content-between mb-4">
-              <a href="" class="footer-gov-link">
-                Министерство просвещения РФ
-              </a>
-              <a href="" class="footer-gov-link">
-                Министерство просвещения РФ
-              </a>
-              <a href="" class="footer-gov-link"> Рособрнадзор </a>
-              <a href="" class="footer-gov-link">
-                Официальный интернет-портал правовой информации
-              </a>
-            </div>
-            <p class="py-3 mb-0 fs-6 text-light opacity-50">
-              <i class="fa-solid fa-copyright" style="color: #ffffff"></i>
-              Херсонский государственный педагогический университет, 2025
-            </p>
+            <div class="w-100 footer-logo-line"></div>
           </div>
+          <p class="text-center text-light mb-0">
+            ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ
+            ВЫСШЕГО ОБРАЗОВАНИЯ
+          </p>
+          <p class="text-center text-light mb-4">
+            "ХЕРСОНСКИЙ ГОСУДАРСТВЕННЫЙ ПЕДАГОГИЧЕСКИЙ УНИВЕРСИТЕТ"
+          </p>
+          <div class="d-flex justify-content-between mb-4">
+            <a href="" class="footer-gov-link">
+              Министерство просвещения РФ
+            </a>
+            <a href="" class="footer-gov-link">
+              Министерство просвещения РФ
+            </a>
+            <a href="" class="footer-gov-link"> Рособрнадзор </a>
+            <a href="" class="footer-gov-link">
+              Официальный интернет-портал правовой информации
+            </a>
+          </div>
+          <p class="py-3 mb-0 fs-6 text-light opacity-50">
+            <i class="fa-solid fa-copyright" style="color: #ffffff"></i>
+            Херсонский государственный педагогический университет, 2025
+          </p>
         </div>
-      </footer>
-    </div>
-  </body>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
-  <script src="{% static 'bootstrap/js/main.js'%}"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+      </div>
+    </footer>
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script> -->
+<script src="{% static 'bootstrap/js/main.js'%}"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+  integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </html>

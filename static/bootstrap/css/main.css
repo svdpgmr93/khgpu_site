@@ -1868,6 +1868,10 @@ summary p {
     color: #ffbf31;
 }
 
+.text-ylw-hov:hover {
+    color: #ffbf31 !important;
+}
+
 .institut-tab {
     background-color: #ffffff;
     text-decoration: none;
@@ -1883,7 +1887,7 @@ summary p {
 
 .nav-pills .nav-link.active{
     background-color: #ffbf31;
-    border-color: #ffbf31;
+    border-color: #ffbf31 !important;
     color: #000;
 }
 
@@ -1975,13 +1979,13 @@ a:hover .traslating-card {
     color: #fff; 
 }
 
-/* carousel styles */
+/* antiterror carousel styles */
 
-.owl-carousel .owl-wrapper-outer {
+  #antiterror_carousel.owl-carousel .owl-wrapper-outer, #antiterror_carousel_2.owl-carousel .owl-wrapper-outer {
     overflow: visible !important;
 }
 
-.owl-wrapper {
+#antiterror_carousel .owl-wrapper, #antiterror_carousel_2 .owl-wrapper {
     display: flex !important;
     gap: 30px;
 }
@@ -2306,4 +2310,250 @@ a:hover .traslating-card {
         line-height: 1.2;
         margin-bottom: 20px !important;
     }
+}
+
+/* stulife psycho support styles */
+
+.blur {
+    background-color: rgba(255,255,255,0.50);
+    backdrop-filter: blur(15px);
+}
+
+/* psycho support carousel styles */
+#cpp_carousel .owl-nav {
+    display: flex !important;
+    gap: 5px;
+    position: absolute;
+    right: 0;
+    top: -5%
+}
+
+.owl-nav button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #ffbf31 !important;
+    border-radius: 50%;
+}
+
+.owl-nav button:hover {
+    background-color: #528b00 !important;
+}
+
+.owl-prev span,
+.owl-next span {
+    font-size: 20px;
+    line-height: 100% !important;
+    color: #fff;
+}
+
+.bg-light-red {
+    background-color: #c74512;
+}
+
+.link-scale {
+    transition: ease-in-out;
+    transition-duration: .2s;
+}
+
+.link-scale:hover {
+    transform: scale(102%) translateY(-10%);
+}
+
+.salat-green {
+    color: #528b00;
+}
+
+.bg-salat-green {
+    background-color: #528b00;
+}
+
+.purple-red {
+    color: #C74512;
+}
+
+.border-salat-green:not(.active) {
+    border-color: #528b00 !important;
+}
+
+#cpp_carousel_2 .owl-nav {
+    display: flex !important;
+    gap: 5px;
+    position: absolute;
+    bottom: 0;
+    left: -103%;
+}
+
+.bg-beige {
+    background-color: #fef9f0;
+}
+
+.bg-deep-beige {
+    background-color: #ffc04a2d;
+}
+
+.anon-question {
+    position: relative;
+     width: 100%;
+     background: 
+         url('../img/studlife/psycho_support/anon-q1.png') center top / 100% 50% no-repeat,
+         url('../img/studlife/psycho_support/anon-q2.jpg') center bottom / 100% 50% no-repeat;
+}
+
+.anon-question::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: #a6c891;
+  opacity: .3;
+}
+
+.anon-question::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-image: linear-gradient(0turn, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  opacity: .6;
+}
+
+.title-green-marker::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-image: url('../img/studlife/psycho_support/green-line-marker.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 60%;
+    z-index: -1;
+}
+
+.title-green-marker-sm::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-image: url('../img/studlife/psycho_support/green-line-marker-sm.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 60%;
+    z-index: -1;
+}
+
+.title-yellow-wave-marker::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-image: url('../img/studlife/psycho_support/yellow-wave.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 60%;
+    z-index: -1;
+}
+
+
+/* education edu-pay styles */
+.red-link-hov:hover {
+    background-color: #d80707 !important;
+    color: #ffffff !important;
+}
+
+.ylw-bg-hov:hover {
+   background-color: #ffbf31 !important;
+   transition-duration: .5s;
+}
+
+.text-beige {
+    color: #948e8e;
+}
+
+.bg-beige-2 {
+    background-color: #e1d8d8;
+}
+
+.bg-beige-3 {
+    background-color: #fef9f0;
+}
+
+.ylw-dot {
+    width: 15px;
+    height: 15px;
+    background-color: #ffbf31;
+    border-radius: 50%;
+}
+
+.black-white-icon-link:hover .black-white-icon-link-icon img:first-child {
+    order: 1;
+}
+
+.black-white-icon-link:hover {
+    background-color: #333333;
+}
+
+.black-white-icon-link:hover span{
+    color: #ffffff;
+}
+
+.black-white-icon-link-icon {
+    width: 30px;
+    display: flex;
+    overflow: hidden;
+}
+
+.table-h-borders td {
+  border-top: 1px solid var(--bs-border-color, #dee2e6);
+  border-bottom: 1px solid var(--bs-border-color, #dee2e6);
+  border-left: none;
+  border-right: none;
+}
+
+.translatig-card-hov:hover {
+    transform: translateY(0%) !important;
+}
+
+.bg-dark-gray {
+    background-color: #C6C5C5;
+}
+
+.bg-light-ylw {
+    background-color: #ffd600 !important;
+}
+
+#rector_page_news_carousel .owl-nav {
+    display: flex !important;
+    gap: 5px;
+    padding: 10px 0px;
+}
+
+#rector_page_news_carousel .owl-nav button:hover {
+    background-color: #ffd600 !important;
+}
+
+#rector_page_news_carousel .owl-stage-outer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.active-text.active {
+    opacity: 1 !important;
+}
+
+.bg-light-black {
+    background-color: #333333;
+}
+
+.white-dot {
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
 }

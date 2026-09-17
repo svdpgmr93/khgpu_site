@@ -99,6 +99,15 @@ def gup(requests):
 def antiterror(requests):
     return render(requests, 'antiterror.html')
 
+def psycho_support(requests):
+    return render(requests, 'templates_studlife/psycho_support.html')
+
+def rector_page(requests):
+    return render(requests, 'rector-page.html')
+
+def center_life(requests):
+    return render(requests, 'center-life.html')
+
 def grants(requests):
     return render(requests, 'templates_science/grants.html')
 

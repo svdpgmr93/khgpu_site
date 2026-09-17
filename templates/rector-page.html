@@ -1,0 +1,388 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Страница ректора
+{% endblock %}
+{% block content %}
+<main class="main">
+    <div class="container">
+        <div class="py-4">
+            <nav style="--bs-breadcrumb-divider: '»'" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">Главная</a></li>
+                    <li class="breadcrumb-item" aria-current="page">
+                        <a href="#">Университет</a>
+                    </li>
+                    <li class="breadcrumb-item" aria-current="page">
+                        <a href="#">Ректор ХГПУ</a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+        <div class="mb-5 row">
+            <div class="col-4">
+                <img class="w-100 object-fit-cover rounded-4 shadow"
+                    src="{% static 'bootstrap/img/rector-page/rector-photo-1.png' %}" alt="">
+            </div>
+            <div class="col-8 d-flex flex-column align-items-start justify-content-between">
+                <p class="fw-bold text-uppercase text-beige">Доктор экономических наук, профессор</p>
+                <p class="fw-bold fs-1"><span class="text-uppercase">Шашкова</span> Нина Игоревна</p>
+                <div>
+                    <p class="mb-0 fw-bold fs-4 text-uppercase">ректор</p>
+                    <p class="w-75 fw-bold fs-4">ФГБОУ ВО "Херсонский государственный педагогический университет"</p>
+                </div>
+                <a href=""
+                    class="px-3 py-2 d-inline-flex align-items-center gap-2 bg-ylw rounded-3 link-scale text-decoration-none text-black">
+                    <img src="{% static 'bootstrap/img/rector-page/circlearw_fill_upright_semibold.svg' %}"
+                        alt="circle-arrow-right-up">
+                    <span>Онлайн-приемная</span>
+                </a>
+                <div class="d-flex align-items-center gap-3">
+                    <a href="mailto:hgpurf@yandex.ru"
+                        class="px-3 py-2 d-inline-flex align-items-center gap-2 bg-ylw-hov border rounded-3 bg-gray ylw-bg-hov text-decoration-none text-black">
+                        <img style="width: 25px;" src="{% static 'bootstrap/img/rector-page/at-icon.svg' %}"
+                            alt="circle-arrow-right-up">
+                        <span>hgpurf@yandex.ru</span>
+                    </a>
+                    <a href="https://max.ru/join/b1pNrc-Nwq5lqmcBddHcygxCk-Y7nqhe-Imd8xiNKgc"
+                        class="px-3 py-2 d-inline-flex align-items-center gap-2 bg-ylw-hov border rounded-3 bg-gray ylw-bg-hov text-decoration-none text-black">
+                        <img style="width: 24px;" src="{% static 'bootstrap/img/edu-programs/Max_logo_black.svg' %}"
+                            alt="">
+                        <span>Канал ректора в МАХ</span>
+                    </a>
+                    <a href=""
+                        class="px-3 py-2 d-inline-flex align-items-center gap-2 bg-ylw-hov border rounded-3 bg-gray ylw-bg-hov text-decoration-none text-black">
+                        <img style="width: 24px;" src="{% static 'bootstrap/img/tg.png' %}" alt="">
+                        <span>Телеграмм-канал ректора</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="mb-5 fs-5">
+            <p class="mb-0">Шашкова Нина Игоревна в Херсонском государственном университете работала с 2010 года.
+                Занимала должности профессора, заведующей кафедрой, декана факультета социальных наук и массовых
+                коммуникаций.</p>
+            <p class="mb-0">С 2023 года исполняет обязанности ректора ХГПУ.</p>
+            <p class="mb-0">С 2024 года – Президент Малой академии наук ХГПУ.</p>
+            <p class="mb-0">В 2025 году приказом Минпросвещения России от 9 июня 2025 года назначена на должность
+                ректора ФГБОУ ВО "Херсонский государственный педагогический университет".</p>
+            <p class="mb-0">С 2026 года - Член Экспертного совета при Комитете по молодёжной политике Государственной
+                Думы РФ.</p>
+        </div>
+        <div class="mb-4 py-5 px-5 bg-gray rounded-4 fs-5">
+            <div class="d-flex gap-4">
+                <div>
+                    <div class="mb-4 d-flex align-items-center gap-4">
+                        <img style="width: 50px;" class="bg-ylw rounded-3"
+                            src="{% static 'bootstrap/img/rector-page/atom-icon.svg' %}" alt="">
+                        <div class="fw-bold fs-3">Научная деятельность</div>
+                    </div>
+                    <ul class="ps-3">
+                        <li>Главный редактор научного журнала (2016-2022)</li>
+                        <li>Государственный эксперт научно-исследовательских проектов в рамках госзаданий (2018-2022)
+                        </li>
+                        <li>Рецензент статей зарубежных журналов, индексируемых в международных наукометрических базах
+                            (Индия, WoS)</li>
+                    </ul>
+                </div>
+                <div class="d-flex flex-column gap-3">
+                    <div class="px-4 py-1 bg-ylw d-flex align-items-center gap-2 rounded-4 text-nowrap"><span
+                            class="fw-bold fs-2">80+</span> научных трудов</div>
+                    <div class="px-4 py-1 bg-dark-gray d-flex align-items-center gap-2 rounded-4 text-nowrap"><span
+                            class="fw-bold fs-2">4</span>монографии</div>
+                    <div class="px-4 py-1 bg-dark-gray d-flex align-items-center gap-2 rounded-4 text-nowrap"><span
+                            class="fw-bold fs-2">2</span>учебных пособия</div>
+                </div>
+            </div>
+            <div class="px-5 py-3 bg-white rounded-4">
+                Государственные награды за научную деятельность в области фундаментальных и прикладных исследований,
+                научно-технических разработок
+            </div>
+        </div>
+        <div class="mb-5 row fs-5">
+            <div class="col-3">
+                <div class="d-flex flex-column gap-2 h-100">
+                    <div style="
+                    background-image: url('{% static 'bootstrap/img/rector-page/rector-photo-2.png' %}');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: 40% 80%;
+                    width: 100%;
+                    height: 100%;" class="rounded-4">
+                    </div>
+                    <div class="px-4 py-4 bg-gray rounded-4">
+                        <div class="mb-3 d-flex align-items-center gap-4">
+                            <img style="width: 50px;" class="bg-ylw rounded-3"
+                                src="{% static 'bootstrap/img/rector-page/cinema-icon.svg' %}" alt="">
+                            <div class="fw-bold fs-4 lh-1">Проектная деятельность</div>
+                        </div>
+                        <div>Руководитель проекта "Кинопедагогика: как воспитательный и ценностный ресурс в
+                            образовательной
+                            среде".</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="px-5 py-4 bg-ylw rounded-4 text-black">
+                    <div class="mb-3 d-flex align-items-center gap-4">
+                        <img style="width: 50px;" class="bg-white rounded-3"
+                            src="{% static 'bootstrap/img/rector-page/public-activity-icon.svg' %}" alt="">
+                        <div class="fw-bold fs-3 lh-1">Общественная деятельность</div>
+                    </div>
+                    <ul class="ps-3">
+                        <li><a href=""
+                                class="text-black link-offset-2 link-underline link-underline-opacity-10">Руководитель
+                                Центр защиты материнства и детства "Жизнь" ХГПУ.</a></li>
+                        <li>Член Рабочей группы Областной межведомственной комиссии по делам несовершеннолетних и защите
+                            их
+                            прав при Правительстве Херсонской области.</li>
+                        <li>Секретарь и певчая Храма Рождества Иоанна Предтечи при Херсонской областной детской
+                            больнице.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-4">
+                <div style="
+                    background-image: url('{% static 'bootstrap/img/rector-page/rector-photo-3.png' %}');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    width: 100%;
+                    height: 100%;" class="rounded-4">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="py-5 bg-ylw">
+        <div class="py-5 container">
+            <div class="row g-5">
+                <div class="col-7">
+                    <div class="px-5 py-5 bg-gray rounded-4 text-black">
+                        <div class="fw-bold fs-3">Видение развития университета</div>
+                        <div style="width: 25%; height: 3px;" class="mb-3 bg-red"></div>
+                        <div class="mb-3 fs-5">Трансформация Университета в современный многопрофильный,
+                            мультидисциплинарный,
+                            научно-образовательный, методический, культурно-просветительский центр, отрытый сфере
+                            образования и обществу в целом, активно участвующий в достижении национальных целей, решении
+                            государственных задач.</div>
+                        <div class="d-flex align-items-center gap-3">
+                            <a href="https://vk.ru/hgpu_official" target="_blank"
+                                class="d-flex align-items-center justify-content-center px-2 py-2 bg-ylw rounded-circle"><img
+                                    style="width: 15px;" src="{% static 'bootstrap/img/icons/icons8-vk-white.png' %}"
+                                    alt=""></a>
+                            <a href="https://max.ru/id9500007226_biz" target="_blank"
+                                class="d-flex align-items-center justify-content-center px-2 py-2 bg-ylw rounded-circle"><img
+                                    style="width: 15px;" src="{% static 'bootstrap/img/icons/Max-white.svg' %}"
+                                    alt=""></a>
+                            <a href="https://t.me/hgpu_official1" target="_blank"
+                                class="d-flex align-items-center justify-content-center px-2 py-2 bg-ylw rounded-circle"><img
+                                    style="width: 15px;" src="{% static 'bootstrap/img/icons/icons8-tg-white.png' %}"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <img class="w-100 h-100 object-fit-cover rounded-4 shadow"
+                        src="{% static 'bootstrap/img/rector-page/rector-photo-4.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pt-5 container">
+        <h2 class="py-5 fw-bold">Видеоинтервью</h2>
+        <div class="row row-cols-lg-2 g-5">
+            <div class="col">
+                <div class="d-flex flex-column justify-content-between gap-3">
+                    <div class="ratio ratio-16x9 rounded-4 overflow-hidden">
+                        <iframe width="100%" allow="encrypted-media; fullscreen; picture-in-picture"
+                            src="https://rutube.ru/embed/46466d1ff35ca591a88966fc2b857cbe?autoplay=0"></iframe>
+                    </div>
+                    <div class="d-flex flex-column gap-2">
+                        <div class="fs-4 fw-semibold lh-sm">Семья Шашковых об эвакуации из города и планах на будущее
+                        </div>
+                        <div class="fw-bold">16.05.2026 | ТРК "Таврия"</div>
+                        <div>ТВ-программа "Херсон, я вернусь"</div>
+                        <div class="text-black-50">#тв #беседа_диалог</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="d-flex flex-column justify-content-between gap-3">
+                    <div class="ratio ratio-16x9 rounded-4 overflow-hidden">
+                        <iframe width="100%" allow="encrypted-media; fullscreen; picture-in-picture"
+                            src="https://rutube.ru/embed/2480c5baff0a4eef2b44456a5b0140b6?autoplay=0"></iframe>
+                    </div>
+                    <div class="d-flex flex-column gap-2">
+                        <div class="fs-4 fw-semibold lh-sm">Интервью на ЯлтаТВ</div>
+                        <div class="fw-bold">27.02.2026 | Студия "Ялта-ТВ"</div>
+                        <div>ТВ-программа "Гость в студии"</div>
+                        <div class="text-black-50">#тв #беседа_диалог</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="d-flex flex-column justify-content-between gap-3">
+                    <div class="ratio ratio-16x9 rounded-4 overflow-hidden">
+                        <iframe width="100%" allow="encrypted-media; fullscreen; picture-in-picture"
+                            src="https://rutube.ru/32e25b76-56e3-48d3-8833-18c7d5b0a3d2"></iframe>
+                    </div>
+                    <div class="d-flex flex-column gap-2">
+                        <div class="fs-4 fw-semibold lh-sm">Истории настоящих людей: Нина Шашкова</div>
+                        <div class="fw-bold">03.07.2025 | RuTube-канал "Херсонская область"</div>
+                        <div>Проект "Истории настоящих людей"</div>
+                        <div class="text-black-50">#тв #беседа_диалог</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="d-flex flex-column justify-content-between gap-3">
+                    <div class="ratio ratio-16x9 rounded-4 overflow-hidden">
+                        <iframe width="100%" allow="encrypted-media; fullscreen; picture-in-picture"
+                            src="https://kinescope.io/embed/5URM8PNGLEfLma9Tj1vdtk?autoplay=0"></iframe>
+                    </div>
+                    <div class="d-flex flex-column gap-2">
+                        <div class="fs-4 fw-semibold lh-sm">Нина Шашкова рассказала о работе вузов в Херсонской области
+                        </div>
+                        <div class="fw-bold">15.04.2025 | ТРК "Таврия"</div>
+                        <div>ТВ-программа "На равных"</div>
+                        <div class="text-black-50">#тв #беседа_диалог</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="py-5 bg-beige">
+        <div class="container">
+            <h2 class="py-4 fw-bold">Ректор в эфире: аудиоинтервью</h2>
+            <p class="mb-5 fs-5 text-black">Выступления ректора на радиостанциях о развитии университета, инициативах и
+                партнёрствах</p>
+            <div class="py-4 row row-cols-2 g-5">
+                <div class="col">
+                    <a href=""
+                        class="px-4 py-4 d-flex flex-column gap-3 bg-white shadow text-black text-decoration-none rounded-4">
+                        <div class="fw-bold text-uppercase text-ylw">Радио "Таврия"</div>
+                        <div class="fw-semibold fs-5">Образование в Херсонской области: экзамены, поступление и
+                            поддержка педагогов</div>
+                        <div class="mb-4 fs-5">Программа "Обратная связь"</div>
+                        <div class="fw-bold text-uppercase text-ylw">21 мая 2026</div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href=""
+                        class="px-4 py-4 d-flex flex-column gap-3 bg-white shadow text-black text-decoration-none rounded-4">
+                        <div class="fw-bold text-uppercase text-ylw">Радио "Таврия"</div>
+                        <div class="fw-semibold fs-5">Ректор Нина Шашкова: ХГПУ интегрировался в образовательное
+                            пространство России</div>
+                        <div class="mb-4 fs-5">Программа "Вечерний Херсон"</div>
+                        <div class="fw-bold text-uppercase text-ylw">05 июня 2025</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="py-5 bg-gray">
+        <div class="container">
+            <h2 class="py-4 fw-bold">Блог ректора</h2>
+            <div style="background-image: url('{% static 'bootstrap/img/rector-page/hands.png' %}'); 
+                        background-repeat: no-repeat; 
+                        background-size: cover; " class="mb-5 px-5 py-5 rounded-4">
+                <div class="m-auto d-flex w-75 align-items-end justify-content-between">
+                    <div style="font-size: 63px;" class="fw-bold text-white lh-1">Блог<br>ректора</div>
+                    <a href=""
+                        class="px-5 py-2 d-inline-flex align-items-center gap-3 fs-5 text-decoration-none text-black bg-light-ylw rounded-4 position-relative glare overflow-hidden">
+                        <img style="width: 28px;" src="{% static 'bootstrap/img/institut-it/icons/icon-it-5.svg' %}"
+                            alt="">
+                        Перейти
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="py-5">
+            <h2 class="py-4 fw-bold">Новости</h2>
+            <div id="rector_page_news_carousel" class="mb-3 owl-carousel">
+                <a class="card-link rounded-3 overflow-hidden" href="">
+                    <div class="card h-100 news-card">
+                        <img src="{% static 'bootstrap\img\posts_photo\post1.webp' %}"
+                            class="card-img-top card-img-size" alt="..." />
+                        <div class="card-body">
+                            <p class="card-text px-3">25 сентября 2025</p>
+                            <h5 class="card-title px-3 fw-semibold">
+                                В честь третьей годовщины воссоединения новых регионов с
+                                Россией
+                            </h5>
+                        </div>
+                    </div>
+                </a>
+                <a class="card-link rounded-3 overflow-hidden" href="">
+                    <div class="card h-100 news-card">
+                        <img src="{% static 'bootstrap\img\posts_photo\post1.webp' %}"
+                            class="card-img-top card-img-size" alt="..." />
+                        <div class="card-body">
+                            <p class="card-text px-3">25 сентября 2025</p>
+                            <h5 class="card-title px-3 fw-semibold">
+                                В честь третьей годовщины воссоединения новых регионов с
+                                Россией
+                            </h5>
+                        </div>
+                    </div>
+                </a>
+                <a class="card-link rounded-3 overflow-hidden" href="">
+                    <div class="card h-100 news-card">
+                        <img src="{% static 'bootstrap\img\posts_photo\post1.webp' %}"
+                            class="card-img-top card-img-size" alt="..." />
+                        <div class="card-body">
+                            <p class="card-text px-3">25 сентября 2025</p>
+                            <h5 class="card-title px-3 fw-semibold">
+                                В честь третьей годовщины воссоединения новых регионов с
+                                Россией
+                            </h5>
+                        </div>
+                    </div>
+                </a>
+                <a class="card-link rounded-3 overflow-hidden" href="">
+                    <div class="card h-100 news-card">
+                        <img src="{% static 'bootstrap\img\posts_photo\post1.webp' %}"
+                            class="card-img-top card-img-size" alt="..." />
+                        <div class="card-body">
+                            <p class="card-text px-3">25 сентября 2025</p>
+                            <h5 class="card-title px-3 fw-semibold">
+                                В честь третьей годовщины воссоединения новых регионов с
+                                Россией
+                            </h5>
+                        </div>
+                    </div>
+                </a>
+                <a class="card-link rounded-3 overflow-hidden" href="">
+                    <div class="card h-100 news-card">
+                        <img src="{% static 'bootstrap\img\posts_photo\post1.webp' %}"
+                            class="card-img-top card-img-size" alt="..." />
+                        <div class="card-body">
+                            <p class="card-text px-3">25 сентября 2025</p>
+                            <h5 class="card-title px-3 fw-semibold">
+                                В честь третьей годовщины воссоединения новых регионов с
+                                Россией
+                            </h5>
+                        </div>
+                    </div>
+                </a>
+                <a class="card-link rounded-3 overflow-hidden" href="">
+                    <div class="card h-100 news-card">
+                        <img src="{% static 'bootstrap\img\posts_photo\post1.webp' %}"
+                            class="card-img-top card-img-size" alt="..." />
+                        <div class="card-body">
+                            <p class="card-text px-3">25 сентября 2025</p>
+                            <h5 class="card-title px-3 fw-semibold">
+                                В честь третьей годовщины воссоединения новых регионов с
+                                Россией
+                            </h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}
