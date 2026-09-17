@@ -11,4 +11,5 @@ urlpatterns = [
     path('program-mag-cards', get_edu_mag_cards, name='get_edu_mag_cards'),
     path('searching_bak', searching_bak),
     path('searching_mag', searching_mag),
+    path('edu-pay/', edu_pay, name='edu_pay'),
 ]

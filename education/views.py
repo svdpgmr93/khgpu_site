@@ -102,3 +102,6 @@ def searching_bak(request):
 def searching_mag(request):
     programs = EduProgram.objects.filter(level__contains='Магистратура').filter(name__contains=request.GET.get('searching'))
     return render(request, 'program_cards.html', context={'programs': programs})
+
+def edu_pay(request):
+    return render(request, 'edu_pay.html')

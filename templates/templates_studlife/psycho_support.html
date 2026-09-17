@@ -1,0 +1,674 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Центр психологической поддержки
+{% endblock %}
+{% block content %}
+<main class="main">
+    <div class="container">
+        <div class="py-3">
+            <img class="w-100 rounded-4 shadow"
+                src="{% static 'bootstrap\img\studlife\psycho_support\psycho_support_banner.png' %}" alt="">
+        </div>
+        <div class="py-4">
+            <nav style="--bs-breadcrumb-divider: '»'" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">Главная</a></li>
+                    <li class="breadcrumb-item" aria-current="page">
+                        <a href="#">Студенческая жизнь</a>
+                    </li>
+                    <li class="breadcrumb-item" aria-current="page">
+                        <a href="{% url 'sveden' %}">Центр психологической поддержки ХГПУ</a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+        <p class="fs-1 fw-bold">Центр психологической поддержки</p>
+        <p class="mb-4 fs-5">Центр психологической поддержки создан в ХГПУ в 2024 году. Главная цель работы Центра –
+            психологическое
+            сопровождение всех участников образовательного процесса ФГБОУ ВО "ХГПУ".</p>
+        <p class="mb-4 d-inline-block fw-bold fs-1 position-relative z-2 title-yellow-marker">Направления нашей заботы о
+            вас</p>
+        <p class="pe-lg-5 fs-5">Мы создали систему поддержки, которая охватывает все стороны университетской жизни. От
+            личных консультаций до
+            масштабных тренингов и просветительской работы - выберите формат, который комфортен именно вам, и помните:
+            <span class="fw-bold">здесь вас всегда поймут и поддержат.</span>
+        </p>
+        <div class="position-relative">
+            <div id="cpp_carousel" class="py-4 owl-carousel">
+                <div style="background-image: url('{% static 'bootstrap/img/studlife\psycho_support\carousel-img-1.png' %}');
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      height: 480px;" class="d-flex align-items-end rounded-4 py-3 px-3">
+                    <div class="py-4 px-4 rounded-4 blur text-black">
+                        <div class="mb-2 fs-4 fw-bold lh-1">Психологическое просвещение</div>
+                        <div>Разбираемся в эмоциях вместе. Учим понимать себя и других: лекции, тренинги и полезные
+                            материалы для осознанной жизни.</div>
+                    </div>
+                </div>
+                <div style="background-image: url('{% static 'bootstrap/img/studlife\psycho_support\carousel-img-2.png' %}');
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      height: 480px;" class="d-flex align-items-end rounded-4 py-3 px-3">
+                    <div class="py-4 px-4 rounded-4 blur text-black">
+                        <div class="mb-2 fs-4 fw-bold lh-1">Организационно-методическая деятельность</div>
+                        <div>Экспертная опора для университета. Разрабатываем передовые методики, чтобы сделать
+                            университет зоной психологического комфорта.</div>
+                    </div>
+                </div>
+                <div style="background-image: url('{% static 'bootstrap/img/studlife\psycho_support\carousel-img-3.png' %}');
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      height: 480px;" class="d-flex align-items-end rounded-4 py-3 px-3">
+                    <div class="py-4 px-4 rounded-4 blur text-black">
+                        <div class="mb-2 fs-4 fw-bold lh-1">Консультативная деятельность</div>
+                        <div>Пространство, где вас услышат. Конфиденциальные беседы с психологом, когда нужно
+                            разобраться в себе или найти выход из тупика.</div>
+                    </div>
+                </div>
+                <div style="background-image: url('{% static 'bootstrap/img/studlife\psycho_support\carousel-img-4.png' %}');
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      height: 480px;" class="d-flex align-items-end rounded-4 py-3 px-3">
+                    <div class="py-4 px-4 rounded-4 blur text-black">
+                        <div class="mb-2 fs-4 fw-bold lh-1">Психологическая диагностика</div>
+                        <div>Точка отсчета для личных изменений. Узнайте больше о своих сильных сторонах, скрытых
+                            ресурсах и особенностях личности.</div>
+                    </div>
+                </div>
+                <div style="background-image: url('{% static 'bootstrap/img/studlife\psycho_support\carousel-img-5.png' %}');
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      height: 480px;" class="d-flex align-items-end rounded-4 py-3 px-3">
+                    <div class="py-4 px-4 rounded-4 blur text-black">
+                        <div class="mb-2 fs-4 fw-bold lh-1">Психологическая профилактика и коррекция</div>
+                        <div>Справляться с выгоранием, стрессом и тревогой — это навык. Укрепляем внутренние опоры и
+                            мягко корректируем то, что мешает двигаться вперед.</div>
+                    </div>
+                </div>
+                <div style="background-image: url('{% static 'bootstrap\img\studlife\psycho_support\carousel-img-6.png' %}');
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      height: 480px;" class="d-flex align-items-end rounded-4 py-3 px-3">
+                    <div class="py-4 px-4 rounded-4 blur text-black">
+                        <div class="mb-2 fs-4 fw-bold lh-1">Тьюторство</div>
+                        <div>Равные возможности для каждого. Наставники, которые помогут адаптироваться к учебе, защитят
+                            от барьеров и поддержат на всем пути.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="py-4 fs-5">Квалифицированная помощь бесплатно для студентов и сотрудников нашего вуза.</p>
+        <div class="mb-5 py-4 px-5 rounded-4 shadow"
+            style="background-image: url('{% static 'bootstrap/img/studlife\psycho_support\community-block-bg.png' %}'); background-repeat:no-repeat; background-position-y: 60%; background-position-x: 30%">
+            <div class="mb-4 w-75 fw-bold fs-2 text-black">Станьте частью сообщества, которое ценит поддержку и
+                взаимопомощь!
+            </div>
+            <div class="d-flex align-items-end gap-3">
+                <div>
+                    <a href="https://max.ru/join/m1gyNU7c1D11y0Oj1pZ6Nz9BasUH369MQMU33zvhzMk" target="_blank"
+                        class="d-inline-flex align-items-center gap-2 py-2 px-4 bg-body-tertiary border border-warning rounded-5 text-decoration-none text-black shadow link-scale">
+                        <div class="edu-program-contact-link-icon">
+                            <img class="d-block w-100"
+                                src="{% static 'bootstrap/img/edu-programs/max-icon-hover.png' %}" alt="">
+                        </div>
+                        <span>Группа в MAX</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://vk.ru/club229251761" target="_blank"
+                        class="d-inline-flex align-items-center gap-2 py-2 px-4 bg-light-red rounded-5 text-decoration-none text-white shadow link-scale">
+                        <div class="edu-program-contact-link-icon">
+                            <img class="d-block w-100"
+                                src="{% static 'bootstrap\img\studlife\psycho_support\VK_Logo_White.png' %}" alt="">
+                        </div>
+                        <span>Группа ВКонтакте</span>
+                    </a>
+                </div>
+                <div class="w-25 text-black">Присоединяйтесь к нам в МАХ и ВКонтакте, следите за нашими анонсами и
+                    новостями</div>
+            </div>
+        </div>
+        <p class="mb-4 d-inline-block fw-bold fs-1 position-relative z-2 title-yellow-marker">Наша команда</p>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="h-100 d-flex flex-column align-items-center px-4 py-4 bg-gray rounded-4 shadow">
+                    <img src="{% static 'bootstrap\img\studlife\psycho_support\team-1.png' %}"
+                        style="width: 160px; height: 160px;"
+                        class="mb-2 border border-3 border-warning rounded-circle object-fit-cover" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold">ПОПЕЛЬЧУК<br>Галина Алексеевна</h5>
+                        <div class="mb-2">Руководитель Центра</div>
+                        <div class="salat-green fw-semibold">popelchukga@hgpurf.ru</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="h-100 d-flex flex-column align-items-center px-4 py-4 bg-gray rounded-4 shadow">
+                    <img src="{% static 'bootstrap\img\studlife\psycho_support\team-2.png' %}"
+                        style="width: 160px; height: 160px;"
+                        class="mb-2 border border-3 border-warning rounded-circle object-fit-cover" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold">УХОВА<br>Ксения Александровна</h5>
+                        <div class="mb-2">Психолог Центра</div>
+                        <div class="salat-green fw-semibold">ukhova@hgpurf.ru</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="h-100 d-flex flex-column align-items-center px-4 py-4 bg-gray rounded-4 shadow">
+                    <img src="{% static 'bootstrap\img\studlife\psycho_support\team-3.png' %}"
+                        style="width: 160px; height: 160px;"
+                        class="mb-2 border border-3 border-warning rounded-circle object-fit-cover" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold">БОДНАР<br>Виола Олеговна</h5>
+                        <div class="mb-2">Психолог Центра</div>
+                        <div class="salat-green fw-semibold">bodnarvo@hgpurf.ru</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="h-100 d-flex flex-column align-items-center px-4 py-4 bg-gray rounded-4 shadow">
+                    <img src="{% static 'bootstrap\img\studlife\psycho_support\team-4.png' %}"
+                        style="width: 160px; height: 160px;"
+                        class="mb-2 border border-3 border-warning rounded-circle object-fit-cover" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold">ГАРКУША<br>Игорь Вячеславович</h5>
+                        <div class="mb-2">Секретарь, тьютор</div>
+                        <div class="salat-green fw-semibold">garkushaiv@hgpurf.ru</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-5 row justify-content-between position-relative">
+            <div class="col-6">
+                <div class="pe-5 fs-5">
+                    Вместе с реализацией своих главных направлений работы, психологи Центра активно принимают участие в
+                    конференциях, круглых столах и научных семинарах, организованных ФРЦ РАО для специалистов
+                    психологических служб системы высшего образования. Также специалисты Центра психологической
+                    поддержки
+                    регулярно повышают свою квалификацию, проходят курсы переподготовки и повышения квалификации для
+                    оптимизации качества предоставляемой помощи участникам образовательного процесса.
+                </div>
+            </div>
+            <div class="col-6">
+                <div id="cpp_carousel_2" class="owl-carousel w-100">
+                    <div>
+                        <img style="height: 400px;"
+                            src="{% static 'bootstrap\img\studlife\psycho_support\cpp_carousel_2_1.png' %}"
+                            class="rounded-4 object-fit-cover" alt="">
+                    </div>
+                    <div>
+                        <img style="height: 400px;"
+                            src="{% static 'bootstrap\img\studlife\psycho_support\cpp_carousel_2_2.png' %}"
+                            class="rounded-4 object-fit-cover" alt="">
+                    </div>
+                    <div>
+                        <img style="height: 400px;"
+                            src="{% static 'bootstrap\img\studlife\psycho_support\cpp_carousel_2_3.png' %}"
+                            class="rounded-4 object-fit-cover" alt="">
+                    </div>
+                    <div>
+                        <img style="height: 400px;"
+                            src="{% static 'bootstrap\img\studlife\psycho_support\cpp_carousel_2_4.png' %}"
+                            class="rounded-4 object-fit-cover" alt="">
+                    </div>
+                    <div>
+                        <img style="height: 400px;"
+                            src="{% static 'bootstrap\img\studlife\psycho_support\cpp_carousel_2_5.png' %}"
+                            class="rounded-4 object-fit-cover" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="py-5 bg-beige">
+        <div class="container">
+            <p class="mb-4 d-inline-block fw-bold fs-1 position-relative z-2 title-yellow-marker">Деятельность</p>
+            <p class="mb-5 fs-5"><span class="fw-bold">Центр психологической поддержки ХГПУ приглашает на индивидуальные
+                    психологические консультации.</span>
+                Консультации проходят в <span class="text-decoration-underline">конфиденциальном формате</span> и
+                направлены на поддержку, понимание и поиск решений
+                проблем.
+            </p>
+            <div class="mb-4">
+                <ul class="nav nav-pills mb-3 gap-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button
+                            class="px-4 rounded-5 nav-link border border-2 border-salat-green text-uppercase text-black active"
+                            id="pills-1-tab" data-bs-toggle="pill" data-bs-target="#pills-1" type="button" role="tab"
+                            aria-controls="pills-1" aria-selected="true">Поддержка</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button
+                            class="px-4 rounded-5 nav-link border border-2 border-salat-green text-uppercase text-black"
+                            id="pills-2-tab" data-bs-toggle="pill" data-bs-target="#pills-2" type="button" role="tab"
+                            aria-controls="pills-2" aria-selected="false">Понимание</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button
+                            class="px-4 rounded-5 nav-link border border-2 border-salat-green text-uppercase text-black"
+                            id="pills-3-tab" data-bs-toggle="pill" data-bs-target="#pills-3" type="button" role="tab"
+                            aria-controls="pills-3" aria-selected="false">Поиск решений</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab"
+                        tabindex="0">
+                        <div class="row align-items-center g-5">
+                            <div class="col">
+                                <img src="{% static 'bootstrap/img/studlife/psycho_support/activity-1.jpg' %}"
+                                    class="w-100 rounded-4 object-fit-cover" alt="">
+                            </div>
+                            <div class="col">
+                                <div class="mb-3 fw-bold fs-2">Поддержка</div>
+                                <div style="height: 3px; width: 50px; background-color: #ffbf31; margin-bottom: 25px;">
+                                </div>
+                                <ul class="fs-5 text-black">
+                                    <li>Рядом в трудные моменты: бережно, конфиденциально, без оценок</li>
+                                    <li>Профессиональная опора, когда нужно поговорить прямо сейчас</li>
+                                    <li>Тёплое участие и надёжность на каждом шаге к устойчивости</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab" tabindex="0">
+                        <div class="row align-items-center g-5">
+                            <div class="col">
+                                <img src="{% static 'bootstrap/img/studlife/psycho_support/activity-2.png' %}"
+                                    class="w-100 rounded-4 object-fit-cover" alt="">
+                            </div>
+                            <div class="col">
+                                <div class="mb-3 fw-bold fs-2">Понимание</div>
+                                <div style="height: 3px; width: 50px; background-color: #ffbf31; margin-bottom: 25px;">
+                                </div>
+                                <ul class="fs-5 text-black">
+                                    <li>Помогаем разобраться в причинах и смыслах происходящего</li>
+                                    <li>Эмпатия и профессиональная оценка ситуации</li>
+                                    <li>Чёткая обратная связь, чтобы увидеть картину целиком</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-3-tab" tabindex="0">
+                        <div class="row align-items-center g-5">
+                            <div class="col">
+                                <img src="{% static 'bootstrap/img/studlife/psycho_support/activity-3.jpg' %}"
+                                    class="w-100 rounded-4 object-fit-cover" alt="">
+                            </div>
+                            <div class="col">
+                                <div class="mb-3 fw-bold fs-2">Поиск решений</div>
+                                <div style="height: 3px; width: 50px; background-color: #ffbf31; margin-bottom: 25px;">
+                                </div>
+                                <ul class="fs-5 text-black">
+                                    <li>Доказательные методы, адаптированные к жизни студент</li>
+                                    <li>Инструменты управления стрессом, временем и границами</li>
+                                    <li>Вместе находим следующий шаг - маленький, но уверенный</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="border-radius: 50px;"
+                class="mb-4 px-4 py-2 d-flex align-items-center justify-content-between gap-2 bg-ylw text-black">
+                <div class="d-flex align-items-center gap-3 w-25">
+                    <img style="width: 50px;" src="{% static 'bootstrap/img/studlife/psycho_support/cpp-logo.png' %}"
+                        alt="">
+                    <div class="fw-bold fs-5 text-uppercase lh-1">Записаться на консультацию</div>
+                </div>
+                <ol class="mb-0 fs-6">
+                    <li>Заполните короткую предварительную форму</li>
+                    <li>Выберите удобное время и специалиста в онлайн-расписании</li>
+                </ol>
+                <div class="w-50 d-flex align-items-center justify-content-between gap-2">
+                    <div>
+                        <a href="https://forms.yandex.ru/u/68da6e10068ff000153d0b4e/" target="_blank"
+                            class="d-inline-flex align-items-center gap-2 py-3 px-4 bg-light-red rounded-5 text-decoration-none text-white shadow link-scale">
+                            <span class="fw-bold">Заполнить форму</span>
+                            <i class="fa-solid fa-circle-chevron-right fa-lg" style="color: rgb(255, 255, 255);"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://dikidi.net/1919951" target="_blank"
+                            class="d-inline-flex align-items-center gap-2 py-3 px-4 bg-salat-green rounded-5 text-decoration-none text-white shadow link-scale">
+                            <span class="fw-bold">Онлайн-расписание</span>
+                            <i class='fa-solid fa-circle-check fa-lg' style='color: white'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-5 anon-question px-5 py-5 rounded-5 text-center text-black overflow-hidden">
+                <div class="position-relative z-2">
+                    <div class="mb-3 fs-3 fw-bold">Анонимный вопрос психологу</div>
+                    <div class="mb-3 m-auto fs-5">Если вы пока не готовы к личной консультации, но хотите получить
+                        профессиональный ответ на<br>важный вопрос, вы можете воспользоваться анонимной формой.</div>
+                    <div class="mb-3 fs-5 fw-bold">Как это работает:</div>
+                    <div class="mb-3 d-flex justify-content-between gap-5">
+                        <div class="w-50 px-5 py-4 d-flex align-items-center bg-beige rounded-5">
+                            <img class="w-25" src="{% static 'bootstrap\img\studlife\psycho_support\anon-icon1.svg' %}"
+                                alt="">
+                            <div class="text-start fs-5">Напишите свой вопрос в специальной Яндекс.форме (кнопка ниже).
+                                Мы
+                                гарантируем полную
+                                конфиденциальность!</div>
+                        </div>
+                        <div class="w-50 px-5 py-4 d-flex align-items-center bg-beige rounded-5">
+                            <img class="w-25" src="{% static 'bootstrap\img\studlife\psycho_support\anon-icon2.svg' %}"
+                                alt="">
+                            <div class="text-start fs-5">Каждую неделю наши специалисты публикуют ответы на вопросы в
+                                группе
+                                (<a href="https://vk.ru/club229251761" target="_blank"
+                                    class="text-ylw text-decoration-none">ВК</a>,
+                                <a href="https://max.ru/join/m1gyNU7c1D11y0Oj1pZ6Nz9BasUH369MQMU33zvhzMk"
+                                    target="_blank" class="text-ylw text-decoration-none">МАХ</a>), чтобы помочь
+                                вам разобраться в интересующих вас темах.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 fs-5 fw-bold text-white">Это безопасный и удобный способ получить профессиональную
+                        поддержку.</div>
+                    <a href="https://forms.yandex.ru/u/6756845b493639ae18f69f2b" target="_blank"
+                        class="mb-3 w-50 d-inline-block py-3 px-4 bg-ylw rounded-5 text-center text-decoration-none text-black shadow link-scale">
+                        <span class="fw-semibold fs-5">Задать вопрос анонимно</span>
+                    </a>
+                    <div class="m-auto fs-5 fw-bold text-white">Не оставайтесь наедине со своими мыслями, проблемами,
+                        переживаниями.<br>Мы рядом и готовы поддержать вас.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="py-5">
+            <p class="mb-4 d-inline-block fw-bold fs-1 position-relative z-2 title-yellow-marker">Наши проекты</p>
+            <p class="mb-4 fs-5"><span class="fw-bold">Проекты Центра психологической поддержки ХГПУ</span> - это
+                открытая площадка для тех, кто ищет
+                единомышленников, нуждается в опоре в сложных жизненных ситуациях, стремится к самопознанию и ценит
+                живой диалог. Наши онлайн- и офлайн-инициативы имеют важную социальную миссию и объединяют школьников
+                региона, студентов и сотрудников вуза. Мы создаем бережную среду, где каждый может развить критическое
+                мышление, расширить кругозор и обсудить волнующие темы без страха осуждения.
+                Присоединяйтесь к нашим встречам, лекториям и подкастам, чтобы сделать осознанную паузу в привычном
+                ритме и найти свои внутренние ориентиры.</p>
+        </div>
+        <p class="mb-4 d-inline-block fw-bold fs-1 position-relative z-2 title-green-marker">Подкаст "ХГПУ. Слушай себя"
+        </p>
+        <p class="mb-4 fs-5">Пространство коротких и честных разговоров о внутреннем мире. Психологи Центра поддержки
+            ХГПУ каждую неделю выпускают эпизоды, которые помогают услышать себя, замедлиться и найти точку опоры.</p>
+        <p class="mb-4 fs-5">Контактное лицо: Ухова К.А. | <a href="mailto:ukhova@hgpurf.ru" target="_blank"
+                class="text-decoration-none fw-bold salat-green">ukhova@hgpurf.ru</a></p>
+        <div class="mb-5">
+            <div class="row m-0 align-items-center rounded-4 shadow overflow-hidden">
+                <div class="col p-0">
+                    <img class="w-100 object-fit-cover"
+                        src="{% static 'bootstrap\img\studlife\psycho_support\podcast.png' %}" alt="">
+                </div>
+                <div class="col-8 py-5 px-5 bg-deep-beige">
+                    <div class="mb-3 fw-semibold fs-6 text-uppercase purple-red">15 июня 2026 • Специальный выпуск</div>
+                    <div class="mb-3 fw-bold fs-1 lh-1">Специальный выпуск подкаста «ХГПУ. Слушай себя».</div>
+                    <div class="mb-4 fs-5">Студенты ХГПУ делятся своим опытом участия во Всероссийской олимпиаде
+                        студентов<br>«Я
+                        - профессионал»</div>
+                    <!-- аудио -->
+                    <audio id="track" loop>
+                        <source src="track.mp3" type="audio/mpeg" />
+                        Ваш браузер не поддерживает аудиоэлемент.
+                    </audio>
+
+                    <div class="audio-player-wrapper" id="player" onclick="togglePlay()">
+                        <div class="play-btn">
+                            <div class="play-icon"></div>
+                            <div class="pause-icon"></div>
+                        </div>
+
+                        <div class="wave-container" id="waveContainer">
+                            <div class="progress-overlay" id="progressOverlay"></div>
+                            <div id="bars"></div>
+                        </div>
+
+                        <div class="time-display" id="time">00:00</div>
+                    </div>
+                    <!-- аудио -->
+                </div>
+            </div>
+            <!-- ALL PODCASTS BLOCK START -->
+            <!-- ALL PODCASTS BLOCK END -->
+        </div>
+    </div>
+    <div class="py-5 bg-gray">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-4">
+                    <p class="mb-2 d-inline-block fw-bold fs-1 position-relative z-2 title-green-marker-sm">Кинолекторий
+                    </p>
+                    <p class="mb-3 fs-5">Кинолекторий позволяет участникам смотреть и обсуждать фильмы, затрагивающие
+                        актуальные социальные и психологические вопросы.</p>
+                    <p class="mb-0 fs-5"><span class="fw-bold">Контактное лицо:</span><br>Ухова К.А. | <a
+                            href="mailto:ukhova@hgpurf.ru" target="_blank"
+                            class="text-decoration-none fw-bold salat-green">ukhova@hgpurf.ru</a></p>
+                </div>
+                <div class="col-4">
+                    <p class="mb-0 fs-5">После просмотра организуются:</p>
+                    <ul class="mb-0 fs-5">
+                        <li>дискуссии с модератором-психологом,</li>
+                        <li>мини-лекции о психологических аспектах сюжета, обсуждение персонажей и жизненных ситуаций.
+                        </li>
+                    </ul>
+                    <p class="mb-0 fs-5">Такой формат помогает участникам лучше понимать себя и других, учит
+                        сопереживанию и конструктивному общению.</p>
+                </div>
+                <div class="col-4">
+                    <img class="w-100 h-100 rounded-4"
+                        src="{% static 'bootstrap\img\studlife\psycho_support\kinolectoriy.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="py-5 bg-beige">
+        <div class="container">
+            <p class="mb-4 d-inline-block fw-bold fs-1 position-relative z-2 title-yellow-wave-marker">Смотрим.
+                Обсуждаем. Помогаем</p>
+            <p class="mb-0 fs-5">Центр психологической поддержки ХГПУ совместно с Центром защиты материнства и детства
+                "Жизнь" и Киностудией ХГПУ организует выездные мероприятия в рамках просветительского десанта.</p>
+            <p class="mb-0 fs-5">Наш совместный проект - это пространство, где кино оживает в дискуссиях. Киностудия
+                создает <span class="fw-bold">визуальный
+                    язык</span> (контент), Центр "Жизнь" закладывает <span class="fw-bold">фундамент традиционных и
+                    семейных ценностей</span>, а наш Центр
+                обеспечивает <span class="fw-bold">глубокую рефлексию и психологическую поддержку участникам.</span></p>
+            <p class="mb-3 fs-5">Мы регулярно проводим встречи с молодежью нашего региона: смотрим фильмы, снятые нашей
+                киностудией, и
+                вместе с экспертами разбираем психологические мотивы героев, вопросы отношений, родительства и выбора
+                жизненного пути. Это не просто просмотр, а бережный инструмент самопознания через киноискусство.</p>
+            <div style="width: 100px; height: 1px; background-color: #000;"></div>
+            <p class="mb-5 fs-5">В рамках сотрудничества Центра психологической поддержки ХГПУ с Центром материнства и
+                детства "Жизнь" и
+                киностудией ХГПУ, реализуется системная просветительская работа с подростками и студентами, направленная
+                на формирование ценности человеческой жизни, осознанного выбора жизненного пути, ответственного
+                отношения к семейным ценностям и позитивного образа родительства.</p>
+            <div class="pb-5 d-flex gap-5">
+                <div class="w-50">
+                    <div class="d-flex flex-column justify-content-between">
+                        <div class="ratio ratio-16x9">
+                            <iframe width="100%" allow="encrypted-media; fullscreen; picture-in-picture"
+                                src="https://kinescope.io/embed/oHTmL3TqvVvaAT4ixngPQ2?"></iframe>
+                        </div>
+                        <div class="d-flex flex-column justify-content-between">
+                            <div class="fs-4 fw-semibold">Психологи ЦПП ХГПУ проводят тренинги для подростков</div>
+                            <div>Новостной сюжет ТРК "Таврия"</div>
+                            <a href="https://tavria.tv/tv/stories/psihologi-hgpu-zapustili-seriyu-zanyatij-s-podrostkami/"
+                                class="link-underline-warning link-offset-3 salat-green fw-semibold">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-50 d-flex flex-column justify-content-between">
+                    <div class="d-flex gap-4">
+                        <img class="w-50 object-fit-cover shadow rounded-4"
+                            src="{% static 'bootstrap/img/studlife/psycho_support/kinostud.jpg' %}" alt="">
+                        <div class="d-flex flex-column justify-content-between">
+                            <div class="fs-4 fw-semibold">Киностудия ХГПУ</div>
+                            <div>Основу кинотеки совместного проекта (просветительского десанта) составляют
+                                короткометражные фильмы Киностудии ХГПУ</div>
+                            <a href=""
+                                class="link-underline-warning link-offset-3 salat-green fw-semibold">Познакомиться</a>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-4">
+                        <img class="w-50 object-fit-cover shadow rounded-4"
+                            src="{% static 'bootstrap/img/studlife/psycho_support/centrlife.png' %}" alt="">
+                        <div class="d-flex flex-column justify-content-between">
+                            <div class="fs-4 fw-semibold">Центр защиты материнства и детства "Жизнь"</div>
+                            <div class="">Площадка поддержки семей, содействия укреплению семейных ценностей</div>
+                            <a href=""
+                                class="link-underline-warning link-offset-3 salat-green fw-semibold">Познакомиться</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="py-5">
+        <div class="container">
+            <p class="mb-4 d-inline-block fw-bold fs-1 position-relative z-2 title-green-marker">Книжный студенческий
+                клуб</p>
+            <div class="mb-5 py-5 px-5 d-flex align-items-stretch gap-5 bg-gray rounded-4">
+                <img style="height: 300px; width: 225px;" class="object-fit-cover rounded-4"
+                    src="{% static 'bootstrap/img/studlife/psycho_support/bookclub.jpg' %}" alt="">
+                <div class="d-flex flex-column justify-content-between">
+                    <p class="mb-0 fs-5 text-black">Книжный студенческий клуб объединяет студентов и сотрудников,
+                        интересующихся литературой.</p>
+                    <p class="mb-0 fs-5 text-black">В онлайн-формате участники читают выбранные книги, а затем
+                        собираются для обсуждения и обмена
+                        мнениями. Психологи Центра помогают раскрывать психологический контекст произведений, обсуждать
+                        личные впечатления и находить практическое применение прочитанного в жизни. Клуб способствует
+                        развитию культуры чтения, навыков анализа текста и укреплению чувства общности.</p>
+                    <div class="d-flex justify-content-end">
+                        <div class="px-4 py-2 d-inline-block bg-ylw text-black rounded-3">
+                            <p class="mb-0">Контактное лицо: Ухова К.А.</p>
+                            <p class="mb-0">ukhova@hgpurf.ru</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="mb-4 d-inline-block fw-bold fs-1 position-relative z-2 title-green-marker-sm">Тьюторство</p>
+            <p class="mb-4 fs-5">Специалистами Центра реализуется тьюторство – практика индивидуального сопровождения
+                студентов с ОВЗ в
+                образовательном и воспитательном процессах.</p>
+            <div class="mb-5 py-5 px-5 d-flex gap-5 bg-gray rounded-4">
+                <img style="height: 300px; width: 225px;" class="object-fit-cover rounded-4"
+                    src="{% static 'bootstrap/img/studlife/psycho_support/tutor.jpg' %}" alt="">
+                <div class="d-flex flex-column justify-content-between">
+                    <p class="mb-0 fs-5 text-black">Тьюторство в ХГПУ создано в целях организации доступной
+                        квалифицированной помощи в сопровождении студентов с ОВЗ. Деятельность тьютора призвана
+                        способствовать укреплению психологического здоровья и позитивной социализации обучающихся
+                        студентов с ОВЗ.</p>
+                    <div class="d-flex justify-content-start">
+                        <div class="px-4 py-2 d-inline-block bg-ylw text-black rounded-3">
+                            <p class="mb-0">Контактное лицо: Гаркуша И.В.</p>
+                            <p class="mb-0">garkushaiv@hgpurf.ru</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="mb-4 d-inline-block fw-bold fs-1 position-relative z-2 title-green-marker-sm">Женский клуб</p>
+            <div class="mb-5 py-5 px-5 d-flex gap-5 bg-gray rounded-4">
+                <img style="height: 235px; width: 235px;" class="object-fit-cover rounded-4"
+                    src="{% static 'bootstrap/img/studlife/psycho_support/womensclub.png' %}" alt="">
+                <div class="d-flex flex-column justify-content-between">
+                    <p class="w-75 mb-0 fs-5 text-black">Женский клуб при Центре психологической поддержки – это
+                        пространство, где можно выдохнуть, побыть собой, получить поддержку и поговорить о важном – о
+                        себе, отношениях, балансе и внутренней гармонии.</p>
+                    <div class="d-flex justify-content-start">
+                        <div class="px-4 py-2 d-inline-block bg-ylw text-black rounded-3">
+                            <p class="mb-0">Контактное лицо: Боднар В.О.</p>
+                            <p class="mb-0">bodnarvo@hgpurf.ru</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="mb-4 d-inline-block fw-bold fs-1 position-relative z-2 title-green-marker">Актуальные опросы</p>
+            <div class="mb-5 py-5 px-5 d-flex gap-5 bg-gray rounded-4">
+                <div style="background-image: url('{% static 'bootstrap/img/studlife\psycho_support\actual-q.jpg' %}');
+                      background-repeat: no-repeat;
+                      background-size: cover;" class="d-flex flex-column justify-content-between rounded-4 py-4 px-4">
+                    <div>
+                        <img style="width: 262px; height: 80px; border-radius: 1rem;"
+                            src="{% static 'bootstrap/img/studlife/psycho_support/cpp-logo-text.png' %}" alt="">
+                    </div>
+                    <div class="d-flex align-items-end gap-3">
+                        <a href="https://max.ru/join/m1gyNU7c1D11y0Oj1pZ6Nz9BasUH369MQMU33zvhzMk" target="_blank"
+                            class="d-inline-flex align-items-center gap-2 py-2 px-4 bg-body-tertiary border border-warning rounded-5 text-decoration-none text-black shadow link-scale text-nowrap">
+                            <div class="edu-program-contact-link-icon">
+                                <img class="d-block w-100"
+                                    src="{% static 'bootstrap/img/edu-programs/max-icon-hover.png' %}" alt="">
+                            </div>
+                            <span>Группа в MAX</span>
+                        </a>
+                        <a href="https://vk.ru/club229251761" target="_blank"
+                            class="d-inline-flex align-items-center gap-2 py-2 px-4 bg-light-red rounded-5 text-decoration-none text-white shadow link-scale text-nowrap">
+                            <div class="edu-program-contact-link-icon">
+                                <img class="d-block w-100"
+                                    src="{% static 'bootstrap\img\studlife\psycho_support\VK_Logo_White.png' %}" alt="">
+                            </div>
+                            <span>Группа ВКонтакте</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex flex-column justify-content-between">
+                    <p class="mb-4 fs-5 text-black"><span class="fw-bold">Студент ХГПУ!</span> Если ты точно так же, как
+                        и специалисты Центра
+                        увлекаешься самопознанием – скорее присоединяйся к актуальным опросам! Ты можешь принять участие
+                        в опросе как анонимно, сделав свой вклад в развитие современной психологической науки, так и
+                        указать свои контакты, чтобы получить разбор своих результатов с опытным психологом.<br><span
+                            class="fw-bold">Присоединяйся!</span></p>
+                    <div class="d-flex justify-content-start">
+                        <div class="px-4 py-2 d-inline-block bg-ylw text-black rounded-3">
+                            <p class="mb-0">Контактное лицо: Попельчук Г.А. | popelchukga@hgpurf.ru</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="max-width: 1400px; height: 600px;" class="bg-beige m-auto py-5 rounded-5 position-relative z-1">
+        <div class="container">
+            <div style="font-size: 60px;" class="mb-4 fw-bold lh-1">Онлайн-консультация<br>
+                <span class="text-ylw">психолога</span>
+            </div>
+            <div class="mb-5 fs-5"><span class="fw-bold">Запись на консультацию в 2 шага: это займет 2-3
+                    минуты.</span><br>Вся информация конфиденциальна.</div>
+            <div style="width: fit-content;" class="d-flex flex-column gap-3">
+                <a href="https://forms.yandex.ru/u/68da6e10068ff000153d0b4e/" target="_blank"
+                    class="d-inline-flex align-items-center justify-content-center gap-2 px-4 py-3 bg-ylw rounded-3 shadow text-decoration-none text-black">
+                    <img style="width: 25px;"
+                        src="{% static 'bootstrap/img/studlife/psycho_support/consult-step-1-icon.svg' %}" alt="">
+                    <span>Шаг 1: Заполните короткую предварительную форму</span>
+                </a>
+                <a href="https://dikidi.net/1919951" target="_blank"
+                    class="d-inline-flex align-items-center justify-content-center gap-2 px-4 py-3 bg-ylw rounded-3 shadow text-decoration-none text-black">
+                    <img style="width: 25px;"
+                        src="{% static 'bootstrap/img/studlife/psycho_support/consult-step-2-icon.svg' %}" alt="">
+                    <span>Шаг 2: Выберите удобное время и специалиста</span>
+                </a>
+            </div>
+        </div>
+        <img style="position: absolute; top: 20%; left: 50%; width: 650px; z-index: 2;"
+            src="{% static 'bootstrap/img/studlife/psycho_support/online-consult-notebook.png' %}" alt="">
+        <img style="position: absolute; top: 50%; left: 50%; width: 110px;"
+            src="{% static 'bootstrap/img/studlife/psycho_support/bird.png' %}" alt="">
+        <img style="position: absolute; top: 10%; left: 55%; width: 350px; z-index: 1;"
+            src="{% static 'bootstrap/img/studlife/psycho_support/orange-elips.svg' %}" alt="">
+    </div>
+    <div>
+        <div class="container">
+            <div style="margin-top: -50px; position: relative; z-index: 4; background-color: #333333; border-radius: 1.4rem;" class="px-5 py-4 d-flex align-items-center justify-content-between">
+                <div class="fw-semibold fs-2 text-white">Анонимный вопрос психологу</div>
+                <a href="https://forms.yandex.ru/u/6756845b493639ae18f69f2b" target="_blank"
+                    class="d-inline-flex align-items-center justify-content-center gap-2 px-5 py-2 bg-ylw rounded-4 shadow text-decoration-none text-black shadow link-scale">
+                    <img style="width: 25px;"
+                        src="{% static 'bootstrap/img/studlife/psycho_support/consult-step-2-icon.svg' %}" alt="">
+                    <span class="fs-5">Задать вопрос анонимно</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}

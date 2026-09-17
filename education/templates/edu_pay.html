@@ -1,0 +1,475 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Оплата обучения
+{% endblock %}
+{% block content %}
+<main class="main">
+    <div class="container">
+        <div class="py-4">
+            <nav style="--bs-breadcrumb-divider: '»'" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">Главная</a></li>
+                    <li class="breadcrumb-item" aria-current="page">
+                        <a href="#">Образование</a>
+                    </li>
+                    <li class="breadcrumb-item" aria-current="page">
+                        <a href="{% url 'sveden' %}">Олата обучения</a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+        <p class="fs-1 fw-bold">Оплата обучения</p>
+        <p class="mb-4 fs-5">Благодарим за выбор ФГБОУ ВО "Херсонский государственный педагогический университет".
+            На этой странице Вы найдете всю необходимую информацию о порядке и сроках внесения платежей за обучение.</p>
+        <div class="mb-5 py-5 px-5 bg-gray rounded-4">
+            <div class="mb-4 d-flex align-items-center justify-content-between gap-4">
+                <a href="https://vk.ru/club229251761" target="_blank"
+                    class="d-inline-flex align-items-center gap-2 py-3 px-5 bg-ylw rounded-4 text-decoration-none text-black link-scale red-link-hov text-nowrap">
+                    <div>
+                        <img style="width: 30px;"
+                            src="{% static 'bootstrap\img\education\edu-pay\edu-cost-black.svg' %}" alt="">
+                    </div>
+                    <span class="fs-5">Узнать актуальную стоимость обучения на текущий учебный год</span>
+                </a>
+                <a href="https://max.ru/join/m1gyNU7c1D11y0Oj1pZ6Nz9BasUH369MQMU33zvhzMk" target="_blank"
+                    class="d-inline-flex align-items-center gap-2 py-3 px-5 bg-body-tertiary border border-warning rounded-4 text-decoration-none text-black link-scale ylw-bg-hov text-nowrap">
+                    <div>
+                        <img style="width: 30px;" src="{% static 'bootstrap/img/education/edu-pay/requisites.svg' %}"
+                            alt="">
+                    </div>
+                    <span class="fs-5">Перейти к реквизитам</span>
+                </a>
+            </div>
+            <div class="px-4 border-start border-2 border-danger fs-5">
+                <span class="fw-bold">Реквизиты изменились:</span> с <span class="fw-bold text-danger">25.07.2026</span>
+                оплата принимается только по новым банковским реквизитам, которые
+                размещены на странице.
+            </div>
+        </div>
+        <p class="fs-2 fw-bold">Сроки оплаты</p>
+        <p class="mb-0 fs-5">Порядок внесения оплаты зависит от года обучения.</p>
+        <p class="mb-4 fs-5">Оплата, как правило, проходит в два этапа: предварительный и окончательный расчет.</p>
+        <div class="row row-cols-1 row-cols-lg-3 g-5">
+            <div class="col">
+                <div class="px-4 py-4 h-100 rounded-4 bg-beige-2">
+                    <div class="mb-3 fw-bold text-uppercase text-beige">старт</div>
+                    <div class="mb-3 d-flex align-items-center justify-content-start gap-2">
+                        <div class="bg-ylw px-3 py-2 rounded-3">
+                            <img style="width: 30px;"
+                                src="{% static 'bootstrap/img/education/edu-pay/rocket-icon.svg' %}" alt="">
+                        </div>
+                        <div class="fw-bold fs-5 lh-sm">Первый<br>год обучения</div>
+                    </div>
+                    <div class="mb-3 border-1 border-bottom border-warning"></div>
+                    <div class="d-flex gap-3">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="ylw-dot"></div>
+                            <div style="width: 1px; height: 135px; background-color: #000000;"></div>
+                            <div class="ylw-dot"></div>
+                        </div>
+                        <div class="d-flex flex-column gap-4 text-black">
+                            <div class="d-flex flex-column gap-2">
+                                <div class="pe-4 fw-bold">
+                                    До издания приказа о зачислении
+                                </div>
+                                <div class="py-3 px-4 rounded-3 lh-1 fw-medium bg-body-tertiary">
+                                    Предоплата - не менее 50% от годовой стоимости
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column gap-2">
+                                <div class="fw-bold">
+                                    До 1 февраля текущего<br>учебного года
+                                </div>
+                                <div class="py-3 px-4 rounded-3 lh-1 fw-medium bg-body-tertiary">
+                                    Окончательный расчет за текущий учебный год
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="px-4 py-4 h-100 rounded-4 bg-beige-2">
+                    <div class="mb-3 fw-bold text-uppercase text-beige">процесс</div>
+                    <div class="mb-3 d-flex align-items-center justify-content-start gap-2">
+                        <div class="bg-ylw px-3 py-2 rounded-3">
+                            <img style="width: 30px;"
+                                src="{% static 'bootstrap/img/education/edu-pay/rectangles.svg' %}" alt="">
+                        </div>
+                        <div class="fw-bold fs-5 lh-sm">Второй и последующий годы обучения</div>
+                    </div>
+                    <div class="mb-3 border-1 border-bottom border-warning"></div>
+                    <div class="d-flex gap-3">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="ylw-dot"></div>
+                            <div style="width: 1px; height: 110px; background-color: #000000;"></div>
+                            <div class="ylw-dot"></div>
+                        </div>
+                        <div class="d-flex flex-column gap-4 text-black">
+                            <div class="d-flex flex-column gap-2">
+                                <div class="pe-5 fw-bold">
+                                    До 15 июля текущего года
+                                </div>
+                                <div class="py-3 px-4 rounded-3 lh-1 fw-medium bg-body-tertiary">
+                                    Предоплата - не менее 50% от годовой стоимости
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column gap-2">
+                                <div class="fw-bold">
+                                    До 1 февраля текущего<br>учебного года
+                                </div>
+                                <div class="py-3 px-4 rounded-3 lh-1 fw-medium bg-body-tertiary">
+                                    Окончательный расчет за текущий учебный год
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="px-4 py-4 h-100 rounded-4 bg-beige-2">
+                    <div class="mb-3 fw-bold text-uppercase text-beige">Финиш</div>
+                    <div class="mb-3 d-flex align-items-center justify-content-start gap-2">
+                        <div class="bg-ylw px-3 py-2 rounded-3">
+                            <img style="width: 30px;"
+                                src="{% static 'bootstrap/img/education/edu-pay/finish-icon.svg' %}" alt="">
+                        </div>
+                        <div class="fw-bold fs-5 lh-sm">Последний<br>год обучения</div>
+                    </div>
+                    <div class="mb-3 border-1 border-bottom border-warning"></div>
+                    <div class="d-flex gap-3">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="ylw-dot"></div>
+                            <div style="width: 1px; height: 220px; background-color: #000000;"></div>
+                            <div class="ylw-dot"></div>
+                        </div>
+                        <div class="d-flex flex-column gap-4 text-black">
+                            <div class="d-flex flex-column gap-2">
+                                <div class="pe-5 fw-bold">
+                                    До 15 июля предстоящего учебного года
+                                </div>
+                                <div class="py-3 px-4 rounded-3 lh-1 fw-medium bg-body-tertiary">
+                                    Если срок обучения менее 10 месяцев - оплата в полном объеме
+                                </div>
+                                <div class="py-3 px-4 rounded-3 lh-1 fw-medium bg-body-tertiary">
+                                    Если срок ровно 10 месяцев - не менее 50%
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column gap-2">
+                                <div class="fw-bold">
+                                    До 1 февраля текущего<br>учебного года
+                                </div>
+                                <div class="py-3 px-4 rounded-3 lh-1 fw-medium bg-body-tertiary">
+                                    Окончательный расчет
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="my-5 border-1 border-bottom border-warning"></div>
+        <p class="fs-2 fw-bold">Способы оплаты</p>
+        <p class="mb-4 fs-5">Вы можете оплатить обучение удобным способом:</p>
+        <div class="mb-5 d-flex gap-5 text-black">
+            <div
+                class="w-50 px-5 py-5 d-flex flex-column align-items-start gap-3 rounded-3 bg-gray border border-light-subtle">
+                <div class="bg-ylw px-3 py-2 rounded-3 d-flex align-items-center justify-content-center">
+                    <img src="{% static 'bootstrap/img/education/edu-pay/bank-icon.svg' %}"
+                        style="width: 30px; height: auto;" alt="">
+                </div>
+                <div class="fw-bold fs-4">В отделении банка</div>
+                <div class="fs-5">По квитанции, которую мы направляем на Вашу электронную почту. В квитанции указаны
+                    реквизиты университета, сумма и номер договора.</div>
+                <div
+                    class="py-3 px-4 d-flex flex-column gap-3 rounded-3 lh-1 fw-medium bg-white border border-light-subtle">
+                    <div class="fw-bold">Не пришла квитанция?</div>
+                    <div>Обратитесь в Управление бухгалтерского учета и финансового контроля Университета</div>
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-envelope fa-xl" style="color: #f2bf16"></i>
+                        <div>+7(978) 502-17-99</div>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-envelope fa-xl" style="color: #f2bf16"></i>
+                        <div>buhkhgpu@yandex.ru</div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="w-50 px-5 py-5 d-flex flex-column align-items-start gap-3 rounded-3 bg-gray border border-light-subtle">
+                <div class="bg-ylw px-3 py-2 rounded-3 d-flex align-items-center justify-content-center">
+                    <img src="{% static 'bootstrap/img/education/edu-pay/qr-icon.svg' %}"
+                        style="width: 30px; height: auto;" alt="">
+                </div>
+                <div class="fw-bold fs-4">Через мобильное приложение банка</div>
+                <div class="fs-5"><span class="fw-bold">Вариант А:</span> Отсканируйте QR-код из квитанции - для оплаты
+                    через приложение "Сбербанк".</div>
+                <div class="fs-5"><span class="fw-bold">Вариант Б:</span> При оплате из приложений других банков введите
+                    реквизиты вручную.</div>
+                <div
+                    class="py-3 px-4 d-flex flex-column gap-3 rounded-3 lh-1 fw-medium bg-white border border-light-subtle">
+                    <div class="fw-bold">Совет</div>
+                    <div>Перед подтверждением сверьте получателя и номер счёта с реквизитами ниже.</div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-5 px-5 py-4 d-flex gap-5 bg-beige-3 rounded-3 border border-warning fs-5 text-black">
+            <div class="fw-bold text-danger">Важно</div>
+            <div><span class="fw-bold">При изменении контактных данных</span> (телефона, e-mail, места проживания), а
+                также фамилии, имени или
+                отчества - <span class="fw-bold">незамедлительно сообщите об этом в дирекцию института.</span> Это
+                позволит избежать ошибок при
+                зачислении платежей и сохранить связь с Университетом.</div>
+        </div>
+        <div class="mb-4 d-flex justify-content-between align-items-center">
+            <div class="fs-2 fw-bold">Реквизиты для оплаты</div>
+            <div class="d-flex align-items-center gap-3 flex-wrap flex-xl-nowrap">
+                <a href="path-to-file" download
+                    class="d-inline-flex align-items-center gap-2 py-2 px-4 rounded-3 bg-ylw text-decoration-none text-black black-white-icon-link">
+                    <div class="black-white-icon-link-icon">
+                        <img class="d-block w-100"
+                            src="{% static 'bootstrap/img/education/edu-pay/download-black-icon.svg' %}" alt="">
+                        <img class="d-block w-100"
+                            src="{% static 'bootstrap/img/education/edu-pay/download-white-icon.svg' %}" alt="">
+                    </div>
+                    <span>Скачать реквизиты</span>
+                </a>
+                <a href="" target="_blank"
+                    class="d-inline-flex align-items-center gap-2 py-2 px-4 rounded-3 bg-ylw text-decoration-none text-black black-white-icon-link">
+                    <div class="black-white-icon-link-icon">
+                        <img class="d-block w-100"
+                            src="{% static 'bootstrap/img/education/edu-pay/copy-black-icon.svg' %}" alt="">
+                        <img class="d-block w-100"
+                            src="{% static 'bootstrap/img/education/edu-pay/copy-white-icon.svg' %}" alt="">
+                    </div>
+                    <span>Скопировать реквизиты</span>
+                </a>
+            </div>
+        </div>
+        <div class="px-4 border-start border-3 border-danger fs-5">
+            <div class="fw-bold text-ylw text-uppercase">ВНИМАНИЕ!</div>
+            <div class="mb-4 fw-bold">ИЗМЕНЕНИЕ РЕКВИЗИТОВ ДЛЯ ОПЛАТЫ ЗА ОБРАЗОВАТЕЛЬНЫЕ УСЛУГИ!</div>
+            <div class="mb-4">Федеральное государственное бюджетное образовательное учреждение высшего образования
+                "Херсонский
+                государственный педагогический университет" (ФГБОУ ВО "ХГПУ") сообщает об изменении банковских
+                реквизитов для оплаты за образовательные услуги <span class="fw-bold">с 25.07.2026 года.</span></div>
+        </div>
+        <div class="mb-4">
+            <table class="table table-h-borders fs-5">
+                <tbody>
+                    <tr>
+                        <td class="w-25">Получатель</td>
+                        <td>УФК ПО ХЕРСОНСКОЙ ОБЛАСТИ (ФГБОУ ВО "ХГПУ", л/с 20976НЛ4Ш00)</td>
+                    </tr>
+                    <tr>
+                        <td class="w-25">ИНН</td>
+                        <td>9500007226</td>
+                    </tr>
+                    <tr>
+                        <td class="w-25">КПП</td>
+                        <td>950001001</td>
+                    </tr>
+                    <tr>
+                        <td class="w-25">ОГРН</td>
+                        <td>1229500007252</td>
+                    </tr>
+                    <tr>
+                        <td class="w-25">ОКТМО</td>
+                        <td>74543000001 или 74543000</td>
+                    </tr>
+                    <tr>
+                        <td class="w-25">Банк</td>
+                        <td>ОКЦ № 1 ВВГУ Банка России/УФК по Нижегородской области, г. Нижний Новгород</td>
+                    </tr>
+                    <tr>
+                        <td class="w-25">БИК</td>
+                        <td>012202102</td>
+                    </tr>
+                    <tr>
+                        <td class="w-25">Единый казначейский счет (корр.счет)</td>
+                        <td>40102810745370000024</td>
+                    </tr>
+                    <tr>
+                        <td class="w-25">Казначейский счет (р/с)</td>
+                        <td>03214643000000013255</td>
+                    </tr>
+                    <tr>
+                        <td class="w-25">Лицевой счет</td>
+                        <td>20976НЛ4Ш00</td>
+                    </tr>
+                    <tr>
+                        <td class="w-25">КБК</td>
+                        <td>00000000000000000130</td>
+                    </tr>
+                    <tr>
+                        <td class="w-25"><span class="fw-bold">НАЗНАЧЕНИЕ ПЛАТЕЖА</span></td>
+                        <td>л/с 20976НЛ4Ш00<br>Оплата за образовательные услуги за <span class="fw-bold">ФИО по договору
+                                №___</span> от ___________ 202_ г., направление
+                            подготовки, курс, группа, за ____ семестр 202__-202__ уч. года</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="mb-5 px-5 py-4 d-flex gap-5 bg-beige-3 rounded-3 border border-warning fs-5 text-black">
+            <div class="fw-bold text-danger">Важно</div>
+            <div>Обязательно указывайте <span class="fw-bold">номер договора</span> и <span class="fw-bold">ФИО
+                    студента</span> в НАЗНАЧЕНИИ платежа, чтобы средства были зачислены корректно.</div>
+        </div>
+        <p class="fs-2 fw-bold">Отсрочка и рассрочка платежа</p>
+        <p class="mb-4 fs-5">Если вы временно не можете внести платеж в срок - не допускайте просрочки без уведомления.
+            При тяжелом материальном положении или иной уважительной причине, Университет может предоставить отсрочку
+            или рассрочку оплаты.</p>
+        <div class="mb-5 d-flex gap-4">
+            <div class="ps-0">
+                <div class="mb-3 d-flex align-items-start gap-5">
+                    <div class="num-circle border border-2 border-warning fs-5 fw-bold">1</div>
+                    <div class="fs-5 fw-medium">
+                        <div class="mb-3 fw-bold">Напишите заявление</div>
+                        <div>Отсрочка или рассрочка оформляется по личному заявлению обучающегося или заказчика.</div>
+                    </div>
+                </div>
+                <div class="mb-3 d-flex align-items-start gap-5">
+                    <div class="num-circle border border-2 border-warning fs-5 fw-bold">2</div>
+                    <div class="fs-5 fw-medium">
+                        <div class="mb-3 fw-bold">Приложите подтверждающие документы</div>
+                        <div>Они должны подтверждать обстоятельства, изложенные в заявлении, - на их основании
+                            Университет принимает решение.</div>
+                    </div>
+                </div>
+                <div class="mb-3 d-flex align-items-start gap-5">
+                    <div class="num-circle border border-2 border-warning fs-5 fw-bold">3</div>
+                    <div class="fs-5 fw-medium">
+                        <div class="mb-3 fw-bold">Дождитесь решения</div>
+                        <div>При положительном решении оформляется <span class="fw-bold text-ylw">дополнительное
+                                соглашение</span> к договору, где закрепляется новая дата оплаты.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="px-5 py-4 d-flex flex-column flex-grow-1 gap-2 bg-gray rounded-4 border text-nowrap">
+                <div class="fw-bold fs-5">Бланки заявлений</div>
+                <a href="" download=""
+                    class="px-3 py-2 d-inline-flex align-items-center gap-2 border border-warning rounded-3 ylw-bg-hov text-decoration-none text-black">
+                    <img style="width: 20px;" src="{% static 'bootstrap/img/education/edu-pay/blank-icon.svg' %}"
+                        alt="">
+                    Заявление на отсрочку
+                </a>
+                <a href="" download=""
+                    class="px-3 py-2 d-inline-flex align-items-center gap-2 border border-warning rounded-3 ylw-bg-hov text-decoration-none text-black">
+                    <img style="width: 20px;" src="{% static 'bootstrap/img/education/edu-pay/blank-icon.svg' %}"
+                        alt="">
+                    Заявление на pacсрочку
+                </a>
+                <div><span class="fw-bold">Куда направить заявление:</span><br>(на выбор - по приоритетности)</div>
+                <div class="d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-envelope fa-lg flex-shrink-0" style="color: #f2bf16"></i>
+                    <div>Дирекция института</div>
+                </div>
+                <div class="d-flex align-items-baseline gap-2">
+                    <i class="fa-solid fa-envelope fa-lg flex-shrink-0" style="color: #f2bf16"></i>
+                    <div>
+                        <div>buhkhgpu@yandex.ru</div>
+                        <div style="font-size: 12px;" class="text-wrap">Управление бухгалтерского учета и финансового
+                            контроля</div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-baseline gap-2">
+                    <i class="fa-solid fa-envelope fa-lg flex-shrink-0" style="color: #f2bf16"></i>
+                    <div>
+                        <div>hgpurf@yandex.ru</div>
+                        <div style="font-size: 12px;" class="text-wrap">Официальная почта Университета</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="fs-2 fw-bold">Государственная поддержка при оплате обучения</p>
+        <p class="mb-4 fs-5">Оформление господдержки требует внимания к деталям. Чтобы избежать ошибок и не тратить
+            время на уточнения, мы подготовили памятки: по оплате материнским капиталом и по образовательному кредиту с
+            господдержкой. В материалах - чёткие шаги и перечень документов. Скачайте подходящую памятку и используйте
+            её как инструкцию.</p>
+        <div class="mb-5 py-4 row row-cols-1 row-cols-md-2 g-5">
+            <div class="col">
+                <a href="" download="" class="d-block rounded-3 overflow-hidden position-relative">
+                    <img class="" width="100%" height="322px"
+                        src="{% static 'bootstrap/img/education/edu-pay/edu-gov-credit.jpg' %}" alt="" />
+                    <div style="background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.70));"
+                        class="w-100 h-100 position-absolute top-0 left-0"></div>
+                    <div style="transform: translateY(51%); transition-duration: .3s;"
+                        class="py-5 px-5 w-100 position-absolute bottom-0 z-2 text-white shadow translatig-card-hov">
+                        <div class="fs-5 fw-semibold lh-sm">Образовательный кредит с государственной поддержкой</div>
+                        <div class="my-4 w-100 border-top border-warning-subtle"></div>
+                        <div class="mb-3 fs-6">Условия, процентная ставка, необходимые документы и порядок получения
+                            льготного финансирования</div>
+                        <div
+                            class="px-3 py-2 d-inline-block text-black bg-ylw rounded-3 fs-6 fw-semibold position-relative overflow-hidden glare">
+                            <i class="fa-solid fa-file-lines"></i>
+                            <span>Скачать памятку</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="" download="" class="d-block rounded-3 overflow-hidden position-relative">
+                    <img class="" width="100%" height="322px"
+                        src="{% static 'bootstrap/img/education/edu-pay/edu-gov-credit.jpg' %}" alt="" />
+                    <div style="background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.70));"
+                        class="w-100 h-100 position-absolute top-0 left-0"></div>
+                    <div style="transform: translateY(54%); transition-duration: .3s;"
+                        class="py-5 px-5 w-100 position-absolute bottom-0 z-2 text-white shadow translatig-card-hov">
+                        <div class="fs-5 fw-semibold lh-sm">Оплата обучения средствами материнского (семейного) капитала
+                        </div>
+                        <div class="my-4 w-100 border-top border-warning-subtle"></div>
+                        <div class="mb-3 fs-6">
+                            Оплата обучения средствами материнского (семейного) капитала
+                            Основные требования, пошаговая инструкция и необходимые документы - в одном файле</div>
+                        <div
+                            class="px-3 py-2 d-inline-block text-black bg-ylw rounded-3 fs-6 fw-semibold position-relative overflow-hidden glare">
+                            <i class="fa-solid fa-file-lines"></i>
+                            <span>Скачать памятку</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="mb-5 px-5 py-5 rounded-4 bg-ylw">
+            <div class="mb-4 fw-bold text-uppercase text-beige">поддержка</div>
+            <div class="mb-4 d-flex align-items-center">
+                <div class="w-75">
+                    <div class="mb-4 fw-bold fs-1 text-black">
+                        Остались вопросы по оплате?
+                    </div>
+                    <div class="w-75 text-black fs-5">
+                        Мы поможем разобраться в нюансах и подобрать удобный вариант.
+                        По всем вопросам - Управление бухгалтерского учета и
+                        финансового контроля.
+                    </div>
+                </div>
+                <img style="max-width: 185px;" src="{% static 'bootstrap/img/education/edu-pay/max-qr.svg' %}" alt="">
+            </div>
+            <div class="d-flex justify-content-between gap-5">
+                <div class="w-100 px-5 py-4 rounded-3 bg-white">
+                    <div class="mb-3 fw-bold text-uppercase text-beige">телефон</div>
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-phone fa-xl" style="color: #000000"></i>
+                        <div class="fs-5 fw-medium text-ylw-hov">+7(978) 502-17-99</div>
+                    </div>
+                </div>
+                <div class="w-100 px-5 py-4 rounded-3 bg-white">
+                    <div class="mb-3 fw-bold text-uppercase text-beige">Электронная почта</div>
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-envelope fa-xl" style="color: #000000"></i>
+                        <div class="fs-5 fw-medium text-ylw-hov">buhkhgpu@yandex.ru</div>
+                    </div>
+                </div>
+                <div class="w-100 px-5 py-4 rounded-3 bg-white">
+                    <div class="mb-3 fw-bold text-uppercase text-beige">Группа "Оплата обучения"</div>
+                    <div class="d-flex align-items-center gap-2">
+                        <img style="width: 24px;" src="{% static 'bootstrap/img/edu-programs/Max_logo_black.svg' %}" alt="">
+                        <a href="https://max.ru/join/xeVbtBM_e8O8qnOd3SlvDGplW5F8tXP41RBCUy0Oeow" class="fs-5 fw-medium text-decoration-none text-black text-ylw-hov">Перейти</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}

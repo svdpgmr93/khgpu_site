@@ -57,8 +57,12 @@ urlpatterns = [
     path('media/universitet_v_smi', universitet_v_smi, name='universitet_v_smi'),
     path('gup', gup, name='gup'),
     path('media/blog_rectora', blog_rectora, name='blog_rectora'),
+    path('rector-page', rector_page, name='rector_page'),
+    path('center-life', center_life, name='center_life'),
     path('institutes/<str:institute_name>', institut, name='institute'),
     path('', include('education.urls', namespace='education')),
+    # Студенческая жизнь
+    path('studlife/psycho_support', psycho_support, name='psycho_support'),
     # Служебные приложения
     path('ckeditor/', include('ckeditor_uploader.urls')),
 ]
